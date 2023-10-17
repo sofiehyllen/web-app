@@ -1,11 +1,93 @@
-
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
 :root{
-    --darkest-purple: #201740;
-    --dark-purple: #2B1E59;
-    --purple: #42208C;
-    --light-purple: #6E34BF;
-    --green: #5CC49B;
+    --darkest-purple: #1C172F; 
+    --darker-purple: #241E3C;
+    --dark-purple: #30274F;
+    --purple: #433770;
+    --light-purple: #54458C;
+    --peach: #E77360;
+    --titel-text:#F0EEE6;
+    --body-text:rgba(240, 238, 230, 0.7);
+
+    --font-titel: var(--titel-text),
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--titel-text);
+}
+
+.titel1, .titel2{
+    font-family: "gyst-variable",sans-serif;
+    font-variation-settings: 'wght' 550;
+}
+
+.titel1{
+    font-size: 13vw;
+}
+
+.titel2{
+    font-size: 17vw;
+}
+
+.heading1, .heading2{
+    font-family: "mundial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bodytext{
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.page-content{
+    background-image: url("/src/assets/background-default.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding: 3vw;
+}
+
+nav{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--darkest-purple);
+    box-shadow: inset 0 7px 15px -7px rgb(0, 0, 0,0.7);
+    z-index: -1;
+}
+
+nav a{
+    display: flex;
+    color: var(--titel-text);
+    font-size: 9vw;
+    padding-bottom: 3vw;
+    padding-top: 3vw;
+    justify-content: center;
+}
+
+.active{
+    background-image: url("/src/assets/nav-active.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
+}
+
+.nav-item{
+    width: 33%;
+}
 
