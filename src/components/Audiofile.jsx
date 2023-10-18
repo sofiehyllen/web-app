@@ -1,5 +1,7 @@
 import { useRef, useState, useEffect, useCallback } from 'react'
+import PropTypes from 'prop-types';
 import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
+import moment from 'moment/moment'
 
 const useWavesurfer = (containerRef, options) => {
     const [wavesurfer, setWavesurfer] = useState(null)
@@ -29,7 +31,12 @@ export default function Audiofile(props){
     const [isPlaying, setIsPlaying] = useState(false)
     const [currentTime, setCurrentTime] = useState(0)
     const wavesurfer = useWavesurfer(containerRef, props)
+    const {textarea} = props;
   
+    Audiofile.propTypes = {
+        textarea: PropTypes.string.isRequired,
+      };
+
     // On play button click
     const onPlayClick = useCallback(() => {
       wavesurfer.isPlaying() ? wavesurfer.pause() : wavesurfer.play()
@@ -54,15 +61,16 @@ export default function Audiofile(props){
       }
     }, [wavesurfer])
   
+    const formattedTime = moment.utc(currentTime * 1000).format('mm:ss')
+
     return (
-      <>
-        <div ref={containerRef} />
-  
-        <button onClick={onPlayClick}>
-          {isPlaying ? 'Pause' : 'Play'}
+      <section className='audio-container'>
+        <button className='playbutton' onClick={onPlayClick}>
+          {isPlaying ? <img className='img-max' src="src/assets/afspiller-pause.svg" alt="pause-button" /> : <img className='img-max' src='src/assets/afspiller-play.svg' alt='play-button'/> }
         </button>
-  
-        <p>Seconds played: {currentTime}</p>
-      </>
+        <p className='audiotext'>{textarea}</p>
+        <div className='audiowave' ref={containerRef}></div>
+        <div className='audiotime'><p>{formattedTime}</p></div>
+      </section>
     )
 }

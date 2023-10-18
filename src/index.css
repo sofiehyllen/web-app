@@ -23,6 +23,12 @@ body{
     color: var(--titel-text);
 }
 
+.img-max{
+    min-width: 100%;
+    min-height: 100%;
+    display: block;
+}
+
 .titel1, .titel2{
     font-family: "gyst-variable",sans-serif;
     font-variation-settings: 'wght' 550;
@@ -110,5 +116,47 @@ nav a{
 
 .nav-item{
     width: 33%;
+}
+
+
+
+
+
+.audio-container{
+    display: flex;
+    align-items: center;
+    background-color: var(--darkest-purple);
+    margin-bottom: 3vw;
+    border-radius: 20vw;
+    padding: 1vw;
+    width: 100%;
+    min-width: fit-content;
+    font-family: "poppins", sans-serif;
+    font-weight: 100;
+}
+
+.playbutton{
+    border: none;
+    background: transparent;
+    width: 14vw;
+    padding: .5vw;
+}
+
+.audiotext{
+    font-size: 3vw;
+    line-height: 4vw;
+    min-width: 23vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.audiowave{
+    width: 100%;
+}
+
+.audiotime{
+    font-size: 3.3vw;
+    min-width: 11vw;
+    text-align: center;
 }
 
