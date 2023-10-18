@@ -16,6 +16,5 @@ export default function Navigation(){
                     <i className="fi fi-br-menu-burger"></i>
                 </NavLink>
             </nav>
-
     )
 }
