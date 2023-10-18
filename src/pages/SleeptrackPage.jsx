@@ -6,7 +6,7 @@ export default function SleeptrackPage(){
     return(
         <section className="page-content">
             <p className="titel1">Sleeptrack content</p>
-            
+
             <Audiofile
             height={40}
             waveColor="rgba(96, 92, 110)"

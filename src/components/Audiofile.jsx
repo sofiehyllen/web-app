@@ -15,7 +15,7 @@ const useWavesurfer = (containerRef, options) => {
       })
   
       setWavesurfer(ws)
-  
+
       return () => {
         ws.destroy()
       }
@@ -56,9 +56,9 @@ export default function Audiofile(props){
   
     return (
       <>
-        <div ref={containerRef} style={{ minHeight: '120px' }} />
+        <div ref={containerRef} />
   
-        <button onClick={onPlayClick} style={{ marginTop: '1em' }}>
+        <button onClick={onPlayClick}>
           {isPlaying ? 'Pause' : 'Play'}
         </button>
   
