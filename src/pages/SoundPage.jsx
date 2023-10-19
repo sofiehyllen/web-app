@@ -10,7 +10,7 @@ export default function SoundPage(){
                 quiet rainfall while you meditate.
             </p>
 
-{/* CATEGORIES SECTION */}
+{/* SOUND CATEGORIES SECTION */}
             <section>
                 <p> Categories </p>
                 <div className="brickcontainer large">
