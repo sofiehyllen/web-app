@@ -35,7 +35,7 @@ export default function ToolPage(){
                 <button className="button-small button-purple"> Explore more </button>
             </section>
 
-{/* "10 STEPS TO BETTER SLEEP" SECTION */}
+{/* 10 STEPS SECTION */}
             <section>
                 <p> During the day</p>
                 <div className="brickcontainer large">
