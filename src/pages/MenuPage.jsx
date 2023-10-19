@@ -5,7 +5,7 @@ export default function MenuPage(){
         <section className="page-content">
             <h1 className="titel">Menu</h1>
             <p className="bodytext">Try our calming sounds, soothing tools, or check up on your latest sleep trackings. </p>
-            <Link to ="/soundspage">
+            <Link to ="/soundpage">
                 <div className="brickcontainer medium">
                     <h2 className="heading">Calming Sounds</h2>
                     <p className="bodytext">Fall asleep to one of many peaceful sleeping sounds</p>
@@ -21,7 +21,7 @@ export default function MenuPage(){
             </Link>
 
 
-            <Link to="/tipspage">
+            <Link to="/toolpage">
                 <div className="brickcontainer medium">
                     <h2 className="heading">Tips & Tools</h2>
                     <p className="bodytext">Elevate your sleep experience with our soothing tools</p>

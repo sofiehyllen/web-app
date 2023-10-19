@@ -6,6 +6,8 @@ import MenuPage from './pages/MenuPage';
 import Navigation from './components/Navigation';
 import SleeptrackPage from './pages/SleeptrackPage';
 import SoundPage from './pages/SoundPage';
+import StatisticsPage from './pages/StatisticsPage';
+import ToolPage from './pages/ToolPage';
 
 function App() {
 
@@ -20,6 +22,8 @@ function App() {
                 <Route exact path="/sleeptrackpage" element={<SleeptrackPage/>} /> 
                 <Route exact path="/menupage" element={<MenuPage/>} /> 
                 <Route exact path="/soundpage" element={<SoundPage/>} />
+                <Route exact path="/toolpage" element={<ToolPage/>} />
+                <Route exact path="/statisticspage" element={<StatisticsPage/>} />
             </Routes> 
         </BrowserRouter>
         
