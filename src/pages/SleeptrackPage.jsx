@@ -1,11 +1,21 @@
 import Audiofile from "../components/Audiofile";
 
+import { useState } from 'react'
+import SleepTracker from '../components/Sleeptracker'
+
+
 export default function SleeptrackPage(){
+    const [count, setCount] = useState(0)
 
     return(
         <section className="page-content">
+ 
             <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
-            
+            <div className="SleepTracker">
+                <SleepTracker />
+            </div>
+
+           
             <h2 className="heading">Your favourite sounds</h2>
             <Audiofile
             textarea={"Quiet rain"}
@@ -20,6 +30,7 @@ export default function SleeptrackPage(){
             dragToSeek={true}
             cursorColor={'transparent'}
             />
+
 
             <Audiofile
             textarea={"Ocean waves"}
