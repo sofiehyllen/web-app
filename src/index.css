@@ -23,6 +23,10 @@ body{
     color: var(--titel-text);
 }
 
+.flex{
+    display: flex;
+}
+
 .titel{
     font-family: "gyst-variable",sans-serif;
     font-variation-settings: 'wght' 550;
