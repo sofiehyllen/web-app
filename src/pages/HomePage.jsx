@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Audiofile from "../components/Audiofile";
 
 
 export default function HomePage(){
@@ -25,6 +26,34 @@ export default function HomePage(){
                     <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
                 </div>
             </div>
+            <h2 className="heading">Your favourite sounds</h2>
+            <Audiofile
+            textarea={"Quiet rain"}
+            height={30}
+            waveColor="rgba(96, 92, 110)"
+            progressColor="rgba(240, 238, 230)"
+            url={'src/assets/audio-rain.mp3'}
+            barHeight={1.5}
+            barWidth={3}
+            barGap={4}
+            barRadius={10}
+            dragToSeek={true}
+            cursorColor={'transparent'}
+            />
+
+            <Audiofile
+            textarea={"Ocean waves"}
+            height={30}
+            waveColor="rgba(96, 92, 110)"
+            progressColor="rgba(240, 238, 230, 1)"
+            url={'src/assets/audio-ocean-waves.mp3'}
+            barHeight={2}
+            barWidth={3}
+            barGap={4}
+            barRadius={10}
+            dragToSeek={true}
+            cursorColor={'transparent'}
+            />
         </section>
     )
 }
