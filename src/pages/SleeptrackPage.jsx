@@ -4,7 +4,8 @@ export default function SleeptrackPage(){
 
     return(
         <section className="page-content">
-            <p className="titel1">Sleeptrack content</p>
+
+            <p className="titel">Sleeptrack content</p>
             <Audiofile
             textarea={"Quiet rain"}
             height={30}
