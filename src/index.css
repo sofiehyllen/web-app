@@ -1,33 +1,35 @@
-@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+/*--Import af ikoner--*/
+    @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
-:root{
-    --darkest-purple: #1C172F; 
-    --darker-purple: #241E3C;
-    --dark-purple: #30274F;
-    --purple: #433770;
-    --light-purple: #54458C;
-    --peach: #E77360;
-    --titel-text:#F0EEE6;
-    --body-text:rgba(240, 238, 230, 0.7);
-}
+/*--Generelle regler, farver og typografi--*/
+    :root{
+        --darkest-purple: #1C172F; 
+        --darker-purple: #241E3C;
+        --dark-purple: #30274F;
+        --purple: #433770;
+        --light-purple: #54458C;
+        --peach: #E77360;
+        --titel-text:#F0EEE6;
+        --body-text:rgba(240, 238, 230, 0.7);
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
 
-body{
-    color: var(--titel-text);
-}
+    body{
+        color: var(--titel-text);
+    }
 
-.img-max{
-    min-width: 100%;
-    min-height: 100%;
-    display: block;
-}
+    .img-max{
+        min-width: 100%;
+        min-height: 100%;
+        display: block;
+    }
 
 .titel1, .titel2{
     font-family: "gyst-variable",sans-serif;
