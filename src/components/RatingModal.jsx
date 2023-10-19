@@ -35,16 +35,16 @@ const RatingModal = ({ isOpen, onClose, onPublish, sleepDuration }) => {
         <label>Rate Your Sleep:</label>
         <div className='icon-container'>
           
-          <img src={verysadIcon} alt="VerySad" style={{ width: '50px', height: '50px', marginRight: '10px' }} />
-          <img src={sadIcon} alt="Sad" style={{ width: '50px', height: '50px', marginRight: '10px' }}/>
-          <img src={betweenIcon} alt="Between" style={{ width: '50px', height: '50px', marginRight: '10px' }}/>
-          <img src={happyIcon} alt="Happy" style={{ width: '50px', height: '50px', marginRight: '10px' }}/>
-          <img src={veryhappyIcon} alt="VeryHappy" style={{ width: '50px', height: '50px', marginRight: '10px' }}/>
+          <img src={verysadIcon} alt="VerySad"/>
+          <img src={sadIcon} alt="Sad"/>
+          <img src={betweenIcon} alt="Between" />
+          <img src={happyIcon} alt="Happy" />
+          <img src={veryhappyIcon} alt="VeryHappy" />
           
         </div>
         <div> 
-          <button onClick={() => handleRating(1)}>Publish</button>
-          <button onClick={onClose}>Cancel</button>
+          <button className="button-small" onClick={() => handleRating(1)}>Publish</button>
+          <button className="button-small" onClick={onClose}>Cancel</button>
         </div>
       </div>
     </div>
