@@ -1,27 +1,35 @@
-@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+/*--Import af ikoner--*/
+    @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
-:root{
-    --darkest-purple: #1C172F; 
-    --darker-purple: #241E3C;
-    --dark-purple: #30274F;
-    --purple: #433770;
-    --light-purple: #54458C;
-    --peach: #E77360;
-    --titel-text:#F0EEE6;
-    --body-text:rgba(240, 238, 230, 0.7);
-}
+/*--Generelle regler, farver og typografi--*/
+    :root{
+        --darkest-purple: #1C172F; 
+        --darker-purple: #241E3C;
+        --dark-purple: #30274F;
+        --purple: #433770;
+        --light-purple: #54458C;
+        --peach: #E77360;
+        --titel-text:#F0EEE6;
+        --body-text:rgba(240, 238, 230, 0.7);
+    }
 
-*{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
 
-body{
-    color: var(--titel-text);
-}
+    body{
+        color: var(--titel-text);
+    }
+
+    .img-max{
+        min-width: 100%;
+        min-height: 100%;
+        display: block;
+    }
 
 .titel{
     font-family: "gyst-variable",sans-serif;
@@ -119,6 +127,51 @@ nav a{
 }
 
 
+
+.audio-container{
+    display: flex;
+    align-items: center;
+    background-color: var(--darkest-purple);
+    margin-bottom: 3vw;
+    border-radius: 20vw;
+    padding: 1vw;
+    width: 100%;
+    min-width: fit-content;
+    font-family: "poppins", sans-serif;
+    font-weight: 100;
+}
+
+.playbutton{
+    border: none;
+    background: transparent;
+    width: 14vw;
+    padding: .5vw;
+}
+
+.audiotext{
+    font-size: 3vw;
+    line-height: 4vw;
+    min-width: 23vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.audiowave{
+    width: 100%;
+}
+
+.audiotime{
+    font-size: 3.3vw;
+    min-width: 11vw;
+    text-align: center;
+}
+
+
+.graph{
+    height: 50vw;
+    width: auto;
+}
+
 .brickcontainer{
     background-color: var(--light-purple);
     border-radius: 4vw;
@@ -138,3 +191,4 @@ nav a{
 .large{
     width: 100%;
 }
+
