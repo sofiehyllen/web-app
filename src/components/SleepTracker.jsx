@@ -48,16 +48,15 @@ function SleepTracker() {
 
   return (
     <div>
-      <h1>Sleep Tracker App</h1>
       {isSleeping ? (
         <div>
           <h2>You are currently sleeping...</h2>
           <Timer startTime={sleepStartTime} />
-          <button onClick={stopSleep}>Stop Tracking</button>
+          <button className="button-small" onClick={stopSleep}>Stop Tracking</button>
         </div>
       ) : (
         <div>
-          <button onClick={startSleep}>Start Sleep</button>
+          <button className="button-small" onClick={startSleep}>Start Sleep</button>
         </div>
       )}
 
