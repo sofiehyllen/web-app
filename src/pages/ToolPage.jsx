@@ -1,11 +1,13 @@
+import { Link } from "react-router-dom";
+
 export default function ToolPage(){
     return(
         <section className="page-content">
             
 {/* TIPS & TOOLS HEADER */}            
-            <p className="titel">Tips & tools</p>
-            <p className="heading heading-small"> 
-                Getting a good night's sleep is essential for overall 
+            <h1 className="titel">Tips & <br /><span className="titel-tab">tools</span></h1>
+            <p className="bodytext"> 
+                Getting a good night&apos;s sleep is essential for overall 
                 well-being. Here are some tips and tools to help you sleep better
             </p>
 
@@ -14,10 +16,10 @@ export default function ToolPage(){
             <section>
                 <p className="heading" > In the evening </p>
                 <div className="flex">
-                    <div className="brickcontainer">
+                    <div className="brickcontainer leftalign-bottom">
                         <p className="heading">Meditation</p>
                     </div>
-                    <div className="brickcontainer">
+                    <div className="brickcontainer leftalign-bottom">
                         <p className="heading">Exercises</p>
                     </div>
                 </div>
@@ -26,19 +28,21 @@ export default function ToolPage(){
 {/* "TIP OF THE DAY" SECTION */}
             <section>
                 <p className="heading"> Tip of the day </p>
-                    <p className="heading heading-small center"> 
+                <div className="rightalign-bottom">
+                    <p className="bodytext center"> 
                         Create a calming bedtime routine to signal your body 
-                        that it's time to wind down. This can include activities 
+                        that it&apos;s time to wind down. This can include activities 
                         like reading or gentle stretching. A consistent routine 
                         can improve your sleep quality.
                     </p>
-                <button className="button btn-small button-purple"> Explore more </button>
+                    <Link to="/homepage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
+                </div>
             </section>
 
 {/* 10 STEPS SECTION */}
             <section>
                 <p className="heading"> During the day</p>
-                <div className="brickcontainer medium">
+                <div className="brickcontainer medium leftalign-bottom">
                     <p className="heading">10 steps to better sleep</p>
                 </div>
             </section>

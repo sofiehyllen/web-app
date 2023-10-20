@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Timer from './Timer';
 import SleepSummaryCard from './SleepSummaryCard';
 import RatingModal from './RatingModal';
@@ -56,7 +56,7 @@ function SleepTracker() {
         </div>
       ) : (
         <div>
-          <button className="button btn-small" onClick={startSleep}>Start Sleep</button>
+          <button className="button btn-big" onClick={startSleep}>start tracking</button>
         </div>
       )}
 
