@@ -1,5 +1,6 @@
 /*--Import af ikoner--*/
     @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+    @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
 
 /*--Generelle regler, farver og typografi--*/
     :root{
@@ -31,18 +32,33 @@
         justify-content: space-between;
     }
 
+    .center{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .rightalign-bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+    }
+
+    .leftalign-bottom{
+        display: flex;
+        align-items: end;
+    }
+
     .img-max{
-        min-width: 100%;
-        min-height: 100%;
+        max-width: 100%;
+        max-height: 100%;
         display: block;
     }
 
 
 
-.center{
-    justify-content: center;
-    text-align: center;
-}
+
 
 .titel{
     font-family: "gyst-variable",sans-serif;
@@ -75,49 +91,70 @@
     line-height: 5vw;
 }
 
+.titel-tab{
+    padding-left: 15vw;
+}
+
 .page-content{
     background-image: url("/src/assets/background-default.svg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
     height: 100%;
     padding: 7vw;
+    position: absolute;
+    bottom: 0;
 }
 
+.header{
+    margin-bottom: 5vw;
+}
+
+/*--Knapper--*/
+.button{
+    font-family: "poppins", sans-serif;
+    font-size: 17px;
+    color: var(--darkest-purple);
+    font-weight: 800;
+    border-radius: 20vw;
+    background-color: var(--peach);
+    text-align: center;
+    width: fit-content;
+    position: relative;
+    border: none;
+}
 
 .button a{
     color: var(--darkest-purple);
     font-weight: 800;
 }
 
-.button{
-    font-family: "poppins", sans-serif;
-    font-size: 17px;
-    border-radius: 20vw;
-    background-color: var(--peach);
-    text-align: center;
-    width: fit-content;
-    position: relative;
-}
-
 .btn-small{
-    padding: 5px 27px 3px 27px;
+    padding: 5px 24px 3px 24px;
 }
 
-.btn-big a{
-    padding: 11px 25px 11px 25px;
+.btn-big{
+    padding: 10px 27px 10px 27px;
 }
 
-.button-purple{
-    font-family: "poppins", sans-serif;
+.btn-purple{
     font-weight: 400;
-    background-color: var(--titel-text);
-    color: var(--darker-purple);
+    background-color: var(--darkest-purple);
+    color: var(--titel-text);
+    display: flex;
+    align-items: center;
 }
 
-.titel-tab{
-    padding-left: 15vw;
+.rotate{
+    transform: rotate(90deg);
+    writing-mode: vertical;
+    color: var(--titel-text);
+    font-size: 3vw;
+    padding-bottom: 2vw;
 }
+
+
 
 nav{
     position: absolute;
@@ -152,6 +189,49 @@ nav a{
 
 
 
+/*---Lilla container i 3 størrelser---*/
+    .brickcontainer{
+        background-color: var(--light-purple);
+        border-radius: 4vw;
+        box-shadow: 0 0 12px rgba(0, 0, 0, .3);
+        width: 47%;
+        height: 37vw;
+        contain: content;
+        padding: 2.5vw 4vw 2.5vw 4vw;
+    }
+
+    .medium{
+        width: 100%;
+        height: 26vw;
+        padding: 3.5vw 5vw 4vw 5vw;
+        margin-bottom: 5vw;
+    }
+
+    .large{
+        width: 100%;
+        height: 43vw;
+        padding: 3.5vw 5vw 4vw 5vw;
+        margin-bottom: 5vw;
+    }
+
+
+
+/*---ID til margin på hver illustration---*/
+    #illustration-home{
+        margin-top: 3vw;
+        margin-bottom: 6.5vw;
+    }
+
+    #illustration-startsleep{
+        margin-top: 10vw;
+        margin-bottom: 15vw;
+    }
+
+    #illustration-stopsleep{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
 .audio-container{
     display: flex;
     align-items: center;
@@ -182,6 +262,7 @@ nav a{
 
 .audiowave{
     width: 100%;
+    z-index: 1;
 }
 
 .audiotime{
@@ -196,28 +277,7 @@ nav a{
     width: auto;
 }
 
-.brickcontainer{
-    background-color: var(--light-purple);
-    border-radius: 4vw;
-    margin-bottom: 5vw;
-    box-shadow: 0 0 12px rgba(0, 0, 0, .3);
-    width: 47%;
-    height: 37vw;
-    contain: content;
-    padding: 2.5vw 4vw 2.5vw 4vw;
-}
 
-.medium{
-    width: 100%;
-    height: 26vw;
-    padding: 3.5vw 5vw 4vw 5vw;
-}
-
-.large{
-    width: 100%;
-    height: 43vw;
-    padding: 3.5vw 5vw 4vw 5vw;
-}
 
 
 /* RatingModal.css */
@@ -231,6 +291,7 @@ nav a{
     justify-content: center;
     align-items: center;
     background: #1c072080;
+    z-index: 50;
   }
   
   .modal-content {
@@ -255,8 +316,6 @@ nav a{
     text-align: left;
   }
 
-  .SleepTracker{
-    text-align: center;
-  }
+ 
 
 
