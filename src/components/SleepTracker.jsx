@@ -50,13 +50,13 @@ function SleepTracker() {
     <div>
       {isSleeping ? (
         <div>
-          <h2>You are currently sleeping...</h2>
+          <h2 className='heading'>You are currently sleeping...</h2>
           <Timer startTime={sleepStartTime} />
-          <button className="button-small" onClick={stopSleep}>Stop Tracking</button>
+          <button className="button btn-small" onClick={stopSleep}>Stop Tracking</button>
         </div>
       ) : (
         <div>
-          <button className="button-small" onClick={startSleep}>Start Sleep</button>
+          <button className="button btn-small" onClick={startSleep}>Start Sleep</button>
         </div>
       )}
 
@@ -70,7 +70,7 @@ function SleepTracker() {
 
       {sleepSessions.length > 0 && (
         <div>
-          <h2>Sleep History</h2>
+          <h2 className='heading'> Latest trackings</h2>
           {sleepSessions.map((session, index) => (
             <SleepSummaryCard
               key={index}

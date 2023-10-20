@@ -12,7 +12,7 @@ export default function ToolPage(){
 
 {/* MEDITATION & EXERCISES SECTION */}
             <section>
-                <p> In the evening </p>
+                <p className="heading" > In the evening </p>
                 <div className="flex">
                     <div className="brickcontainer">
                         <p className="heading">Meditation</p>
@@ -25,20 +25,20 @@ export default function ToolPage(){
 
 {/* "TIP OF THE DAY" SECTION */}
             <section>
-            <p> Tip of the day </p>
-                <p className="heading heading-small"> 
-                    Create a calming bedtime routine to signal your body 
-                    that it's time to wind down. This can include activities 
-                    like reading or gentle stretching. A consistent routine 
-                    can improve your sleep quality.
-                </p>
-                <button className="button-small button-purple"> Explore more </button>
+                <p className="heading"> Tip of the day </p>
+                    <p className="heading heading-small center"> 
+                        Create a calming bedtime routine to signal your body 
+                        that it's time to wind down. This can include activities 
+                        like reading or gentle stretching. A consistent routine 
+                        can improve your sleep quality.
+                    </p>
+                <button className="button btn-small button-purple"> Explore more </button>
             </section>
 
 {/* 10 STEPS SECTION */}
             <section>
-                <p> During the day</p>
-                <div className="brickcontainer large">
+                <p className="heading"> During the day</p>
+                <div className="brickcontainer medium">
                     <p className="heading">10 steps to better sleep</p>
                 </div>
             </section>
