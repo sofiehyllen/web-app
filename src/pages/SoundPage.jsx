@@ -12,8 +12,8 @@ export default function SoundPage(){
 
 {/* SOUND CATEGORIES SECTION */}
             <section>
-                <p> Categories </p>
-                <div className="brickcontainer large">
+                <p className="heading" >  Categories </p>
+                <div className="brickcontainer medium">
                     <p className="heading">Forest</p>
                 </div>
                 
@@ -27,6 +27,12 @@ export default function SoundPage(){
                 </div>
             </section>
 {/* LIKED SOUNDS SECTION */}
+
+
+
+
+
+
             
         </section>
     )

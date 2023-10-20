@@ -31,9 +31,10 @@ const RatingModal = ({ isOpen, onClose, onPublish, sleepDuration }) => {
   return (
     <div className="modal" onClick={onClose}>
       <div className="modal-content" onClick={handleContainerClick}>
-        <h2>You have slept for {sleepDuration.toFixed(2)} minutes.</h2>
-        <label>Rate Your Sleep:</label>
-        <div className='icon-container'>
+        <h1 className='titel'>  Goodmorning </h1>
+        <h2 className='heading heading-small' >You have slept for <br></br> {sleepDuration.toFixed(2)} hours.</h2>
+        <label className='heading'>How did you sleep? </label>
+        <div className='icon-container flex'>
           
           <img src={verysadIcon} alt="VerySad"/>
           <img src={sadIcon} alt="Sad"/>
@@ -43,8 +44,8 @@ const RatingModal = ({ isOpen, onClose, onPublish, sleepDuration }) => {
           
         </div>
         <div> 
-          <button className="button-small" onClick={() => handleRating(1)}>Publish</button>
-          <button className="button-small" onClick={onClose}>Cancel</button>
+          <button className="button btn-small" onClick={() => handleRating(1)}>Rate</button>
+          <button className="button btn-small button-purple" onClick={onClose}>Cancel</button>
         </div>
       </div>
     </div>

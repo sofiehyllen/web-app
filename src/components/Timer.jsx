@@ -17,7 +17,7 @@ function Timer({ startTime }) {
 
   return (
     <div>
-      <p>Elapsed Time: {elapsedTime.toFixed(0)} seconds</p>
+      <p className='heading heading-small'> {elapsedTime.toFixed(0)} seconds</p>
     </div>
   );
 }
