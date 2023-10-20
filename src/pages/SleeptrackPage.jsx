@@ -47,7 +47,7 @@ export default function SleeptrackPage(){
                     cursorColor={'transparent'}
                     />
 
-                    <Link to="/homepage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
+                    <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
                 </div>
             </div>
         </section>

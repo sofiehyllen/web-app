@@ -19,13 +19,17 @@ export default function HomePage(){
 
             <div className="flex">
                 <div className="brickcontainer">
-                    <h2 className="heading">Sounds</h2>
-                    <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
+                    <Link to="/soundpage">
+                        <h2 className="heading">Sounds</h2>
+                        <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
+                    </Link>
                 </div>
 
                 <div className="brickcontainer">
-                    <h2 className="heading">Statistics</h2>
-                    <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
+                    <Link to="/statisticspage">
+                        <h2 className="heading">Statistics</h2>
+                        <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
+                    </Link>
                 </div>
             </div>
         </section>
