@@ -11,13 +11,13 @@ export default function SleeptrackPage(){
             <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
             <div id="illustration-startsleep"><img className="img-max" src="src/assets/illustration-start-sleep.svg" alt="moon illustration sleep" /></div>
 
-            <div className="center">
+            <div className="center spacing-bottom">
                 <SleepTracker />
             </div>
             
             <div>
                 <h2 className="heading">Your favourite sounds</h2>
-                <div className="rightalign-bottom">
+                <div className="rightalign-bottom spacing-top">
                     <Audiofile
                     textarea={"Quiet rain"}
                     height={30}
