@@ -14,9 +14,20 @@ export default function StatisticsPage(){
                 <Graph/>
             </div>
 
-            <div className="center">
-                <p className="heading heading-small">On average, you have slept for <span id="statistics-time">7:43 </span>hours every night this week.
-                That is <span>34% </span>better than last week. <br /> <span>Good job Sarah!</span></p>
+            <div className="heading heading-small">
+                <div className="center">
+                    <p  id="statistictext">On average, you have slept for <span className="heavy-text">7:43 </span>hours every night this week.
+                    That is <span className="heavy-text">34% </span>better than last week.</p> 
+                </div>    
+                
+                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job Sarah!</p>
+            </div>
+
+            <div>
+                <h2 className="heading">History</h2>
+                <div>
+                    
+                </div>
             </div>
         </section>
 
