@@ -11,6 +11,10 @@ export default function StatisticsPage(){
             <div>
                 <Graph/>
             </div>
+
+            
+
+            
         </section>
 
 

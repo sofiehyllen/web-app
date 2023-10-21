@@ -3,10 +3,18 @@ import { Link } from "react-router-dom";
 export default function MenuPage(){
     return(
         <section className="page-content">
+
+            <Link to ="/userpage">
+                <div id="usericon">
+                    <i class="fi fi-ss-user"></i>
+                </div>
+            </Link>
+
             <div className="header">
                 <h1 className="titel">Menu</h1>
                 <p className="bodytext">Try our calming sounds, soothing tools, or check up on your latest sleep trackings. </p>
             </div>
+
             <Link to ="/soundpage">
                 <div className="brickcontainer medium">
                     <h2 className="heading">Calming Sounds</h2>

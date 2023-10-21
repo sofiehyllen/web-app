@@ -1,6 +1,7 @@
 /*--Import af ikoner--*/
     @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
+    @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
 
 /*--Generelle regler, farver og typografi--*/
     :root{
@@ -33,7 +34,6 @@
     }
 
     .center{
-        display: flex;
         justify-content: center;
         text-align: center;
     }
@@ -280,7 +280,7 @@ nav a{
 
 
 
-/* RatingModal.css */
+/* RATING MODAL */
 .modal {
     display: flex;
     position: fixed;
@@ -293,11 +293,25 @@ nav a{
     background: #1c072080;
     z-index: 50;
   }
+
+  .modal h1{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
   
+  .modal h2{
+    padding-bottom: 30px;
+  }
+
+  .modal button{
+    margin: 10px;
+  }
+
   .modal-content {
-    background: white;
     padding: 20px;
     border-radius: 5px;
+    background-image: url("/src/assets/moda-background.svg");
+    background-size: cover;
   }
   
   .icon-container{
@@ -311,10 +325,18 @@ nav a{
     height: 50px;
   }
 
-  /* SleepSummaryCard.css */
+/* SLEEPSUMMARYCARD */
 .sleep-summary-card {
     text-align: left;
   }
+
+
+/* MENUPAGE - USER ICON */  
+#usericon{
+  float: right;
+  font-size: 150%;
+}
+
 
  
 
