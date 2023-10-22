@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function HomePage(){
     return(
         <section className="page-content">
-            <h6 id="home-date" className="heading heading-small">October 11</h6>
+            <h6 id="homedate" className="heading heading-small">October 11</h6>
             <h1 className="titel">Good evening <br /><span className="titel-tab">Sarah</span></h1>
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
@@ -19,13 +19,17 @@ export default function HomePage(){
 
             <div className="flex">
                 <div className="brickcontainer">
-                    <h2 className="heading">Sounds</h2>
-                    <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
+                    <Link to="/soundpage">
+                        <h2 className="heading">Sounds</h2>
+                        <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
+                    </Link>
                 </div>
 
                 <div className="brickcontainer">
-                    <h2 className="heading">Statistics</h2>
-                    <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
+                    <Link to="/statisticspage">
+                        <h2 className="heading">Statistics</h2>
+                        <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
+                    </Link>
                 </div>
             </div>
         </section>

@@ -28,7 +28,7 @@ Chart.defaults.font.weight = 100;
 
 export default function Graph() {
     return (
-      <div className='graph'>
+      <div className='spacing-top' id='graph'>
         <Bar
           data={state}
           options={{
