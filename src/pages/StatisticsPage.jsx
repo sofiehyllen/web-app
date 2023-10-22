@@ -30,8 +30,5 @@ export default function StatisticsPage(){
                 </div>
             </div>
         </section>
-
-
-
     )
 }
