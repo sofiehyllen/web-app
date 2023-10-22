@@ -52,7 +52,7 @@ function SleepTracker() {
         <div>
           <h2 className='heading'>You are currently sleeping...</h2>
           <Timer startTime={sleepStartTime} />
-          <button className="button btn-small" onClick={stopSleep}>Stop Tracking</button>
+          <button className="button btn-big" onClick={stopSleep}>stop tracking</button>
         </div>
       ) : (
         <div>
