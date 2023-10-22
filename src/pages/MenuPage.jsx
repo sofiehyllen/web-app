@@ -7,7 +7,7 @@ export default function MenuPage(){
 
             <Link to ="/userpage">
                 <div id="usericon">
-                    <i class="fi fi-ss-user"></i>
+                    <i className="fi fi-ss-user"></i>
                 </div>
             </Link>
 
