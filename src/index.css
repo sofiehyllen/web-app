@@ -226,8 +226,31 @@
         margin-bottom: 5vw;
     }
 
+/*---ID til baggrunde til hver enkelt lilla container---*/
+    #brick-bg-home-1{
+        background-image: url('src/assets/bg-large-waves.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 
-/*--Specifikke ID--*/
+/*ID til margin på hver illustration*/
+    #illustration-home{
+        margin-top: 3vw;
+        margin-bottom: 6.5vw;
+    }
+
+    #illustration-startsleep{
+        margin-top: 10vw;
+        margin-bottom: 15vw;
+    }
+
+    #illustration-stopsleep{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+/*--Andre specifikke ID--*/
     #homedate{
         padding-bottom: 2.5vw;
     }
@@ -244,21 +267,10 @@
         height: 50vw;
     }
     
-    /*ID til margin på hver illustration*/
-    #illustration-home{
-        margin-top: 3vw;
-        margin-bottom: 6.5vw;
+    #background-dark{
+        background-image: url('src/assets/background-dark.svg');
     }
 
-    #illustration-startsleep{
-        margin-top: 10vw;
-        margin-bottom: 15vw;
-    }
-
-    #illustration-stopsleep{
-        margin-top: 5vw;
-        margin-bottom: 5vw;
-    }
 
 /*--Afspiller til lydfiler--*/
     .audio-container{

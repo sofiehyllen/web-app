@@ -8,7 +8,7 @@ export default function HomePage(){
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
 
-            <div className="brickcontainer large rightalign-bottom">
+            <div className="brickcontainer large rightalign-bottom" id="brick-bg-home-1">
                 <div>
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
