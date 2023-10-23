@@ -1,7 +1,12 @@
 import { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 function Timer({ startTime }) {
   const [elapsedTime, setElapsedTime] = useState(0);
+
+  Timer.propTypes = {
+    startTime: PropTypes.number.isRequired,
+  };
 
   useEffect(() => {
     const intervalId = setInterval(() => {

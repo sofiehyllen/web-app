@@ -12,10 +12,8 @@ import UserPage from './pages/UserPage';
 import SleepingPage from './pages/SleepingPage';
 
 function App() {
-
   return (
     <section>
-        
         <BrowserRouter>
             <Navigation/>
             <Routes> 

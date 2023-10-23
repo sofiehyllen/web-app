@@ -5,13 +5,13 @@
 
 /*--Generelle regler, farver og typografi--*/
     :root{
-        --darkest-purple: #1C172F; 
-        --darker-purple: #241E3C;
-        --dark-purple: #30274F;
-        --purple: #433770;
-        --light-purple: #54458C;
-        --peach: #E77360;
-        --titel-text:#F0EEE6;
+        --darkest-purple: rgba(28, 23, 47, 1); 
+        --darker-purple: rgba(36, 30, 60, 1);
+        --dark-purple: rgba(48, 39, 79, 1);
+        --purple: rgba(67, 55, 112, 1);
+        --light-purple: rgba(84, 69, 140, 1);
+        --peach: rgba(231, 115, 96, 1);
+        --titel-text:rgba(240, 238, 230, 1);
         --body-text:rgba(240, 238, 230, 0.7);
     }
 
@@ -74,8 +74,6 @@
     font-family: "mundial", sans-serif;
     font-weight: 100;
     font-size: 6.5vw;
-    
-
 }
 
 .heading-small{
@@ -405,6 +403,31 @@
   float: right;
   font-size: 150%;
 }
+
+.form-input{
+    border-radius: 20px;
+    border: none;
+    height: 8vw;
+    width: 40vw;
+    margin-top: 1vw;
+    background-color: rgba(240, 238, 230, .2);
+    color: var(--titel-text);
+    padding-left: 3vw;
+    text-transform: capitalize;
+    margin-bottom: 2vw;
+}
+
+#email{
+    width: 100%;
+    text-transform: none;
+}
+
+#hoursofsleep{
+    width: 15vw;
+    padding: 0;
+    text-align: center;
+}
+
 
 
  

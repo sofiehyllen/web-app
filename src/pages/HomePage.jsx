@@ -1,10 +1,13 @@
+
 import { Link } from "react-router-dom";
 
+
 export default function HomePage(){
+
     return(
         <section className="page-content">
             <h6 id="homedate" className="heading heading-small">October 11</h6>
-            <h1 className="titel">Good evening <br /><span className="titel-tab">Sarah</span></h1>
+                <h1 className='titel' > Good evening <span className="titel titel-tab">name</span></h1>
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
 

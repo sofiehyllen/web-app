@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 // Import your SVG icons here
 import verysadIcon from '../assets/smiley1.svg';
