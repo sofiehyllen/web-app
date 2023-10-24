@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 
-function Timer({ startTime }) {
+export default function Sleeptimer({ startTime }) {
   const [elapsedTime, setElapsedTime] = useState(0);
 
-  Timer.propTypes = {
+  Sleeptimer.propTypes = {
     startTime: PropTypes.number.isRequired,
   };
 
@@ -28,4 +28,4 @@ function Timer({ startTime }) {
   );
 }
 
-export default Timer;
+

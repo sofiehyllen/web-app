@@ -367,16 +367,23 @@
 
     .modal-content h2{
         padding-top: 5vw;
+        padding-bottom: 1.5vw;
     }
 
     .icon-container{
-        margin-top: 1.5vw;
+        display: flex;
+        justify-content: center;
     }
     
     .icon-container img {
         width: 13vw; 
         height: 13vw;
         
+    }
+
+    .icon.selected{
+        background-color: rgb(255, 255, 255, .2);
+        border-radius: 12px;
     }
 
     #modal-buttons{
@@ -391,8 +398,8 @@
     }
 
 /* SLEEPSUMMARYCARD */
-    .sleep-summary-card {
-        text-align: left;
+    .rating-card{
+        background-color: cornflowerblue;
     }
 
 

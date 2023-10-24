@@ -1,4 +1,5 @@
 import Graph from "../components/Graph";
+import HomePage from "./HomePage2";
 
 export default function StatisticsPage(){
 
@@ -25,8 +26,8 @@ export default function StatisticsPage(){
 
             <div>
                 <h2 className="heading">History</h2>
-                <div>
-                    
+                <div className="spacing-top">
+                    <HomePage/>
                 </div>
             </div>
         </section>

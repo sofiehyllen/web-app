@@ -1,6 +1,8 @@
 import Audiofile from "../components/Audiofile";
-import SleepTracker from '../components/Sleeptracker'
 import { Link } from "react-router-dom";
+import CreatePage from "./CreatePage";
+import SleepingPage from "./SleepingPage";
+import Sleeptimer from "../components/Sleeptimer";
 
 
 export default function SleeptrackPage(){
@@ -8,11 +10,12 @@ export default function SleeptrackPage(){
 
     return(
         <section className="page-content">
+
             <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
             <div id="illustration-startsleep"><img className="img-max" src="src/assets/illustration-start-sleep.svg" alt="moon illustration sleep" /></div>
 
             <div className="center spacing-bottom">
-                <SleepTracker />
+                <CreatePage />
             </div>
             
             <div>
