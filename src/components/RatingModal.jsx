@@ -28,28 +28,31 @@ const RatingModal = ({ isOpen, onClose, onPublish, sleepDuration }) => {
     return null;
   }
 
-  return (
+return (
     <div className="modal" onClick={onClose}>
-      <div className="modal-content" onClick={handleContainerClick}>
-        <h1 className='titel'>  Goodmorning </h1>
-        <h2 className='heading heading-small' >You have slept for <br></br> {sleepDuration.toFixed(2)} hours.</h2>
-        <label className='heading'>How did you sleep? </label>
-        <div className='icon-container flex'>
-          
-          <img src={verysadIcon} alt="VerySad"/>
-          <img src={sadIcon} alt="Sad"/>
-          <img src={betweenIcon} alt="Between" />
-          <img src={happyIcon} alt="Happy" />
-          <img src={veryhappyIcon} alt="VeryHappy" />
-          
+        <div className='gradient-wrapper'>
+        <div className="modal-content" onClick={handleContainerClick}>
+            <h1 className='titel titel-small spacing-bottom'>  Goodmorning <br /> <span className='titel-tab'>name</span></h1>
+            <div>
+                <h5 className='bodytext-normal' >You have slept for</h5>
+                <p className='heading spacing-bottom'>{sleepDuration.toFixed(2)}</p>
+            </div>
+            <h2 className='heading'>How did you sleep? </h2>
+            <div className='icon-container flex'>
+                <img src={verysadIcon} alt="VerySad"/>
+                <img src={sadIcon} alt="Sad"/>
+                <img src={betweenIcon} alt="Between" />
+                <img src={happyIcon} alt="Happy" />
+                <img src={veryhappyIcon} alt="VeryHappy" />
+            </div>
+            <div id='modal-buttons'> 
+                <button className="button btn-big" onClick={() => handleRating(1)}>rate sleep</button>
+                <button className="button btn-purple" onClick={onClose}>cancel</button>
+            </div>
         </div>
-        <div> 
-          <button className="button btn-small" onClick={() => handleRating(1)}>Rate</button>
-          <button className="button btn-small button-purple" onClick={onClose}>Cancel</button>
         </div>
-      </div>
     </div>
-  );
+);
 };
 
 export default RatingModal;
