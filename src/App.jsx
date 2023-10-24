@@ -9,12 +9,11 @@ import SoundPage from './pages/SoundPage';
 import StatisticsPage from './pages/StatisticsPage';
 import ToolPage from './pages/ToolPage';
 import UserPage from './pages/UserPage';
+import SleepingPage from './pages/SleepingPage';
 
 function App() {
-
   return (
     <section>
-        
         <BrowserRouter>
             <Navigation/>
             <Routes> 
@@ -26,6 +25,7 @@ function App() {
                 <Route exact path="/toolpage" element={<ToolPage/>} />
                 <Route exact path="/statisticspage" element={<StatisticsPage/>} />
                 <Route exact path="/userpage" element={<UserPage/>} />
+                <Route exact path="/sleepingpage" element={<SleepingPage/>} />
             </Routes> 
         </BrowserRouter>
         

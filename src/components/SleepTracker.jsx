@@ -3,6 +3,7 @@ import Timer from './Timer';
 import SleepSummaryCard from './SleepSummaryCard';
 import RatingModal from './RatingModal';
 
+
 function SleepTracker() {
   const [isSleeping, setIsSleeping] = useState(false);
   const [sleepStartTime, setSleepStartTime] = useState(null);
@@ -56,7 +57,7 @@ function SleepTracker() {
         </div>
       ) : (
         <div>
-          <button className="button btn-big" onClick={startSleep}> Start tracking</button>
+            <button className="button btn-big" onClick={startSleep}> start tracking</button>
         </div>
       )}
 
