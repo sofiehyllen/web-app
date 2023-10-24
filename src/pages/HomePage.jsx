@@ -8,7 +8,7 @@ export default function HomePage(){
 
     const [currentDate, setCurrentDate] = useState('');
 
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
     useEffect(() => {
         var date = new Date().getDate() // current date
