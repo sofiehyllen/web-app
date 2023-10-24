@@ -19,7 +19,6 @@ export default function HomePage(){
                 <Link className="button btn-small" to="/sleeptrackpage">go to sleep</Link>
             </div>
 
-
             <div className="flex">
                 <div className="brickcontainer">
                     <Link to="/soundpage">
