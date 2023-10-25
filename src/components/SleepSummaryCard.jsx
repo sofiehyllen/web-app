@@ -1,7 +1,6 @@
-// SleepSummaryCard.js
-import React from 'react';
 
-function SleepSummaryCard({ sleepDate, sleepDuration, sleepRating }) {
+
+export default function SleepSummaryCard({ sleepDate, sleepDuration, sleepRating }) {
   return (
     <div className="sleep-summary-card flex brickcontainer medium">
       <div>
@@ -15,5 +14,3 @@ function SleepSummaryCard({ sleepDate, sleepDuration, sleepRating }) {
     </div>
   );
 }
-
-export default SleepSummaryCard;
