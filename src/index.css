@@ -457,6 +457,15 @@
     text-align: center;
 }
 
+.hearticon{
+    position: absolute;
+    margin-left: 110px;
+    margin-bottom: 90px;
+    color: red;
+}
+
+
+
 
 
  

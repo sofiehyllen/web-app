@@ -17,9 +17,11 @@ export default function ForestPage() {
         <div className="flex">
           <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+            <i className="fi fi-sr-heart hearticon"></i>
           </div>
           <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+            <i className="fi fi-sr-heart hearticon"></i>
           </div>
         </div>
       </section>
@@ -30,17 +32,21 @@ export default function ForestPage() {
         <div className="flex spacing-bottom">
           <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+            <i className="fi fi-sr-heart hearticon"></i>
           </div>
           <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+            <i className="fi fi-sr-heart hearticon"></i>
           </div>
         </div>
         <div className="flex">
           <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-3" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+            <i className="fi fi-sr-heart hearticon"></i> 
           </div>
           <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+            <i className="fi fi-sr-heart hearticon"></i>
           </div>
         </div>
       </section>
