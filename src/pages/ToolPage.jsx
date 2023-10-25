@@ -18,10 +18,10 @@ export default function ToolPage(){
             <section className="spacing-bottom">
                 <p className="heading">In the evening </p>
                 <div className="flex spacing-top">
-                    <div className="brickcontainer leftalign-bottom">
+                    <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-1">
                         <p className="heading">Meditation</p>
                     </div>
-                    <div className="brickcontainer leftalign-bottom">
+                    <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-2">
                         <p className="heading">Exercises</p>
                     </div>
                 </div>
@@ -46,7 +46,7 @@ export default function ToolPage(){
 {/* 10 STEPS SECTION */}
             <section>
                 <p className="heading"> During the day</p>
-                <div className="spacing-top brickcontainer medium leftalign-bottom">
+                <div className="spacing-top brickcontainer medium leftalign-bottom brick-bg" id="brick-bg-tools-3">
                     <p className="heading">10 steps to better sleep</p>
                 </div>
             </section>

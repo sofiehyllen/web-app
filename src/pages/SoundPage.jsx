@@ -1,4 +1,5 @@
 import Audiofile from "../components/Audiofile";
+import { Link } from "react-router-dom";
 
 export default function SoundPage(){
     return(
@@ -16,15 +17,17 @@ export default function SoundPage(){
 {/* SOUND CATEGORIES SECTION */}
             <section className="spacing-bottom">
                 <h2 className="heading">Categories</h2>
-                <div className="brickcontainer medium leftalign-bottom spacing-top">
-                    <p className="heading">Forest</p>
-                </div>
-                
+                <Link to="/forestpage">
+                    <div className="brickcontainer medium leftalign-bottom spacing-top brick-bg" id="brick-bg-sounds-1">
+                        <p className="heading">Forest</p>
+                    </div>
+                </Link>
+
                 <div className="flex">
-                    <div className="brickcontainer leftalign-bottom">
+                    <div className="brickcontainer leftalign-bottom" id="brick-bg-sounds-2">
                         <p className="heading">Rain</p>
                     </div>
-                    <div className="brickcontainer leftalign-bottom">
+                    <div className="brickcontainer leftalign-bottom" id="brick-bg-sounds-3">
                         <p className="heading">Ocean</p>
                     </div>
                 </div>
