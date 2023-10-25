@@ -1,6 +1,7 @@
 import Audiofile from "../components/Audiofile";
 
 export default function SoundPage(){
+
     return(
         <section className="page-content">
             
@@ -31,8 +32,11 @@ export default function SoundPage(){
             </section>
 {/* LIKED SOUNDS SECTION */}
             <section>
+                
                 <h2 className="heading">Your favourite sounds</h2>
                 <div className="spacing-top">
+                    
+                    
                     <Audiofile
                     textarea={"Quiet rain"}
                     height={30}
