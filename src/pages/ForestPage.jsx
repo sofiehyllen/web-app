@@ -1,54 +1,49 @@
 
-import { Link } from "react-router-dom";
+import PlayButton from "../components/PlayButton";
 
+export default function ForestPage() {
+  return (
+    <section className="page-content">
+      <h1 className='titel spacing-top'> Forest sounds </h1>
+      <p className="bodytext spacing-bottom">
+        Explore the diverse and soothing soundscape of the forest. 
+        Immerse yourself in the sound of the wind whispering through 
+        the trees or listen to the gentle stream flowing by.
+      </p>
 
-export default function ForestPage(){
+      <section className="spacing-bottom">
+        <p className="heading">Rainforest</p>
 
-    return(
-        <section className="page-content">
-                <h1 className='titel spacing-top'> Forest sounds </h1>
-                <p className="bodytext spacing-bottom">
-                    Explore the diverse and soothing soundscape of the forest. 
-                    Immerse yourself in the sound of the wind whispering through 
-                    the trees or listen to the gentle stream flowing by.
-                </p>
+        <div className="flex">
+          <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+          </div>
+          <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+          </div>
+        </div>
+      </section>
 
-                <section className="spacing-bottom">
-                    <p className="heading">Rainforest</p>
+      <section>
+        <p className="heading">Forest</p>
 
-                    <div className="flex">
-                        <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-1">
-
-                        </div>
-                        <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-2">
-
-                        </div>
-                    </div>
-                </section>
-
-                <section>
-                    <p className="heading">Forest</p>
-
-                    <div className="flex spacing-bottom">
-                        <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-1">
-
-                        </div>
-                        <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-2">
-
-                        </div>
-                    </div>
-                    <div className="flex">
-                        <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-3">
-
-                        </div>
-                        <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-4">
-
-                        </div>
-                    </div>
-                </section>
-
-
-            
-        </section>
-    )
+        <div className="flex spacing-bottom">
+          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+          </div>
+          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+          </div>
+        </div>
+        <div className="flex">
+          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-3" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+          </div>
+          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
+          </div>
+        </div>
+      </section>
+    </section>
+  );
 }

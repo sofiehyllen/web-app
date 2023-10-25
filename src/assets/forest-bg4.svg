@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.9.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="bg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 265.2 241.8" style="enable-background:new 0 0 265.2 241.8;" xml:space="preserve">
+	 viewBox="0 0 265.2 242" style="enable-background:new 0 0 265.2 242;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill:#FFFFFF;}
-	.st1{clip-path:url(#SVGID_00000157267997859192945150000000675638147854600613_);}
-	.st2{clip-path:url(#SVGID_00000125601084001108076770000016870469063587478433_);}
-	.st3{fill:url(#SVGID_00000173127437596428165890000008763234665183348385_);}
-	.st4{clip-path:url(#SVGID_00000137116581671511227780000013780613762264553386_);}
+	.st1{clip-path:url(#SVGID_00000054256631228375759740000017684122184026584505_);}
+	.st2{clip-path:url(#SVGID_00000074441176061033882310000016773904888952117656_);}
+	.st3{fill:url(#SVGID_00000163035716418373093540000016183044010698754447_);}
+	.st4{clip-path:url(#SVGID_00000020379342138434408590000014810064236505788826_);}
 	.st5{fill:#433770;}
 	.st6{fill:#1C172F;}
 	.st7{fill:#54458C;}
@@ -18,405 +18,405 @@
 </symbol>
 <g>
 	<defs>
-		<rect id="SVGID_1_" x="0" y="-0.2" width="265.2" height="242"/>
+		<rect id="SVGID_1_" width="265.2" height="242"/>
 	</defs>
-	<clipPath id="SVGID_00000083054762088548037830000008531472350882813375_">
+	<clipPath id="SVGID_00000138558020955779597590000005237163163892086156_">
 		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 	</clipPath>
-	<g style="clip-path:url(#SVGID_00000083054762088548037830000008531472350882813375_);">
+	<g style="clip-path:url(#SVGID_00000138558020955779597590000005237163163892086156_);">
 		<g>
 			<g>
 				<defs>
-					<path id="SVGID_00000066504211977124814620000012051449345653744266_" d="M-316.7-66.1H744.6c32.5,0,58.8,26.3,58.8,58.8v702.5
-						c0,32.5-26.3,58.8-58.8,58.8H-316.7c-32.5,0-58.8-26.3-58.8-58.8V-7.3C-375.5-39.8-349.2-66.1-316.7-66.1z"/>
+					<path id="SVGID_00000013161028964660461630000007534214127658678661_" d="M-316.6-65.9H744.7c32.5,0,58.8,26.3,58.8,58.8v702.5
+						c0,32.5-26.3,58.8-58.8,58.8H-316.6c-32.5,0-58.8-26.3-58.8-58.8V-7.1C-375.4-39.5-349.1-65.9-316.6-65.9z"/>
 				</defs>
-				<clipPath id="SVGID_00000137100917098886260370000009485651092257516463_">
-					<use xlink:href="#SVGID_00000066504211977124814620000012051449345653744266_"  style="overflow:visible;"/>
+				<clipPath id="SVGID_00000016776113887718129990000005131598302815588271_">
+					<use xlink:href="#SVGID_00000013161028964660461630000007534214127658678661_"  style="overflow:visible;"/>
 				</clipPath>
-				<g style="clip-path:url(#SVGID_00000137100917098886260370000009485651092257516463_);">
+				<g style="clip-path:url(#SVGID_00000016776113887718129990000005131598302815588271_);">
 					<g>
 						
-							<linearGradient id="SVGID_00000131335037031202430470000002881732722615011765_" gradientUnits="userSpaceOnUse" x1="300.8649" y1="-184.9292" x2="300.8649" y2="901.9308" gradientTransform="matrix(1 0 0 -1 0 814.9518)">
+							<linearGradient id="SVGID_00000074429998721586655070000014502698587154608060_" gradientUnits="userSpaceOnUse" x1="300.9" y1="-184.7202" x2="300.9" y2="902.1398" gradientTransform="matrix(1 0 0 -1 0 815.3698)">
 							<stop  offset="8.000000e-02" style="stop-color:#54458C"/>
 							<stop  offset="0.21" style="stop-color:#54458C"/>
 							<stop  offset="0.34" style="stop-color:#433770"/>
 							<stop  offset="0.6" style="stop-color:#30274F"/>
 						</linearGradient>
-						<path style="fill:url(#SVGID_00000131335037031202430470000002881732722615011765_);" d="M-750.8-87h2103.3
-							c6.6,0,12,5.4,12,12V987.9c0,6.6-5.4,12-12,12H-750.8c-6.6,0-12-5.4-12-12V-75C-762.8-81.6-757.4-87-750.8-87z"/>
+						<path style="fill:url(#SVGID_00000074429998721586655070000014502698587154608060_);" d="M-750.7-86.8h2103.3
+							c6.6,0,12,5.4,12,12V988.1c0,6.6-5.4,12-12,12H-750.7c-6.6,0-12-5.4-12-12V-74.8C-762.7-81.4-757.4-86.8-750.7-86.8z"/>
 						<g>
 							<defs>
-								<rect id="SVGID_00000034783372075452650710000003371526489022701982_" x="-970.4" y="-102.7" width="2989" height="959.3"/>
+								<rect id="SVGID_00000088812728077536673240000010410399873765557654_" x="-970.4" y="-102.5" width="2989" height="959.3"/>
 							</defs>
-							<clipPath id="SVGID_00000141431328748058935440000010891580955354808195_">
-								<use xlink:href="#SVGID_00000034783372075452650710000003371526489022701982_"  style="overflow:visible;"/>
+							<clipPath id="SVGID_00000083073589546981998420000018317620191734697396_">
+								<use xlink:href="#SVGID_00000088812728077536673240000010410399873765557654_"  style="overflow:visible;"/>
 							</clipPath>
-							<g style="clip-path:url(#SVGID_00000141431328748058935440000010891580955354808195_);">
+							<g style="clip-path:url(#SVGID_00000083073589546981998420000018317620191734697396_);">
 								<g>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1076.8942 29.7862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1076.8591 29.9952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1068.7343 34.0362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1068.6991 34.2452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1060.6042 29.7461)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1060.5691 29.9552)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -760.7242 -50.5838)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -760.6891 -50.3748)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -490.8142 -96.1938)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -490.7792 -95.9848)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -392.4942 -106.4638)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -392.4592 -106.2548)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1015.7942 276.6261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1015.7592 276.8352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1172.2942 391.7561)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -1172.2592 391.9652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -976.9342 337.8261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -976.8992 338.0352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 859.7958 -175.6039)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 859.8309 -175.3948)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1093.8558 -205.7138)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1093.891 -205.5048)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 256.4058 5.3962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 256.4409 5.6052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -380.3141 227.9262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -380.2791 228.1352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -545.2542 320.9662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -545.2192 321.1752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -551.0642 314.3861)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -551.0292 314.5952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -173.5443 158.4961)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -173.5092 158.7052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 363.4958 104.0462)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 363.5308 104.2552)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 333.2658 130.2262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 333.3008 130.4352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -259.0742 408.8561)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -259.0391 409.0652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -521.5942 564.6962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -521.5591 564.9052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -527.5542 571.2862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -527.5192 571.4952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 208.8658 116.7962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 208.9008 117.0052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 524.1058 -8.5639)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 524.1408 -8.3548)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 609.3058 -14.9438)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 609.3409 -14.7348)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -462.5342 586.8661)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -462.4992 587.0751)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -754.2242 844.8362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -754.1891 845.0452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -703.0342 819.1662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -702.9991 819.3752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 519.6558 288.7561)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 519.6909 288.9652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1294.2958 55.1261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1294.3309 55.3352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 972.6557 156.8261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 972.6907 157.0352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -670.4342 1015.0162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -670.3992 1015.2252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -773.9342 1143.9861)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -773.8992 1144.1952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -131.4142 867.8661)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -131.3792 868.0751)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1351.1058 30.2561)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1351.141 30.4652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1474.7157 -9.5938)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1474.7509 -9.3848)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1461.6356 -4.5738)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1461.6708 -4.3648)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -84.5042 742.5262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -84.4692 742.7352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -221.0641 854.1662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -221.0291 854.3752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 271.5258 641.6662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 271.5609 641.8752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1128.3358 408.4562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1128.371 408.6653)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1200.4657 393.0862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1200.5009 393.2952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 70.3858 761.1762)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 70.4208 761.3852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 4.7658 798.6562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 4.8009 798.8652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 747.3957 626.1262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 747.4307 626.3351)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1554.3956 420.0362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1554.4308 420.2452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1586.4056 416.3761)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1586.4408 416.5852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1398.3158 509.5762)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1398.351 509.7852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1099.1356 730.7562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1099.1708 730.9651)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1403.7257 706.9262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1403.7609 707.1352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1928.6259 565.0262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1928.661 565.2352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1943.1158 565.0062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1943.151 565.2151)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1576.9357 738.5762)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1576.9708 738.7852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1519.0958 776.6362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1519.131 776.8452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1593.4056 740.9761)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1593.4408 741.1851)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1943.5858 431.4661)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1943.621 431.6751)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1943.8856 331.6961)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1943.9208 331.9052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1611.5157 274.6261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1611.5509 274.8352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1165.8458 313.4162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1165.881 313.6252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1307.1757 248.5962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1307.2108 248.8052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1608.4757 108.9062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1608.5109 109.1152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1627.3856 90.9662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1627.4208 91.1752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1673.9257 -10.0738)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1673.9608 -9.8648)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1703.9457 -41.1239)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1703.9808 -40.9148)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1916.7958 -18.9638)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1916.8309 -18.7548)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 2000.6656 6.9961)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 2000.7008 7.2052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1916.7958 17.4361)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1916.8309 17.6452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1070.3558 -55.9838)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1070.391 -55.7748)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 855.0959 -88.0738)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 855.1309 -87.8648)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 820.3559 -93.5138)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 820.3909 -93.3048)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 869.1457 20.2561)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 869.1807 20.4652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 880.8459 115.2262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 880.8809 115.4352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 718.2057 154.5862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 718.2408 154.7952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 656.1557 106.9862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 656.1907 107.1952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 602.3058 81.3362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 602.3409 81.5452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 528.5659 339.0761)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 528.6009 339.2852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 706.1457 404.8461)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 706.1807 405.0551)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1141.8158 311.4361)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1141.851 311.6452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1299.2257 237.8961)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1299.2609 238.1052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1331.9457 227.8261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1331.9808 228.0352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1659.3558 245.5761)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1659.391 245.7852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1861.2557 242.0362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1861.2909 242.2452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1704.4257 219.8261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1704.4608 220.0352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -81.5543 116.8562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -81.5192 117.0652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -594.1242 158.9262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -594.0892 159.1352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -540.2842 196.5862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -540.2491 196.7952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -81.6142 332.0661)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -81.5792 332.2752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 108.5757 329.3662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 108.6108 329.5752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 105.3758 311.0562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 105.4108 311.2652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -37.0742 245.6162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -37.0391 245.8252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 105.3158 463.8961)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 105.3509 464.1052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 242.5258 575.5062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 242.5609 575.7151)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 237.7658 583.5162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 237.8009 583.7252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -196.4243 589.0362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -196.3892 589.2452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -282.6342 553.3262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -282.5992 553.5352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -546.8542 527.4262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -546.8192 527.6352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -706.8042 490.6161)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -706.7692 490.8252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -778.5342 444.8362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -778.4991 445.0453)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -781.0842 541.2462)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -781.0492 541.4551)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -819.6342 651.5662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -819.5992 651.7752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -805.5642 563.9262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -805.5292 564.1352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -647.9442 121.7362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -647.9092 121.9452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -655.8242 74.6861)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -655.7892 74.8952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -666.2542 62.8562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -666.2192 63.0652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -221.0641 -9.0738)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -221.0291 -8.8648)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 418.4858 -20.9538)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 418.5208 -20.7448)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 544.2057 0.2662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 544.2408 0.4752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -289.8642 -7.3039)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -289.8292 -7.0948)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -671.1242 -34.4638)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -671.0892 -34.2548)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -820.1942 69.0162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -820.1592 69.2252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -882.6242 137.0661)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -882.5892 137.2752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -829.2842 215.0262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -829.2491 215.2352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -748.8442 254.2461)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -748.8091 254.4552)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -633.2842 206.8261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -633.2491 207.0352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -433.7642 145.3562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -433.7292 145.5652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -292.1342 84.5061)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -292.0992 84.7152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 48.4557 82.8761)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 48.4908 83.0852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 183.8058 88.4062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 183.8409 88.6152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 200.4258 75.2662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 200.4609 75.4752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 205.2158 -19.6038)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 205.2508 -19.3948)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -30.4842 -24.4939)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -30.4491 -24.2848)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -99.1442 -19.5539)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -99.1092 -19.3448)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -135.2242 1.5661)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -135.1891 1.7752)" style="overflow:visible;"/>
 								</g>
 								<g>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -867.8042 -39.9239)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -867.7692 -39.7148)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -457.3043 -41.6938)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -457.2692 -41.4848)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -439.4642 56.6062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -439.4291 56.8152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 247.1358 -75.5938)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 247.1709 -75.3848)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -75.0642 -97.6338)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -75.0291 -97.4248)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1388.8058 -90.9038)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1388.8409 -90.6948)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1930.2958 119.9762)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1930.3309 120.1852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1850.3658 287.8761)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1850.401 288.0852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1726.0858 503.6962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1726.121 503.9052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1569.0758 586.5062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1569.111 586.7151)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1850.3058 726.4962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1850.3409 726.7051)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1719.7557 780.6762)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1719.7909 780.8852)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1155.0658 804.3962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1155.101 804.6052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 705.0659 801.1161)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 705.1009 801.3251)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 533.2758 699.6061)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 533.3109 699.8151)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1001.2358 703.0062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1001.2708 703.2151)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1276.3058 534.1262)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1276.3409 534.3351)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 959.8058 527.4462)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 959.8409 527.6552)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 610.4257 522.3362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 610.4608 522.5452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 281.7358 442.9362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 281.7708 443.1452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -4.9042 621.9462)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -4.8692 622.1552)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -480.9942 694.3962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -480.9592 694.6052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -377.3141 809.2962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -377.2791 809.5052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 435.7057 843.2062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 435.7408 843.4152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 441.7458 459.8062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 441.7808 460.0152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 882.6357 459.6962)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 882.6707 459.9052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 811.7158 733.4062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 811.7508 733.6152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 66.5058 161.1861)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 66.5408 161.3952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -184.8043 64.9562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -184.7692 65.1652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 93.3058 -6.1538)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 93.3409 -5.9448)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 595.7158 -79.0438)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 595.7508 -78.8348)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 991.9357 13.6162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 991.9708 13.8252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1468.2958 138.8662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1468.3309 139.0752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1054.1456 213.6261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1054.1808 213.8352)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -952.0642 -39.7938)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -952.0292 -39.5848)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -930.7942 -79.3739)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -930.7592 -79.1648)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -929.2542 77.7862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -929.2192 77.9952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -920.6142 75.9361)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -920.5792 76.1452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -785.2142 127.6662)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -785.1791 127.8752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -948.4042 232.3562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -948.3691 232.5652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1963.4957 151.0862)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1963.5309 151.2952)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1817.7958 157.6562)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1817.8309 157.8652)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1731.4257 145.6162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1731.4608 145.8252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1563.1158 189.8362)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1563.151 190.0452)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1066.6556 88.1162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1066.6908 88.3252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1181.5157 -77.4738)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1181.5509 -77.2648)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1915.2257 -78.9838)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1915.2609 -78.7748)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -193.7342 -84.0639)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -193.6991 -83.8548)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -338.7042 -67.1638)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -338.6691 -66.9548)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -628.7442 -80.6739)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -628.7092 -80.4648)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -318.1542 186.7162)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 -318.1192 186.9252)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 672.4658 270.6961)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 672.5008 270.9052)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 725.7158 10.5661)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 725.7508 10.7752)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1003.1857 96.8062)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1003.2208 97.0152)" style="overflow:visible;"/>
 									
-										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1125.7257 154.3261)" style="overflow:visible;"/>
+										<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1.56 0 0 0.89 1125.7609 154.5352)" style="overflow:visible;"/>
 								</g>
 							</g>
 						</g>
 					</g>
 				</g>
 			</g>
-			<ellipse class="st0" cx="92.5" cy="85.9" rx="60" ry="55"/>
-			<path class="st5" d="M-287,631.4c9.2-10.8,16.6-20,22-27c9.6-12.3,14.5-19.3,13-21c-1.7-1.8-10.3,4.1-11,3
+			<ellipse class="st0" cx="70.8" cy="61.1" rx="28.3" ry="25.9"/>
+			<path class="st5" d="M-287,631.6c9.2-10.8,16.6-20,22-27c9.6-12.3,14.5-19.3,13-21c-1.7-1.8-10.2,4.1-11,3
 				c-0.8-1.2,10.3-8.2,20-20c1.5-1.8,4.4-5.5,15-26c11.2-21.7,14.7-30.6,17-30c2.2,0.6,0.2,9.7,3,29c0.7,4.9,1.5,8.6,2,11
 				c2.8,13.6,6,21,10,33c8.7,26.1,7.6,31.8,12,33c8,2.2,19.1-13.9,26-24c18.5-26.9,26.9-54.4,28-54c1.2,0.4-5.3,36.1-3,45
 				c0.3,1.2,0.6,2.2,0.6,2.2c1.9,6.4,3.9,8.3,4.4,10.8c1.3,6.3-7.7,12.2-7,13c1.4,1.7,39.8-23.6,37-29c-1.7-3.2-16.6,2.9-18,0
@@ -435,9 +435,9 @@
 				c4.8,3.3,16.2,11.2,25,8c13.9-5.1,14.8-35.5,9-38c-3.8-1.7-10.4,8.7-13,7c-2.7-1.7,3.4-13.7,7-34c1.2-6.7,3.6-20.5,0-22
 				c-3.8-1.6-11.6,11.4-14,10c-1.6-0.9,1.2-7.4,3-15c4.8-20.6-2.1-34.1,2-36c3.3-1.5,7.6,7,19,16c18.7,14.8,38.6,16.9,38,20
 				c-0.6,3-18.9-0.5-21,5c-0.6,1.6-0.2,5.1,12,15c16.6,13.4,25.2,14.6,37,23c16.7,11.9,28.1,30.1,25,34c-3.9,4.9-29.3-14.3-34-9
-				c-4.2,4.9,8.5,30.7,28,36c6.5,1.8,10.2,0.3,28,3c10.6,1.6,12,2.6,16,3c24.9,2.6,39.6-26.8,52-24c7.6,1.8,15.4,16.1,16,72H-300.8
-				L-287,631.4L-287,631.4z"/>
-			<path class="st6" d="M-35,721.4c-0.9-1.7-2.6-4.3-5-7c-5.2-5.8-8.4-5.6-11-10c-3.1-5.3-0.2-8.7-3-12c-4.3-5.3-16-2.3-17-2
+				c-4.2,4.9,8.5,30.7,28,36c6.5,1.8,10.2,0.3,28,3c10.6,1.6,12,2.6,16,3c24.9,2.6,39.6-26.8,52-24c7.6,1.8,15.4,16.1,16,72H-300.7
+				L-287,631.6L-287,631.6z"/>
+			<path class="st6" d="M-35,721.6c-0.9-1.7-2.6-4.3-5-7c-5.2-5.8-8.4-5.6-11-10c-3.1-5.3-0.2-8.7-3-12c-4.3-5.3-16-2.3-17-2
 				c-18.3,4.9-18.2,23.3-33,26c-9.4,1.7-19.7-3.8-24-11c-3.1-5.1-3.4-11.4-2-12c1.6-0.7,4.1,6.9,12,11c4.6,2.4,12.6,4.4,16,1
 				c3.5-3.4-1-9.3-3-25c-1.8-14.4,0.9-18-3-27c-1.7-4-5.5-12.7-11-13c-7.2-0.4-9,13.9-25,23c-1.8,1-10,5.7-13,3
 				c-1.7-1.5-0.5-4.3,0-12c0.6-9.6,0.9-14.7-2-18c-3.8-4.3-9.5-1.6-13-6c-0.8-1-2.3-3.5-1-12c2.1-13,7.3-16.4,9-26
@@ -446,7 +446,7 @@
 				c-0.7-13-0.2-13.6-1-18c-2.1-12.3-5.9-12.2-8-23c-2.8-14.4,3-19.8-2-26c-4.6-5.7-13.7-6.7-17-7c-8.6-0.9-13.6,1.9-16-1
 				c-1.2-1.6-0.4-2.9,0-11c0.3-7,0.5-10.6-1-12c-3.7-3.6-12.5,2.2-15-1c-1.9-2.5,2.5-7.2,0-11c-1.5-2.2-3.6-1.6-5-4
 				c-1.4-2.5-0.1-4.8,0-8c0.1-2.8-0.7-6.8-5-12l-4.3,172H-35z"/>
-			<path class="st6" d="M566,721.4c-17.8-8.2-21.4-11-21-12c0.5-1.4,8.9,1.6,21,0c8.9-1.2,18.2-4.7,18-7c-0.3-3.1-16.6,0.4-33-9
+			<path class="st6" d="M566,721.6c-17.8-8.2-21.4-11-21-12c0.5-1.4,8.9,1.6,21,0c8.9-1.2,18.2-4.7,18-7c-0.3-3.1-16.6,0.4-33-9
 				c-12.3-7-18.9-18-18-19c0.7-0.7,5.3,4.5,13,5c4.8,0.3,8.9-1.3,12-3l0,0c-24.2-14.7-28-18-28-18c-8.2-7.3-12.3-14.9-20-30
 				c-12.4-24.1-15.6-40.5-18-40c-2.7,0.6-0.9,22.4,0,34c1.7,21.3,3.9,26.5,0,35c-3,6.5-6.4,8.3-9,17c-2,6.8-3.1,16.6,0,18
 				c2.8,1.3,8.8-4.9,12-10c4.8-7.6,5.2-15.1,6-15c0.4,0.1,0.9,2.1,0.5,8.4c-0.8,14.3-1.7,28.6-11.5,36.6c-0.9,0.7-7.4,6.1-12,4
@@ -461,22 +461,22 @@
 				c-14.4,3.8-15,3.3-18,5c-7.2,4.1-14.7,13.3-13,21c1.7,7.9,11.7,8.4,12,15c0.3,6.3-8.8,6.9-12,17c-0.3,1-0.6,7-1,19
 				c-0.3,7.6-0.4,10.3-2,11c-3.2,1.4-9.3-6.2-10-7c-3.7-4.6-3.3-6.6-6-10c-4.9-6.1-12.5-7.5-15-8c-9.6-1.8-22.5,1.1-24,7
 				c-1.6,6.2,9.9,12.6,8,16c-1.6,2.9-10.1-1.5-21,3c-2,0.8-6.6,2.8-7,6c-0.3,2.6,2.6,3.4,3,6c1.1,6.2-13.6,9.2-18,21
-				c-2.4,6.4-0.6,12.3,0,14c2.9,8.4,10.2,12.1,12,13L566,721.4z"/>
-			<path class="st6" d="M-353,723.4c8.9-14.3,17.1-24.4,23-31c3.6-4,6.4-6.8,9-12c4.4-8.8,3-13.9,7-24c2-5,3.8-7.4,8-14
+				c-2.4,6.4-0.6,12.3,0,14c2.9,8.4,10.2,12.1,12,13L566,721.6z"/>
+			<path class="st6" d="M-353,723.6c8.9-14.3,17.1-24.4,23-31c3.6-4,6.4-6.8,9-12c4.4-8.8,3-13.9,7-24c2-5,3.8-7.4,8-14
 				c6.7-10.4,12.7-21.3,19-32c8-13.4,15.4-25.9,24-42c8.7-16.4,8.1-16.6,15-29c9.9-17.7,12.8-19.9,21-34c12.6-21.7,9.6-23.1,23-48
 				c5.7-10.7,12.2-20.8,25-41c13-20.4,15.6-23.5,22-35c7.9-14.3,9.5-19.9,17-36c7.3-15.6,7.8-14.8,32-59c21.6-39.6,20.3-38.6,29-53
 				c8.4-13.8,13.2-20.6,23-38c9.1-16.2,13.7-24.3,16-30c8.9-21.9,8.8-35.9,20-41c5-2.3,8.8-1.1,12-5c4.4-5.3-0.1-10.4,2-20
 				c2.1-9.4,7.4-9.1,18-27c2.4-4,1.4-2.9,7-13c6.9-12.5,8.9-15.4,12-21c12.6-23,11.7-37.1,19-38c4.1-0.5,9.3,3.3,10,5
-				c0.6,1.6,0.8,3.4,0.8,3.4s0,0.3,0.1,0.6c0.1,1.9,0.2,2.9-0.9,6c-1.3,3.8,1.1,14.5,3,21c2.2,7.5,4.9,12.9,6,15
+				C60.6,7.2,60.8,9,60.8,9s0,0.3,0.1,0.6c0.1,1.9,0.2,2.9-0.9,6c-1.3,3.8,1.1,14.5,3,21c2.2,7.5,4.9,12.9,6,15
 				c3.2,6.2,6.1,11.7,12,17c0,0,6.1,5.4,13.2,8.1c1.4,0.5,2.8,0.9,2.8,0.9c0.6,0.2,1,0.3,1.2,0.3c8,2,11.7,2.8,15.8,4.7
 				c2,0.9,3.4,1.8,4.4,2.4c2.2,1.3,10.1,6.4,17.6,17.6c5,7.5,5.2,10.8,9,12c3.6,1.1,8.5-0.1,10-3c2.7-5.3-7.1-15.1-13-21
 				c-5.8-5.8-13.2-13.2-25-18c-3.7-1.5-9.6-3.5-20-8c-4-1.7-6.4-2.8-9-5c-2.8-2.3-5-5.1-9-13c-5.8-11.5-8.7-17.3-9-23
 				c-0.3-6,1.4-7,1-16c-0.2-4.5-0.4-7.9-2-12c-2.6-6.8-5.7-6.8-6-11c-0.3-3.9,2.2-5.6,7-14c2.3-4.1,4-7.6,5-10H-40
-				c-4.7,6.4-11.4,16-19,28C-71.9,8.8-71,10.7-83,30.4c-10.2,16.6-21.8,35.6-37,51c-1.8,1.8-5.5,5.5-10,11c-2.6,3.2-7.8,9.9-16,24
+				c-4.7,6.4-11.4,16-19,28C-71.8,9-70.9,10.9-83,30.6c-10.2,16.6-21.8,35.6-37,51c-1.8,1.8-5.5,5.5-10,11c-2.6,3.2-7.8,9.9-16,24
 				c-11.1,19.1-8.7,19.4-14,25c-8.2,8.8-13.1,7.3-20,16c-5.6,7.1-6.1,12.7-9,21c-5.1,14.2-11.6,19.7-23,35
-				c-16.2,21.6-12.1,22.5-30,49c-21,31.1-26,28.8-42,55c-13.7,22.3-12.4,27.8-24,46c-14.9,23.4-32.6,38.8-45,48V723.4L-353,723.4z"
+				c-16.2,21.6-12.1,22.5-30,49c-21,31.1-26,28.8-42,55c-13.7,22.3-12.4,27.8-24,46c-14.9,23.4-32.6,38.8-45,48V723.6L-353,723.6z"
 				/>
-			<path class="st6" d="M778,722.4c-2.9-3.4-7.4-8.8-12-16c-12.3-19.1-12.6-30.2-22-51c-3.5-7.8-2.2-3.5-23-39
+			<path class="st6" d="M778,722.6c-2.9-3.4-7.4-8.8-12-16c-12.3-19.1-12.6-30.2-22-51c-3.5-7.8-2.2-3.5-23-39
 				c-12.6-21.5-18.9-32.2-24-42c-11-20.9-13-27.7-23-43c-1.1-1.7-5.3-8-11-17c-8.8-13.7-11.4-18.2-14-24c-2.4-5.2-3.5-8.9-6-17
 				c-7.2-23.3-9.6-31.4-11-36c-6.8-21.3-11.4-21.5-24-50c-10.4-23.5-6.7-22.2-16-43c-12.1-27.2-17.6-27.5-30-55
 				c-9.1-20-6.1-19.7-17-45c-9.2-21.4-10.9-20.8-24-49c-12.9-27.9-12-30.3-21-46c-8.6-15-9.5-13-22-34c-2.3-3.8-11.4-19.2-21-40
@@ -484,38 +484,38 @@
 				c1.1,2.5,2.7,6.4,5,11c8.1,16.7,14.1,23.9,21,36c6.7,11.7,3.9,9.9,14,31c8.3,17.2,15.8,30,21,39c10.9,18.6,13.2,20.5,22,35
 				c13.5,22.4,12.4,25.5,29,57c9.8,18.6,18.4,35,32,55c16.7,24.5,18.8,21.9,32,43c12.4,19.8,10.2,21.5,28,52
 				c9.4,16.1,10.6,16.8,23,38c12.6,21.6,11.8,21.9,19,33c11.7,18.2,14.1,18.1,25,36c5.6,9.2,13.5,23.3,15,26c5.1,9.1,7.2,13.1,11,19
-				c5.8,9,11.3,15.8,15,20V722.4z"/>
-			<path class="st6" d="M616.2-39.1c0,0,134.8,204.8,162.3,224.2l-0.5-72.1l-113.7-152H616.2z"/>
-			<path class="st6" d="M-257,721.4c5-9.7,12.4-24.6,21-43c11.1-23.7,11.4-26.3,19-42c14.8-30.7,18.2-30.5,32-59
+				c5.8,9,11.3,15.8,15,20V722.6z"/>
+			<path class="st6" d="M616.2-38.9c0,0,134.8,204.8,162.3,224.2l-0.5-72.1l-113.7-152H616.2z"/>
+			<path class="st6" d="M-257,721.6c5-9.7,12.4-24.6,21-43c11.1-23.7,11.4-26.3,19-42c14.8-30.7,18.2-30.5,32-59
 				c7.9-16.3,5.4-13.4,22-51c10.3-23.3,15.4-34.9,23-50c11.4-22.7,14.1-25.2,24-46c8.9-18.7,9.1-21.7,17-39c10.6-23.2,17-32.9,33-62
 				c8.2-14.9,19.7-36.3,33-63l-10,43c-3.1,6.3-7.7,15.6-13,27c-12.4,26.7-17.4,41.5-26,60c-12.2,26.4-14.6,29.6-30,62
 				c-20.1,42.5-17.3,39.9-36,79c-14.9,31.2-18.8,37.2-25,55c-8.7,25.1-17.6,32.8-23,51c-5.8,19.3-8,26-34,78H-257z"/>
-			<path class="st6" d="M695.7,721.4c-5-9.7-12.4-24.6-21-43c-11.1-23.7-11.4-26.3-19-42c-14.9-30.7-18.2-30.5-32-59
+			<path class="st6" d="M695.8,721.6c-5-9.7-12.4-24.6-21-43c-11.1-23.7-11.4-26.3-19-42c-14.9-30.7-18.2-30.5-32-59
 				c-7.9-16.3-5.4-13.4-22-51c-10.3-23.3-15.4-34.9-23-50c-11.4-22.7-14.1-25.2-24-46c-8.9-18.7-9.1-21.7-17-39
 				c-10.6-23.2-17-32.9-33-62c-8.2-14.9-19.7-36.3-33-63l10,43c3.1,6.3,7.7,15.6,13,27c12.4,26.7,17.4,41.5,26,60
 				c12.2,26.4,14.6,29.6,30,62c20.1,42.5,17.3,39.9,36,79c14.9,31.2,18.8,37.2,25,55c8.7,25.1,17.6,32.8,23,51c5.8,19.3,8,26,34,78
-				H695.7z"/>
-			<path class="st6" d="M58.4,723.6c2.4-9.7,6-24.5,9.8-42.6c4.9-23.4,4.6-25.7,8.2-41.3c6.8-30.4,10-31.1,16.4-59.3
+				H695.8z"/>
+			<path class="st6" d="M58.4,723.8c2.4-9.7,6-24.5,9.8-42.6c4.9-23.4,4.6-25.7,8.2-41.3c6.8-30.4,10-31.1,16.4-59.3
 				c3.7-16.1,2-13,8.9-49.9c4.3-22.8,6.4-34.2,10.1-49.2c5.4-22.6,7.4-25.4,11.9-46c4-18.4,3.6-21.2,7-38.2
 				c4.5-22.8,8.3-32.8,16.6-62.1c4.2-15,10.1-36.5,16.4-63l0.4,40c-1.5,6.2-3.6,15.5-6,26.7c-5.5,26.3-6.8,40.4-10.6,58.7
 				c-5.3,26-6.9,29.4-13.8,61.4c-9.1,42-7.1,39-15.6,77.7c-6.8,30.9-9,37.1-10.8,54.1c-2.4,24.1-8.9,32.9-9.8,50.1
-				c-1,18.3-1.6,24.7-13.9,76.4L58.4,723.6L58.4,723.6z"/>
-			<path class="st6" d="M271.4,721.8c0.2-5.8,0.4-14.8,0.4-25.7c0-14-0.4-15.4-0.3-24.7c0.2-18.3,1.8-18.9,2.1-35.9
+				c-1,18.3-1.6,24.7-13.9,76.4L58.4,723.8L58.4,723.8z"/>
+			<path class="st6" d="M271.5,722c0.2-5.8,0.4-14.8,0.4-25.7c0-14-0.4-15.4-0.3-24.7c0.2-18.3,1.8-18.9,2.1-35.9
 				c0.1-9.7-0.4-7.7-0.9-29.8c-0.3-13.7-0.4-20.5-0.2-29.5c0.3-13.6,1.1-15.4,1.2-27.8c0.1-11.1-0.5-12.6-0.6-22.8
 				c-0.2-13.7,0.7-19.8,1.9-37.6c0.6-9.1,1.3-22.1,1.6-38.1l4.8,23.3c-0.1,3.8-0.2,9.3-0.2,16.1c0.1,15.8,0.9,24.1,1,35.1
 				c0.1,15.6-0.3,17.7-0.4,36.9c-0.1,25.2,0.7,23.3,0.5,46.6c-0.1,18.6-0.6,22.3,0.4,32.4c1.4,14.2-1,19.9,0.4,30
-				c1.6,10.8,2,14.5,1.2,45.7L271.4,721.8L271.4,721.8z"/>
-			<path class="st6" d="M376.1,733.9c-0.1-4.7-0.2-11.7-0.6-20.4c-0.5-11.1-0.9-12.2-1.1-19.6c-0.5-14.5,0.8-15.1,0.4-28.6
+				c1.6,10.8,2,14.5,1.2,45.7L271.5,722L271.5,722z"/>
+			<path class="st6" d="M376.1,734.1c-0.1-4.7-0.2-11.7-0.6-20.4c-0.5-11.1-0.9-12.2-1.1-19.6c-0.5-14.5,0.8-15.1,0.4-28.6
 				c-0.2-7.7-0.6-6.1-1.8-23.6c-0.7-10.8-1.1-16.2-1.2-23.4c-0.2-10.8,0.3-12.3-0.1-22.1c-0.3-8.8-0.8-10-1.3-18.1
 				c-0.6-10.8-0.1-15.8,0.2-29.9c0.1-7.2,0.2-17.6,0-30.3l4.7,18.3c0.1,3,0.2,7.4,0.4,12.8c0.6,12.5,1.6,19.1,2.1,27.8
 				c0.6,12.3,0.3,14.1,1,29.3c0.8,20,1.4,18.5,2.1,36.9c0.6,14.7,0.3,17.8,1.4,25.7c1.7,11.2-0.1,15.8,1.4,23.8
-				c1.6,8.5,2.1,11.4,2.6,36.2L376.1,733.9L376.1,733.9z"/>
-			<path class="st6" d="M-323.9,682.4c1.7-4.8,4.2-12.3,7.2-21.5c3.8-11.8,3.9-13.1,6.5-21c5.1-15.3,6.2-15.2,10.9-29.4
+				c1.6,8.5,2.1,11.4,2.6,36.2L376.1,734.1L376.1,734.1z"/>
+			<path class="st6" d="M-323.9,682.6c1.7-4.8,4.2-12.3,7.2-21.5c3.8-11.8,3.9-13.1,6.5-21c5.1-15.3,6.2-15.2,10.9-29.4
 				c2.7-8.1,1.8-6.7,7.5-25.4c3.5-11.6,5.3-17.4,7.8-24.9c3.9-11.3,4.8-12.6,8.2-22.9c3-9.3,3.1-10.8,5.8-19.5
-				c3.6-11.6,5.8-16.4,11.2-30.9c2.8-7.4,6.7-18.1,11.3-31.4l-3.4,21.5c-1.1,3.1-2.6,7.8-4.4,13.5c-4.2,13.3-5.9,20.7-8.9,29.9
+				c3.6-11.6,5.8-16.4,11.2-30.9c2.8-7.4,6.7-18.1,11.2-31.4l-3.4,21.5c-1.1,3.1-2.6,7.8-4.4,13.5c-4.2,13.3-5.9,20.7-8.9,29.9
 				c-4.2,13.2-5,14.8-10.2,30.9c-6.9,21.2-5.9,19.9-12.3,39.4c-5.1,15.6-6.4,18.6-8.5,27.4c-3,12.5-6,16.4-7.8,25.4
-				c-2,9.7-2.7,13-11.6,38.9L-323.9,682.4L-323.9,682.4z"/>
-			<path class="st7" d="M-72-39.6c3.4,4.4,6.2,7.8,8,10c3.7,4.5,4.9,5.8,5,8c0.1,3.5-2.7,4.4-5,9c-3.9,7.6-0.7,14-3,15
+				c-2,9.7-2.7,13-11.6,38.9L-323.9,682.6L-323.9,682.6z"/>
+			<path class="st7" d="M-72-39.4c3.4,4.4,6.2,7.8,8,10c3.7,4.5,4.9,5.8,5,8c0.1,3.5-2.7,4.4-5,9c-3.9,7.6-0.7,14-3,15
 				c-3.4,1.5-10.1-12.4-16-11c-3.8,0.9-3.9,7.5-8,8c-3.8,0.5-6.2-5-9-4c-2.3,0.8-1.2,4.7-4,7c-4.3,3.5-11.9-1.8-14,1
 				c-1.2,1.6,0,5.1,2,7c3.1,2.9,6.6,0.7,9,3c3.8,3.7-1.7,13.2,1,15c2.6,1.7,8.8-5.9,12-4c2.6,1.5-0.4,6.8,3,12c2.5,3.9,5.2,2.5,9,7
 				c3.9,4.5,2.5,7.4,6,10c1.4,1,2.7,1.4,10,2c12.5,1.1,13.5,0.6,16,2c4.5,2.5,8.1,7.9,7,12c-0.6,2.2-2.4,3.7-5,6
@@ -526,54 +526,54 @@
 				c-0.6-0.7-2.8,1.5-6,1c-2.8-0.4-4.7-2.6-5-3c-2.1-2.5-1.5-4.9-1-16c0.3-8.2,0.1-8.9,1-11c1.8-4.3,4.7-5.9,4-8
 				c-0.8-2.4-5.6-2.9-7-3c-5.6-0.5-7.2,1.7-14,3c-4.1,0.8-10.3,2-16-1c-3.3-1.7-5.4-4.2-7-6c-3.1-3.6-4.6-7-5-8c-1.3-3.2-1.8-6-2-8
 				H-72z"/>
-			<path class="st7" d="M144,110.4c-1.2,6.9,0,12,0,12c2.1,8.9,3.2,13.9,7,20c3.5,5.6,10.6,11.4,25,23c7.3,5.9,7.5,5.4,8.6,6.9
+			<path class="st7" d="M144,110.6c-1.2,6.9,0,12,0,12c2.1,8.9,3.2,13.9,7,20c3.5,5.6,10.6,11.4,25,23c7.3,5.9,7.5,5.4,8.6,6.9
 				c0.2,0.3,0.7,1,1.4,1.1c1.9,0.2,2.5-4.4,5-5c2-0.5,3,2,7,4c0.5,0.2,7.1,3.4,10,1c2.7-2.2-0.3-7.1,2-9c3.4-2.8,14.6,4.5,20,8
 				c5.3,3.5,6.2,4.8,10,6c3.1,0.9,6.4,1,13,1c9.7,0,9.4-0.7,12,0c6.5,1.7,5.8,5.9,13,9c5.5,2.4,11,2.2,17,2c2.3-0.1,5.3-0.2,9-1
 				c9.9-2.2,16.4-7.4,22-12c3.5-2.9,11-9.5,10-11c-0.7-1-4.8,0.6-11,3c-7,2.7-11.9,5.2-12,5c-0.2-0.4,15.6-8.7,15-10
 				c-0.4-0.8-6.3,1.5-16,4c-5.9,1.5-25.4,6.5-27,3c-1.3-2.8,10.4-8.4,9-14c-0.9-3.9-7.5-5.4-10-6c-9-2.1-13.3,1.4-23,2
 				c-6.1,0.3-11.4-1.1-22-4c-14.1-3.8-24-9-26-10c-11.8-6.2-22.3-14.2-26-17c-2.6-2-8.8-6.8-17-11c-2.6-1.3-6.3-3-11-4
-				c-3.6-0.8-2.8-0.1-8-1c-2.4-0.4-3.8-0.8-5,0C144.6,107.3,144.2,109,144,110.4z"/>
-			<path class="st7" d="M-65,332.4c0,0.5,0.1,1.3,0.1,2.3c0,0,0.1,2.8-0.1,5.7c-1.1,17.5-11,32-11,32c-4.5,6.5-9,10.5-13,14
+				c-3.6-0.8-2.8-0.1-8-1c-2.4-0.4-3.8-0.8-5,0C144.6,107.5,144.2,109.2,144,110.6z"/>
+			<path class="st7" d="M-65,332.6c0,0.5,0.1,1.3,0.1,2.3c0,0,0.1,2.8-0.1,5.7c-1.1,17.5-11,32-11,32c-4.5,6.5-9,10.5-13,14
 				c-2.8,2.4-8.9,6.3-21,14c-2.7,1.7-10.6,6.7-21,10c-2.4,0.8-6.9,2.1-9,0c-1.8-1.8-0.3-4.8-2-6c-2.2-1.6-5.4,3-11,3
 				c-3.5,0-6.3-2-12-6c-4.6-3.2-6.9-4.9-7-7c-0.2-4.3,7.4-7.8,10-9c8.3-3.8,13.3-2.8,20-4c9.7-1.8,8.9-5.7,28-17
-				c13.8-8.2,16.8-7.7,27-15c7.3-5.3,12.7-10.5,16-14L-65,332.4z"/>
-			<path class="st7" d="M-72.9,377.5l-2.1,9c-0.3,2.6-0.7,6.4-1,11c-0.4,6.7-0.3,10.7,0,25c0.4,20.3,0.4,20.8,1,23
+				c13.8-8.2,16.8-7.7,27-15c7.3-5.3,12.7-10.5,16-14L-65,332.6z"/>
+			<path class="st7" d="M-72.9,377.7l-2.1,9c-0.3,2.6-0.7,6.4-1,11c-0.4,6.7-0.3,10.7,0,25c0.4,20.3,0.4,20.8,1,23
 				c1.7,6,3.8,8.9,5,17c0.9,6.1,1.6,10.7-1,13c-2.8,2.6-8.1,1.1-15-1c-6.6-2-10-2.9-13-6c-5-5-5.5-11.9-6-19c-0.4-6.1,0.2-10.6,1-16
 				c0.6-4.2,2.3-13.8,7-27c3.7-10.2,5.1-11.1,8-20c2.9-8.8,4.3-16.2,5-21l0.7-9.8l6.3,1.8c0.2,2.1,0.4,4.8,1,8
 				c1.5,8.3,3.9,14.5,5,17c4.8,11.3,7.4,9.1,13,21c3,6.4,4.3,11.4,8,12c1.8,0.3,4-0.4,5-2c2.6-4.1-4.5-12.6-4-13
 				c0.5-0.3,4.3,7.5,12,11c4.9,2.3,11.9,3,14,0c1.3-1.9,0.3-4.8-1-8c-6.1-14.3-12.8-18-18-29c-2.2-4.7-3.1-9.1-5-18
-				c-0.5-2.6-2.4-11.7-3-24c-0.3-6.8-0.2-12.5,0-17l-1.9-11.7L-72.9,377.5L-72.9,377.5z"/>
-			<path class="st7" d="M123.9,441.2c0,0.6,0.1,1.3,0.1,2.3c0,0,0.1,2.8-0.1,5.7c-1.1,17.5-11,32-11,32c-4.5,6.6-9,10.5-13,14
+				c-0.5-2.6-2.4-11.7-3-24c-0.3-6.8-0.2-12.5,0-17l-1.9-11.7L-72.9,377.7L-72.9,377.7z"/>
+			<path class="st7" d="M123.9,441.4c0,0.6,0.1,1.3,0.1,2.3c0,0,0.1,2.8-0.1,5.7c-1.1,17.5-11,32-11,32c-4.5,6.6-9,10.5-13,14
 				c-2.8,2.4-8.9,6.3-21,14c-2.7,1.7-10.6,6.7-21,10c-2.4,0.8-6.9,2.1-9,0c-1.8-1.8-0.3-4.8-2-6c-2.2-1.6-5.4,3-11,3
 				c-3.5,0-6.3-2-12-6c-4.6-3.2-6.9-4.9-7-7c-0.2-4.3,7.4-7.8,10-9c8.3-3.8,13.3-2.8,20-4c9.7-1.8,8.9-5.7,28-17
-				c13.8-8.2,16.8-7.7,27-15c7.3-5.3,12.7-10.5,16-14L123.9,441.2z"/>
-			<path class="st7" d="M150.6,315.3c0.2,0.5,0.5,1.3,0.8,2.2c0,0,1,2.7,1.6,5.5c3.6,17.3-6.4,35.7-6.4,35.7
+				c13.8-8.2,16.8-7.7,27-15c7.3-5.3,12.7-10.5,16-14L123.9,441.4z"/>
+			<path class="st7" d="M150.7,315.5c0.2,0.5,0.5,1.3,0.8,2.2c0,0,1,2.7,1.6,5.5c3.6,17.3-6.4,35.7-6.4,35.7
 				c-4.6,8.3-9.9,14.2-14.7,19.4c-3.3,3.6-11,10.1-26.4,23c-3.4,2.9-13.4,11.2-27.6,19.2c-3.2,1.8-9.4,5.2-13.1,4.1
 				c-3.2-0.9-1.9-4.4-4.7-4.8c-3.6-0.5-7,5.3-15.1,7.9c-5.1,1.6-9.8,1-19.3-0.2c-7.7-1-11.5-1.5-12.3-3.5c-1.6-4,8.4-10.9,11.9-13.2
-				c10.9-7.4,18.5-8.7,27.9-13c13.5-6.1,11.2-9.5,35.7-29.1c17.7-14.2,22.2-15,34.8-26.7c9.1-8.4,15.3-15.8,19.1-20.7L150.6,315.3
-				L150.6,315.3z"/>
-			<path class="st7" d="M278.4,459c0.2,0.3,0.4,0.7,0.7,1.2c0,0,0.8,1.5,1.5,3.1c4,9.7,1.3,20.8,1.3,20.8c-1.2,5-3.1,8.7-4.9,11.9
+				c10.9-7.4,18.5-8.7,27.9-13c13.5-6.1,11.2-9.5,35.7-29.1c17.7-14.2,22.2-15,34.8-26.7c9.1-8.4,15.3-15.8,19.1-20.7L150.7,315.5
+				L150.7,315.5z"/>
+			<path class="st7" d="M278.4,459.2c0.2,0.3,0.4,0.7,0.7,1.2c0,0,0.8,1.5,1.5,3.1c4,9.7,1.3,20.8,1.3,20.8c-1.2,5-3.1,8.7-4.9,11.9
 				c-1.2,2.2-4.2,6.4-10.2,14.6c-1.3,1.8-5.2,7.1-11.3,12.4c-1.4,1.2-4,3.4-6,3c-1.7-0.4-1.5-2.4-3-2.5c-1.9-0.1-2.8,3.4-6.5,5.3
 				c-2.3,1.2-4.7,1.1-9.6,0.9c-3.9-0.2-5.9-0.3-6.6-1.4c-1.3-2.2,2.8-6.7,4.2-8.2c4.5-4.8,8.1-5.9,12.2-8.9c5.9-4.2,4.4-6,14-18.5
-				c7-9,9.1-9.8,13.9-17.1c3.4-5.3,5.6-9.9,6.8-12.9L278.4,459L278.4,459z"/>
-			<path class="st7" d="M166.2,265.7c0.2,0.3,0.4,0.7,0.7,1.2c0,0,0.8,1.5,1.5,3.1c4,9.7,1.3,20.8,1.3,20.8c-1.2,5-3.1,8.7-4.9,11.9
+				c7-9,9.1-9.8,13.9-17.1c3.4-5.3,5.6-9.9,6.8-12.9L278.4,459.2L278.4,459.2z"/>
+			<path class="st7" d="M166.2,265.9c0.2,0.3,0.4,0.7,0.7,1.2c0,0,0.8,1.5,1.5,3.1c4,9.7,1.3,20.8,1.3,20.8c-1.2,5-3.1,8.7-4.9,11.9
 				c-1.2,2.2-4.2,6.4-10.2,14.6c-1.3,1.8-5.2,7.1-11.3,12.4c-1.4,1.2-4,3.5-6,3c-1.7-0.4-1.5-2.5-3-2.5c-1.9-0.1-2.8,3.4-6.5,5.3
 				c-2.3,1.2-4.7,1.1-9.6,0.9c-3.9-0.2-5.9-0.3-6.6-1.4c-1.3-2.2,2.8-6.7,4.2-8.2c4.5-4.8,8.1-6,12.2-8.9c5.9-4.2,4.4-6,14-18.5
-				c7-9,9.1-9.8,13.9-17.1c3.4-5.3,5.6-9.9,6.8-12.9L166.2,265.7L166.2,265.7z"/>
-			<path class="st7" d="M-47,311.4c-0.1,0.6-0.2,1.1-0.3,2.3c0,0-0.4,2.9-0.7,5.7c-1,9.9,0,20,0,20c0.4,3.9,0.9,6.8,3,9
+				c7-9,9.1-9.8,13.9-17.1c3.4-5.3,5.6-9.9,6.8-12.9L166.2,265.9L166.2,265.9z"/>
+			<path class="st7" d="M-47,311.6c-0.1,0.6-0.2,1.1-0.3,2.3c0,0-0.4,2.9-0.7,5.7c-1,9.9,0,20,0,20c0.4,3.9,0.9,6.8,3,9
 				c0.1,0.1,2.6,2.7,4,2c1.9-0.9,0.6-6.9,1-7c0.3,0,0.8,3.5,2,7c2,6.1,5.4,10.2,7,12c2.6,3.1,4.6,5.4,8,7c6.4,3.1,14.5,2,15,0
 				c0.5-2.3-9.8-3.3-17-13c-2.9-4-4.1-7.6-6-14c-2.1-7-1.9-9.5-4-22c-3.5-20.8-5.5-22.8-7-23c-1.7-0.2-3.3,1.8-4,3
-				C-47.5,303-46.2,305.2-47,311.4z"/>
-			<path class="st7" d="M-23,253.4c0.7,0.2-0.2,6-1,16c-0.8,10.1-0.4,12.9,0,15c0.5,2.7,1.7,5.4,4,11c2.7,6.4,4.2,10.2,7,15
+				C-47.5,303.2-46.1,305.4-47,311.6z"/>
+			<path class="st7" d="M-23,253.6c0.7,0.2-0.2,6-1,16c-0.8,10.1-0.4,12.9,0,15c0.5,2.7,1.7,5.4,4,11c2.7,6.4,4.2,10.2,7,15
 				c2.9,5.1,4.7,7.1,4,8c-0.9,1.2-5.6-0.3-9-3c-4.3-3.4-3.1-5.8-8-12c-4.5-5.7-7.2-5.9-8-10c-0.3-1.7-0.2-3.3-1-7
 				c-0.7-3-1.1-4.9-2-5c-1.7-0.3-2.1,6-7,9c-3,1.8-3.9,0-9,2c-4.4,1.7-5.2,3.5-9,4c-2.8,0.4-5.9-0.2-6-1c-0.1-0.8,3-1.9,6-3
 				c6.4-2.2,8.4-1.9,12-4c2.3-1.4,5.5-3.9,5-5c-0.4-1.1-3.7-0.1-11,0c-6.9,0.1-9.8-0.8-12-2c-1.6-0.9-4.4-2.8-4-4
-				c0.4-1.4,5-0.3,11-1c5.6-0.6,5.6-2,17-6c10.2-3.6,12-3.1,15-6C-24.1,259.7-23.8,253.2-23,253.4z"/>
-			<path class="st7" d="M-54,306.4c-0.7-0.4-2.3,4.1-7,6c-2.6,1-3.3,0.2-8,1c-4.7,0.8-9.1,2.5-9,3c0.1,0.3,2.1,0.2,6,0
-				c3.5-0.2,5.8-0.3,9-1c3.1-0.6,4.7-1,6-2C-54.1,311-53.4,306.8-54,306.4z"/>
-			<path class="st7" d="M139,372.4c-2.4-0.8-5,7.8-14,17c-8.9,9.1-14.1,8.5-25,20c-7.5,7.9-7.8,11.2-7,13c1,2.2,4.1,2.8,5,3
-				c6.1,1.2,10.2-3.1,21-10c13.2-8.5,15.3-7.4,18-12c2.2-3.8,2.4-8.5,3-18C140.4,377.9,140.7,373,139,372.4z"/>
-			<path class="st7" d="M116.9,444.2l11.9,29.4c0.7,2,1.6,4.6,2.9,7.5c3.4,7.7,7,13.2,8.5,15.3c6.8,9.8,8.2,7.2,15.8,17.4
+				c0.4-1.4,5-0.3,11-1c5.6-0.6,5.6-2,17-6c10.2-3.6,12-3.1,15-6C-24.1,259.9-23.8,253.4-23,253.6z"/>
+			<path class="st7" d="M-54,306.6c-0.7-0.4-2.3,4.1-7,6c-2.6,1-3.3,0.2-8,1c-4.7,0.8-9.1,2.5-9,3c0.1,0.3,2.1,0.2,6,0
+				c3.5-0.2,5.8-0.3,9-1c3.1-0.6,4.7-1,6-2C-54,311.2-53.3,307-54,306.6z"/>
+			<path class="st7" d="M139,372.6c-2.4-0.8-5,7.8-14,17c-8.9,9.1-14.1,8.5-25,20c-7.5,7.9-7.8,11.2-7,13c1,2.2,4.1,2.8,5,3
+				c6.1,1.2,10.2-3.1,21-10c13.2-8.5,15.3-7.4,18-12c2.2-3.8,2.4-8.5,3-18C140.4,378.1,140.7,373.2,139,372.6z"/>
+			<path class="st7" d="M116.9,444.4l11.9,29.4c0.7,2,1.6,4.6,2.9,7.5c3.4,7.7,7,13.2,8.5,15.3c6.8,9.8,8.2,7.2,15.8,17.4
 				c4.1,5.5,6.4,10.1,9.5,9.8c1.5-0.1,3.1-1.3,3.4-3c0.9-4.6-6.9-11.2-6.6-11.7c0.3-0.4,5.4,6.3,12.4,8c4.5,1.1,10.2,0.3,11.1-3
 				c0.6-2.1-1-4.7-2.9-7.5c-8.6-12.5-14.9-14.6-21.9-24.1c-3-4-4.9-8.1-8.7-16.3c-1.1-2.4-5-10.8-8.7-22.5
 				c-2.1-6.4-3.5-12.1-4.5-16.4l-4.6-10.8l-2.9-54.8l4.4,8.8c1.8,4.5,4.4,11.6,6.4,20.6c2,9.1,1.2,10.6,3.3,21.3
@@ -584,48 +584,48 @@
 				c2.3,5.6,3,7.6,5,10c1.7,2,4.6,4.7,6,4c1.6-0.8,0.1-5.7,1-6c0.9-0.3,1.9,5.2,6,7c2.8,1.2,6.5,0.5,7-1c0.8-2.4-6.7-6.7-6-8
 				c0.6-1.1,5.5,1.6,7,0c0.5-0.5,1.2-2.2-4-11c-4.4-7.4-5.7-7.5-9-13c-3.1-5.2-6.1-10.1-7-17c-0.7-5.1,0-9.1-2-10
 				c-1.5-0.7-3.5,0.7-5,2l-3.6,0.5"/>
-			<path class="st7" d="M270,467.4c-2.1,3.5-5.1,7-9.1,7.4s-8.2-4.6-5.7-7.8c1.3-1.6,3.5-2,5.5-2.7c6.9-2.5,10.6-9.9,13.1-16.8
+			<path class="st7" d="M270,467.6c-2.1,3.5-5.1,7-9.1,7.4s-8.2-4.6-5.7-7.8c1.3-1.6,3.5-2,5.5-2.7c6.9-2.5,10.6-9.9,13.1-16.8
 				c2.5-6.9,4.7-14.5,10.4-19.1c2.1,9.7-2.1,19.9,0.3,29.9c1.9,8.2,7.3,15,9.4,23.2c2.2,8.7,0.5,18.1,2.7,26.8
-				c3.6,14.8,17.1,24.7,25.4,37.5c0.6,0.9,1.2,2,0.9,3c-0.3,1.5-2.2,2.1-3.7,2.3c-4.9,0.5-10.1-1.2-13.8-4.5
+				c3.6,14.8,17.1,24.8,25.4,37.5c0.6,0.9,1.2,2,0.9,3c-0.3,1.5-2.2,2.1-3.7,2.3c-4.9,0.5-10.1-1.2-13.8-4.5
 				c-2.7-2.4-6.7-5.8-9.2-3.2c-0.8,0.8-1,1.9-1.7,2.7c-2.2,2.5-6.3,0.2-8.5-2.4c-4.7-5.6-7.9-12.3-9.2-19.5
 				c1.5,15.8-12.1,31.5-28,32.3c10.1-11.7,18.3-25.1,24.1-39.4c-2.5,16-5,32-7.5,48c15.8,11.9,19.5,35.8,36.4,46.3
 				c2.6,1.6,5.6,2.9,8.7,2.9c6.6,0.1,11.9-5.3,16.4-10.2c0.9-1,1.8-2.1,2-3.4c0.6-3.7-4.2-5.5-7.7-6.4c-10.7-2.8-19.9-9.4-28.7-16.1
 				c-3.3-2.5-6.6-5.2-9-8.5c-4.8-6.7-5.4-15.4-6-23.6c-9.7,17.3-20.1,35.3-36.6,46.3c-5.6,3.8-11.8,6.6-17,11
 				c-1.2,1-2.3,2.2-2.3,3.7c0,2.1,2.3,3.4,4.4,4c4.9,1.3,10.4,0.5,14.8-2.1c-2.4,0.8-4.9,1.8-6.2,3.9s0.1,5.7,2.6,5.5
 				c0.8-0.1,1.4-0.5,2.1-0.9c10.1-6.1,20.3-12.3,28.5-20.8c1.8-1.8,3.5-3.8,4.3-6.2c0.7-2.2,0.7-4.5,0.6-6.7
-				C271.8,545.1,270.9,506.3,270,467.4C270,467.4,270,467.4,270,467.4L270,467.4z"/>
-			<path class="st7" d="M365,497.4c0.3,4.4-2.6,11.8-4,16c-2.2,6.8-7.4,12.9-9.2,19.4c-0.9,3.4,0.7,7.7,4.1,8.3c4.8,1,7.7-5,8.8-9.7
+				C271.8,545.3,270.9,506.5,270,467.6C270,467.6,270,467.6,270,467.6L270,467.6z"/>
+			<path class="st7" d="M365,497.6c0.3,4.4-2.6,11.8-4,16c-2.2,6.8-7.4,12.9-9.2,19.4c-0.9,3.4,0.7,7.7,4.1,8.3c4.8,1,7.7-5,8.8-9.7
 				c6.4,11.2,3.2,25.5-2.5,37c-5.7,11.6-13.8,22-17.8,34.3c-1.3,4-1.2,9.7,2.8,10.8c1.5,0.4,3.1,0,4.4-0.7
 				c12.5-5.7,12.9-23.3,21-34.3c6.8,8.2,3,20.6-2.2,29.9s-11.5,19.5-8.7,29.8c6-7.1,10.2-15.8,12.1-24.9c4.3,5.3,8.8,10.7,14.5,14.5
 				s13.1,5.7,19.6,3.4c-12.9-1.4-22.8-13.2-26.1-25.7c-3.3-12.6-1.5-25.8,0.3-38.7c7,5.2,16.2,7.5,24.9,6.1
-				c-5.5-4.9-11.1-9.9-16.6-14.8c10.9,2.3,22.3,2.7,33.3,1.1c-13.3-6.7-26.8-13.6-37.9-23.5C374.7,525.8,366,512.3,365,497.4
-				L365,497.4z"/>
-			<path class="st7" d="M455,242.4c0.5-0.2-1.1,57.7-2.1,62.3c7.1,2.4,15.2-6.1,12.3-13.1c2.6,12.2-0.7,25.5-8.8,35
+				c-5.5-4.9-11.1-9.9-16.6-14.8c10.9,2.3,22.3,2.7,33.3,1.1c-13.3-6.7-26.8-13.6-37.9-23.5C374.8,526,366,512.5,365,497.6
+				L365,497.6z"/>
+			<path class="st7" d="M455,242.6c0.5-0.2-1.1,57.7-2.1,62.3c7.1,2.4,15.2-6.1,12.3-13.1c2.6,12.2-0.7,25.5-8.8,35
 				c10.7-1.1,18.9-12.8,16.4-23.2c3.4,15.8-1.3,33.1-12.1,45c-5.9,6.5-13.3,11.3-18.7,18.2c-5.3,6.9-8.2,17-3.3,24.2
 				c24-15.9,50.4-35.7,52.9-64.5c8.6,10.5,8.4,25.6,7.2,39.1c-2.2,24.3-6.2,48.4-12.1,72.1c4.3-2.2,12.5-1.2,10.6,3.3
-				c10.9-7.1,15.1-21.2,15.8-34.3s-1.4-26.2,0.7-39.1C525.9,396,556,415.8,587,416c-9.8-3.3-18.8-8.7-26.3-15.8
+				c10.9-7.1,15.1-21.2,15.8-34.3s-1.4-26.2,0.7-39.1C526,396.2,556,416,587,416.2c-9.8-3.3-18.8-8.7-26.3-15.8
 				c16.1,5.8,34.8,3.5,49-6c6.4-4.3,12.3-11.8,9.6-19c-4.5,6-15.2,5.6-19.3-0.7c3.3,1,6.8,1,10.1,0.1c0.8-3.6,1.2-7.6-0.9-10.5
 				s-7.8-3-8.7,0.5c0.3-3.6,0.6-7.2,0.9-10.9c-18.3,8-39.6,9.6-58.5,3.2s-35.1-21.1-42.2-39.8c20.2,5.3,42.2,10.6,61.6,2.6
 				c4.5-1.9,9.1-4.8,10.4-9.5s-2.9-10.7-7.6-9.3c4.4-1.7,8.7-3.4,13.1-5c-12.4-3.7-25.6-0.4-38.4,1.1s-27.5,0.6-36-9.1
-				c3.5,1.7,7.7,2,11.4,0.7c0.4-6.7-8.8-8.5-15.4-9.5c-11.3-1.8-19.2-8.1-26.7-16.2C470.3,259.7,459.6,240.3,455,242.4L455,242.4z"
+				c3.5,1.7,7.7,2,11.4,0.7c0.4-6.7-8.8-8.5-15.4-9.5c-11.3-1.8-19.2-8.1-26.7-16.2C470.4,259.9,459.6,240.5,455,242.6L455,242.6z"
 				/>
-			<path class="st7" d="M568.3,510.4c-6.3,18.3-15.9,35.4-28.4,50.2c-0.7,0.8-1.4,1.7-2.4,2c-2.8,1.1-5.7-2.2-5.5-5.1
+			<path class="st7" d="M568.4,510.6c-6.3,18.3-15.9,35.4-28.4,50.2c-0.7,0.8-1.4,1.7-2.4,2c-2.8,1.1-5.7-2.2-5.5-5.1
 				s2.4-5.4,4.4-7.6c-2.7,3.8-5.6,7.7-9.8,9.5s-10.2,0.3-11.6-4.1c-1.3-4,1.6-8,4.2-11.3c23.8-30.7,35.2-70.7,31.2-109.4
 				c0.6,5.6,25.2,18.7,29.5,21.8c12.7,9.1,25.6,18,39.7,24.7c22.5,10.8,47.9,16.8,72.5,12.4c-11.7,15.6-33.5,20.9-52.7,17.6
-				c-19.2-3.3-36.4-13.7-52.4-24.8c13.1,19.8,36.7,30.2,59.9,34.9c3.4,0.7,7.8,2.5,7.4,6c-0.2,1.6-1.6,2.9-2.8,3.9
-				c-5.4,4.7-11.1,9.6-18,11.6s-15.4,0.5-19.4-5.6c3.4,19.4,16,36.2,31.4,48.6s33.5,20.7,51.4,29c-8.9,4.4-19.6,2.2-28.6-2.2
-				s-16.9-10.5-26-14.3c-3.1-1.3-6.5-2.2-9.6-1.2c-5.5,1.8-7.3,8.5-8.4,14.2c-2.4,12.8-5,25.9-11.5,37.2
-				c-6.5,11.3-17.8,20.7-30.8,21.6c23.9-36.8,30.6-84.3,17.8-126.3c-12,14-12.4,34.2-14.8,52.5s-10.5,39.1-28.3,43.8
-				c-0.9-7.6-0.6-15.2,1-22.7c-2,8.2-8.3,18.8-16,15.3c-4.2-1.9-5.6-7.6-4.3-12s4.4-8.1,7.3-11.7c21.8-27.4,30.8-64.6,23.9-99
-				C568.4,510.1,568.4,510.2,568.3,510.4L568.3,510.4z"/>
-			<path class="st7" d="M450-34.6c-1.1,7.1-2.9,17.2-6,29c-3.2,12-5.3,20.2-10,30c-2.7,5.7-9.4,19.3-23,32c-16.1,15-35.7,23-37,21
+				S603,497.6,587,486.6c13.1,19.8,36.7,30.2,59.9,34.9c3.4,0.7,7.8,2.5,7.4,6c-0.2,1.6-1.6,2.9-2.8,3.9c-5.4,4.7-11.1,9.6-18,11.6
+				s-15.4,0.5-19.4-5.6c3.4,19.4,16,36.2,31.4,48.6s33.5,20.7,51.4,29c-8.9,4.4-19.6,2.2-28.6-2.2s-16.9-10.5-26-14.3
+				c-3.1-1.3-6.5-2.2-9.6-1.2c-5.5,1.8-7.3,8.5-8.4,14.2c-2.4,12.8-5,25.9-11.5,37.2c-6.5,11.3-17.8,20.7-30.8,21.6
+				c23.9-36.8,30.6-84.3,17.8-126.3c-12,14-12.4,34.2-14.8,52.5s-10.5,39.1-28.3,43.8c-0.9-7.6-0.6-15.2,1-22.7
+				c-2,8.2-8.3,18.8-16,15.3c-4.2-1.9-5.6-7.6-4.3-12s4.4-8.1,7.3-11.7c21.8-27.4,30.8-64.6,23.9-99
+				C568.5,510.3,568.4,510.4,568.4,510.6L568.4,510.6z"/>
+			<path class="st7" d="M450-34.4c-1.1,7.1-2.9,17.2-6,29c-3.2,12-5.3,20.2-10,30c-2.7,5.7-9.4,19.3-23,32c-16.1,15-35.7,23-37,21
 				c-0.8-1.2,6.4-5.4,14-16c10.4-14.5,13-29.2,14-35c3.3-19.9-0.8-37-2-37c-0.8,0-0.5,7.4-4,22c-0.1,0.3-0.6,2.6-1,4
 				c-4,14.7-17.2,30.8-21,29c-4.4-2.1,4.3-28.7,3-29c-0.7-0.2-2.3,8.3-8,17c-8.2,12.4-22,20.5-25,18c-3.6-3,8.8-21.1,6-23
 				c-1.4-1-5.8,3-12,9c-18.1,17.6-27.3,29.1-29,28c-2.1-1.3,8.6-20.3,6-22c-2.1-1.4-9.1,10.8-24,17c-10.8,4.5-23,4.8-24,2
 				c-1.5-4.1,21-15,20-17c-0.8-1.5-12.9,5-30,7c-15,1.7-29.8-0.6-30-3c-0.3-3.7,32.7-1.7,67-22c2.8-1.6,16.5-9.9,31-25
 				c14.2-14.8,22.9-29.5,28-40l113-1c1.1,2.6,2.8,6.4,5,11c13,27.7,23.3,49.6,39,65c6.8,6.7,17.9,12.1,40,23
 				c24.1,11.9,52.7,25.7,93,36c23.9,6.1,38.8,9.9,60,10c33.1,0.2,59.6-8.8,76-16v142c-2.1,1-5.2,2.4-9,4c-15.7,6.5-28.8,9.4-32,10
-				c-27.3,5.2-55.9-17.8-57-16c-1.2,2,38.7,24,36,31c-1.8,4.7-21.9,1.7-36-2c-7-1.8-29.7-8.3-75-40c-10.9-7.7-13.2-9.8-32-23
+				c-27.3,5.2-55.9-17.8-57-16c-1.2,2,38.7,24,36,31c-1.8,4.7-21.9,1.7-36-2c-7-1.8-29.7-8.2-75-40c-10.9-7.7-13.2-9.8-32-23
 				c-32.5-22.8-42.8-28.3-47-25c-4.3,3.4,2.8,12.3-1,27c-3.8,15-16.6,27-21,25c-6.6-2.9,4.1-38.2,1-39c-2.9-0.8-16.9,29.6-18,32
 				c-3.6,7.9-6.8,15.7-12,16c-3.6,0.2-4.4-3.3-8-4c-8.8-1.6-14.9,18-31,31c-15,12.1-34.3,15.1-36,12c-1.7-3.2,16.7-10.8,33-31
 				c20.6-25.5,24.8-55.1,28-78c3.5-25.1,2.4-47.9,1-48c-0.8-0.1-1.3,6.6-5,19c-3,10.1-3.8,9.4-8,22c-4.6,13.9-4.2,16.4-8,20
@@ -633,8 +633,8 @@
 				c-3.8-2-16,11.4-24,25c-6.2,10.5-4.4,11.8-9,17c-8.1,9.2-15.7,7.4-34,16c-16.2,7.6-14.2,10.8-26,15c-17.8,6.3-37.9,4.6-39,0
 				c-1-4.4,16.2-7.6,36-23c27.2-21.2,40.5-50.9,37-54c-2.3-2-10.6,8-31,15c-8.7,3-22.8,6.5-24,4c-3-6.5,80.9-47.6,77-57
 				c-2.3-5.5-33.7,3.4-35-1c-0.8-2.6,9.8-6.1,23-16c9-6.7,9.3-9,30-31c15.2-16.1,22.9-24.3,30-29c15.1-10,21.1-8,31-15
-				c9.6-6.8,20.6-20.7,24-52L450-34.6L450-34.6z"/>
-			<path class="st7" d="M-218.8,399.5c0.4,0.2-28.6,27.9-31.3,29.7c2.9,5.2,11.6,5.4,13.4,0.4c-4.4,7.5-12.7,12.2-21.9,12.4
+				c9.6-6.8,20.6-20.7,24-52L450-34.4L450-34.4z"/>
+			<path class="st7" d="M-218.8,399.8c0.4,0.2-28.6,27.9-31.3,29.7c2.9,5.2,11.6,5.4,13.4,0.4c-4.4,7.5-12.7,12.2-21.9,12.4
 				c6.6,5.4,17,4.2,20.6-2.3c-5.7,9.7-16.7,15.7-28.7,15.5c-6.5-0.1-13.1-1.8-19.5-1.4c-6.4,0.4-12.9,3.9-13.6,10.2
 				c21.5,5.5,46.2,10.5,61.5-2.3c-0.2,10-7.6,17.3-14.8,23.4c-13,10.8-27,20.5-41.8,29c3.6,1.3,7.7,6.4,4.5,7.5
 				c9.7,2.6,18.9-2,25.6-8.2c6.7-6.1,11.9-13.8,19.3-19c-6.7,20.9,0.9,47.6,18.6,64.9c-4-7.1-6.6-14.8-7.4-22.5
@@ -642,32 +642,32 @@
 				c2.2-1.3,4.3-3.1,4.6-5.7s-3-5.8-5.2-4.6c1.9-1.6,3.8-3.3,5.8-4.9c-14.3-6.3-27.3-17.4-35-31.1c-7.7-13.8-9.9-30.1-4.9-43.3
 				c9,14,19.1,28.9,34,35.7c3.5,1.6,7.5,2.7,10.6,1.1s3.5-6.9,0.2-8.8c3.3,1.6,6.6,3.2,9.9,4.8c-5.3-8.7-14.4-14.5-22.5-20.9
 				s-16-15.1-16.2-24.6c1.2,2.8,3.5,5.3,6.2,6.7c3.4-3.1-0.9-9.1-4.2-13.3c-5.6-7.2-7.1-14.8-7.4-22.9
-				C-218.3,416.7-215.1,401.1-218.8,399.5L-218.8,399.5z"/>
-			<line class="st8" x1="116.9" y1="450.2" x2="127" y2="419.4"/>
-			<line class="st8" x1="129" y1="388.4" x2="131.9" y2="378"/>
+				C-218.3,416.9-215.1,401.3-218.8,399.8L-218.8,399.8z"/>
+			<line class="st8" x1="116.9" y1="450.4" x2="127" y2="419.6"/>
+			<line class="st8" x1="129" y1="388.6" x2="132" y2="378.2"/>
 		</g>
 	</g>
 </g>
 <g>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 111.335 195.721)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 111.3701 195.93)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 234.855 239.9409)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 234.8901 240.15)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 55.175 210.091)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 55.21 210.3)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 18.415 122.6209)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 18.45 122.83)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 103.175 9.331)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 103.21 9.54)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 170.285 30.791)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 170.32 31)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 155.905 207.901)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 155.94 208.11)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 198.0249 184.641)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 198.06 184.85)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 130.705 143.7509)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 130.7401 143.96)" style="overflow:visible;"/>
 	
-		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 258.605 98.781)" style="overflow:visible;"/>
+		<use xlink:href="#Star"  width="3.4" height="3.4" x="-1.7" y="-1.7" transform="matrix(1 0 0 1 258.6401 98.99)" style="overflow:visible;"/>
 </g>
 </svg>
