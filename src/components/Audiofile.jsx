@@ -27,6 +27,7 @@ const useWavesurfer = (containerRef, options) => {
   }
 
 export default function Audiofile(props){
+
     const containerRef = useRef()
     const [isPlaying, setIsPlaying] = useState(false)
     const [currentTime, setCurrentTime] = useState(0)
