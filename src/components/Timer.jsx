@@ -1,62 +1,51 @@
 import { useState, useEffect } from 'react';
-import PropTypes from 'prop-types';
+import ModalRating from './ModalRating';
 import moment from 'moment';
 
-export default function Timer({ startTime }) {
-    const [elapsedTime, setElapsedTime] = useState(0);
-    const [isTimerRunning, setIsTimerRunning] = useState(true);
+const Timer = () => {
+  const [seconds, setSeconds] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [startTime, setStartTime] = useState(moment()); // Opdater startTime ved indlæsning
 
-    useEffect(() => {
-        let intervalId;
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setStartTime(moment()); // Opdater startTime, når modalen lukkes
+  };
 
-        if (isTimerRunning) {
-            intervalId = setInterval(() => {
-            const currentTime = new Date();
-            const elapsed = (currentTime - startTime) / 1000; // Convert milliseconds to seconds
-            setElapsedTime(elapsed);
-            }, 1000); // Update every 1 second
-        }
+  const stopTimer = () => {
+    setIsModalOpen(true);
+  };
 
-        return () => {
-            clearInterval(intervalId);
-        };
-    }, [startTime, isTimerRunning]);
+  useEffect(() => {
+    const timerInterval = setInterval(() => {
+      if (!isModalOpen) {
+        setSeconds((prevSeconds) => prevSeconds + 1);
+      }
+    }, 1000);
 
-    const handleToggleTimer = () => {
-        setIsTimerRunning(!isTimerRunning);
-      };
+    return () => clearInterval(timerInterval);
+}, [isModalOpen]);
 
-    const duration = moment.duration(elapsedTime, 'seconds');
-    const hours = duration.hours();
-    const minutes = duration.minutes();
-    const seconds = duration.seconds();
+  const calculateElapsedTime = () => {
+    const duration = moment.duration(seconds, 'seconds');
+    const formattedTime = `${duration.minutes()} minutes ${duration.seconds()} seconds`;
+    return formattedTime;
+  };
 
-    const formatTimeUnit = (value, unit) => {
-    return value > 0 ? `${value} ${unit}${value === 1 ? '' : 's'}` : '';
-    };
+  return (
+    <div>
+        <div className='flex center'>
+            <h3 className='heading time spacing-bottom' >{calculateElapsedTime()}</h3>
+        </div>    
+      <button className="button btn-big" onClick={stopTimer}>stop tracking</button>
 
-    const formattedTime = [formatTimeUnit(hours, 'hour'), formatTimeUnit(minutes, 'minute'), formatTimeUnit(seconds, 'second')]
-    .filter(Boolean) // Remove empty strings
-    .join(' ');
-
-    Timer.propTypes = {
-        startTime: PropTypes.instanceOf(Date).isRequired,
-        };
-        
-    return (
+      {isModalOpen && (
         <div>
-            <p className='heading heading-small'>{formattedTime}</p>
-            <button onClick={handleToggleTimer}>
-                {isTimerRunning ? 'stop timer' : 'start timer'}
-            </button>
+          <ModalRating isOpen={isModalOpen} onClose={closeModal} elapsedTime={calculateElapsedTime()} />
         </div>
-    );
-}
+      )}
+    </div>
+  );
+};
 
-
-
-
-
-
-
-
+export default Timer;

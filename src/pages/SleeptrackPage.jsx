@@ -31,7 +31,6 @@ export default function SleeptrackPage(){
                     cursorColor={'transparent'}
                     />
 
-
                     <Audiofile
                     textarea={"Ocean waves"}
                     height={30}

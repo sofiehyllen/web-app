@@ -90,6 +90,14 @@
     font-weight: 100;
 }
 
+.time{
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 30px;
+    width: 75vw;
+    padding: 2vw;
+    margin-top: 3vw;
+}
+
 .bodytext{
     font-family: 'poppins-light', sans-serif;
     font-style: italic;
@@ -280,6 +288,7 @@
     #background-dark{
         background-image: url('src/assets/background-dark.svg');
         height: 100vh;
+        padding-top: 10vw;
     }
 
 

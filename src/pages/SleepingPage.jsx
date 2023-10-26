@@ -1,32 +1,26 @@
-
-import { useState } from "react";
-import PostForm from "../components/PostForm";
+import { useEffect, useState } from "react";
 import Timer from "../components/Timer";
-import ModalRating from "../components/ModalRating";
-
+import moment from "moment";
 
 export default function SleepingPage(){
-    const startTime = new Date()
-    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [startTime, setStartTime] = useState(moment());
 
-    const openModal = () => {
-        setIsModalOpen(true);
-    };
-
-    const closeModal = () => {
-        setIsModalOpen(false);
-    };
-
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setStartTime(moment());
+      }, 1000);
+  
+      return () => clearInterval(interval);
+    }, []);
+  
     return(
         <section id="background-dark">
             <section className="page-content" >
                 <h1 className=" titel titel-big">Sleep tight <span className="titel-tab">name</span></h1>
                 <div className="center">
+                    <div className="spacing-bottom"><img className="img-max" src="src/assets/illustration-stop-sleep.svg" alt="star illustration" /></div>
                     <h2 className="bodytext-normal">You have been sleeping for</h2>
                     <Timer startTime={startTime} />
-    
-                    <button onClick={openModal} className="button btn-big">stop tracking</button>
-                    <ModalRating isOpen={isModalOpen} onClose={closeModal} content={<PostForm/>}></ModalRating>
                 </div>
             </section>
         </section>

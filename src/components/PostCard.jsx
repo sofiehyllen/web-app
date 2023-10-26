@@ -4,7 +4,7 @@ import sadIcon from '../assets/smiley2.svg';
 import betweenIcon from '../assets/smiley3.svg';
 import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
-
+import PropTypes from 'prop-types';
 
 const ratingIcons = {
     1: verysadIcon,
@@ -21,12 +21,11 @@ const ratingIcons = {
       // Look at the app.js page to understand this
       navigate(`posts/${post.id}`); // -> like "posts/-NDxg_qx1eWfdkNlZ6oj" 
     }
-  
-    // CSS class card_container styles the card
-    // with translation information.
-    // CSS card is a flexbox that separates the
-    // english and danish terms.
-  
+    
+    PostCard.propTypes = {
+        post: PropTypes.object,
+    }
+    
     return (
         <div className="brickcontainer medium" onClick={handleClick}>
             <span className="ident heading heading-small">{post.date}</span>
@@ -39,7 +38,6 @@ const ratingIcons = {
                 <div className="icon-container">
                     <img src={ratingIcons[post.rt]} alt={`rating-icon-${post.rt}`} className="img-max" />
                 </div>
-                
             </section>
         </div>
     );

@@ -1,11 +1,10 @@
 import { useEffect, useState } from 'react';
-
-//isOpen, onClose, onPublish, sleepDuration
 import verysadIcon from '../assets/smiley1.svg';
 import sadIcon from '../assets/smiley2.svg';
 import betweenIcon from '../assets/smiley3.svg';
 import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
+import PropTypes from 'prop-types';
 
 const ratingIcons = {
     1: verysadIcon,
@@ -17,7 +16,7 @@ const ratingIcons = {
 
 // Component receives callback method "savepost" and translation
 // information (post) if any.
-export default function PostForm({ savePost, post }){
+export default function PostForm({ savePost, post, elapsedTime }){
     // Defines initial states of data values
     const [hours, setHour] = useState("");
     const [rating, setRating] = useState("");
@@ -67,13 +66,19 @@ if (validForm) {
    }
 }
 
-
 // The html form. The form fields have values that is equal to
 // their variabel counterparts values. When the user types in
 // values, the relevant states are updated.
 // If the form is used for updating an existing translation, 
 // the date (transaction id) field is hidden: it cannot be updated.
 // Mortens decision. 
+
+PostForm.propTypes = {
+    savePost: PropTypes.func,
+    post: PropTypes.object,
+    elapsedTime: PropTypes.string,
+  };
+
 return (
     
     <form onSubmit={handleSubmit}>
@@ -91,7 +96,8 @@ return (
         )}
 
         <label>
-            <h2 className='bodytext-normal'>You have slept for</h2><input type="text" name="hours" value={hours} onChange={e => setHour(e.target.value)} />
+            <h2 className='bodytext-normal'>You have slept for</h2>
+            <h3 className='heading'>{elapsedTime}</h3>
         </label>
 
         <label>
