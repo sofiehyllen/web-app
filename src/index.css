@@ -70,6 +70,10 @@
     font-size: 17vw;
 }
 
+.titel-small {
+    font-size: 8vw;
+}
+
 .heading{
     font-family: "mundial", sans-serif;
     font-weight: 100;
@@ -465,6 +469,26 @@
     margin-left: 110px;
     margin-bottom: 90px;
     color: red;
+}
+
+/*---Dialogboks til brugernavn---*/
+
+.dialog {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 170px;
+    border-radius: 20px;
+    color: var(--titel-text);
+    background-color: var(--purple);
+    border: 0;
+    padding: 50px 40px;
+}
+
+.text {
+    color: var(--titel-text);
+    background-color: var(--purple);
+    margin-left: 15px;
+    border: solid 1px var(--dark-purple);
 }
 
 
