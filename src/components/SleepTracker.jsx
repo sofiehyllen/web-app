@@ -4,7 +4,7 @@ import SleepSummaryCard from './SleepSummaryCard';
 import RatingModal from './RatingModal';
 
 
-function SleepTracker() {
+export default function SleepTracker() {
   const [isSleeping, setIsSleeping] = useState(false);
   const [sleepStartTime, setSleepStartTime] = useState(null);
   const [sleepRating, setSleepRating] = useState(0);
@@ -86,4 +86,3 @@ function SleepTracker() {
   );
 }
 
-export default SleepTracker;
