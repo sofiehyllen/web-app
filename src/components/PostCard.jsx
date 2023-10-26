@@ -15,8 +15,6 @@ const ratingIcons = {
   };
 
   export default function PostCard({post}) {
-
-
     const navigate = useNavigate();
   
     function handleClick() {

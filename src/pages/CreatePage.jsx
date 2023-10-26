@@ -1,4 +1,5 @@
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import PostForm from "../components/PostForm";
 
 export default function CreatePage() {
     const navigate = useNavigate();
@@ -25,8 +26,9 @@ export default function CreatePage() {
     // the new translation.
     return (
        <section>
-            <div>
-                <Link to="/sleepingpage" className="button btn-big">start tracking</Link>
+            <div> 
+            <h1>Add New Sleepcycle</h1>
+                <PostForm savePost={createPost} />
             </div>
        </section>
     );

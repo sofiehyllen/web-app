@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 export default function UserPage(){
     const [user, setUser] = useState(
         {Firstname: '', Lastname: '', Email: '', Hoursofsleep: ''}
@@ -34,7 +33,7 @@ export default function UserPage(){
         
         else
         {
-            alert("Error: Information not saved")
+            alert("Error: Unable to save information")
         }
     }
 

@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import PostCard from "../components/Postcard";
+import PostCard from "./PostCard";
 
-export default function HomePage() {
+
+export default function RatingHistory() {
   // "posts" and "isposts" have hooks. Posts holds the
   // data from the fetch GET. isPosts is used to check
   // if translations exists in the database. If not, an

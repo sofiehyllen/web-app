@@ -1,5 +1,5 @@
 import Graph from "../components/Graph";
-import HomePage from "./HomePage2";
+import RatingHistory from "../components/RatingHistory";
 
 export default function StatisticsPage(){
 
@@ -27,7 +27,7 @@ export default function StatisticsPage(){
             <div>
                 <h2 className="heading">History</h2>
                 <div className="spacing-top">
-                    <HomePage/>
+                    <RatingHistory/>
                 </div>
             </div>
         </section>

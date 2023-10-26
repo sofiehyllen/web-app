@@ -21,6 +21,7 @@ export default function PostForm({ savePost, post }){
     // Defines initial states of data values
     const [hours, setHour] = useState("");
     const [rating, setRating] = useState("");
+    const [date, setDate] = useState(""); // date = transaction id
     const [errorMessage, setErrorMessage] = useState("");
 
 useEffect(() => {
@@ -30,8 +31,18 @@ useEffect(() => {
     if (post) {
         setHour(post.hs);
         setRating(post.rt);
-    } 
+        setDate(post.date);
+    } else {
+        // Sæt standardværdien for date til dagens dato
+        const today = new Date().toISOString().split('T')[0];
+        setDate(today);
+    }
 }, [post]);
+
+const formatDate = (inputDate) => {
+    const options = { day: 'numeric', month: 'long' };
+    return new Date(inputDate).toLocaleDateString('en-US', options);
+};
 
 const handleRatingClick = (selectedOption) => {
     setRating(selectedOption)};
@@ -42,15 +53,16 @@ async function handleSubmit(e) {
     const formData = {
         hs: hours,
         rt: rating,
+        date: date
     }
 
 // Check to see if all fields were filled. If not, show an 
 // error message. If everything is ok - call callback method 
 // defined by "savePost"
-   const validForm = formData.hs && formData.rt;
-   if (validForm) {
-    savePost(formData);
-   } else {
+const validForm = formData.hs && formData.rt && formData.date;
+if (validForm) {
+ savePost(formData);
+} else {
     setErrorMessage("You forgot to rate your sleep!");
    }
 }
@@ -63,8 +75,20 @@ async function handleSubmit(e) {
 // the date (transaction id) field is hidden: it cannot be updated.
 // Mortens decision. 
 return (
+    
     <form onSubmit={handleSubmit}>
         <h1 className="titel">Goodmorning <span className="titel-tab">name</span></h1>
+
+        {post ? (
+            <div>{formatDate(date)}</div> 
+        )
+         : 
+        (
+       <label> 
+            <h3 className='bodytext-normal'>Todays date is</h3>
+            <div className='heading'>{formatDate(date)}</div>        
+            </label>
+        )}
 
         <label>
             <h2 className='bodytext-normal'>You have slept for</h2><input type="text" name="hours" value={hours} onChange={e => setHour(e.target.value)} />

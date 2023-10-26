@@ -28,6 +28,15 @@
         color: var(--titel-text);
     }
 
+    body{
+        background-image: url("/src/assets/background-default.svg");
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh; /* Minimums højde af viewportens højde */
+        display: flex;
+        flex-direction: column;
+    }
+
     .flex{
         display: flex;
         justify-content: space-between;
@@ -108,15 +117,10 @@
 }
 
 .page-content{
-    background-image: url("/src/assets/background-default.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     width: 100%;
     height: 100%;
     padding: 7vw;
-    position: absolute;
-    bottom: 0;
+    margin-bottom: 10vw;
 }
 
 .spacing-bottom{
@@ -176,7 +180,7 @@
 
 /*---Navigation---*/
     nav{
-        position: absolute;
+        position: fixed;
         bottom: 0;
         width: 100%;
         display: flex;
@@ -275,6 +279,7 @@
     
     #background-dark{
         background-image: url('src/assets/background-dark.svg');
+        height: 100vh;
     }
 
 
