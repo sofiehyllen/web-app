@@ -32,7 +32,7 @@ return (
     <div className="modal" onClick={onClose}>
         <div className='gradient-wrapper'>
         <div className="modal-content" onClick={handleContainerClick}>
-            <h1 className='titel titel-small spacing-bottom'>  Goodmorning <br /> <span className='titel-tab'>name</span></h1>
+            <h1 className='titel spacing-bottom'>  Goodmorning <br /> <span className='titel-tab'>{brugernavn}</span></h1>
             <div>
                 <h5 className='bodytext-normal' >You have slept for</h5>
                 <p className='heading spacing-bottom'>{sleepDuration.toFixed(2)}</p>

@@ -1,6 +1,20 @@
+import { useEffect, useState } from "react";
 import Graph from "../components/Graph";
 
 export default function StatisticsPage(){
+
+    const [brugernavn, setBrugernavn] = useState("");
+
+    useEffect(() => {
+        const temp = localStorage.getItem("brugernavn");
+
+        if (temp) {
+            setBrugernavn(temp)
+        } else {
+            setBrugernavn("you");
+        }
+
+    },[])
 
     return(
         <section className="page-content">
@@ -20,7 +34,7 @@ export default function StatisticsPage(){
                     That is <span className="heavy-text">34% </span>better than last week.</p> 
                 </div>    
                 
-                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job Sarah!</p>
+                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job {brugernavn} !</p>
             </div>
 
             <div>
