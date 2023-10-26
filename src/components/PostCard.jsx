@@ -5,6 +5,7 @@ import betweenIcon from '../assets/smiley3.svg';
 import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
 
+
 const ratingIcons = {
     1: verysadIcon,
     2: sadIcon,
@@ -14,6 +15,8 @@ const ratingIcons = {
   };
 
   export default function PostCard({post}) {
+
+
     const navigate = useNavigate();
   
     function handleClick() {

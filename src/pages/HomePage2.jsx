@@ -43,7 +43,8 @@ export default function HomePage() {
           ))}
         </div>
       ) : (
-        <p>Nothing to show</p>
+        <p className="bodytext">You have no recorded sleep history. <br />
+        Start your first sleeptracking to see the statistics of your sleep here. </p>
       )}
     </article>
   );

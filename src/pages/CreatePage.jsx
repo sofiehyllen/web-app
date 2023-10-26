@@ -1,5 +1,4 @@
-import { useNavigate } from "react-router-dom";
-import PostForm from '../components/PostForm';
+import { Link, useNavigate } from "react-router-dom";
 
 export default function CreatePage() {
     const navigate = useNavigate();
@@ -25,13 +24,10 @@ export default function CreatePage() {
     // name of the method that creates
     // the new translation.
     return (
-       <section className="modal">
-        <div className="gradient-wrapper">
-            <div className="modal-content">
-                <h1 className="titel">Goodmorning <span className="titel-tab">name</span></h1>
-                <PostForm savePost={createPost} />
+       <section>
+            <div>
+                <Link to="/sleepingpage" className="button btn-big">start tracking</Link>
             </div>
-        </div>
        </section>
     );
 }

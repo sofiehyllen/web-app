@@ -360,19 +360,20 @@
     .modal-content h1{
         text-align: left;
         font-size: 11vw;
-        margin-bottom: 15vw;
+        margin-bottom: 5vw;
         padding-top: 3vw;
         padding-left: 1vw;
     }
 
     .modal-content h2{
-        padding-top: 5vw;
+        padding-top: 15vw;
         padding-bottom: 1.5vw;
     }
 
     .icon-container{
         display: flex;
         justify-content: center;
+        margin-bottom: 15vw;
     }
     
     .icon-container img {

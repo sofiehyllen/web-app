@@ -21,9 +21,7 @@ export default function PostForm({ savePost, post }){
     // Defines initial states of data values
     const [hours, setHour] = useState("");
     const [rating, setRating] = useState("");
-    const [date, setDate] = useState(""); // date = transaction id
     const [errorMessage, setErrorMessage] = useState("");
-
 
 useEffect(() => {
     // If translation information is present, change states
@@ -32,7 +30,6 @@ useEffect(() => {
     if (post) {
         setHour(post.hs);
         setRating(post.rt);
-        setDate(post.date);
     } 
 }, [post]);
 
@@ -45,17 +42,16 @@ async function handleSubmit(e) {
     const formData = {
         hs: hours,
         rt: rating,
-        date: date
     }
 
 // Check to see if all fields were filled. If not, show an 
 // error message. If everything is ok - call callback method 
 // defined by "savePost"
-   const validForm = formData.hs && formData.rt && formData.date;
+   const validForm = formData.hs && formData.rt;
    if (validForm) {
     savePost(formData);
    } else {
-    setErrorMessage("Please, fill in all fields.");
+    setErrorMessage("You forgot to rate your sleep!");
    }
 }
 
@@ -68,22 +64,11 @@ async function handleSubmit(e) {
 // Mortens decision. 
 return (
     <form onSubmit={handleSubmit}>
-         {post ? (
-         <input type="hidden" name="date" value={date} />
-        )
-         : 
-        (
-       <label>
-            Date   
-            <input type="date" name="date" value={date} placeholder="date" onChange={e => setDate(e.target.value)}/>
-        </label>
-        )}
-     
-        <label>
-            Hours<input type="text" name="hours" value={hours} onChange={e => setHour(e.target.value)} />
-        </label>
+        <h1 className="titel">Goodmorning <span className="titel-tab">name</span></h1>
 
-        
+        <label>
+            <h2 className='bodytext-normal'>You have slept for</h2><input type="text" name="hours" value={hours} onChange={e => setHour(e.target.value)} />
+        </label>
 
         <label>
             <h2 className='heading'>How did you sleep?</h2>
@@ -98,9 +83,8 @@ return (
             ))}
             </div>
         </label>
-        <p className="text-error">{errorMessage}</p>
+        <p className="heading heading-small">{errorMessage}</p>
         <button type="submit" className='button btn-big'>rate sleep</button>
      </form>
- );
-
+    );
 }

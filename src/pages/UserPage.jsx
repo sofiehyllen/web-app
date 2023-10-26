@@ -25,6 +25,7 @@ export default function UserPage(){
             })
         };
 
+        localStorage.setItem("brugernavn", Firstname)
         const res = await fetch('https://web-app-3d8f8-default-rtdb.europe-west1.firebasedatabase.app/UserData.json', options)
         if(res)
         {
@@ -36,7 +37,7 @@ export default function UserPage(){
             alert("Error: Information not saved")
         }
     }
-    
+
     return(
         <section className="page-content">
             <div>
