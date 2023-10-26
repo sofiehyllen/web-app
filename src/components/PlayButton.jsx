@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import oceanWavesAudio from '../assets/audio-ocean-waves.mp3'; // Update with the correct path to your audio file
 
-const PlayButton = () => {
-  const [audio, setAudio] = useState(new Audio(oceanWavesAudio));
+const PlayButton = ({ audioUrl }) => {
+  const [audio, setAudio] = useState(new Audio(audioUrl));
   const [isPlaying, setIsPlaying] = useState(false);
 
   const handlePlay = () => {
     if (isPlaying) {
       audio.pause();
+      audio.currentTime = 0;
     } else {
       audio.play();
     }
@@ -15,7 +15,7 @@ const PlayButton = () => {
   };
 
   return (
-    <div className=''
+    <div
       style={{
         width: 60,
         height: 60,
@@ -27,7 +27,6 @@ const PlayButton = () => {
         cursor: 'pointer',
         color: 'white',
         fontSize: '25px',
-        
       }}
       onClick={handlePlay}
     >
