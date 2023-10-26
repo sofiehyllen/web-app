@@ -18,12 +18,16 @@ export default function ToolPage(){
             <section className="spacing-bottom">
                 <p className="heading">In the evening </p>
                 <div className="flex spacing-top">
-                    <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-1">
-                        <p className="heading">Meditation</p>
-                    </div>
-                    <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-2">
-                        <p className="heading">Exercises</p>
-                    </div>
+                    <Link to="/Meditation">
+                        <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-1">
+                            <p className="heading">Meditation</p>
+                        </div>
+                    </Link>
+                    <Link to="/Exercises">
+                        <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-2">
+                            <p className="heading">Exercises</p>
+                        </div>
+                    </Link>
                 </div>
             </section>
 

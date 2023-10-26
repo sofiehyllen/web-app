@@ -11,6 +11,8 @@ import ToolPage from './pages/ToolPage';
 import UserPage from './pages/UserPage';
 import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
+import Exercises from './pages/Exercises'
+import Meditation from './pages/Meditation'
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
                 <Route exact path="/userpage" element={<UserPage/>} />
                 <Route exact path="/sleepingpage" element={<SleepingPage/>} />
                 <Route exact path="/forestpage" element={<ForestPage/>} />
+                <Route exact path="/exercises" element={<Exercises/>} />
+                <Route exact path="/meditation" element={<Meditation/>} />
             </Routes> 
         </BrowserRouter>
         
