@@ -225,12 +225,41 @@
     }
 
 /*---ID til baggrunde til hver enkelt lilla container---*/
-    #brick-bg-home-1{
-        background-image: url('src/assets/bg-large-waves.svg');
+    .brick-bg{
         background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
     }
+
+    .opacity{
+        background-color: rgba(0, 0, 0, 0.3); /*  Giver baggrunden 30% opacity, ved at lægge sort farve ovenpå */
+        background-blend-mode: multiply;    
+    }    
+
+    #brick-bg-home-1{background-image: url('src/assets/home-bg1.svg');}
+    #brick-bg-home-2{background-image: url('src/assets/home-bg2.svg');}
+    #brick-bg-home-3{background-image: url('src/assets/home-bg3.svg');}
+
+    #brick-bg-menu-1{background-image: url('src/assets/menu-waves2.svg');}
+    #brick-bg-menu-2{background-image: url('src/assets/menu-waves1.svg');}
+    #brick-bg-menu-3{background-image: url('src/assets/menu-waves3.svg');}
+
+    #brick-bg-sounds-1{background-image: url('src/assets/forest.svg');}
+    #brick-bg-sounds-2{background-image: url('src/assets/Rain.svg');}
+    #brick-bg-sounds-3{background-image: url('src/assets/Ocean.svg');}
+
+    #brick-bg-tools-1{background-image: url('src/assets/tool-bg1.svg');}
+    #brick-bg-tools-2{background-image: url('src/assets/tool-bg2.svg');}
+    #brick-bg-tools-3{background-image: url('src/assets/tool-bg3.svg');}
+
+    #brick-bg-rainforest-1{background-image: url('src/assets/rainforest-bg1.svg');}
+    #brick-bg-rainforest-2{background-image: url('src/assets/rainforest-bg2.svg');}
+    #brick-bg-forest-1{background-image: url('src/assets/forest-bg4.svg');}
+    #brick-bg-forest-2{background-image: url('src/assets/forest-bg2.svg');}
+    #brick-bg-forest-3{background-image: url('src/assets/forest-bg3.svg');}
+    #brick-bg-forest-4{background-image: url('src/assets/forest-bg1.svg');}
+
+    
 
 /*ID til margin på hver illustration*/
     #illustration-home{
@@ -427,6 +456,15 @@
     padding: 0;
     text-align: center;
 }
+
+.hearticon{
+    position: absolute;
+    margin-left: 110px;
+    margin-bottom: 90px;
+    color: red;
+}
+
+
 
 
 

@@ -17,7 +17,7 @@ export default function MenuPage(){
             </div>
 
             <Link to ="/soundpage">
-                <div className="brickcontainer medium">
+                <div className="brickcontainer medium brick-bg" id="brick-bg-menu-1">
                     <h2 className="heading">Calming Sounds</h2>
                     <p className="bodytext">Fall asleep to one of many <br />peaceful sleeping sounds</p>
                 </div>
@@ -25,7 +25,7 @@ export default function MenuPage(){
 
 
             <Link to="/statisticspage">
-                <div className="brickcontainer medium">
+                <div className="brickcontainer medium brick-bg" id="brick-bg-menu-2">
                     <h2 className="heading">Your Statistics</h2>
                     <p className="bodytext">Explore the world of your <br />personal sleep trackings</p>
                 </div>
@@ -33,7 +33,7 @@ export default function MenuPage(){
 
 
             <Link to="/toolpage">
-                <div className="brickcontainer medium">
+                <div className="brickcontainer medium brick-bg" id="brick-bg-menu-3">
                     <h2 className="heading">Tips & Tools</h2>
                     <p className="bodytext">Elevate your sleep experience <br /> with our soothing tools</p>
                 </div>

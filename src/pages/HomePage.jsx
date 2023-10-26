@@ -11,7 +11,7 @@ export default function HomePage(){
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
 
-            <div className="brickcontainer large rightalign-bottom" id="brick-bg-home-1">
+            <div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1">
                 <div>
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
@@ -21,14 +21,14 @@ export default function HomePage(){
 
 
             <div className="flex">
-                <div className="brickcontainer">
+                <div className="brickcontainer brick-bg" id="brick-bg-home-2">
                     <Link to="/soundpage">
                         <h2 className="heading">Sounds</h2>
                         <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
                     </Link>
                 </div>
 
-                <div className="brickcontainer">
+                <div className="brickcontainer brick-bg" id="brick-bg-home-3">
                     <Link to="/statisticspage">
                         <h2 className="heading">Statistics</h2>
                         <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>

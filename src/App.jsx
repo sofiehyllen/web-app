@@ -10,6 +10,7 @@ import StatisticsPage from './pages/StatisticsPage';
 import ToolPage from './pages/ToolPage';
 import UserPage from './pages/UserPage';
 import SleepingPage from './pages/SleepingPage';
+import ForestPage from './pages/ForestPage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
                 <Route exact path="/statisticspage" element={<StatisticsPage/>} />
                 <Route exact path="/userpage" element={<UserPage/>} />
                 <Route exact path="/sleepingpage" element={<SleepingPage/>} />
+                <Route exact path="/forestpage" element={<ForestPage/>} />
             </Routes> 
         </BrowserRouter>
         
