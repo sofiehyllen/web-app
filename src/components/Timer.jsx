@@ -1,31 +1,52 @@
-import { useEffect, useState } from 'react';
-import PropTypes from 'prop-types';
+import { useState, useEffect } from 'react';
+import moment from 'moment';
+import RatingModal from './RatingModal';
 
-function Timer({ startTime }) {
-  const [elapsedTime, setElapsedTime] = useState(0);
 
-  Timer.propTypes = {
-    startTime: PropTypes.number.isRequired,
+const Timer = () => {
+  const [seconds, setSeconds] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [mortenstid, setMortenstid] = useState(""); 
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
+  const stopTimer = () => {
+    setIsModalOpen(true);
+    setMortenstid(calculateElapsedTime()); // Morten har indsat dette
   };
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      const currentTime = new Date();
-      
-      const elapsed = (currentTime - startTime) / 1000; // Convert milliseconds to seconds
-      setElapsedTime(elapsed);
-    }, 1000); // Update every 1 second
+    const timerInterval = setInterval(() => {
+      if (!isModalOpen) {
+        setSeconds((prevSeconds) => prevSeconds + 1);
+      }
+    }, 1000);
 
-    return () => {
-      clearInterval(intervalId);
-    };
-  }, [startTime]);
+    return () => clearInterval(timerInterval);
+  }, [isModalOpen]);
+
+  const calculateElapsedTime = () => {
+    const duration = moment.duration(seconds, 'seconds');
+    const formattedTime = moment.utc(duration.asMilliseconds()).format('HH:mm:ss');
+    return formattedTime;
+  };
 
   return (
     <div>
-      <p className='heading heading-small'> {elapsedTime.toFixed(0)} seconds</p>
+      <div className='flex center'>
+        <h3 className='heading time spacing-bottom' >{calculateElapsedTime()}</h3>
+      </div>
+      <button className="button btn-big" onClick={stopTimer}>stop tracking</button>
+
+      {isModalOpen && (
+        <div>
+          <RatingModal isOpen={isModalOpen} onClose={closeModal} elapsedTime={mortenstid} />
+        </div>
+      )}
     </div>
   );
-}
+};
 
 export default Timer;
