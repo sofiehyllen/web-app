@@ -25,7 +25,7 @@ export default function HomePage(){
     return(
         <section className="page-content">
 
-            <h6 id="homedate" className="heading heading-small">{currentDate}</h6>
+            <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
                 <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn}</span></h1>
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
