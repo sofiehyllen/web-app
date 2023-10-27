@@ -72,7 +72,7 @@ export default function RatingForm({ savePost, elapsedTime }) {
 
             <label>
                 <h3 className='bodytext-normal'>Todays date is</h3>
-                <div className='heading'>{formatDate(date)}</div>
+                <div className='heading heading-small'>{formatDate(date)}</div>
             </label>
 
             <label>

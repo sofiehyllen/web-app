@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
-import RatingCard from "./SleepSummaryCard";
-
-
-
+import RatingCard from "./RatingCard";
 
 export default function RatingHistory() {
   const [posts, setPosts] = useState([]);
