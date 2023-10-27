@@ -1,18 +1,8 @@
-import { useEffect, useState } from "react";
 import Graph from "../components/Graph";
+import RatingHistory from "../components/RatingHistory";
+
 
 export default function StatisticsPage(){
-
-    const [brugernavn, setBrugernavn] = useState("");
-
-    useEffect(() => {
-        const temp = localStorage.getItem("brugernavn");
-
-        if (temp) {
-            setBrugernavn(temp)
-        }
-
-    },[])
 
     return(
         <section className="page-content">
@@ -32,13 +22,13 @@ export default function StatisticsPage(){
                     That is <span className="heavy-text">34% </span>better than last week.</p> 
                 </div>    
                 
-                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job {brugernavn} !</p>
+                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job Sarah!</p>
             </div>
 
             <div>
                 <h2 className="heading">History</h2>
-                <div>
-                    
+                <div className="spacing-top">
+                    <RatingHistory/>
                 </div>
             </div>
         </section>
