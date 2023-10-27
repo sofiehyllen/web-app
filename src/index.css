@@ -461,10 +461,6 @@
         font-size: 150%;
     }
 
-    .username{
-        text-transform: capitalize;
-    }
-
     .form-input{
         border-radius: 50px;
         border: none;
