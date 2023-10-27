@@ -1,23 +1,22 @@
 import Audiofile from "../components/Audiofile";
-import SleepTracker from '../components/Sleeptracker'
 import { Link } from "react-router-dom";
-
 
 export default function SleeptrackPage(){
    // const [count, setCount] = useState(0)
 
     return(
         <section className="page-content">
+
             <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
             <div id="illustration-startsleep"><img className="img-max" src="src/assets/illustration-start-sleep.svg" alt="moon illustration sleep" /></div>
 
             <div className="center spacing-bottom">
-                <SleepTracker /> 
+                <Link to="/sleepingpage" className="button btn-big">start tracking</Link>
             </div>
             
             <div>
                 <h2 className="heading">Your favourite sounds</h2>
-                <div className="rightalign-bottom spacing-top">                  
+                <div className="rightalign-bottom spacing-top">
                     <Audiofile
                     textarea={"Quiet rain"}
                     height={30}
@@ -31,7 +30,6 @@ export default function SleeptrackPage(){
                     dragToSeek={true}
                     cursorColor={'transparent'}
                     />
-
 
                     <Audiofile
                     textarea={"Ocean waves"}
