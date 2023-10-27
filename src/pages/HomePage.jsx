@@ -1,21 +1,14 @@
+
+import moment from "moment/moment";
+
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 export default function HomePage(){
-
-    const [currentDate, setCurrentDate] = useState('');
-
-    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-    useEffect(() => {
-        var date = new Date().getDate() // current date
-        let month = new Date().getMonth() +1 // curren month
-        setCurrentDate(
-            date + ' ' + month 
-        )
-    }, [])
+    const currentDate = moment();
+    const homepageDate = currentDate.format('MMMM DD')
 
     const [brugernavn, setBrugernavn] = useState("");
 
@@ -31,6 +24,7 @@ export default function HomePage(){
 
     return(
         <section className="page-content">
+
             <h6 id="homedate" className="heading heading-small">{currentDate}</h6>
                 <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn}</span></h1>
             
@@ -41,7 +35,11 @@ export default function HomePage(){
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
                 </div>
-                <Link className="button btn-small" to="/sleeptrackpage">go to sleep</Link>
+                
+                    <Link className="button btn-small" to="/sleeptrackpage">
+                        go to sleep <span className="buttonshine"/>
+                    </Link>
+                
             </div>
 
 

@@ -77,10 +77,15 @@
 
 .titel-big{
     font-size: 17vw;
+
 }
 
 .titel-small {
     font-size: 8vw;
+}
+
+.titel-tab{
+    padding-left: 15vw;
 }
 
 .heading{
@@ -110,15 +115,17 @@
     line-height: 5vw;
 }
 
+.titelcolor{
+    color: var(--titel-text);
+}
+
 .heavy-text{
     color: var(--titel-text);
     font-size: 4.5vw;
     font-weight: 900;
 }
 
-.titel-tab{
-    padding-left: 15vw;
-}
+
 
 .page-content{
     background-image: url("/src/assets/background-default.svg");
@@ -153,6 +160,18 @@
         width: fit-content;
         position: relative;
         border: none;
+        overflow: hidden;
+    }
+
+    .buttonshine{
+        background-image: url("src/assets/button-shine.svg");
+        background-repeat: no-repeat;
+        background-position: -5px;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
 
     .button a{
@@ -335,6 +354,8 @@
     }
 
 
+
+
 /*--Afspiller til lydfiler--*/
     .audio-container{
         display: flex;
@@ -464,18 +485,17 @@
     }
 
     .form-input{
-        border-radius: 20px;
+        border-radius: 50px;
         border: none;
-        height: 8vw;
+        height: 12vw;
         width: 40vw;
         margin-top: 1vw;
-        background-color: rgba(240, 238, 230, .2);
+        background-color: rgba(240, 238, 230, .1);
         color: var(--titel-text);
-        padding-left: 3vw;
+        padding-left: 4vw;
         text-transform: capitalize;
         margin-bottom: 2vw;
     }
-
 
     #email{
         width: 100%;
@@ -483,7 +503,7 @@
     }
 
     #hoursofsleep{
-        width: 15vw;
+        width: 20vw;
         padding: 0;
         text-align: center;
     }
