@@ -11,8 +11,10 @@ import ToolPage from './pages/ToolPage';
 import UserPage from './pages/UserPage';
 import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
-import Exercises from './pages/Exercises'
+import Exercises from './pages/ExercisesPage'
 import Meditation from './pages/Meditation'
+import UsernameModal from './pages/UsernameModal';
+
 
 function App() {
   return (
@@ -32,6 +34,7 @@ function App() {
                 <Route exact path="/forestpage" element={<ForestPage/>} />
                 <Route exact path="/exercises" element={<Exercises/>} />
                 <Route exact path="/meditation" element={<Meditation/>} />
+                <Route exact path="/usernamemodal" element={<UsernameModal/>} />
             </Routes> 
         </BrowserRouter>
         
