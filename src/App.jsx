@@ -1,5 +1,4 @@
 
-import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
@@ -13,7 +12,7 @@ import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
 import Exercises from './pages/ExercisesPage'
 import Meditation from './pages/Meditation'
-import UsernameModal from './pages/UsernameModal';
+import UserModal from './pages/UserModal';
 
 
 function App() {
@@ -34,7 +33,7 @@ function App() {
                 <Route exact path="/forestpage" element={<ForestPage/>} />
                 <Route exact path="/exercises" element={<Exercises/>} />
                 <Route exact path="/meditation" element={<Meditation/>} />
-                <Route exact path="/usernamemodal" element={<UsernameModal/>} />
+                <Route exact path="/usermodal" element={<UserModal/>} />
             </Routes> 
         </BrowserRouter>
         

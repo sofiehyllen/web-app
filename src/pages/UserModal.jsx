@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
-export default function UsernameModal() {
+export default function UserModal() {
 
   const [brugernavn, setBrugernavn] = useState("");
   const [showModal, setShowModal] = useState(true);
