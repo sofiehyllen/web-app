@@ -480,17 +480,13 @@
     margin-top: 170px;
     border-radius: 20px;
     color: var(--titel-text);
-    background-color: var(--purple);
+    background-color: var(--dark-purple);
     border: 0;
     padding: 50px 40px;
 }
 
-.text {
-    color: var(--titel-text);
-    background-color: var(--purple);
-    margin-left: 15px;
-    border: solid 1px var(--dark-purple);
-}
+
+
 
 
 
