@@ -13,6 +13,7 @@ import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
 import Exercises from './pages/Exercises'
 import Meditation from './pages/Meditation'
+import Modal from './pages/Modal'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <BrowserRouter>
             <Navigation/>
             <Routes> 
+                <Route exact path="/modal" element={<Modal/>} /> 
                 <Route exact path="/" element={<HomePage/>} /> 
                 <Route exact path="/homepage" element={<HomePage/>} /> 
                 <Route exact path="/sleeptrackpage" element={<SleeptrackPage/>} /> 

@@ -10,8 +10,6 @@ export default function StatisticsPage(){
 
         if (temp) {
             setBrugernavn(temp)
-        } else {
-            setBrugernavn("you");
         }
 
     },[])
