@@ -19,12 +19,12 @@ export default function ToolPage(){
                 <p className="heading">In the evening </p>
                 <div className="flex spacing-top">
                     <Link to="/Meditation">
-                        <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-1">
+                        <div className="brickcontainer brick-bg" id="brick-bg-tools-1">
                             <p className="heading">Meditation</p>
                         </div>
                     </Link>
                     <Link to="/Exercises">
-                        <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-2">
+                        <div className="brickcontainer brick-bg" id="brick-bg-tools-2">
                             <p className="heading">Exercises</p>
                         </div>
                     </Link>
@@ -32,11 +32,11 @@ export default function ToolPage(){
             </section>
 
 {/* "TIP OF THE DAY" SECTION */}
-            <section className="spacing-bottom">
+            <section className="spacing-bottom center-bg" id="tip-bg">
                 <p className="heading"> Tip of the day </p>
-                <div className="rightalign-bottom">
+                <div className="rightalign-bottom" >
                     <div className="spacing-top">
-                        <p className="bodytext center"> 
+                        <p className="bodytext center spacing-bottom" > 
                             Create a calming bedtime routine to signal your body 
                             that it&apos;s time to wind down. This can include activities 
                             like reading or gentle stretching. A consistent routine 

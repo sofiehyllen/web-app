@@ -21,7 +21,7 @@ export default function Meditation() {
                 height={30}
                 waveColor="rgba(96, 92, 110)"
                 progressColor="rgba(240, 238, 230)"
-                url={'src/assets/audio-rain.mp3'}
+                url={'src/assets/session1.mp3'}
                 barHeight={1.5}
                 barWidth={3}
                 barGap={4}
@@ -35,7 +35,7 @@ export default function Meditation() {
                 height={30}
                 waveColor="rgba(96, 92, 110)"
                 progressColor="rgba(240, 238, 230, 1)"
-                url={'src/assets/audio-ocean-waves.mp3'}
+                url={'src/assets/session2.mp3'}
                 barHeight={2}
                 barWidth={3}
                 barGap={4}
@@ -49,7 +49,7 @@ export default function Meditation() {
                 height={30}
                 waveColor="rgba(96, 92, 110)"
                 progressColor="rgba(240, 238, 230)"
-                url={'src/assets/audio-rain.mp3'}
+                url={'src/assets/session3.mp3'}
                 barHeight={1.5}
                 barWidth={3}
                 barGap={4}
@@ -63,7 +63,7 @@ export default function Meditation() {
                 height={30}
                 waveColor="rgba(96, 92, 110)"
                 progressColor="rgba(240, 238, 230, 1)"
-                url={'src/assets/audio-ocean-waves.mp3'}
+                url={'src/assets/session4.mp3'}
                 barHeight={2}
                 barWidth={3}
                 barGap={4}
@@ -80,10 +80,10 @@ export default function Meditation() {
         <section>
             <p className="heading">Meditation Exersices</p>
             <div className="flex spacing-top">
-                <div className="brickcontainer leftalign-bottom brick-bg" >
+                <div className="brickcontainer brick-bg" >
                     <p className="heading">Relaxation</p>
                 </div>
-                <div className="brickcontainer leftalign-bottom brick-bg" >
+                <div className="brickcontainer brick-bg" >
                     <p className="heading">Mindfulness</p>
                 </div>
             </div>

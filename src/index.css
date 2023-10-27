@@ -8,9 +8,9 @@
     :root{
         --darkest-purple: rgba(28, 23, 47, 1); 
         --darker-purple: rgba(36, 30, 60, 1);
-        --dark-purple: rgba(48, 39, 79, 1);
-        --purple: rgba(67, 55, 112, 1);
-        --light-purple: rgba(84, 69, 140, 1);
+        --dark-purple: rgb(47, 39, 79);
+        --purple: rgb(68, 56, 112);
+        --light-purple: rgb(84, 69, 140);
         --peach: rgba(231, 115, 96, 1);
         --titel-text:rgba(240, 238, 230, 1);
         --body-text:rgba(240, 238, 230, 0.7);
@@ -23,6 +23,14 @@
         text-decoration: none;
         box-sizing: border-box;
         font-weight: 100;
+    }
+
+    .relative{
+        position: relative;
+    }
+
+    .absolute{
+        position: absolute;
     }
 
     body, a{
@@ -268,6 +276,13 @@
         background-blend-mode: multiply;    
     }    
 
+    #tip-bg{
+        background-image: url('src/assets/tip-bg.svg');
+        background-size: 95%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     #brick-bg-home-1{background-image: url('src/assets/home-bg1.svg');}
     #brick-bg-home-2{background-image: url('src/assets/home-bg2.svg');}
     #brick-bg-home-3{background-image: url('src/assets/home-bg3.svg');}
@@ -290,6 +305,14 @@
     #brick-bg-forest-2{background-image: url('src/assets/forest-bg2.svg');}
     #brick-bg-forest-3{background-image: url('src/assets/forest-bg3.svg');}
     #brick-bg-forest-4{background-image: url('src/assets/forest-bg1.svg');}
+
+    .menu-icons{
+        right: 0;
+        top: 0;
+        padding-top: 14px;
+    }
+
+    
 
     
 
@@ -485,12 +508,28 @@
         text-align: center;
     }
 
-.hearticon{
-    position: absolute;
-    margin-left: 110px;
-    margin-bottom: 90px;
-    color: red;
-}
+
+/*---Forest sound side---*/ 
+    .hearticon{
+        position: absolute;
+        margin-left: 110px;
+        margin-bottom: 90px;
+        color: red;
+    }
+
+    .forest-sound-title{
+        bottom: 0;
+        left: 0;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .favourite-heart{
+    margin-left: 190px;
+    width: 43px;
+    top: 0;
+
+    }
 
 /*---Dialogboks til brugernavn---*/
 
@@ -500,22 +539,19 @@
     margin-top: 170px;
     border-radius: 20px;
     color: var(--titel-text);
-    background-color: var(--purple);
+    background-color: var(--dark-purple);
     border: 0;
     padding: 50px 40px;
 }
+
+.exercises-icon {
+    color: var(--light-purple);
+    font-size: xx-large;
+    margin: 40px 20px;}
 
 .text {
     color: var(--titel-text);
     background-color: var(--purple);
     margin-left: 15px;
-    border: solid 1px var(--dark-purple);
+    border: solid 1px var(--dark-purple)
 }
-
-
-
-
-
- 
-
-
