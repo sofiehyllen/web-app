@@ -3,7 +3,6 @@ import { Link, useNavigate } from "react-router-dom";
 
 
 export default function Modal() {
-
   const [brugernavn, setBrugernavn] = useState("");
   const [showModal, setShowModal] = useState(true);
     const navigate = useNavigate();
