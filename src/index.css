@@ -25,6 +25,14 @@
         font-weight: 100;
     }
 
+    .relative{
+        position: relative;
+    }
+
+    .absolute{
+        position: absolute;
+    }
+
     body, a{
         color: var(--titel-text);
     }
@@ -249,6 +257,13 @@
         background-blend-mode: multiply;    
     }    
 
+    #tip-bg{
+        background-image: url('src/assets/tip-bg.svg');
+        background-size: 95%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     #brick-bg-home-1{background-image: url('src/assets/home-bg1.svg');}
     #brick-bg-home-2{background-image: url('src/assets/home-bg2.svg');}
     #brick-bg-home-3{background-image: url('src/assets/home-bg3.svg');}
@@ -271,6 +286,14 @@
     #brick-bg-forest-2{background-image: url('src/assets/forest-bg2.svg');}
     #brick-bg-forest-3{background-image: url('src/assets/forest-bg3.svg');}
     #brick-bg-forest-4{background-image: url('src/assets/forest-bg1.svg');}
+
+    .menu-icons{
+        right: 0;
+        top: 0;
+        padding-top: 14px;
+    }
+
+    
 
     
 
@@ -465,12 +488,28 @@
         text-align: center;
     }
 
-.hearticon{
-    position: absolute;
-    margin-left: 110px;
-    margin-bottom: 90px;
-    color: red;
-}
+
+/*---Forest sound side---*/ 
+    .hearticon{
+        position: absolute;
+        margin-left: 110px;
+        margin-bottom: 90px;
+        color: red;
+    }
+
+    .forest-sound-title{
+        bottom: 0;
+        left: 0;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+
+    .favourite-heart{
+    margin-left: 190px;
+    width: 43px;
+    top: 0;
+
+    }
 
 /*---Dialogboks til brugernavn---*/
 
