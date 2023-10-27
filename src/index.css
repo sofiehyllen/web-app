@@ -2,6 +2,7 @@
     @import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+    @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 /*--Generelle regler, farver og typografi--*/
     :root{
@@ -479,10 +480,11 @@
     margin-top: 170px;
     border-radius: 20px;
     color: var(--titel-text);
-    background-color: var(--dark-purple);
+    background-color: var(--purple);
     border: 0;
     padding: 50px 40px;
 }
+
 
 
 /*---Dialogboks til brugernavn---*/
@@ -491,6 +493,13 @@
     color: var(--light-purple);
     font-size: xx-large;
     margin: 40px 20px;
+
+.text {
+    color: var(--titel-text);
+    background-color: var(--purple);
+    margin-left: 15px;
+    border: solid 1px var(--dark-purple);
+
 }
 
 .icon {
