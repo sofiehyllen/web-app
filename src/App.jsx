@@ -13,7 +13,7 @@ import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
 import Exercises from './pages/Exercises'
 import Meditation from './pages/Meditation'
-import Modal from './pages/Modal'
+import Modal from './pages/UsernameModal'
 
 function App() {
   return (
