@@ -48,19 +48,19 @@ export default function HomePage(){
 
 
             <div className="flex">
-                <div className="brickcontainer brick-bg" id="brick-bg-home-2">
-                    <Link to="/soundpage">
+                <Link to="/soundpage">
+                    <div className="brickcontainer small brick-bg" id="brick-bg-home-2">
                         <h2 className="heading">Sounds</h2>
                         <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
 
-                <div className="brickcontainer brick-bg" id="brick-bg-home-3">
-                    <Link to="/statisticspage">
+                <Link to="/statisticspage">
+                    <div className="brickcontainer small brick-bg" id="brick-bg-home-3">
                         <h2 className="heading">Statistics</h2>
                         <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
-                    </Link>
-                </div>
+                    </div>
+                </Link>
             </div>
         </section>
     )

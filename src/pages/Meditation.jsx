@@ -80,10 +80,10 @@ export default function Meditation() {
         <section>
             <p className="heading">Meditation Exersices</p>
             <div className="flex spacing-top">
-                <div className="brickcontainer leftalign-bottom brick-bg" >
+                <div className="brickcontainer brick-bg" >
                     <p className="heading">Relaxation</p>
                 </div>
-                <div className="brickcontainer leftalign-bottom brick-bg" >
+                <div className="brickcontainer brick-bg" >
                     <p className="heading">Mindfulness</p>
                 </div>
             </div>
