@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import SleepSummaryCard from "./SleepSummaryCard";
+import RatingCard from "./RatingCard";
 
 
 export default function RatingHistory() {
@@ -37,7 +37,7 @@ export default function RatingHistory() {
       {isPosts ? (
         <div className="flexbox">
           {posts.map((post) => (
-            <SleepSummaryCard key={post.id} post={post} />
+            <RatingCard key={post.id} post={post} />
           ))}
         </div>
       ) : (
