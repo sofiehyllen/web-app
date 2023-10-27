@@ -28,11 +28,11 @@ export default function ToolPage(){
             </section>
 
 {/* "TIP OF THE DAY" SECTION */}
-            <section className="spacing-bottom">
+            <section className="spacing-bottom center-bg" id="tip-bg">
                 <p className="heading"> Tip of the day </p>
-                <div className="rightalign-bottom">
+                <div className="rightalign-bottom" >
                     <div className="spacing-top">
-                        <p className="bodytext center"> 
+                        <p className="bodytext center spacing-bottom" > 
                             Create a calming bedtime routine to signal your body 
                             that it&apos;s time to wind down. This can include activities 
                             like reading or gentle stretching. A consistent routine 

@@ -1,21 +1,21 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import PlayButton from "../components/PlayButton";
-import Audiofile from "../components/Audiofile"; // Make sure to import the Audiofile component
+import Audiofile from "../components/Audiofile";
 
 export default function ForestPage() {
   const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
   const [favorites, setFavorites] = useState(storedFavorites);
 
-  const handleHeartClick = (audioUrl) => {
+  const handleHeartClick = (audioUrl, title) => {
     let updatedFavorites = [...favorites];
     const index = updatedFavorites.findIndex(fav => fav.audioUrl === audioUrl);
     if (index > -1) {
       updatedFavorites.splice(index, 1);
     } else {
-      updatedFavorites.push({ audioUrl, isFavorite: true });
+      updatedFavorites.push({ audioUrl, title, isFavorite: true });
     }
     setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites)); // Save updated favorites to localStorage
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
   useEffect(() => {
@@ -35,23 +35,29 @@ export default function ForestPage() {
         <p className="heading">Rainforest</p>
 
         <div className="flex">
-          <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <PlayButton audioUrl={'src/assets/audio-forest.mp3'} />
-            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/audio-forest.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/audio-forest.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/audio-forest.mp3')}></i>
+          <div className="brickcontainer brick-bg opacity relative" id="brick-bg-rainforest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/rainforest-sound1.mp3'} />
+            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/rainforest-sound1.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon  ${favorites.some(fav => fav.audioUrl === 'src/assets/rainforest-sound1.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/rainforest-sound1.mp3', 'Jungle Chorus')}></i>
+            <p className='absolute heading heading-small forest-sound-title'> Jungle Chorus </p>
           </div>
-          <div className="brickcontainer brick-bg opacity" id="brick-bg-rainforest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-            <PlayButton audioUrl={'src/assets/audio-rainforest.mp3'} />
-            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/audio-rainforest.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/audio-rainforest.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/audio-rainforest.mp3')}></i>
+          <div className="brickcontainer brick-bg opacity relative" id="brick-bg-rainforest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <PlayButton audioUrl={'src/assets/rainforest-sound2.mp3'} />
+            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/rainforest-sound2.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/rainforest-sound2.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/rainforest-sound2.mp3', 'Waterfall Melodies')}></i>
+            <p className='absolute heading heading-small forest-sound-title'> Waterfall Melodies </p>
           </div>
         </div>
       </section>
 
-      <section className='favourites'>
-        <p className="heading spacing-bottom"> Your favourites </p>
-        {favorites.map((favorite, index) => (
+      <section className='favourites spacing-top relative'>
+          <p className="heading spacing-bottom"> Your favourites </p>
+          <img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>
+        {favorites.length === 0 ? (
+          <p className='heading heading-small bodytext spacing-bottom'> Select your favorite sounds to display them here.</p>
+        ) : (
+          favorites.map((favorite, index) => (
             <div key={index}>
               <Audiofile
-                textarea={"Quiet rain"}
+                textarea={favorite.title}
                 height={30}
                 waveColor="rgba(96, 92, 110)"
                 progressColor="rgba(240, 238, 230)"
@@ -64,36 +70,38 @@ export default function ForestPage() {
                 cursorColor={'transparent'}
               />
             </div>
-        ))}
+          ))
+        )}
       </section>
 
       <section>
         <p className="heading">Forest</p>
 
         <div className="flex spacing-bottom">
-          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div className="brickcontainer brick-bg opacity relative" id="brick-bg-forest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/forest-sound1.mp3'} />
-            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound1.mp3')}></i>
+            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound1.mp3', "Nature's Lullaby")}></i>
+            <p className='absolute heading heading-small forest-sound-title'> Nature's Lullaby </p>
           </div>
-          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div className="brickcontainer brick-bg opacity relative" id="brick-bg-forest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/forest-sound2.mp3'} />
-            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound2.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound2.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound2.mp3')}></i>
+            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound2.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound2.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound2.mp3', 'Tranquil Woods')}></i>
+            <p className='absolute heading heading-small forest-sound-title'> Tranquil Woods </p>
           </div>
         </div>
         <div className="flex">
-          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-3" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div className="brickcontainer brick-bg opacity relative" id="brick-bg-forest-3" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/forest-sound3.mp3'} />
-            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound3.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound3.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound3.mp3')}></i>
+            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound3.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound3.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound3.mp3', 'Misty Breeze')}></i>
+            <p className='absolute heading heading-small forest-sound-title'> Misty Breeze </p>
           </div>
-          <div className="brickcontainer brick-bg opacity" id="brick-bg-forest-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div className="brickcontainer brick-bg opacity relative" id="brick-bg-forest-4" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/forest-sound4.mp3'} />
-            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound4.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound4.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound4.mp3')}></i>
+            <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound4.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound4.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound4.mp3', 'Moon Chasm')}></i>
+            <p className='absolute heading heading-small forest-sound-title'> Moon Chasm </p>
           </div>
         </div>
       </section>
-
-      
-
     </section>
   );
 }
