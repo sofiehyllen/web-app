@@ -8,9 +8,9 @@
     :root{
         --darkest-purple: rgba(28, 23, 47, 1); 
         --darker-purple: rgba(36, 30, 60, 1);
-        --dark-purple: rgba(48, 39, 79, 1);
-        --purple: rgba(67, 55, 112, 1);
-        --light-purple: rgba(84, 69, 140, 1);
+        --dark-purple: rgb(47, 39, 79);
+        --purple: rgb(68, 56, 112);
+        --light-purple: rgb(84, 69, 140);
         --peach: rgba(231, 115, 96, 1);
         --titel-text:rgba(240, 238, 230, 1);
         --body-text:rgba(240, 238, 230, 0.7);
@@ -485,17 +485,24 @@
     padding: 50px 40px;
 }
 
+
+
+/*---Dialogboks til brugernavn---*/
+
+.exercises-icon {
+    color: var(--light-purple);
+    font-size: xx-large;
+    margin: 40px 20px;
+
 .text {
     color: var(--titel-text);
     background-color: var(--purple);
     margin-left: 15px;
     border: solid 1px var(--dark-purple);
+
 }
 
+.icon {
+    
 
-
-
-
- 
-
-
+}

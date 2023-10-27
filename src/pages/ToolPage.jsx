@@ -19,12 +19,12 @@ export default function ToolPage(){
                 <p className="heading">In the evening </p>
                 <div className="flex spacing-top">
                     <Link to="/Meditation">
-                        <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-1">
+                        <div className="brickcontainer brick-bg" id="brick-bg-tools-1">
                             <p className="heading">Meditation</p>
                         </div>
                     </Link>
                     <Link to="/Exercises">
-                        <div className="brickcontainer leftalign-bottom brick-bg" id="brick-bg-tools-2">
+                        <div className="brickcontainer brick-bg" id="brick-bg-tools-2">
                             <p className="heading">Exercises</p>
                         </div>
                     </Link>
