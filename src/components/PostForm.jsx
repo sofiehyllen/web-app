@@ -5,6 +5,7 @@ import betweenIcon from '../assets/smiley3.svg';
 import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router-dom';
 
 const ratingIcons = {
     1: verysadIcon,
@@ -21,6 +22,7 @@ export default function PostForm({ savePost, post, elapsedTime }){
     const [rating, setRating] = useState("");
     const [date, setDate] = useState(""); // date = transaction id
     const [errorMessage, setErrorMessage] = useState("");
+    const navigate = useNavigate();
 
 useEffect(() => {
     // If translation information is present, change states
@@ -47,6 +49,7 @@ const handleRatingClick = (selectedOption) => {
 // When the form is submitted, an object is created (formData)...
 async function handleSubmit(e) {
     e.preventDefault();
+    
     const formData = {
         rt: rating,
         date: date
@@ -57,11 +60,14 @@ async function handleSubmit(e) {
 // defined by "savePost"
 const validForm = formData.rt 
 if (validForm) {
- savePost(formData);
+    savePost(formData);
+    navigate("/statisticspage")
+    return;
 } else {
     setErrorMessage("You forgot to rate your sleep!");
    }
 }
+
 
 // The html form. The form fields have values that is equal to
 // their variabel counterparts values. When the user types in

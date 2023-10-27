@@ -24,7 +24,8 @@ export default function RatingHistory() {
         const postsArray = Object.keys(data).map((key) => ({
           id: key,
           ...data[key],
-        }));
+        }));      
+
         setPosts(postsArray); // Update "posts" object array list. Set posts equal to postsArray
       } else {
         setIsPosts(false); // If no data is found, set isPosts to "false". "Noting to show" message is shown.

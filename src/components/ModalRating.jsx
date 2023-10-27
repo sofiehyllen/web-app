@@ -1,10 +1,9 @@
-import { useNavigate } from "react-router-dom";
+
 import PostForm from "./PostForm";
 import PropTypes from 'prop-types'; 
 
 export default function ModalRating({ isOpen, onClose, elapsedTime}) {
-    const navigate = useNavigate();
-
+   
     async function createPost(newPost) {
         const url = "https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep.json";
         
@@ -14,7 +13,6 @@ export default function ModalRating({ isOpen, onClose, elapsedTime}) {
         });
         const data = await response.json();
         console.log(data);
-        navigate("/");
     }
 
 
