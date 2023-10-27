@@ -55,7 +55,7 @@ export default function UsernameModal() {
       document.removeEventListener("click", okDialog);
       document.removeEventListener("click", closeDialog);
     };
-  }, []);
+  }, [navigate]);
 
   return (
     <section className="page-content">
