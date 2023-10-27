@@ -58,8 +58,8 @@ export default function HomePage(){
     return(
         <section className="page-content">
             {showModal && (
-            <div className="">
-                <div className="">
+            <div className="modal">
+                <div className="gradient-wrapper">
                     <dialog id="favDialog" className="dialog">
                         <h2 className='titel spacing-bottom'> Welcome!</h2>
                         <h2 className='titel titel-small spacing-bottom'> Please tell us your name</h2>
