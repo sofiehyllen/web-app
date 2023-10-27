@@ -14,14 +14,14 @@ const ratingIcons = {
     5: veryhappyIcon,
 };
 
-export default function RatingCard({ post }) {
+export default function SleepSummaryCard({ post }) {
     const navigate = useNavigate();
 
     function handleClick() {
         navigate(`posts/${post.id}`); // -> "posts/-NDxg_qx1eWfdkNlZ6oj"
     }
 
-    RatingCard.propTypes = {
+    SleepSummaryCard.propTypes = {
         post: PropTypes.object,
     }
 
