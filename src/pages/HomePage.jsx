@@ -1,22 +1,12 @@
-import React from "react";
+import moment from "moment/moment";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
 
 export default function HomePage(){
-
-    const [currentDate, setCurrentDate] = useState('');
-
-    const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-
-    useEffect(() => {
-        var date = new Date().getDate() // current date
-        let month = new Date().getMonth() +1 // curren month
-        setCurrentDate(
-            date + ' ' + month 
-        )
-    }, [])
+    const currentDate = moment();
+    const homepageDate = currentDate.format('MMMM DD')
 
     const [brugernavn, setBrugernavn] = useState("");
     const [showModal, setShowModal] = useState(true);
@@ -68,8 +58,8 @@ export default function HomePage(){
     return(
         <section className="page-content">
             {showModal && (
-            <div className="modal">
-                <div className='gradient-wrapper'>
+            <div className="">
+                <div className="">
                     <dialog id="favDialog" className="dialog">
                         <h2 className='titel spacing-bottom'> Welcome!</h2>
                         <h2 className='titel titel-small spacing-bottom'> Please tell us your name</h2>
@@ -99,7 +89,7 @@ export default function HomePage(){
             </div>
             )}
 
-            <h6 id="homedate" className="heading heading-small">{currentDate}</h6>
+            <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
                 <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn || "you"}</span></h1>
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
