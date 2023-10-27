@@ -14,7 +14,7 @@ const ratingIcons = {
     5: veryhappyIcon,
   };
 
-  export default function PostCard({post}) {
+  export default function PostCard({post, elapsedTime}) {
     const navigate = useNavigate();
   
     function handleClick() {
@@ -24,6 +24,7 @@ const ratingIcons = {
     
     PostCard.propTypes = {
         post: PropTypes.object,
+        elapsedTime: PropTypes.string
     }
     
     return (
@@ -32,7 +33,7 @@ const ratingIcons = {
             <section className="flex">
                 <div className="spacing-top">
                     <h3 className='bodytext-normal'>You have slept</h3>
-                    <p className='heading heading'>{post.hs} hours</p>
+                    <p className='heading heading'>{elapsedTime} hours</p>
                 </div>
                 
                 <div className="icon-container">

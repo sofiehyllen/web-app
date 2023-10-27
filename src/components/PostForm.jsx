@@ -18,7 +18,6 @@ const ratingIcons = {
 // information (post) if any.
 export default function PostForm({ savePost, post, elapsedTime }){
     // Defines initial states of data values
-    const [hours, setHour] = useState("");
     const [rating, setRating] = useState("");
     const [date, setDate] = useState(""); // date = transaction id
     const [errorMessage, setErrorMessage] = useState("");
@@ -28,7 +27,6 @@ useEffect(() => {
     // of variables to the values from post (translation information).
     // This will update the form.
     if (post) {
-        setHour(post.hs);
         setRating(post.rt);
         setDate(post.date);
     } else {
@@ -50,7 +48,6 @@ const handleRatingClick = (selectedOption) => {
 async function handleSubmit(e) {
     e.preventDefault();
     const formData = {
-        hs: hours,
         rt: rating,
         date: date
     }
@@ -58,7 +55,7 @@ async function handleSubmit(e) {
 // Check to see if all fields were filled. If not, show an 
 // error message. If everything is ok - call callback method 
 // defined by "savePost"
-const validForm = formData.hs && formData.rt && formData.date;
+const validForm = formData.rt 
 if (validForm) {
  savePost(formData);
 } else {

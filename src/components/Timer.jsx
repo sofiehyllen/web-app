@@ -28,7 +28,7 @@ const Timer = () => {
 
   const calculateElapsedTime = () => {
     const duration = moment.duration(seconds, 'seconds');
-    const formattedTime = `${duration.minutes()} minutes ${duration.seconds()} seconds`;
+    const formattedTime = moment.utc(duration.asMilliseconds()).format('HH:mm:ss');
     return formattedTime;
   };
 
