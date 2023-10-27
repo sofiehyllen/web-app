@@ -52,7 +52,7 @@ export default function ForestPage() {
           <p className="heading spacing-bottom"> Your favourites </p>
           <img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>
         {favorites.length === 0 ? (
-          <p className='heading heading-small bodytext spacing-bottom'> Select your favorite sounds to display them here.</p>
+          <p className='heading heading-small bodytext spacing-bottom'> # Like your favorite sounds to display them here.</p>
         ) : (
           favorites.map((favorite, index) => (
             <div key={index}>
