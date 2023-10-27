@@ -5,15 +5,15 @@ import moment from 'moment';
 const Timer = () => {
   const [seconds, setSeconds] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [startTime, setStartTime] = useState(moment()); // Opdater startTime ved indlæsning
+  const [mortenstid, setMortenstid] = useState(""); 
 
   const closeModal = () => {
     setIsModalOpen(false);
-    setStartTime(moment()); // Opdater startTime, når modalen lukkes
   };
 
   const stopTimer = () => {
     setIsModalOpen(true);
+    setMortenstid(calculateElapsedTime()); // Morten har indsat dette
   };
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Timer = () => {
     }, 1000);
 
     return () => clearInterval(timerInterval);
-}, [isModalOpen]);
+  }, [isModalOpen]);
 
   const calculateElapsedTime = () => {
     const duration = moment.duration(seconds, 'seconds');
@@ -34,14 +34,14 @@ const Timer = () => {
 
   return (
     <div>
-        <div className='flex center'>
-            <h3 className='heading time spacing-bottom' >{calculateElapsedTime()}</h3>
-        </div>    
-      <button className="button btn-big btn-spacing" onClick={stopTimer}>stop tracking</button>
+      <div className='flex center'>
+        <h3 className='heading time spacing-bottom' >{calculateElapsedTime()}</h3>
+      </div>
+      <button className="button btn-big" onClick={stopTimer}>stop tracking</button>
 
       {isModalOpen && (
         <div>
-          <ModalRating isOpen={isModalOpen} onClose={closeModal} elapsedTime={calculateElapsedTime()} />
+          <ModalRating isOpen={isModalOpen} onClose={closeModal} elapsedTime={mortenstid} />
         </div>
       )}
     </div>

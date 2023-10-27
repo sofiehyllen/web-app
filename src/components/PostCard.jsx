@@ -12,34 +12,32 @@ const ratingIcons = {
     3: betweenIcon,
     4: happyIcon,
     5: veryhappyIcon,
-  };
+};
 
-  export default function PostCard({post, elapsedTime}) {
+export default function PostCard({ post }) {
     const navigate = useNavigate();
-  
+
     function handleClick() {
-      // Look at the app.js page to understand this
-      navigate(`posts/${post.id}`); // -> like "posts/-NDxg_qx1eWfdkNlZ6oj" 
+        navigate(`posts/${post.id}`); // -> "posts/-NDxg_qx1eWfdkNlZ6oj"
     }
-    
+
     PostCard.propTypes = {
         post: PropTypes.object,
-        elapsedTime: PropTypes.string
     }
-    
+
     return (
         <div className="brickcontainer medium" onClick={handleClick}>
             <span className="ident heading heading-small">{post.date}</span>
             <section className="flex">
                 <div className="spacing-top">
                     <h3 className='bodytext-normal'>You have slept</h3>
-                    <p className='heading heading'>{elapsedTime} hours</p>
+                    <p className='heading heading'>{post.hs}</p>
                 </div>
-                
+
                 <div className="icon-container">
                     <img src={ratingIcons[post.rt]} alt={`rating-icon-${post.rt}`} className="img-max" />
                 </div>
             </section>
         </div>
     );
-  }
+}

@@ -15,7 +15,6 @@ export default function ModalRating({ isOpen, onClose, elapsedTime}) {
         console.log(data);
     }
 
-
   //Hvis isOpen er falsk (modalvinduet er lukket), returnerer komponenten null, hvilket betyder, at intet vil blive renderet. 
   //Dette er en måde at skjule modalvinduet, når det ikke er åbent.
   if (!isOpen) return null;

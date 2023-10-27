@@ -13,111 +13,88 @@ const ratingIcons = {
     3: betweenIcon,
     4: happyIcon,
     5: veryhappyIcon,
-  };
+};
 
-// Component receives callback method "savepost" and translation
-// information (post) if any.
-export default function PostForm({ savePost, post, elapsedTime }){
-    // Defines initial states of data values
+export default function PostForm({ savePost, elapsedTime }) {
     const [rating, setRating] = useState("");
-    const [date, setDate] = useState(""); // date = transaction id
+    const [hoursSlept, setHoursSlept] = useState("");
+    const [date, setDate] = useState(""); // date = benyttes som transaction id
     const [errorMessage, setErrorMessage] = useState("");
     const navigate = useNavigate();
 
-useEffect(() => {
-    // If translation information is present, change states
-    // of variables to the values from post (translation information).
-    // This will update the form.
-    if (post) {
-        setRating(post.rt);
-        setDate(post.date);
-    } else {
-        // Sæt standardværdien for date til dagens dato
+    useEffect(() => {
         const today = new Date().toISOString().split('T')[0];
         setDate(today);
+        setHoursSlept(elapsedTime);
+    }, [elapsedTime]);
+
+    const formatDate = (inputDate) => {
+        const options = { day: 'numeric', month: 'long' };
+        return new Date(inputDate).toLocaleDateString('en-US', options);
+    };
+
+    const handleRatingClick = (selectedOption) => {
+        setRating(selectedOption)
+    };
+
+    // Når vores form er udfyldt og submitted, laves der et object (formData)
+    async function handleSubmit(e) {
+        e.preventDefault();
+
+        const formData = {
+            rt: rating,
+            hs: hoursSlept,
+            date: date
+        }
+
+        // Vi tjekker her om der er valgt en rating, hvis ikke
+        // vises der en error message
+        const validForm = formData.rt
+        if (validForm) {
+            savePost(formData);
+            navigate("/statisticspage")
+            return;
+        } else {
+            setErrorMessage("You forgot to rate your sleep!");
+        }
     }
-}, [post]);
 
-const formatDate = (inputDate) => {
-    const options = { day: 'numeric', month: 'long' };
-    return new Date(inputDate).toLocaleDateString('en-US', options);
-};
+    // Vi definerer her værdien af funktionens props
+    PostForm.propTypes = {
+        savePost: PropTypes.func,
+        elapsedTime: PropTypes.string,
+    };
 
-const handleRatingClick = (selectedOption) => {
-    setRating(selectedOption)};
+    return (
 
-// When the form is submitted, an object is created (formData)...
-async function handleSubmit(e) {
-    e.preventDefault();
-    
-    const formData = {
-        rt: rating,
-        date: date
-    }
+        <form onSubmit={handleSubmit}>
+            <h1 className="titel">Goodmorning <span className="titel-tab">name</span></h1>
 
-// Check to see if all fields were filled. If not, show an 
-// error message. If everything is ok - call callback method 
-// defined by "savePost"
-const validForm = formData.rt 
-if (validForm) {
-    savePost(formData);
-    navigate("/statisticspage")
-    return;
-} else {
-    setErrorMessage("You forgot to rate your sleep!");
-   }
-}
+            <label>
+                <h3 className='bodytext-normal'>Todays date is</h3>
+                <div className='heading'>{formatDate(date)}</div>
+            </label>
 
+            <label>
+                <h2 className='bodytext-normal'>You have slept for</h2>
+                <h3 className='heading'>{elapsedTime}</h3>
+            </label>
 
-// The html form. The form fields have values that is equal to
-// their variabel counterparts values. When the user types in
-// values, the relevant states are updated.
-// If the form is used for updating an existing translation, 
-// the date (transaction id) field is hidden: it cannot be updated.
-// Mortens decision. 
-
-PostForm.propTypes = {
-    savePost: PropTypes.func,
-    post: PropTypes.object,
-    elapsedTime: PropTypes.string,
-  };
-
-return (
-    
-    <form onSubmit={handleSubmit}>
-        <h1 className="titel">Goodmorning <span className="titel-tab">name</span></h1>
-
-        {post ? (
-            <div>{formatDate(date)}</div> 
-        )
-         : 
-        (
-       <label> 
-            <h3 className='bodytext-normal'>Todays date is</h3>
-            <div className='heading'>{formatDate(date)}</div>        
-        </label>
-        )}
-
-        <label>
-            <h2 className='bodytext-normal'>You have slept for</h2>
-            <h3 className='heading'>{elapsedTime}</h3>
-        </label>
-
-        <label>
-            <h2 className='heading'>How did you sleep?</h2>
-            <div className="icon-container" >
-            {[1, 2, 3, 4, 5].map((option) => (
-                <span
-                key={option}
-                onClick={() => handleRatingClick(option)}
-                className={`icon ${parseInt(rating) === option ? "selected" : ""}`}>
-                <img src={ratingIcons[option]} alt={`rating-icon-${option}`} className="img-max" />
-            </span>
-            ))}
-            </div>
-        </label>
-        <p className="heading heading-small">{errorMessage}</p>
-        <button type="submit" className='button btn-big'>rate sleep</button>
-     </form>
+            <label>
+                <h2 className='heading'>How did you sleep?</h2>
+                <div className="icon-container" >
+                    {[1, 2, 3, 4, 5].map((option) => (
+                        <span
+                            key={option}
+                            onClick={() => handleRatingClick(option)}
+                            className={`icon ${parseInt(rating) === option ? "selected" : ""}`}>
+                            <img src={ratingIcons[option]} alt={`rating-icon-${option}`} className="img-max" />
+                        </span>
+                    ))}
+                </div>
+            </label>
+            <p className="heading heading-small">{errorMessage}</p>
+            <button type="submit" className='button btn-big'>rate sleep</button>
+        </form>
     );
 }
