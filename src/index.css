@@ -167,6 +167,10 @@
         padding: 11px 27px 8px 27px;
     }
 
+    .btn-spacing{
+        margin-top: 15vw;
+    }
+
     .btn-purple{
         font-weight: 100;
         font-size: 12px;
@@ -264,8 +268,11 @@
     }
 
     #illustration-stopsleep{
+        background-image: url("src/assets/illustration-stop-sleep.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-top: 75vw;
         margin-top: 5vw;
-        margin-bottom: 5vw;
     }
 
 /*--Andre specifikke ID--*/
@@ -286,9 +293,11 @@
     }
     
     #background-dark{
-        background-image: url('src/assets/background-dark.svg');
-        height: 100vh;
-        padding-top: 10vw;
+        background-image: url("src/assets/background-dark.svg");
+        background-size: cover;
+        background-attachment: fixed;
+        height: 95vh;
+        padding-top: 15vw;
     }
 
 

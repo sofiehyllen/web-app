@@ -95,7 +95,7 @@ return (
        <label> 
             <h3 className='bodytext-normal'>Todays date is</h3>
             <div className='heading'>{formatDate(date)}</div>        
-            </label>
+        </label>
         )}
 
         <label>
