@@ -15,7 +15,7 @@ const ratingIcons = {
     5: veryhappyIcon,
 };
 
-export default function PostForm({ savePost, elapsedTime }) {
+export default function RatingForm({ savePost, elapsedTime }) {
     const [rating, setRating] = useState("");
     const [hoursSlept, setHoursSlept] = useState("");
     const [date, setDate] = useState(""); // date = benyttes som transaction id
@@ -60,7 +60,7 @@ export default function PostForm({ savePost, elapsedTime }) {
     }
 
     // Vi definerer her værdien af funktionens props
-    PostForm.propTypes = {
+    RatingForm.propTypes = {
         savePost: PropTypes.func,
         elapsedTime: PropTypes.string,
     };

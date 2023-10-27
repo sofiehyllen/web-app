@@ -1,8 +1,8 @@
 
-import PostForm from "./PostForm";
+import RatingForm from "./RatingForm";
 import PropTypes from 'prop-types'; 
 
-export default function ModalRating({ isOpen, onClose, elapsedTime}) {
+export default function RatingModal({ isOpen, onClose, elapsedTime}) {
    
     async function createPost(newPost) {
         const url = "https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep.json";
@@ -19,7 +19,7 @@ export default function ModalRating({ isOpen, onClose, elapsedTime}) {
   //Dette er en måde at skjule modalvinduet, når det ikke er åbent.
   if (!isOpen) return null;
   
-  ModalRating.propTypes = {
+RatingModal.propTypes = {
     isOpen: PropTypes.bool,
     onClose: PropTypes.func,
     elapsedTime: PropTypes.string,
@@ -30,7 +30,7 @@ export default function ModalRating({ isOpen, onClose, elapsedTime}) {
     <div className="modal" onClick={onClose}>
         <div className="gradient-wrapper">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-                <PostForm savePost={createPost} elapsedTime={elapsedTime}/>
+                <RatingForm savePost={createPost} elapsedTime={elapsedTime}/>
             </div>    
         </div>
     </div>

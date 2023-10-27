@@ -14,14 +14,14 @@ const ratingIcons = {
     5: veryhappyIcon,
 };
 
-export default function PostCard({ post }) {
+export default function RatingCard({ post }) {
     const navigate = useNavigate();
 
     function handleClick() {
         navigate(`posts/${post.id}`); // -> "posts/-NDxg_qx1eWfdkNlZ6oj"
     }
 
-    PostCard.propTypes = {
+    RatingCard.propTypes = {
         post: PropTypes.object,
     }
 

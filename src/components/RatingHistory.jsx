@@ -1,12 +1,8 @@
 import { useEffect, useState } from "react";
-import PostCard from "./PostCard";
+import RatingCard from "./RatingCard";
 
 
 export default function RatingHistory() {
-  // "posts" and "isposts" have hooks. Posts holds the
-  // data from the fetch GET. isPosts is used to check
-  // if translations exists in the database. If not, an
-  // appropriate information is shown to the user.
   const [posts, setPosts] = useState([]);
   const [isPosts, setIsPosts] = useState(true); // isPosts can be true or false
   
@@ -41,7 +37,7 @@ export default function RatingHistory() {
       {isPosts ? (
         <div className="flexbox">
           {posts.map((post) => (
-            <PostCard key={post.id} post={post} />
+            <RatingCard key={post.id} post={post} />
           ))}
         </div>
       ) : (

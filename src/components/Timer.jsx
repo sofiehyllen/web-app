@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import ModalRating from './ModalRating';
 import moment from 'moment';
+import RatingModal from './RatingModal';
+
 
 const Timer = () => {
   const [seconds, setSeconds] = useState(0);
@@ -41,7 +42,7 @@ const Timer = () => {
 
       {isModalOpen && (
         <div>
-          <ModalRating isOpen={isModalOpen} onClose={closeModal} elapsedTime={mortenstid} />
+          <RatingModal isOpen={isModalOpen} onClose={closeModal} elapsedTime={mortenstid} />
         </div>
       )}
     </div>
