@@ -492,17 +492,12 @@
 .exercises-icon {
     color: var(--light-purple);
     font-size: xx-large;
-    margin: 40px 20px;
+    margin: 40px 20px;}
 
 .text {
     color: var(--titel-text);
     background-color: var(--purple);
     margin-left: 15px;
     border: solid 1px var(--dark-purple);
-
-}
-
-.icon {
-    
 
 }
