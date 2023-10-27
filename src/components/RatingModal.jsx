@@ -1,58 +1,39 @@
-import { useState } from 'react';
 
-// Import your SVG icons here
-import verysadIcon from '../assets/smiley1.svg';
-import sadIcon from '../assets/smiley2.svg';
-import betweenIcon from '../assets/smiley3.svg';
-import happyIcon from '../assets/smiley4.svg';
-import veryhappyIcon from '../assets/smiley5.svg';
 
-const RatingModal = ({ isOpen, onClose, onPublish, sleepDuration }) => {
-  const [selectedSmiley, setSelectedSmiley] = useState(null);
+import PropTypes from 'prop-types'; 
+import RatingForm from './Sleeptracker';
 
-  const handleRating = (value) => {
-    onPublish(value); // Call the onPublish function with the selected rating
-  };
+export default function RatingModal({ isOpen, onClose, elapsedTime}) {
+   
+    async function createPost(newPost) {
+        const url = "https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep.json";
+        
+        const response = await fetch(url, {
+            method: "POST", 
+            body: JSON.stringify(newPost) 
+        });
+        const data = await response.json();
+        console.log(data);
+    }
 
-  const handleContainerClick = (event) => {
-    event.stopPropagation(); // Prevent the modal from closing when clicking inside the modal
-  };
-
-  // New function to handle smiley click
-  const handleSmileyClick = (value) => {
-    setSelectedSmiley(value); // Set the selected smiley value
-    handleRating(value); // Call the handleRating function with the selected value
-  };
-
-  if (!isOpen) {
-    return null;
-  }
-
-return (
+  //Hvis isOpen er falsk (modalvinduet er lukket), returnerer komponenten null, hvilket betyder, at intet vil blive renderet. 
+  //Dette er en måde at skjule modalvinduet, når det ikke er åbent.
+  if (!isOpen) return null;
+  
+RatingModal.propTypes = {
+    isOpen: PropTypes.bool,
+    onClose: PropTypes.func,
+    elapsedTime: PropTypes.string,
+};
+  return (
+    //Dette er selve overlay elementet. Med onClick={onClose} sørger jeg for at modalvinduet lukkes, 
+    //når der trykkes alle andre steder end selve vinduet.
     <div className="modal" onClick={onClose}>
-        <div className='gradient-wrapper'>
-        <div className="modal-content" onClick={handleContainerClick}>
-            <h1 className='titel spacing-bottom'>  Goodmorning <br /> <span className='titel-tab'>name</span></h1>
-            <div>
-                <h5 className='bodytext-normal' >You have slept for</h5>
-                <p className='heading spacing-bottom'>{sleepDuration.toFixed(2)}</p>
-            </div>
-            <h2 className='heading'>How did you sleep? </h2>
-            <div className='icon-container flex'>
-                <img src={verysadIcon} alt="VerySad"/>
-                <img src={sadIcon} alt="Sad"/>
-                <img src={betweenIcon} alt="Between" />
-                <img src={happyIcon} alt="Happy" />
-                <img src={veryhappyIcon} alt="VeryHappy" />
-            </div>
-            <div id='modal-buttons'> 
-                <button className="button btn-big" onClick={() => handleRating(1)}>rate sleep</button>
-                <button className="button btn-purple" onClick={onClose}>cancel</button>
-            </div>
-        </div>
+        <div className="gradient-wrapper">
+            <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                <RatingForm savePost={createPost} elapsedTime={elapsedTime}/>
+            </div>    
         </div>
     </div>
-);
-};
-
-export default RatingModal;
+  );
+}
