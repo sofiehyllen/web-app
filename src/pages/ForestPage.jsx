@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import PlayButton from "../components/PlayButton";
+import Audiofile from "../components/Audiofile"; // Make sure to import the Audiofile component
 
 export default function ForestPage() {
   const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -14,6 +15,7 @@ export default function ForestPage() {
       updatedFavorites.push({ audioUrl, isFavorite: true });
     }
     setFavorites(updatedFavorites);
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites)); // Save updated favorites to localStorage
   };
 
   useEffect(() => {
@@ -44,6 +46,27 @@ export default function ForestPage() {
         </div>
       </section>
 
+      <section className='favourites'>
+        <p className="heading spacing-bottom"> Your favourites </p>
+        {favorites.map((favorite, index) => (
+            <div key={index}>
+              <Audiofile
+                textarea={"Quiet rain"}
+                height={30}
+                waveColor="rgba(96, 92, 110)"
+                progressColor="rgba(240, 238, 230)"
+                url={favorite.audioUrl}
+                barHeight={1.5}
+                barWidth={3}
+                barGap={4}
+                barRadius={10}
+                dragToSeek={true}
+                cursorColor={'transparent'}
+              />
+            </div>
+        ))}
+      </section>
+
       <section>
         <p className="heading">Forest</p>
 
@@ -68,6 +91,9 @@ export default function ForestPage() {
           </div>
         </div>
       </section>
+
+      
+
     </section>
   );
 }

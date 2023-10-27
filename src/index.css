@@ -25,6 +25,14 @@
         font-weight: 100;
     }
 
+    .relative{
+        position: relative;
+    }
+
+    .absolute{
+        position: absolute;
+    }
+
     body, a{
         color: var(--titel-text);
     }
@@ -267,6 +275,14 @@
     #brick-bg-forest-2{background-image: url('src/assets/forest-bg2.svg');}
     #brick-bg-forest-3{background-image: url('src/assets/forest-bg3.svg');}
     #brick-bg-forest-4{background-image: url('src/assets/forest-bg1.svg');}
+
+    .menu-icons{
+        right: 0;
+        top: 0;
+        padding-top: 14px;
+    }
+
+    
 
     
 
