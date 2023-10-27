@@ -69,10 +69,15 @@
 
 .titel-big{
     font-size: 17vw;
+
 }
 
 .titel-small {
     font-size: 8vw;
+}
+
+.titel-tab{
+    padding-left: 15vw;
 }
 
 .heading{
@@ -112,9 +117,7 @@
     font-weight: 900;
 }
 
-.titel-tab{
-    padding-left: 15vw;
-}
+
 
 .page-content{
     background-image: url("/src/assets/background-default.svg");
@@ -328,6 +331,8 @@
     }
 
 
+
+
 /*--Afspiller til lydfiler--*/
     .audio-container{
         display: flex;
@@ -454,6 +459,10 @@
     #usericon{
         float: right;
         font-size: 150%;
+    }
+
+    .username{
+        text-transform: capitalize;
     }
 
     .form-input{
