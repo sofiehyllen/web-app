@@ -1,7 +1,6 @@
 
-
 import PropTypes from 'prop-types'; 
-import RatingForm from './Sleeptracker';
+import RatingForm from './RatingForm';
 
 export default function RatingModal({ isOpen, onClose, elapsedTime}) {
    
