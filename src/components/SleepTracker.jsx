@@ -57,7 +57,9 @@ export default function SleepTracker() {
         </div>
       ) : (
         <div>
-            <button className="button btn-big" onClick={startSleep}> start tracking</button>
+            <button className="button btn-big" onClick={startSleep}> 
+                start tracking <span className='buttonshine'/>
+            </button> 
         </div>
       )}
 

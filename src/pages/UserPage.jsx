@@ -50,18 +50,18 @@ export default function UserPage(){
             <form method="POST">
                 <div className="flex">
                     <div>
-                        <label htmlFor="firstname"><h4 className='heading heading-small'>First name</h4></label>
+                        <label htmlFor="firstname"><h4 className='bodytext titelcolor'>First name</h4></label>
                         <input className='form-input heading heading-small' id="firstname" type="text" name="Firstname" value={user.Firstname} autoComplete="off" onChange={userdata} required/>
                     </div>    
                     
                     <div>
-                        <label htmlFor="lastname"><h4 className='heading heading-small'>Last name</h4></label>
+                        <label htmlFor="lastname"><h4 className='bodytext titelcolor'>Surname</h4></label>
                         <input className='form-input heading heading-small' id="lastname" type="text" name="Lastname" value={user.Lastname} autoComplete="off" onChange={userdata} required />
                     </div>  
                 </div>
                 
                 <div className="spacing-bottom">
-                    <label htmlFor="email"><h4 className='heading heading-small'>E-mail</h4></label>
+                    <label htmlFor="email"><h4 className='bodytext titelcolor'>E-mail</h4></label>
                     <input className='form-input heading heading-small' id="email" type="email" name="Email" value={user.Email} autoComplete="off" onChange={userdata} required />
                 </div>  
 
@@ -78,7 +78,9 @@ export default function UserPage(){
                 </div>
 
                 <div className='center spacing-bottom'>
-                    <button onClick={getdata} type='submit' className='button btn-small'>save</button>
+                    <button onClick={getdata} type='submit' className='button btn-big'>
+                        save <span className="buttonshine"/>
+                    </button>
                 </div>  
             </form>
         </section>

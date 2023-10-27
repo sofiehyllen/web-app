@@ -12,7 +12,7 @@ export default function SleeptrackPage(){
             <div id="illustration-startsleep"><img className="img-max" src="src/assets/illustration-start-sleep.svg" alt="moon illustration sleep" /></div>
 
             <div className="center spacing-bottom">
-                <SleepTracker />
+                <SleepTracker /> 
             </div>
             
             <div>
