@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
-import RatingCard from "./RatingCard";
+import RatingCard from "./SleepSummaryCard";
+
+
 
 
 export default function RatingHistory() {

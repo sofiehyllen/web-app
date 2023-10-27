@@ -38,7 +38,7 @@ const Timer = () => {
       <div className='flex center'>
         <h3 className='heading time spacing-bottom' >{calculateElapsedTime()}</h3>
       </div>
-      <button className="button btn-big" onClick={stopTimer}>stop tracking</button>
+      <button className="button btn-big btn-spacing" onClick={stopTimer}>stop tracking</button>
 
       {isModalOpen && (
         <div>
