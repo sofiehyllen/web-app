@@ -286,9 +286,8 @@
 
     #tip-bg{
         background-image: url('src/assets/tip-bg.svg');
-        background-size: 95%;
+        background-size: contain;
         background-repeat: no-repeat;
-        background-position: center;
     }
 
     #brick-bg-home-1{background-image: url('src/assets/home-bg1.svg');}
@@ -368,6 +367,10 @@
         background-attachment: fixed;
         height: 95vh;
         padding-top: 15vw;
+    }
+
+    #tipoftheday{
+        padding: 4% 7% 4% 7%;
     }
 
 
@@ -548,14 +551,12 @@
     }
 
     .favourite-heart{
-    margin-left: 190px;
-    width: 43px;
-    top: 0;
-
+        margin-left: 190px;
+        width: 43px;
+        top: 0;
     }
 
 /*---Dialogboks til brugernavn---*/
-
 .dialog {
     width: 90%;
     margin-left: 5%;

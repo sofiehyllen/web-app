@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import PlayButton from "../components/PlayButton";
 import Audiofile from "../components/Audiofile";
 
@@ -81,7 +81,7 @@ export default function ForestPage() {
           <div className="brickcontainer brick-bg opacity relative" id="brick-bg-forest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/forest-sound1.mp3'} />
             <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound1.mp3', "Nature's Lullaby")}></i>
-            <p className='absolute heading heading-small forest-sound-title'> Nature's Lullaby </p>
+            <p className='absolute heading heading-small forest-sound-title'> Nature&apos;s Lullaby </p>
           </div>
           <div className="brickcontainer brick-bg opacity relative" id="brick-bg-forest-2" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
             <PlayButton audioUrl={'src/assets/forest-sound2.mp3'} />
