@@ -24,9 +24,8 @@ export default function HomePage(){
 
     return(
         <section className="page-content">
-
             <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
-                <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn}</span></h1>
+            <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn}</span></h1>
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
 
@@ -35,24 +34,22 @@ export default function HomePage(){
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
                 </div>
-                
-                    <Link className="button btn-small" to="/sleeptrackpage">
-                        go to sleep <span className="buttonshine"/>
-                    </Link>
-                
+                <Link className="button btn-small" to="/sleeptrackpage">
+                    go to sleep <span className="buttonshine"/>
+                </Link>
             </div>
 
 
             <div className="flex">
-                <Link to="/soundpage">
-                    <div className="brickcontainer small brick-bg" id="brick-bg-home-2">
+                <Link className="brickcontainer small brick-bg" id="brick-bg-home-2" to="/soundpage">
+                    <div>
                         <h2 className="heading">Sounds</h2>
                         <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
                     </div>
                 </Link>
 
-                <Link to="/statisticspage">
-                    <div className="brickcontainer small brick-bg" id="brick-bg-home-3">
+                <Link className="brickcontainer small brick-bg" id="brick-bg-home-3" to="/statisticspage">
+                    <div>
                         <h2 className="heading">Statistics</h2>
                         <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
                     </div>

@@ -5,6 +5,7 @@ import betweenIcon from '../assets/smiley3.svg';
 import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
 import PropTypes from 'prop-types';
+import moment from 'moment';
 
 const ratingIcons = {
     1: verysadIcon,
@@ -16,6 +17,21 @@ const ratingIcons = {
 
 export default function RatingCard({ post }) {
     const navigate = useNavigate();
+
+    const formattedTime = () => {
+        const duration = moment.duration(post.hs, 'minutes');
+        const hours = duration.hours();
+        const minutes = duration.minutes();
+        const seconds = duration.seconds();
+    
+        if (hours > 0) {
+            return `${hours} ${hours === 1 ? 'hour' : 'hours'} ${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
+        } else if (minutes > 0) {
+            return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} ${seconds} ${seconds === 1 ? 'second' : 'seconds'}`;
+        } else {
+            return `${seconds} ${seconds === 1 ? 'second' : 'seconds'}`;
+        }
+    };
 
     function handleClick() {
         navigate(`posts/${post.id}`); // -> "posts/-NDxg_qx1eWfdkNlZ6oj"
@@ -31,7 +47,7 @@ export default function RatingCard({ post }) {
             <section className="flex">
                 <div className="spacing-top">
                     <h3 className='bodytext-normal'>You have slept</h3>
-                    <p className='heading heading'>{post.hs}</p>
+                    <p className='heading heading'>{formattedTime()}</p>
                 </div>
 
                 <div className="icon-container">

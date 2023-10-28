@@ -1,14 +1,15 @@
 import { useEffect, useState } from "react";
 import RatingCard from "./RatingCard";
 
+
 export default function RatingHistory() {
   const [posts, setPosts] = useState([]);
   const [isPosts, setIsPosts] = useState(true); // isPosts can be true or false
   
   useEffect(() => {
     async function getPosts() {
-      const url = "https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep.json";
-      const response = await fetch(url);
+        const url = "https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep.json";
+        const response = await fetch(url);
       const data = await response.json();
       if (data !== null) {
         // This code makes a new array (postsArray) with all the 
@@ -21,7 +22,7 @@ export default function RatingHistory() {
           ...data[key],
         }));      
 
-        setPosts(postsArray); // Update "posts" object array list. Set posts equal to postsArray
+        setPosts(postsArray.reverse()); // Update "posts" object array list. Set posts equal to postsArray
       } else {
         setIsPosts(false); // If no data is found, set isPosts to "false". "Noting to show" message is shown.
       }
