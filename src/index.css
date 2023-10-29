@@ -475,11 +475,15 @@
     .time-wrapper{
         background-color: rgb(255, 255, 255, .13);
         border-radius: 30px;
-        padding: 3vw 7vw 2vw 7vw;
+        padding: 3vw 5vw 3vw 5vw;
         margin-top: 1.5vw;
         margin-bottom: 10vw;
+        min-width: 40vw;
+    }
+
+    #time-modalrating{
         font-family: "poppins", sans-serif;
-        font-size: 4.8vw;
+        padding: 3vw 6vw 2vw 6vw;
     }
 
     .icon-container{

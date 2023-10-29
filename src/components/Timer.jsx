@@ -36,7 +36,7 @@ const Timer = () => {
   return (
     <div>
         <div className='flex center'>
-        <h3 className='heading time spacing-bottom timer-wrapper' >{calculateElapsedTime()}</h3>
+        <h3 className='time-wrapper heading' >{calculateElapsedTime()}</h3>
         </div>
         <button className="button btn-big btn-spacing" onClick={stopTimer}>
             stop tracking <span className='btn-shine'/>

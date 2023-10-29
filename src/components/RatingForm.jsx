@@ -93,7 +93,7 @@ export default function RatingForm({ savePost, elapsedTime }) {
             <label>
                 <h2 className='bodytext-normal'>You have slept for</h2>
                 <div className='flex center'>
-                    <h3 className='spacing-bottom time-wrapper'>{formattedTime()}</h3>
+                    <h3 className='spacing-bottom time-wrapper' id='time-modalrating'>{formattedTime()}</h3>
                 </div>
             </label>
 
