@@ -43,7 +43,7 @@ export default function ToolPage(){
                             can improve your sleep quality.
                         </p>
                     </div>
-                    <Link to="/homepage" className="spacing-top button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
+                    <Link to="" className="spacing-top button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
                 </div>
             </section>
 

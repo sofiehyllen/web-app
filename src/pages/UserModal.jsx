@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 
 export default function UserModal() {
 
-  const [brugernavn, setBrugernavn] = useState("");
-  const [showModal, setShowModal] = useState(true);
+    const [brugernavn, setBrugernavn] = useState("");
+    const [showModal, setShowModal] = useState(true);
     const navigate = useNavigate();
     
 
@@ -49,6 +49,7 @@ export default function UserModal() {
           alert("Please enter a username");
         }
       }
+      
     confirmBtn.addEventListener("click", okDialog);
 
     return () => {

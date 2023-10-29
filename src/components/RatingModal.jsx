@@ -31,6 +31,9 @@ RatingModal.propTypes = {
         <div className="gradient-wrapper">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <RatingForm savePost={createPost} elapsedTime={elapsedTime}/>
+                <div className='flex center spacing-bottom' >
+                    <button className='button btn-purple' onClick={onClose}>cancel</button>
+                </div>
             </div>    
         </div>
     </div>

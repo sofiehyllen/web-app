@@ -43,14 +43,16 @@ export default function RatingCard({ post }) {
 
     return (
         <div className="brickcontainer medium" onClick={handleClick}>
-            <span className="ident heading heading-small">{post.date}</span>
             <section className="flex">
-                <div className="spacing-top">
-                    <h3 className='bodytext-normal'>You have slept</h3>
-                    <p className='heading heading'>{formattedTime()}</p>
+                <div className='rating-text'>
+                    <span className="ident heading heading-small">{post.date}</span>
+                    <div>
+                        <h3 className='heading heading-small small-italic'>You slept for</h3>
+                        <p className='heading heading'>{formattedTime()}</p>    
+                    </div>
                 </div>
 
-                <div className="icon-container">
+                <div className="icon-container card-icon">
                     <img src={ratingIcons[post.rt]} alt={`rating-icon-${post.rt}`} className="img-max" />
                 </div>
             </section>

@@ -35,16 +35,18 @@ const Timer = () => {
 
   return (
     <div>
-      <div className='flex center'>
-        <h3 className='heading time spacing-bottom' >{calculateElapsedTime()}</h3>
-      </div>
-      <button className="button btn-big btn-spacing" onClick={stopTimer}>stop tracking</button>
-
-      {isModalOpen && (
-        <div>
-          <RatingModal isOpen={isModalOpen} onClose={closeModal} elapsedTime={mortenstid} />
+        <div className='flex center'>
+        <h3 className='heading time spacing-bottom timer-wrapper' >{calculateElapsedTime()}</h3>
         </div>
-      )}
+        <button className="button btn-big btn-spacing" onClick={stopTimer}>
+            stop tracking <span className='btn-shine'/>
+        </button>
+
+        {isModalOpen && (
+            <div>
+                <RatingModal isOpen={isModalOpen} onClose={closeModal} elapsedTime={mortenstid} />
+            </div>
+        )}
     </div>
   );
 };

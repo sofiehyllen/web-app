@@ -6,6 +6,7 @@ import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
 import PropTypes from 'prop-types';
 import { useNavigate } from 'react-router-dom';
+import moment from 'moment';
 
 const ratingIcons = {
     1: verysadIcon,
@@ -28,9 +29,24 @@ export default function RatingForm({ savePost, elapsedTime }) {
         setHoursSlept(elapsedTime);
     }, [elapsedTime]);
 
-    const formatDate = (inputDate) => {
-        const options = { day: 'numeric', month: 'long' };
-        return new Date(inputDate).toLocaleDateString('en-US', options);
+    //const formatDate = (inputDate) => {
+    //    const options = { day: 'numeric', month: 'long' };
+    //    return new Date(inputDate).toLocaleDateString('en-US', options);
+    //};
+
+    const formattedTime = () => {
+        const duration = moment.duration(elapsedTime, 'minutes');
+        const hours = duration.hours();
+        const minutes = duration.minutes();
+        const seconds = duration.seconds();
+    
+        if (hours > 0) {
+            return `${hours} ${hours === 1 ? 'hour' : 'hours'} ${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
+        } else if (minutes > 0) {
+            return `${minutes} ${minutes === 1 ? 'minute' : 'minutes'} ${seconds} ${seconds === 1 ? 'second' : 'seconds'}`;
+        } else {
+            return `${seconds} ${seconds === 1 ? 'second' : 'seconds'}`;
+        }
     };
 
     const handleRatingClick = (selectedOption) => {
@@ -71,13 +87,14 @@ export default function RatingForm({ savePost, elapsedTime }) {
             <h1 className="titel">Goodmorning <span className="titel-tab">name</span></h1>
 
             <label>
-                <h3 className='bodytext-normal'>Todays date is</h3>
-                <div className='heading heading-small'>{formatDate(date)}</div>
+               {/* <h3 className='heading heading-small small-italic spacing-bottom'>Todays date is <span id='ratingmodal-date'>{formatDate(date)}</span></h3>*/}
             </label>
 
             <label>
                 <h2 className='bodytext-normal'>You have slept for</h2>
-                <h3 className='heading'>{elapsedTime}</h3>
+                <div className='flex center'>
+                    <h3 className='spacing-bottom time-wrapper'>{formattedTime()}</h3>
+                </div>
             </label>
 
             <label>
@@ -93,8 +110,12 @@ export default function RatingForm({ savePost, elapsedTime }) {
                     ))}
                 </div>
             </label>
-            <p className="heading heading-small">{errorMessage}</p>
-            <button type="submit" className='button btn-big'>rate sleep</button>
+            <div id='rating-errormessage'>
+                <p className="heading heading-small">{errorMessage}</p>
+            </div>
+            <button type="submit" className='button btn-big'>
+                rate sleep <span className='btn-shine'/>
+            </button>
         </form>
     );
 }
