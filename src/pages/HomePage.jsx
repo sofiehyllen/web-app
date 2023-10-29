@@ -35,7 +35,7 @@ export default function HomePage(){
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
                 </div>
                 <Link className="button btn-small" to="/sleeptrackpage">
-                    go to sleep <span className="buttonshine"/>
+                    go to sleep <span className="btn-shine"/>
                 </Link>
             </div>
 
