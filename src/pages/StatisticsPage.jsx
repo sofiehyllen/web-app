@@ -4,6 +4,8 @@ import RatingHistory from "../components/RatingHistory";
 
 export default function StatisticsPage(){
 
+    
+
     return(
         <section className="page-content">
             <div className="spacing-bottom">
@@ -22,7 +24,7 @@ export default function StatisticsPage(){
                     That is <span className="heavy-text">34% </span>better than last week.</p> 
                 </div>    
                 
-                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job Sarah!</p>
+                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job !</p>
             </div>
 
             <div>

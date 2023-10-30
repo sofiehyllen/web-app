@@ -16,15 +16,15 @@ export default function ExercisesPage() {
             <div className="cirkel">
             <i className="fi fi-br-physics icon"></i>
             <i className="fi fi-br-user icon"></i>
-            <i className="fi fi-rr-gym icon"></i> {/* ? */}
+            <i className="fi fi-rr-gym icon"></i> 
             <i className="fi fi-sr-heart icon"></i>
-            <i className="fi fi-rr-users icon"></i>{/* ? */}
+            <i className="fi fi-rr-users icon"></i>
             <i className="fi fi-br-running icon"></i>
-            <i className="fi fi-rr-user-visor icon"></i> {/* ? */}
+            <i className="fi fi-rr-user-visor icon"></i> 
             <i className="fi fi-ss-brain icon"></i>
             <i className="fi fi-br-person-praying icon"></i>
             <i className="fi fi-br-skating icon"></i>
-            <i className="fi fi-br-walking icon"></i>{/* ? */}
+            <i className="fi fi-br-walking icon"></i>
             </div>
           </div>
 
