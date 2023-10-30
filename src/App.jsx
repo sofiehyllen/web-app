@@ -12,7 +12,7 @@ import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
 import Exercises from './pages/ExercisesPage'
 import Meditation from './pages/Meditation'
-import UserModal from "./pages/UserModal";
+import UsernameModal from "./pages/UsernameModal";
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
                 <Route exact path="/forestpage" element={<ForestPage/>} />
                 <Route exact path="/exercises" element={<Exercises/>} />
                 <Route exact path="/meditation" element={<Meditation/>} />
-                <Route exact path="/usermodal" element={<UserModal/>} />
+                <Route exact path="/usernamemodal" element={<UsernameModal/>} />
             </Routes> 
         </BrowserRouter>
         
