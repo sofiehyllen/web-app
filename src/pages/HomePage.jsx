@@ -18,7 +18,6 @@ export default function HomePage(){
         if (temp) {
             setBrugernavn(temp)
         }
-
     },[])
  
 
