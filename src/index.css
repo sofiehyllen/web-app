@@ -318,6 +318,9 @@
     #brick-bg-forest-3{background-image: url('src/assets/forest-bg3.svg');}
     #brick-bg-forest-4{background-image: url('src/assets/forest-bg1.svg');}
 
+    #brick-bg-meditation-1{background-image: url('src/assets/meditation-bg1.svg');}
+    #brick-bg-meditation-2{background-image: url('src/assets/meditation-bg2.svg');}
+
     .menu-icons{
         right: 0;
         top: 0;
@@ -604,14 +607,17 @@
     padding: 50px 40px;
 }
 
-.exercises-icon {
-    color: var(--light-purple);
-    font-size: xx-large;
-    margin: 40px 20px;}
-
 .text {
     color: var(--titel-text);
     background-color: var(--purple);
     margin-left: 15px;
     border: solid 1px var(--dark-purple)
+}
+
+/*--- exercises side ---*/
+
+.icon {
+    position: relative;
+    color: var(--light-purple);
+    font-size: xx-large;
 }
