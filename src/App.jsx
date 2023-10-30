@@ -10,8 +10,8 @@ import ToolPage from './pages/ToolPage';
 import UserPage from './pages/UserPage';
 import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
-import Exercises from './pages/ExercisesPage'
-import Meditation from './pages/Meditation'
+import ExercisesPage from './pages/ExercisesPage'
+import MeditationPage from './pages/MeditationPage'
 import UserModal from "./pages/UserModal";
 
 
@@ -31,8 +31,8 @@ function App() {
                 <Route exact path="/userpage" element={<UserPage/>} />
                 <Route exact path="/sleepingpage" element={<SleepingPage/>} />
                 <Route exact path="/forestpage" element={<ForestPage/>} />
-                <Route exact path="/exercises" element={<Exercises/>} />
-                <Route exact path="/meditation" element={<Meditation/>} />
+                <Route exact path="/exercises" element={<ExercisesPage/>} />
+                <Route exact path="/meditation" element={<MeditationPage/>} />
                 <Route exact path="/usermodal" element={<UserModal/>} />
             </Routes> 
         </BrowserRouter>

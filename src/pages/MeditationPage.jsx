@@ -1,7 +1,7 @@
 import Audiofile from "../components/Audiofile";
 import { Link } from "react-router-dom";
 
-export default function Meditation() {
+export default function MeditationPage() {
     return (
       <section className="page-content">
         <h1 className='titel spacing-top'> Meditation </h1>
