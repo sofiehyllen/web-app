@@ -364,6 +364,12 @@
         padding-top: 3vw;
     }
 
+    #sleepcalculator{
+        padding: .5vw 3vw .5vw 3vw;
+        margin: 1.5vw;
+        font-weight: 400;
+    }
+
     #graph{
         height: 50vw;
     }
@@ -387,6 +393,8 @@
     #sleeptrackpage-sounds{
         padding-top: 20vw;
     }
+
+
 
 
 /*--Afspiller til lydfiler--*/

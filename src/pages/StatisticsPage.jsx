@@ -1,19 +1,16 @@
 import { useEffect, useState } from "react";
 import Graph from "../components/Graph";
 import RatingHistory from "../components/RatingHistory";
+import SleepCalculator from "../components/SleepCalculator";
 
 
 export default function StatisticsPage(){
-
     const [brugernavn, setBrugernavn] = useState("");
-
     useEffect(() => {
         const temp = localStorage.getItem("brugernavn");
-
         if (temp) {
             setBrugernavn(temp)
         }
-
     },[])
 
     return(
@@ -30,11 +27,13 @@ export default function StatisticsPage(){
 
             <div className="heading heading-small">
                 <div className="center">
-                    <p  id="statistictext">On average, you have slept for <span className="heavy-text">7:43 </span>hours every night this week.
-                    That is <span className="heavy-text">34% </span>better than last week.</p> 
+                    <p id="statistictext">On average, you have slept for  
+                    <span className="time-wrapper titelcolor" id="sleepcalculator"><SleepCalculator/></span>
+                    hours every night this week. 
+                    </p>
                 </div>    
                 
-                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job {brugernavn} !</p>
+                <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job {brugernavn}!</p>
             </div>
 
             <div>
