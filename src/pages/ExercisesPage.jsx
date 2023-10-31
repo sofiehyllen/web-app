@@ -13,19 +13,17 @@ export default function ExercisesPage() {
         <section className="spacing-bottom">
           <p className="heading">During the day</p>
           <div className="exercises-icon">
-            <div className="cirkel">
-            <i className="fi fi-br-physics icon"></i>
-            <i className="fi fi-br-user icon"></i>
-            <i className="fi fi-rr-gym icon"></i> {/* ? */}
-            <i className="fi fi-sr-heart icon"></i>
-            <i className="fi fi-rr-users icon"></i>{/* ? */}
-            <i className="fi fi-br-running icon"></i>
-            <i className="fi fi-rr-user-visor icon"></i> {/* ? */}
-            <i className="fi fi-ss-brain icon"></i>
-            <i className="fi fi-br-person-praying icon"></i>
-            <i className="fi fi-br-skating icon"></i>
-            <i className="fi fi-br-walking icon"></i>{/* ? */}
-            </div>
+            <i className="fi fi-br-physics icon icon1"></i>
+            <i className="fi fi-br-user icon icon2"></i>
+            <i className="fi fi-rr-gym icon icon3"></i> 
+            <i className="fi fi-sr-heart icon icon4"></i>
+            <i className="fi fi-rr-users icon icon5"></i>
+            <i className="fi fi-br-running icon icon6"></i>
+            <i className="fi fi-rr-user-visor icon icon7"></i> 
+            <i className="fi fi-ss-brain icon icon8"></i>
+            <i className="fi fi-br-person-praying icon icon9"></i>
+            <i className="fi fi-br-skating icon icon10"></i>
+            <i className="fi fi-br-walking icon"></i>
           </div>
 
           <p className="heading">Breahting exercises</p>

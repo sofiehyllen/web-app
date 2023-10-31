@@ -1,7 +1,7 @@
 import Audiofile from "../components/Audiofile";
 import { Link } from "react-router-dom";
 
-export default function Meditation() {
+export default function MeditationPage() {
     return (
       <section className="page-content">
         <h1 className='titel spacing-top'> Meditation </h1>
@@ -80,10 +80,10 @@ export default function Meditation() {
         <section>
             <p className="heading">Meditation Exersices</p>
             <div className="flex spacing-top">
-                <div className="brickcontainer brick-bg" >
+                <div className="brickcontainer brick-bg" id="brick-bg-meditation-1" >
                     <p className="heading">Relaxation</p>
                 </div>
-                <div className="brickcontainer brick-bg" >
+                <div className="brickcontainer brick-bg" id="brick-bg-meditation-2" >
                     <p className="heading">Mindfulness</p>
                 </div>
             </div>
