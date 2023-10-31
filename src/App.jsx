@@ -21,7 +21,7 @@ function App() {
         <BrowserRouter>
             <Navigation/>
             <Routes> 
-                <Route exact path="/" element={<HomePage/>} /> 
+                <Route exact path="/" element={<UserModal/>} /> 
                 <Route exact path="/homepage" element={<HomePage/>} /> 
                 <Route exact path="/sleeptrackpage" element={<SleeptrackPage/>} /> 
                 <Route exact path="/menupage" element={<MenuPage/>} /> 

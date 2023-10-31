@@ -1,8 +1,10 @@
+import GoBackButton from "../components/GoBackButton";
 
 
 export default function ExercisesPage() {
     return (
       <section className="page-content">
+        <GoBackButton/>
         <h1 className='titel spacing-top'> Exercises </h1>
         <p className="bodytext spacing-bottom">
         Explore diverse methods and exercises to enhance your sleep rhythm. 
@@ -23,7 +25,7 @@ export default function ExercisesPage() {
             <i className="fi fi-ss-brain icon icon8"></i>
             <i className="fi fi-br-person-praying icon icon9"></i>
             <i className="fi fi-br-skating icon icon10"></i>
-            <i className="fi fi-br-walking icon"></i>
+            <i className="fi fi-br-walking"></i>
           </div>
 
           <p className="heading">Breahting exercises</p>
