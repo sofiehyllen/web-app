@@ -412,12 +412,12 @@
         align-items: center;
         background-color: var(--darkest-purple);
         margin-bottom: 3vw;
-        border-radius: 20vw;
+        border-radius: 20px;
         padding: 1vw;
         width: 100%;
         min-width: fit-content;
         font-family: "poppins-light", sans-serif;
-        
+        height: 10vw;
     }
 
     .playbutton{
