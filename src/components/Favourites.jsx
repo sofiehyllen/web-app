@@ -15,11 +15,11 @@ export default function Favourites({ favorites, handleHeartClick }) {
           <div key={index}>
             <Audiofile
               textarea={favorite.title}
-              height={30}
+              height={20}
               waveColor="rgba(96, 92, 110)"
               progressColor="rgba(240, 238, 230)"
               url={favorite.audioUrl}
-              barHeight={1.5}
+              barHeight={1}
               barWidth={3}
               barGap={4}
               barRadius={10}

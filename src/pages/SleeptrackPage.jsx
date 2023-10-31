@@ -56,14 +56,15 @@ export default function SleeptrackPage() {
         </Link>
       </div>
 
-      <div>
+      <div> 
         <Favourites
           favorites={favorites}
           handleHeartClick={handleHeartClick}
         />
-        <Link to="/soundpage" className=" button btn-small btn-purple ">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
+        <div className="rightalign-bottom">
+            <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
+        </div>
       </div>
-
     </section>
   )
 }
