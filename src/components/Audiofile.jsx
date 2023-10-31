@@ -24,7 +24,7 @@ const useWavesurfer = (containerRef, options) => {
     }, [options, containerRef])
   
     return wavesurfer
-  }
+}
 
 export default function Audiofile(props){
 
@@ -65,13 +65,13 @@ export default function Audiofile(props){
     const formattedTime = moment.utc(currentTime * 1000).format('mm:ss')
 
     return (
-      <section className='audio-container'>
-        <button className='playbutton' onClick={onPlayClick}>
-          {isPlaying ? <img className='img-max' src="src/assets/afspiller-pause.svg" alt="pause-button" /> : <img className='img-max' src='src/assets/afspiller-play.svg' alt='play-button'/> }
-        </button>
-        <p className='audiotext'>{textarea}</p>
-        <div className='audiowave' ref={containerRef}></div>
-        <div className='audiotime'><p>{formattedTime}</p></div>
-      </section>
+        <section className='audio-container'>
+            <button className='playbutton' onClick={onPlayClick}>
+                {isPlaying ? <img className='img-max' src="src/assets/afspiller-pause.svg" alt="pause-button" /> : <img className='img-max' src='src/assets/afspiller-play.svg' alt='play-button'/> }
+            </button>
+            <p className='audiotext'>{textarea}</p>
+            <div className='audiowave' ref={containerRef}></div>
+            <div className='audiotime'><p>{formattedTime}</p></div>
+        </section>
     )
 }

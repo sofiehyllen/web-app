@@ -144,7 +144,7 @@
     width: 100%;
     height: 100%;
     padding: 7vw;
-    margin-bottom: 10vw;
+    margin-bottom: 15vw;
 }
 
 .spacing-bottom{
@@ -184,6 +184,11 @@
         padding: 4px 22px 2px 22px;
         display: flex;
         align-items: center;
+    }
+
+    .btn-delete{
+        background-color: rgb(243, 40, 40);
+        margin-right: 4vw;
     }
 
     .btn-shine{
@@ -337,8 +342,8 @@
 
 /*ID til illustrationer på sider*/
     #illustration-home{
-        margin-top: 10vw;
-        margin-bottom: 15vw;
+        margin-top: 2vw;
+        margin-bottom: 10vw;
     }
 
     #illustration-startsleep{
@@ -368,6 +373,12 @@
         padding-top: 3vw;
     }
 
+    #sleepcalculator{
+        padding: .5vw 3vw .5vw 3vw;
+        margin: 1.5vw;
+        font-weight: 400;
+    }
+
     #graph{
         height: 50vw;
     }
@@ -391,6 +402,8 @@
     #sleeptrackpage-sounds{
         padding-top: 20vw;
     }
+
+
 
 
 /*--Afspiller til lydfiler--*/
@@ -542,8 +555,26 @@
 
 
 
+.delete-modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: 50;
+}
 
+.delete-content{
+    border-radius: 20px;
+    padding: 5vw;
+    background-color: var(--darkest-purple);
+    width: 85%;
 
+}
 
 
 

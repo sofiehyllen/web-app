@@ -15,6 +15,10 @@ const ratingIcons = {
     5: veryhappyIcon,
 };
 
+RatingCard.propTypes = {
+    post: PropTypes.object,
+}
+
 export default function RatingCard({ post, userHoursOfSleep }) {
     const navigate = useNavigate();
 
@@ -53,11 +57,6 @@ export default function RatingCard({ post, userHoursOfSleep }) {
     function handleClick() {
         navigate(`posts/${post.id}`);
     }
-
-    RatingCard.propTypes = {
-        post: PropTypes.object,
-        userHoursOfSleep: PropTypes.number,
-    };
 
     return (
         <div className="brickcontainer medium" onClick={handleClick}>
