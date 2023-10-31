@@ -1,11 +1,7 @@
-
 import moment from "moment/moment";
-import { motion } from "framer-motion";
-
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 
 export default function HomePage(){
     const currentDate = moment();
@@ -21,7 +17,6 @@ export default function HomePage(){
         }
     },[])
  
-
     return(
         <section className="page-content">
             <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
@@ -55,8 +50,6 @@ export default function HomePage(){
                         <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
                     </div>
                 </Link>
-
-                
             </div>
         </section>
     )

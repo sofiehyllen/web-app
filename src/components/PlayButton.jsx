@@ -1,7 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
-
-
 
 const PlayButton = ({ audioUrl }) => {
   const [audio, setAudio] = useState(new Audio(audioUrl));

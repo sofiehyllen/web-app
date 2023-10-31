@@ -17,6 +17,7 @@ const ratingIcons = {
 
 RatingCard.propTypes = {
     post: PropTypes.object,
+    userHoursOfSleep: PropTypes.number,
 }
 
 export default function RatingCard({ post, userHoursOfSleep }) {
