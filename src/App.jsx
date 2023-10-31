@@ -12,8 +12,8 @@ import SleepingPage from './pages/SleepingPage';
 import ForestPage from './pages/ForestPage';
 import ExercisesPage from './pages/ExercisesPage'
 import MeditationPage from './pages/MeditationPage'
-import UsernameModal from "./pages/UsernameModal";
 import RatingDelete from "./components/RatingDelete";
+import UserModal from "./pages/UserModal";
 
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
                 <Route exact path="/forestpage" element={<ForestPage/>} />
                 <Route exact path="/exercises" element={<ExercisesPage/>} />
                 <Route exact path="/meditation" element={<MeditationPage/>} />
-                <Route exact path="/usernamemodal" element={<UsernameModal/>} />
+                <Route exact path="/usermodal" element={<UserModal/>} />
             </Routes> 
         </BrowserRouter>
         
