@@ -2,8 +2,13 @@
 import PropTypes from 'prop-types'; 
 import RatingForm from './RatingForm';
 
+    RatingModal.propTypes = {
+        isOpen: PropTypes.bool,
+        onClose: PropTypes.func,
+        elapsedTime: PropTypes.string,
+    };
+
 export default function RatingModal({ isOpen, onClose, elapsedTime}) {
-   
     async function createPost(newPost) {
         const url = "https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep.json";
         
@@ -18,12 +23,7 @@ export default function RatingModal({ isOpen, onClose, elapsedTime}) {
   //Hvis isOpen er falsk (modalvinduet er lukket), returnerer komponenten null, hvilket betyder, at intet vil blive renderet. 
   //Dette er en måde at skjule modalvinduet, når det ikke er åbent.
   if (!isOpen) return null;
-  
-RatingModal.propTypes = {
-    isOpen: PropTypes.bool,
-    onClose: PropTypes.func,
-    elapsedTime: PropTypes.string,
-};
+
   return (
     //Dette er selve overlay elementet. Med onClick={onClose} sørger jeg for at modalvinduet lukkes, 
     //når der trykkes alle andre steder end selve vinduet.

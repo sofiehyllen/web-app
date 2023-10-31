@@ -15,6 +15,10 @@ const ratingIcons = {
     5: veryhappyIcon,
 };
 
+RatingCard.propTypes = {
+    post: PropTypes.object,
+}
+
 export default function RatingCard({ post }) {
     const navigate = useNavigate();
 
@@ -35,10 +39,6 @@ export default function RatingCard({ post }) {
 
     function handleClick() {
         navigate(`posts/${post.id}`); // -> "posts/-NDxg_qx1eWfdkNlZ6oj"
-    }
-
-    RatingCard.propTypes = {
-        post: PropTypes.object,
     }
 
     return (

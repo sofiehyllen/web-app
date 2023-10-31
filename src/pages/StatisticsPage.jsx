@@ -4,7 +4,6 @@ import SleepCalculator from "../components/SleepCalculator";
 
 
 export default function StatisticsPage(){
-
     return(
         <section className="page-content">
             <div className="spacing-bottom">
@@ -30,7 +29,7 @@ export default function StatisticsPage(){
             <div>
                 <h2 className="heading">History</h2>
                 <div className="spacing-top">
-                    <RatingHistory/>
+                <RatingHistory/>
                 </div>
             </div>
         </section>
