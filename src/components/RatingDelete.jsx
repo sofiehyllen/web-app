@@ -59,8 +59,8 @@ export default function RatingDelete() {
                                 <button className="button btn-small" onClick={handleCancel}>Cancel <span className='btn-shine'/></button>
                             </div>
                         </div>
-                        </div>
-                )}
+                    </div>
+                )}ß
             </div>
         </section>
     );
