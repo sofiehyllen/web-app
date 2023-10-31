@@ -1,26 +1,16 @@
 import { useEffect, useState } from "react";
-import {  Navigate, useParams } from "react-router-dom";
-import RatingForm from "./RatingForm";
+import {  useNavigate, useParams } from "react-router-dom";
+
+import RatingCard from "./RatingCard";
 
 
 export default function RatingDelete() {
-  //const navigate = useNavigate();
+    const navigate = useNavigate();
   const [post, setPost] = useState({});
- 
-
-  // The url contains a parameter which is equal
-  // to the id (key) of the translation to be
-  // updated.
-  const params = useParams();
-
-   console.log(`params ${params.postId}`);
-
-  // The url must reflect the fact, that only one translation
-  // is to be updated. This translation is identified by its
-  // id (key).
+  const params = useParams(); //URL indeholder parameters som er det samme som dataets ID (key)
+        // console.log(`params ${params.postId}`);
   const url = `https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep/${params.postId}.json`;
 
-  // Fetch (GET) this single translation
   useEffect(() => {
     async function getPost() {
       const response = await fetch(url);
@@ -34,7 +24,7 @@ export default function RatingDelete() {
   // It asks the user for permission before the
   // deletion is completed.
   async function deletePost() {
-    const confirmDelete = window.confirm(`Do you want to delete translation of?`)
+    const confirmDelete = window.confirm(`Do you want to delete this sleeptracking?`)
     
     if (confirmDelete) {
         const response = await fetch(url, {
@@ -43,9 +33,8 @@ export default function RatingDelete() {
 
         const data = await response.json();
         console.log(data);
-        Navigate("/");
+        navigate("/");
       }
-
   }
 
   // PostForm.js is implemented and 
@@ -53,14 +42,10 @@ export default function RatingDelete() {
   // name of the method that updates
   // the new translation.
     return (
-        <div className="modal">
-            <div className="gradient-wrapper">
-                <div className="modal-content">
-                    <h1>Update Post</h1>
-                    <RatingForm post={post}/>
-                    <button className="btn-delete" onClick={deletePost}>Delete Post</button>
-                </div>
-            </div>
-        </div>
+        <section>
+            <h1>Delete Post</h1>
+            <RatingCard post={post} />
+            <button className="btn-delete" onClick={deletePost}>Delete Post</button>
+        </section>
     );
 }
