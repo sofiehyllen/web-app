@@ -12,7 +12,6 @@ export default function StatisticsPage(){
             setBrugernavn(temp)
         }
     },[])
-
     return(
         <section className="page-content">
             <div className="spacing-bottom">
