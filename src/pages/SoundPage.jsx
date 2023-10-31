@@ -1,7 +1,25 @@
 import Audiofile from "../components/Audiofile";
 import { Link } from "react-router-dom";
+import Favourites from "../components/Favourites";
+import { useState } from "react";
 
 export default function SoundPage(){
+
+    const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const [favorites, setFavorites] = useState(storedFavorites);
+
+  const handleHeartClick = (audioUrl, title) => {
+    let updatedFavorites = [...favorites];
+    const index = updatedFavorites.findIndex(fav => fav.audioUrl === audioUrl);
+    if (index > -1) {
+      updatedFavorites.splice(index, 1);
+    } else {
+      updatedFavorites.push({ audioUrl, title, isFavorite: true });
+    }
+    setFavorites(updatedFavorites);
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+  };
+
 
     return(
         <section className="page-content">
@@ -33,43 +51,12 @@ export default function SoundPage(){
                     </div>
                 </div>
             </section>
-{/* LIKED SOUNDS SECTION */}
-            <section>
-                
-                <h2 className="heading">Your favourite sounds</h2>
-                <div className="spacing-top">
-                    
-                    
-                    <Audiofile
-                    textarea={"Quiet rain"}
-                    height={30}
-                    waveColor="rgba(96, 92, 110)"
-                    progressColor="rgba(240, 238, 230)"
-                    url={'src/assets/audio-rain.mp3'}
-                    barHeight={1.5}
-                    barWidth={3}
-                    barGap={4}
-                    barRadius={10}
-                    dragToSeek={true}
-                    cursorColor={'transparent'}
-                    />
+{/* FAVOURITE SOUNDS SECTION */}
 
-
-                    <Audiofile
-                    textarea={"Ocean waves"}
-                    height={30}
-                    waveColor="rgba(96, 92, 110)"
-                    progressColor="rgba(240, 238, 230, 1)"
-                    url={'src/assets/audio-ocean-waves.mp3'}
-                    barHeight={2}
-                    barWidth={3}
-                    barGap={4}
-                    barRadius={10}
-                    dragToSeek={true}
-                    cursorColor={'transparent'}
-                    />
-                </div>
-            </section>
+            <Favourites
+                favorites={favorites}
+                handleHeartClick={handleHeartClick}
+            />
 
 
 

@@ -15,7 +15,7 @@ const ratingIcons = {
     5: veryhappyIcon,
 };
 
-export default function RatingCard({ post }) {
+export default function RatingCard({ post, userHoursOfSleep }) {
     const navigate = useNavigate();
 
     const formattedTime = () => {
@@ -23,7 +23,7 @@ export default function RatingCard({ post }) {
         const hours = duration.hours();
         const minutes = duration.minutes();
         const seconds = duration.seconds();
-    
+
         if (hours > 0) {
             return `${hours} ${hours === 1 ? 'hour' : 'hours'} ${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
         } else if (minutes > 0) {
@@ -33,13 +33,31 @@ export default function RatingCard({ post }) {
         }
     };
 
+    const getTimeColor = () => {
+        const duration = moment.duration(post.hs, 'minutes');
+        const totalMinutes = duration.asMinutes();
+        const userSleepMinutes = userHoursOfSleep * 60;
+
+        console.log('Total Minutes:', totalMinutes);
+        console.log('User Sleep Minutes:', userSleepMinutes);
+
+        if (totalMinutes < userSleepMinutes) {
+            console.log('Color is red');
+            return '#c95050';
+        } else {
+            console.log('Color is green');
+            return '#87d192';
+        }
+    };
+
     function handleClick() {
-        navigate(`posts/${post.id}`); // -> "posts/-NDxg_qx1eWfdkNlZ6oj"
+        navigate(`posts/${post.id}`);
     }
 
     RatingCard.propTypes = {
         post: PropTypes.object,
-    }
+        userHoursOfSleep: PropTypes.number,
+    };
 
     return (
         <div className="brickcontainer medium" onClick={handleClick}>
@@ -48,7 +66,7 @@ export default function RatingCard({ post }) {
                     <span className="ident heading heading-small">{post.date}</span>
                     <div>
                         <h3 className='heading heading-small small-italic'>You slept for</h3>
-                        <p className='heading heading'>{formattedTime()}</p>    
+                        <p className='heading' style={{ color: getTimeColor() }}>{formattedTime()}</p>
                     </div>
                 </div>
 
