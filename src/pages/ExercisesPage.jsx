@@ -31,10 +31,10 @@ export default function ExercisesPage() {
             Discover the transformative effects of mindful breathing techniques, designed to reduce stress and promote relaxation.
           </p>
           <div className="flex spacing-top">
-                <div className="brickcontainer brick-bg" >
+                <div className="brickcontainer brick-bg" id="brick-bg-breathing-1" >
                     <p className="heading">#1</p>
                 </div>
-                <div className="brickcontainer brick-bg" >
+                <div className="brickcontainer brick-bg" id="brick-bg-breathing-2">
                     <p className="heading">#2</p>
                 </div>
             </div>
