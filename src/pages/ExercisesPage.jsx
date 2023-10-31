@@ -1,5 +1,5 @@
 import GoBackButton from "../components/GoBackButton";
-
+import logoer from "../assets/logoer.svg"
 
 export default function ExercisesPage() {
     return (
@@ -14,19 +14,7 @@ export default function ExercisesPage() {
   
         <section className="spacing-bottom">
           <p className="heading">During the day</p>
-          <div className="exercises-icon">
-            <i className="fi fi-br-physics icon icon1"></i>
-            <i className="fi fi-br-user icon icon2"></i>
-            <i className="fi fi-rr-gym icon icon3"></i> 
-            <i className="fi fi-sr-heart icon icon4"></i>
-            <i className="fi fi-rr-users icon icon5"></i>
-            <i className="fi fi-br-running icon icon6"></i>
-            <i className="fi fi-rr-user-visor icon icon7"></i> 
-            <i className="fi fi-ss-brain icon icon8"></i>
-            <i className="fi fi-br-person-praying icon icon9"></i>
-            <i className="fi fi-br-skating icon icon10"></i>
-            <i className="fi fi-br-walking"></i>
-          </div>
+          <img src={logoer} alt="Logoer" className="logoer" />
 
           <p className="heading">Breahting exercises</p>
           <p className="bodytext spacing-bottom">

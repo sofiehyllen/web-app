@@ -3,7 +3,6 @@
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
-    @import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
 /*--Generelle regler, farver og typografi--*/
     :root{
@@ -619,8 +618,7 @@
 
 /*--- exercises side ---*/
 
-.icon {
-    position: relative;
-    color: var(--light-purple);
-    font-size: xx-large;
+.logoer {
+    width: 90%;
+    margin: 15px 0px 10px 5%;
 }
