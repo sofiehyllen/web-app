@@ -13,6 +13,7 @@ import ForestPage from './pages/ForestPage';
 import ExercisesPage from './pages/ExercisesPage'
 import MeditationPage from './pages/MeditationPage'
 import UsernameModal from "./pages/UsernameModal";
+import RatingDelete from "./components/RatingDelete";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                 <Route exact path="/soundpage" element={<SoundPage/>} />
                 <Route exact path="/toolpage" element={<ToolPage/>} />
                 <Route exact path="/statisticspage" element={<StatisticsPage/>} />
+                <Route path="statisticspage/posts/:postId" element={<RatingDelete />} />
                 <Route exact path="/userpage" element={<UserPage/>} />
                 <Route exact path="/sleepingpage" element={<SleepingPage/>} />
                 <Route exact path="/forestpage" element={<ForestPage/>} />

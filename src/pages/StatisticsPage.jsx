@@ -39,7 +39,7 @@ export default function StatisticsPage(){
             <div>
                 <h2 className="heading">History</h2>
                 <div className="spacing-top">
-                    <RatingHistory/>
+                <RatingHistory/>
                 </div>
             </div>
         </section>
