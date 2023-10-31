@@ -8,6 +8,6 @@ export default function GoBackButton() {
   };
 
   return (
-    <button onClick={handleGoBack}>Go Back</button>
+    <button onClick={handleGoBack} className="back"><i className="fi fi-br-angle-small-left"></i> </button>
   );
 }
