@@ -19,6 +19,7 @@ export default function UserModal() {
     if (temp) {
       setBrugernavn(temp);
       inputEl.value = temp;
+      navigate("/homepage")
     } else {
       inputEl.value = "";
       favDialog.showModal();
@@ -31,7 +32,7 @@ export default function UserModal() {
           localStorage.setItem("brugernavn", formattedUsername);
           setBrugernavn(formattedUsername);
           setShowModal(false);
-          navigate("/"); //til homepage
+          navigate("/homepage"); //til homepage
         } else if (!username) {
           alert("Please enter a username");
         }

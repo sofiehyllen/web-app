@@ -1,9 +1,11 @@
 import Audiofile from "../components/Audiofile";
 import { Link } from "react-router-dom";
+import GoBackButton from "../components/GoBackButton";
 
 export default function MeditationPage() {
     return (
       <section className="page-content">
+        <GoBackButton/> 
         <h1 className='titel spacing-top'> Meditation </h1>
         <p className="bodytext spacing-bottom">
         Try meditation, for a good night sleep. 
@@ -89,7 +91,7 @@ export default function MeditationPage() {
             </div>
             <div className="rightalign-bottom">
                 
-            <p className="bodytext spacing-bottom spacing-top">
+            <p className="bodytext spacing-top">
                 To enhance your meditation practice, enjoy your favorite meditation music or dive into our natural calming sounds. 
                 Let the melodies guide you into a state of deep tranquility, leading you to a place of inner peace and relaxation.
             </p>

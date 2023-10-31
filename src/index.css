@@ -3,7 +3,6 @@
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
-    @import url('https://cdn-uicons.flaticon.com/2.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css');
 
 /*--Generelle regler, farver og typografi--*/
     :root{
@@ -321,6 +320,9 @@
     #brick-bg-meditation-1{background-image: url('src/assets/meditation-bg1.svg');}
     #brick-bg-meditation-2{background-image: url('src/assets/meditation-bg2.svg');}
 
+    #brick-bg-breathing-1{background-image: url('src/assets/breathing-1.svg');}
+    #brick-bg-breathing-2{background-image: url('src/assets/breathing-2.svg');}
+
     .menu-icons{
         right: 0;
         top: 0;
@@ -616,8 +618,19 @@
 
 /*--- exercises side ---*/
 
-.icon {
-    position: relative;
-    color: var(--light-purple);
-    font-size: xx-large;
+.logoer {
+    width: 90%;
+    margin: 10px 0px 5px 5%;
+}
+
+/*--- Go Back Button ---*/
+
+.back{
+    border-radius: 50%;
+    font-size: 20px;
+    padding: 6px 5px 2px 5px;
+    background-color: var(--purple);
+    color: var(--titel-text);
+    border: none;
+    margin-top: -10px;
 }
