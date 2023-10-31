@@ -1,5 +1,6 @@
 
 import moment from "moment/moment";
+import { motion } from "framer-motion";
 
 import { useEffect } from "react";
 import { useState } from "react";
@@ -29,7 +30,8 @@ export default function HomePage(){
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
 
-            <div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1">
+            <div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1" >
+                
                 <div>
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
@@ -54,6 +56,8 @@ export default function HomePage(){
                         <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
                     </div>
                 </Link>
+
+                
             </div>
         </section>
     )
