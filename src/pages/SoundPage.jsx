@@ -1,10 +1,12 @@
 import Audiofile from "../components/Audiofile";
 import { Link } from "react-router-dom";
+import GoBackButton from "../components/GoBackButton";
 
 export default function SoundPage(){
 
     return(
         <section className="page-content">
+            <GoBackButton />
             
 {/* SOUNDPAGE HEADER */}     
             <div className="spacing-bottom">

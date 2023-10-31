@@ -629,8 +629,8 @@
     border-radius: 50%;
     font-size: 20px;
     padding: 6px 5px 2px 5px;
-    background-color: var(--purple);
+    background-color: var(--light-purple);
     color: var(--titel-text);
     border: none;
-    margin-top: -10px;
+    margin: -10px 0px 5px 0px;
 }

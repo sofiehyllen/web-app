@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import GoBackButton from "../components/GoBackButton";
 import Graph from "../components/Graph";
 import RatingHistory from "../components/RatingHistory";
 
@@ -18,6 +19,7 @@ export default function StatisticsPage(){
 
     return(
         <section className="page-content">
+            <GoBackButton />
             <div className="spacing-bottom">
                 <h1 className="titel">Your statistics</h1>
                 <p className="bodytext">Check out the statistics of your weekly sleepcycle to get a better feeling of the quality of your sleep.</p>
