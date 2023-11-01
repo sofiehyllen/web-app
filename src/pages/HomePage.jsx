@@ -2,7 +2,10 @@ import moment from "moment/moment";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import {motion} from 'framer-motion'
 import illustrationHome from "../assets/illustration-home.svg"
+import { containerAnimation, itemAnimation } from "../components/Animationer";
+
 
 export default function HomePage(){
     const currentDate = moment();
@@ -18,15 +21,22 @@ export default function HomePage(){
         }
     },[])
  
+
+//---Animationer---//
+
+
     return(
-        <section className="page-content">
+        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible"> 
+            <motion.div variants={itemAnimation}>
             <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
             <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn}</span></h1>
+            </motion.div>
             
-            <div id="illustration-home"><img className="img-max" src={illustrationHome} alt="moon illustration home" /></div>
+            <motion.div id="illustration-home" variants={itemAnimation}>
+                <img className="img-max" src={illustrationHome} alt="moon illustration home" />
+            </motion.div>
 
-            <div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1" >
-                
+            <motion.div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1" variants={itemAnimation}>
                 <div>
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
@@ -34,24 +44,23 @@ export default function HomePage(){
                 <Link className="button btn-small" to="/sleeptrackpage">
                     go to sleep <span className="btn-shine"/>
                 </Link>
-            </div>
+            </motion.div>
 
 
-            <div className="flex">
+            <motion.div variants={itemAnimation} className="flex">
                 <Link className="brickcontainer small brick-bg" id="brick-bg-home-2" to="/soundpage">
-                    <div>
+                    <div >
                         <h2 className="heading">Sounds</h2>
                         <p className="bodytext">Fall asleep to one of many calmning sleeping sounds</p>
                     </div>
                 </Link>
-
                 <Link className="brickcontainer small brick-bg" id="brick-bg-home-3" to="/statisticspage">
                     <div>
                         <h2 className="heading">Statistics</h2>
                         <p className="bodytext">Keep track of your sleep with the statistics of your latest sleepcycle</p>
                     </div>
                 </Link>
-            </div>
-        </section>
+            </motion.div>
+        </motion.div>
     )
 }

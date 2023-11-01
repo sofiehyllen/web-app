@@ -1,5 +1,5 @@
 
-import { BrowserRouter, Routes, Route } from "react-router-dom"; 
+import { Routes, Route } from "react-router-dom"; 
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import Navigation from './components/Navigation';
@@ -14,6 +14,7 @@ import ExercisesPage from './pages/ExercisesPage'
 import MeditationPage from './pages/MeditationPage'
 import RatingDelete from "./components/RatingDelete";
 import UserModal from "./pages/UserModal";
+import { AnimatePresence } from "framer-motion";
 
 
 
@@ -21,8 +22,8 @@ import UserModal from "./pages/UserModal";
 function App() {
   return (
     <section>
-        <BrowserRouter>
-            <Navigation/>
+        <Navigation/>
+        <AnimatePresence>    
             <Routes> 
                 <Route exact path="/" element={<UserModal/>} /> 
                 <Route exact path="/homepage" element={<HomePage/>} /> 
@@ -39,8 +40,7 @@ function App() {
                 <Route exact path="/meditation" element={<MeditationPage/>} />
                 <Route exact path="/usermodal" element={<UserModal/>} />
             </Routes> 
-        </BrowserRouter>
-        
+        </AnimatePresence>
     </section>
   )
 }

@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import Favourites from "../components/Favourites";
 import { useState, useEffect, useRef } from "react";
 import illustrationSleeptrack from "../assets/illustration-start-sleep.svg"
+import {motion} from 'framer-motion'
+import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 export default function SleeptrackPage() {
   // const [count, setCount] = useState(0)
@@ -43,29 +45,28 @@ export default function SleeptrackPage() {
     };
   }, []);
 
-  return (
-    <section className="page-content">
-      <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
+    return (
+        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+            <motion.div variants={itemAnimation}>
+                 <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
+            </motion.div>
 
-      <div id="illustration-startsleep">
-        <img className="img-max" src={illustrationSleeptrack} alt="moon illustration sleep" />
-      </div>
+            <motion.div id="illustration-startsleep" variants={itemAnimation}>
+                <img className="img-max" src={illustrationSleeptrack} alt="moon illustration sleep" />
+            </motion.div>
 
-      <div className="center flex spacing-bottom">
-        <Link className="button btn-big" to="/sleepingpage">
-          start tracking <span className="btn-shine" />
-        </Link>
-      </div>
+            <motion.div className="center flex spacing-bottom" variants={itemAnimation}>
+                <Link className="button btn-big" to="/sleepingpage">
+                    start tracking <span className="btn-shine" />
+                </Link>
+            </motion.div>
 
-      <div> 
-        <Favourites
-          favorites={favorites}
-          handleHeartClick={handleHeartClick}
-        />
-        <div className="rightalign-bottom">
-            <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
-        </div>
-      </div>
-    </section>
-  )
+            <motion.div variants={itemAnimation}> 
+                <Favourites favorites={favorites} handleHeartClick={handleHeartClick}/>
+                <div className="rightalign-bottom">
+                    <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
+                </div>
+            </motion.div>
+        </motion.div>
+    )
 }
