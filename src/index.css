@@ -447,8 +447,17 @@
         text-align: center;
     }
 
+    .playbutton-big{
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-
+    .playbutton-big img{
+        height: 5.5vh;
+    }
 
 
 
@@ -615,7 +624,7 @@
         position: absolute;
         margin-left: 110px;
         margin-bottom: 90px;
-        color: red;
+        color: rgb(229, 55, 55);
     }
 
     .forest-sound-title{
