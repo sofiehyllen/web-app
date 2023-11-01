@@ -4,6 +4,8 @@ import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js
 import moment from 'moment/moment'
 import play from '../assets/afspiller-play.svg'
 import pause from '../assets/afspiller-pause.svg'
+import { motion } from 'framer-motion';
+import { itemAnimation } from './Animationer';
 
 const useWavesurfer = (containerRef, options) => {
     const [wavesurfer, setWavesurfer] = useState(null)
@@ -64,13 +66,13 @@ export default function Audiofile(props){
     const formattedTime = moment.utc(currentTime * 1000).format('mm:ss')
 
     return (
-        <section className='audio-container'>
+        <motion.section className='audio-container' variants={itemAnimation}>
             <button className='playbutton' onClick={onPlayClick}>
                 {isPlaying ? <img className='img-max' src={pause} alt="pause-button" /> : <img className='img-max' src={play} alt='play-button'/> }
             </button>
             <p className='audiotext'>{textarea}</p>
             <div className='audiowave' ref={containerRef}></div>
             <div className='audiotime'><p>{formattedTime}</p></div>
-        </section>
+        </motion.section>
     )
 }
