@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Favourites from "../components/Favourites";
 import { useState, useEffect, useRef } from "react";
+import illustrationSleeptrack from "../assets/illustration-start-sleep.svg"
 
 export default function SleeptrackPage() {
   // const [count, setCount] = useState(0)
@@ -47,7 +48,7 @@ export default function SleeptrackPage() {
       <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
 
       <div id="illustration-startsleep">
-        <img className="img-max" src="src/assets/illustration-start-sleep.svg" alt="moon illustration sleep" />
+        <img className="img-max" src={illustrationSleeptrack} alt="moon illustration sleep" />
       </div>
 
       <div className="center flex spacing-bottom">

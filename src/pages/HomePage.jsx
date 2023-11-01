@@ -2,6 +2,7 @@ import moment from "moment/moment";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import illustrationHome from "../assets/illustration-home.svg"
 
 export default function HomePage(){
     const currentDate = moment();
@@ -22,7 +23,7 @@ export default function HomePage(){
             <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
             <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn}</span></h1>
             
-            <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
+            <div id="illustration-home"><img className="img-max" src={illustrationHome} alt="moon illustration home" /></div>
 
             <div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1" >
                 
