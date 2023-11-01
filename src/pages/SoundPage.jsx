@@ -2,6 +2,8 @@ import { Link } from "react-router-dom";
 import GoBackButton from "../components/GoBackButton";
 import Favourites from "../components/Favourites";
 import { useState } from "react";
+import { containerAnimation, itemAnimation } from "../components/Animationer";
+import { motion } from "framer-motion";
 
 export default function SoundPage(){
   const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -21,20 +23,20 @@ export default function SoundPage(){
 
 
     return(
-        <section className="page-content">
-            <GoBackButton />
+        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+            <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
             
-{/* SOUNDPAGE HEADER */}     
-            <div className="spacing-bottom">
+            {/* SOUNDPAGE HEADER */}     
+            <motion.div className="spacing-bottom" variants={itemAnimation}> 
                 <h1 className="titel">Have trouble <br /><span className="titel-tab">sleeping?</span></h1>
                 <p className="bodytext spacing-top"> 
                     Explore the variety of calming and relaxing sleeping sounds. 
                     Fall asleep to the sound of waves in the ocean or listen to 
                     quiet rainfall while you meditate.</p>
-            </div>
+            </motion.div>
 
-{/* SOUND CATEGORIES SECTION */}
-            <section className="spacing-bottom">
+            {/* SOUND CATEGORIES SECTION */}
+            <motion.div className="spacing-bottom" variants={itemAnimation}> 
                 <h2 className="heading">Categories</h2>
                 <Link to="/forestpage">
                     <div className="brickcontainer medium leftalign-bottom spacing-top brick-bg" id="brick-bg-sounds-1">
@@ -50,13 +52,10 @@ export default function SoundPage(){
                         <p className="heading">Ocean</p>
                     </div>
                 </div>
-            </section>
-{/* FAVOURITE SOUNDS SECTION */}
+            </motion.div>
 
-            <Favourites
-                favorites={favorites}
-                handleHeartClick={handleHeartClick}
-            />
-        </section>
+            {/* FAVOURITE SOUNDS SECTION */}
+            <motion.div variants={itemAnimation}><Favourites favorites={favorites} handleHeartClick={handleHeartClick}/></motion.div>
+        </motion.div>
     )
 }
