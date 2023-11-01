@@ -46,7 +46,7 @@ export default function SleeptrackPage() {
   }, []);
 
     return (
-        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+        <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <motion.div variants={itemAnimation}>
                  <h1 className="titel">Ready to go <br /> <span className="titel-tab">to sleep?</span></h1>
             </motion.div>
@@ -67,6 +67,6 @@ export default function SleeptrackPage() {
                     <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
                 </div>
             </motion.div>
-        </motion.div>
+        </motion.section>
     )
 }

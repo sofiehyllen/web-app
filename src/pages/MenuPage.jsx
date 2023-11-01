@@ -4,7 +4,7 @@ import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 export default function MenuPage(){
     return(
-        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+        <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <Link to ="/userpage">
                 <motion.div id="usericon" variants={itemAnimation}>
                     <i className="fi fi-ss-user"></i>
@@ -39,6 +39,6 @@ export default function MenuPage(){
                     <img className="img-max absolute menu-icons" src="src/assets/menu-icon1.svg" alt="menu icon 1" />
                 </motion.div>
             </Link>
-        </motion.div>
+        </motion.section>
     )
 }

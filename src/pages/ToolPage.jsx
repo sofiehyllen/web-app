@@ -1,23 +1,25 @@
 import { Link } from "react-router-dom";
 import GoBackButton from "../components/GoBackButton";
+import { motion } from "framer-motion";
+import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 export default function ToolPage(){
     return(
-        <section className="page-content">
-            <GoBackButton />
-            
-{/* TIPS & TOOLS HEADER */}            
-            <div className="spacing-bottom">
+        <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+            <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
+
+            {/* TIPS & TOOLS HEADER */}            
+            <motion.div className="spacing-bottom" variants={itemAnimation}>
                 <h1 className="titel">Tips & tools</h1>
                 <p className="bodytext spacing-top"> 
                     Getting a good night&apos;s sleep is essential for overall 
                     well-being. Here are some tips and tools to help you sleep better
                 </p>
-            </div>
+            </motion.div>
 
 
-{/* MEDITATION & EXERCISES SECTION */}
-            <section className="spacing-bottom">
+            {/* MEDITATION & EXERCISES SECTION */}
+            <motion.div className="spacing-bottom" variants={itemAnimation}>
                 <h2 className="heading">In the evening </h2>
                 <div className="flex spacing-top">
                     <Link className="brickcontainer brick-bg" id="brick-bg-tools-1" to="/Meditation">
@@ -31,10 +33,10 @@ export default function ToolPage(){
                         </div>
                     </Link>
                 </div>
-            </section>
+            </motion.div>
 
-{/* "TIP OF THE DAY" SECTION */}
-            <section className="center-bg" >
+            {/* "TIP OF THE DAY" SECTION */}
+            <motion.div className="center-bg" variants={itemAnimation}>
                 <h2 className="heading"> Tip of the day </h2>
                 <div className="rightalign-bottom" >
                     <div className="spacing-top center" id="tip-bg">
@@ -46,15 +48,15 @@ export default function ToolPage(){
                         </p>
                     </div>
                 </div>
-            </section>
+            </motion.div>
 
-{/* 10 STEPS SECTION */}
-            <section className="spacing-top">
+            {/* 10 STEPS SECTION */}
+            <motion.div className="spacing-top" variants={itemAnimation}>
                 <h2 className="heading"> During the day</h2>
                 <div className="spacing-top brickcontainer medium leftalign-bottom brick-bg" id="brick-bg-tools-3">
                     <p className="heading">10 steps to better sleep</p>
                 </div>
-            </section>
-        </section>
+            </motion.div>
+        </motion.section>
     )
 }

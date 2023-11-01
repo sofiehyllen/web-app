@@ -26,7 +26,7 @@ export default function HomePage(){
 
 
     return(
-        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible"> 
+        <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible"> 
             <motion.div variants={itemAnimation}>
             <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
             <h1 className='titel' > Good evening <span className="titel titel-tab">{brugernavn}</span></h1>
@@ -61,6 +61,6 @@ export default function HomePage(){
                     </div>
                 </Link>
             </motion.div>
-        </motion.div>
+        </motion.section>
     )
 }

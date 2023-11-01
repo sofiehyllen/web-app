@@ -23,7 +23,7 @@ export default function SoundPage(){
 
 
     return(
-        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+        <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
             
             {/* SOUNDPAGE HEADER */}     
@@ -56,6 +56,6 @@ export default function SoundPage(){
 
             {/* FAVOURITE SOUNDS SECTION */}
             <motion.div variants={itemAnimation}><Favourites favorites={favorites} handleHeartClick={handleHeartClick}/></motion.div>
-        </motion.div>
+        </motion.section>
     )
 }
