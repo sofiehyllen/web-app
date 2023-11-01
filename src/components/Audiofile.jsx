@@ -2,6 +2,8 @@ import { useRef, useState, useEffect, useCallback } from 'react'
 import PropTypes from 'prop-types';
 import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js'
 import moment from 'moment/moment'
+import play from '../assets/afspiller-play.svg'
+import pause from '../assets/afspiller-pause.svg'
 
 const useWavesurfer = (containerRef, options) => {
     const [wavesurfer, setWavesurfer] = useState(null)
@@ -9,20 +11,17 @@ const useWavesurfer = (containerRef, options) => {
     // Initialize wavesurfer when the container mounts
     // or any of the props change
     useEffect(() => {
-      if (!containerRef.current) return
-  
-      const ws = WaveSurfer.create({
+        if (!containerRef.current) return
+
+        const ws = WaveSurfer.create({
         ...options,
         container: containerRef.current,
-      })
-  
-      setWavesurfer(ws)
-
-      return () => {
+        })
+        setWavesurfer(ws)
+        return () => {
         ws.destroy()
-      }
+        }
     }, [options, containerRef])
-  
     return wavesurfer
 }
 
@@ -67,7 +66,7 @@ export default function Audiofile(props){
     return (
         <section className='audio-container'>
             <button className='playbutton' onClick={onPlayClick}>
-                {isPlaying ? <img className='img-max' src="src/assets/afspiller-pause.svg" alt="pause-button" /> : <img className='img-max' src='src/assets/afspiller-play.svg' alt='play-button'/> }
+                {isPlaying ? <img className='img-max' src={pause} alt="pause-button" /> : <img className='img-max' src={play} alt='play-button'/> }
             </button>
             <p className='audiotext'>{textarea}</p>
             <div className='audiowave' ref={containerRef}></div>

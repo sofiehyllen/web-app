@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import play from '../assets/afspiller-play.svg'
+import pause from '../assets/afspiller-pause.svg'
 
 const PlayButton = ( {audioUrl} ) => {
   const [audio, setAudio] = useState(new Audio(audioUrl));
@@ -16,7 +18,7 @@ const PlayButton = ( {audioUrl} ) => {
 
   return (
     <button className='playbutton-big' onClick={handlePlay}>
-        {isPlaying ? <img className='img-max' src="src/assets/afspiller-pause.svg" alt="pause-button" /> : <img className='img-max' src='src/assets/afspiller-play.svg' alt='play-button'/> }
+        {isPlaying ? <img className='img-max' src={pause} alt="pause-button" /> : <img className='img-max' src={play} alt='play-button'/> }
     </button>
   );
   

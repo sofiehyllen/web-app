@@ -19,8 +19,6 @@ export default function ForestPage() {
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
-
-
   return (
     <section className="page-content">
       <GoBackButton />
