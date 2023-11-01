@@ -12,21 +12,25 @@ export default function Favourites({ favorites, handleHeartClick }) {
         <p className='heading heading-small bodytext spacing-bottom'> # Like your favorite sounds to display them here.</p>
       ) : (
         favorites.map((favorite, index) => (
-          <div key={index}>
-            <Audiofile
-              textarea={favorite.title}
-              height={20}
-              waveColor="rgba(96, 92, 110)"
-              progressColor="rgba(240, 238, 230)"
-              url={favorite.audioUrl}
-              barHeight={1}
-              barWidth={3}
-              barGap={4}
-              barRadius={10}
-              dragToSeek={true}
-              cursorColor={'transparent'}
-            />
+        <div key={index} className="audiofile-container" style={{ position: 'relative'}}>
+              <Audiofile
+                textarea={favorite.title}
+                height={20}
+                waveColor="rgba(96, 92, 110)"
+                progressColor="rgba(240, 238, 230)"
+                url={favorite.audioUrl}
+                barHeight={1}
+                barWidth={3}
+                barGap={4}
+                barRadius={10}
+                dragToSeek={true}
+                cursorColor={'transparent'}
+                style={{ paddingRight: '50px' }}
+                
+              />
+              <i className="fi fi-sr-heart" style={{ position: 'absolute', top: '56%', transform: 'translateY(-50%)', right: '12px', color:'red' }}></i>
           </div>
+
         ))
       )}
     </section>
