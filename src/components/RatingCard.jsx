@@ -6,6 +6,7 @@ import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
 import PropTypes from 'prop-types';
 import moment from 'moment';
+import { useCallback, useEffect, useState } from 'react';
 
 const ratingIcons = {
     1: verysadIcon,
@@ -20,10 +21,11 @@ RatingCard.propTypes = {
     userHoursOfSleep: PropTypes.number,
 }
 
-export default function RatingCard({ post, userHoursOfSleep }) {
+export default function RatingCard({ post }) {
     const navigate = useNavigate();
+    const [textColor, setTextColor] = useState('');
 
-    const formattedTime = () => {
+    const formattedTime = useCallback(() => {
         const duration = moment.duration(post.hs, 'minutes');
         const hours = duration.hours();
         const minutes = duration.minutes();
@@ -36,24 +38,24 @@ export default function RatingCard({ post, userHoursOfSleep }) {
         } else {
             return `${seconds} ${seconds === 1 ? 'second' : 'seconds'}`;
         }
-    };
+    }, [post.hs]);
 
-    const getTimeColor = () => {
-        const duration = moment.duration(post.hs, 'minutes');
-        const totalMinutes = duration.asMinutes();
-        const userSleepMinutes = userHoursOfSleep * 60;
+    useEffect(() => {
+        const userData = localStorage.getItem("userData");
 
-        console.log('Total Minutes:', totalMinutes);
-        console.log('User Sleep Minutes:', userSleepMinutes);
+        if (userData) {
+            const parsedUserData = JSON.parse(userData);
+            const hoursofsleep = parsedUserData.Hoursofsleep;
+            console.log("Hoursofsleep fra localstorage:", hoursofsleep);
 
-        if (totalMinutes < userSleepMinutes) {
-            console.log('Color is red');
-            return '#c95050';
-        } else {
-            console.log('Color is green');
-            return '#87d192';
+            if (hoursofsleep >= formattedTime()) {
+                setTextColor('rgba(233, 97, 97, 1)'); // Ændrer farven til grøn, når brugerens søvnmål er lig med eller større end formattedTime
+            } else {
+                setTextColor('rgba(102, 203, 100, 1)'); // Ændrer farven til rød, når brugerens søvnmål er mindre end formattedTime
+            }
         }
-    };
+    }, [formattedTime]);
+    
 
     function handleClick() {
         navigate(`posts/${post.id}`);
@@ -66,7 +68,7 @@ export default function RatingCard({ post, userHoursOfSleep }) {
                     <span className="ident heading heading-small">{post.date}</span>
                     <div>
                         <h3 className='heading heading-small small-italic'>You slept for</h3>
-                        <p className='heading' style={{ color: getTimeColor() }}>{formattedTime()}</p>
+                        <p className='heading' style={{ color: textColor }} >{formattedTime()}</p>
                     </div>
                 </div>
 
