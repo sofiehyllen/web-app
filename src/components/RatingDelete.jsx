@@ -60,7 +60,7 @@ export default function RatingDelete() {
                             </div>
                         </div>
                     </div>
-                )}ß
+                )}
             </div>
         </section>
     );
