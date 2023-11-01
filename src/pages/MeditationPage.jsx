@@ -1,23 +1,42 @@
 import Audiofile from "../components/Audiofile";
-import { Link } from "react-router-dom";
 import GoBackButton from "../components/GoBackButton";
 
 export default function MeditationPage() {
     return (
       <section className="page-content">
         <GoBackButton/> 
-        <h1 className='titel spacing-top'> Meditation </h1>
+        <h1 className='titel'> Meditation </h1>
         <p className="bodytext spacing-bottom">
-        Try meditation, for a good night sleep. 
+        Try meditation for a good night sleep. 
         It calms the mind and body, promoting deep, restful sleep. 
-        By focusing on breathing and mindfulness, meditation fosters inner peace. 
         </p>
   
+  {/* MEDITATION EXERCISES SECTION */}
+        <section className="spacing-bottom">
+            <h2 className="heading">Meditation Exersices</h2>
+                <div className="flex spacing-top">
+                    <div className="brickcontainer brick-bg" id="brick-bg-meditation-1" >
+                        <p className="heading">Relaxation</p>
+                    </div>
+                    <div className="brickcontainer brick-bg" id="brick-bg-meditation-2" >
+                        <p className="heading">Mindfull</p>
+                    </div>
+                </div>
+            <div className="rightalign-bottom spacing-top">    
+                {/*<Link to="/soundpage" className="spacing-top button btn-small btn-purple">Calming sounds<i className="fi fi-sr-triangle rotate"></i></Link>*/}
+            </div>
+        </section>
+
+
+{/* AMBIENT MEDITATION SECTION */}
         <section>
-          <p className="heading">Meditation podcast</p>
-{/* MEDITATION PODCAST SECTION */}
-            <div className="spacing-top">
-                    
+          <h2 className="heading">Ambient meditation</h2>
+                <p className="bodytext spacing-top">
+                    Enjoy the variety of ambient sounds and let the melodies guide you into a state of deep tranquility, 
+                    leading you to a place of inner peace and relaxation.
+                 </p>
+
+                <div className="spacing-top">
                 <Audiofile
                 textarea={"Session #1"}
                 height={30}
@@ -78,27 +97,7 @@ export default function MeditationPage() {
   
         </section>
 
-{/* MEDITATION EXERCISES SECTION */}
-        <section>
-            <p className="heading">Meditation Exersices</p>
-            <div className="flex spacing-top">
-                <div className="brickcontainer brick-bg" id="brick-bg-meditation-1" >
-                    <p className="heading">Relaxation</p>
-                </div>
-                <div className="brickcontainer brick-bg" id="brick-bg-meditation-2" >
-                    <p className="heading">Mindfulness</p>
-                </div>
-            </div>
-            <div className="rightalign-bottom">
-                
-            <p className="bodytext spacing-top">
-                To enhance your meditation practice, enjoy your favorite meditation music or dive into our natural calming sounds. 
-                Let the melodies guide you into a state of deep tranquility, leading you to a place of inner peace and relaxation.
-            </p>
-            <Link to="/soundpage" className="spacing-top button btn-small btn-purple">Calming sounds<i className="fi fi-sr-triangle rotate"></i></Link>
-            </div>
-            
-        </section>
+
       </section>
     );
   }
