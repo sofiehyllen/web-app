@@ -16,7 +16,7 @@ export default function StatisticsPage(){
         }
     },[])
     return(
-        <motion.div className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+        <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
 
             <motion.div className="spacing-bottom" variants={itemAnimation}>                 
@@ -45,6 +45,6 @@ export default function StatisticsPage(){
                     <RatingHistory/>
                 </div>
             </motion.div>
-        </motion.div>
+        </motion.section>
     )
 }
