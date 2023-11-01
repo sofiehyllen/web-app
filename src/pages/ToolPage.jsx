@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import GoBackButton from "../components/GoBackButton";
 
 export default function ToolPage(){
     return(
         <section className="page-content">
+            <GoBackButton />
             
 {/* TIPS & TOOLS HEADER */}            
             <div className="spacing-bottom">

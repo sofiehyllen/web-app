@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
+import GoBackButton from "../components/GoBackButton";
 import Favourites from "../components/Favourites";
 import { useState } from "react";
 
 export default function SoundPage(){
-
-    const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
   const [favorites, setFavorites] = useState(storedFavorites);
 
   const handleHeartClick = (audioUrl, title) => {
@@ -22,6 +22,7 @@ export default function SoundPage(){
 
     return(
         <section className="page-content">
+            <GoBackButton />
             
 {/* SOUNDPAGE HEADER */}     
             <div className="spacing-bottom">
@@ -56,11 +57,6 @@ export default function SoundPage(){
                 favorites={favorites}
                 handleHeartClick={handleHeartClick}
             />
-
-
-
-
-            
         </section>
     )
 }

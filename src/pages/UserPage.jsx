@@ -1,4 +1,5 @@
 import { useState } from "react";
+import GoBackButton from "../components/GoBackButton";
 
 export default function UserPage() {
     const [user, setUser] = useState({
@@ -30,6 +31,7 @@ export default function UserPage() {
 
     return (
         <section className="page-content">
+            <GoBackButton/>
             <div>
                 <h1 className='titel titel-big'> Hello...</h1>
                 <p className='bodytext spacing-bottom'>

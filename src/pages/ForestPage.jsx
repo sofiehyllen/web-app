@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import PlayButton from "../components/PlayButton";
+import GoBackButton from '../components/GoBackButton';
 import Favourites from '../components/Favourites';
-
 
 export default function ForestPage() {
   const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -23,6 +23,7 @@ export default function ForestPage() {
 
   return (
     <section className="page-content">
+      <GoBackButton />
       <h1 className='titel spacing-top'> Forest sounds </h1>
       <p className="bodytext spacing-bottom">
         Explore the diverse and soothing soundscape of the forest. 
