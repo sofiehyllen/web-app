@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import {  useNavigate, useParams } from "react-router-dom";
 import RatingCard from "./RatingCard";
+import GoBackButton from "./GoBackButton";
 
 
 
@@ -42,8 +43,9 @@ export default function RatingDelete() {
     };
 
     return (
-        <section className="">
+        <section>
             <div className="page-content">
+                <GoBackButton/>
                 <RatingCard post={post} />
                 <div className="center">
                     <button className="button btn-small" onClick={handleClick}>Delete Post  <span className='btn-shine'/></button>
