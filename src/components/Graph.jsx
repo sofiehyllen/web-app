@@ -24,10 +24,7 @@ export default function Graph() {
     ],
     });
 
-    const formattedDay = (date) => {
-        const dayLetter = moment(date).format("dddd").charAt(0);
-        return dayLetter;
-    }
+
   
     useEffect(() => {
     async function fetchData() {
@@ -35,6 +32,11 @@ export default function Graph() {
         try {
             const response = await fetch(url);
             const data = await response.json();
+
+            const formattedDay = (date) => {
+                const dayLetter = moment(date).format("dddd").charAt(0);
+                return dayLetter;
+            }
         
             if (data !== null) {
             const entries = Object.entries(data);

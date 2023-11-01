@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import PlayButton from "../components/PlayButton";
-import Audiofile from "../components/Audiofile";
 import GoBackButton from '../components/GoBackButton';
+import Favourites from '../components/Favourites';
 
 export default function ForestPage() {
   const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
@@ -19,9 +19,7 @@ export default function ForestPage() {
     localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
   };
 
-  useEffect(() => {
-    localStorage.setItem('favorites', JSON.stringify(favorites));
-  }, [favorites]);
+
 
   return (
     <section className="page-content">
@@ -50,31 +48,10 @@ export default function ForestPage() {
         </div>
       </section>
 
-      <section className='favourites spacing-top relative'>
-          <p className="heading spacing-bottom"> Your favourites </p>
-          <img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>
-        {favorites.length === 0 ? (
-          <p className='heading heading-small bodytext spacing-bottom'> # Like your favorite sounds to display them here.</p>
-        ) : (
-          favorites.map((favorite, index) => (
-            <div key={index}>
-              <Audiofile
-                textarea={favorite.title}
-                height={30}
-                waveColor="rgba(96, 92, 110)"
-                progressColor="rgba(240, 238, 230)"
-                url={favorite.audioUrl}
-                barHeight={1.5}
-                barWidth={3}
-                barGap={4}
-                barRadius={10}
-                dragToSeek={true}
-                cursorColor={'transparent'}
-              />
-            </div>
-          ))
-        )}
-      </section>
+            <Favourites
+                favorites={favorites}
+                handleHeartClick={handleHeartClick}
+            />
 
       <section>
         <p className="heading">Forest</p>

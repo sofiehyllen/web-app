@@ -22,6 +22,14 @@ export default function RatingForm({ savePost, elapsedTime }) {
     const [date, setDate] = useState(""); // date = benyttes som transaction id
     const [errorMessage, setErrorMessage] = useState("");
     const navigate = useNavigate();
+    const [brugernavn, setBrugernavn] = useState("");
+
+    useEffect(() => {
+        const temp = localStorage.getItem("brugernavn");
+        if (temp) {
+            setBrugernavn(temp)
+        }
+    },[])
 
     useEffect(() => {
         const today = new Date().toISOString().split('T')[0];
@@ -84,7 +92,7 @@ export default function RatingForm({ savePost, elapsedTime }) {
     return (
 
         <form onSubmit={handleSubmit}>
-            <h1 className="titel">Goodmorning <span className="titel-tab">name</span></h1>
+            <h1 className="titel">Goodmorning <span className="titel-tab">{brugernavn}</span></h1>
 
             <label>
                {/* <h3 className='heading heading-small small-italic spacing-bottom'>Todays date is <span id='ratingmodal-date'>{formatDate(date)}</span></h3>*/}

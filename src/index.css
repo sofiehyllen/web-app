@@ -16,6 +16,8 @@
         --body-text:rgba(240, 238, 230, 0.7);
     }
 
+    
+
     *{
         margin: 0;
         padding: 0;
@@ -142,7 +144,7 @@
     width: 100%;
     height: 100%;
     padding: 7vw;
-    margin-bottom: 10vw;
+    margin-bottom: 15vw;
 }
 
 .spacing-bottom{
@@ -182,6 +184,11 @@
         padding: 4px 22px 2px 22px;
         display: flex;
         align-items: center;
+    }
+
+    .btn-delete{
+        background-color: rgb(243, 40, 40);
+        margin-right: 4vw;
     }
 
     .btn-shine{
@@ -335,8 +342,8 @@
 
 /*ID til illustrationer på sider*/
     #illustration-home{
-        margin-top: 10vw;
-        margin-bottom: 15vw;
+        margin-top: 2vw;
+        margin-bottom: 10vw;
     }
 
     #illustration-startsleep{
@@ -366,6 +373,12 @@
         padding-top: 3vw;
     }
 
+    #sleepcalculator{
+        padding: .5vw 3vw .5vw 3vw;
+        margin: 1.5vw;
+        font-weight: 400;
+    }
+
     #graph{
         height: 50vw;
     }
@@ -391,33 +404,36 @@
     }
 
 
+
+
 /*--Afspiller til lydfiler--*/
     .audio-container{
         display: flex;
         align-items: center;
         background-color: var(--darkest-purple);
         margin-bottom: 3vw;
-        border-radius: 20vw;
+        border-radius: 20px;
         padding: 1vw;
         width: 100%;
         min-width: fit-content;
-        font-family: "poppins", sans-serif;
-        font-weight: 100;
+        font-family: "poppins-light", sans-serif;
+        height: 10vw;
     }
 
     .playbutton{
         border: none;
         background: transparent;
-        width: 14vw;
-        padding: .5vw;
+        width: 15vw;
+        padding: .7vw;
     }
 
     .audiotext{
-        font-size: 3vw;
+        font-size: 2.6vw;
         line-height: 4vw;
         min-width: 23vw;
         padding-left: 1vw;
         padding-right: 1vw;
+       
     }
 
     .audiowave{
@@ -431,8 +447,17 @@
         text-align: center;
     }
 
+    .playbutton-big{
+        border: none;
+        background: transparent;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-
+    .playbutton-big img{
+        height: 5.5vh;
+    }
 
 
 
@@ -540,8 +565,26 @@
 
 
 
+.delete-modal{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .1);
+    z-index: 50;
+}
 
+.delete-content{
+    border-radius: 20px;
+    padding: 5vw;
+    background-color: var(--darkest-purple);
+    width: 85%;
 
+}
 
 
 
@@ -581,7 +624,7 @@
         position: absolute;
         margin-left: 110px;
         margin-bottom: 90px;
-        color: red;
+        color: rgb(229, 55, 55);
     }
 
     .forest-sound-title{

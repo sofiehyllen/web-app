@@ -3,7 +3,15 @@ import moment from "moment";
 import Timer from "../components/Timer";
 
 export default function SleepingPage(){
+    const [brugernavn, setBrugernavn] = useState("");
     const [startTime, setStartTime] = useState(moment());
+
+    useEffect(() => {
+        const temp = localStorage.getItem("brugernavn");
+        if (temp) {
+            setBrugernavn(temp)
+        }
+    },[])
 
     useEffect(() => {
       const interval = setInterval(() => {
@@ -16,7 +24,7 @@ export default function SleepingPage(){
     return(
         <section >
             <section className="page-content" id="background-dark">
-                <h1 className=" titel titel-big">Sleep tight <span className="titel-tab">name</span></h1>
+                <h1 className=" titel titel-big">Sleep tight <span className="titel-tab">{brugernavn}</span></h1>
                 <div id="illustration-stopsleep" className="center">
                     <h2 className="bodytext-normal">You have slept for</h2>
                     <Timer startTime={startTime} />

@@ -1,10 +1,7 @@
-
 import moment from "moment/moment";
-
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
 
 export default function HomePage(){
     const currentDate = moment();
@@ -18,10 +15,8 @@ export default function HomePage(){
         if (temp) {
             setBrugernavn(temp)
         }
-
     },[])
  
-
     return(
         <section className="page-content">
             <h6 id="homedate" className="heading heading-small">{homepageDate}</h6>
@@ -29,7 +24,8 @@ export default function HomePage(){
             
             <div id="illustration-home"><img className="img-max" src="src/assets/illustration-home.svg" alt="moon illustration home" /></div>
 
-            <div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1">
+            <div className="brickcontainer large rightalign-bottom brick-bg" id="brick-bg-home-1" >
+                
                 <div>
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
