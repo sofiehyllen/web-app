@@ -17,6 +17,9 @@
     }
 
     
+      
+
+
 
     *{
         margin: 0;
@@ -75,8 +78,6 @@
         max-height: 100%;
         display: block;
     }
-
-
 
 
 
@@ -406,7 +407,7 @@
 
 
 
-/*--Afspiller til lydfiler--*/
+/*-- LYDFILER --*/
     .audio-container{
         display: flex;
         align-items: center;
@@ -433,7 +434,6 @@
         min-width: 23vw;
         padding-left: 1vw;
         padding-right: 1vw;
-       
     }
 
     .audiowave{
@@ -445,6 +445,8 @@
         font-size: 3.3vw;
         min-width: 11vw;
         text-align: center;
+        padding-right: 50px;
+        padding-left: 5px;
     }
 
     .playbutton-big{
@@ -458,7 +460,6 @@
     .playbutton-big img{
         height: 5.5vh;
     }
-
 
 
 /*---Modalvindue til rating---*/
@@ -624,7 +625,7 @@
         position: absolute;
         margin-left: 110px;
         margin-bottom: 90px;
-        color: rgb(229, 55, 55);
+        color: rgb(255, 34, 0);
     }
 
     .forest-sound-title{
@@ -636,8 +637,9 @@
 
     .favourite-heart{
         margin-left: 190px;
-        width: 43px;
+        width: 40px;
         top: 0;
+        margin-top: 2px;
     }
 
 /*---Dialogboks til brugernavn---*/
