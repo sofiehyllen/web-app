@@ -81,7 +81,7 @@ export default function UserModal() {
                 </p>
                 <div id="modal-buttons">
                   <button id="confirmBtn" value="default" className="button btn-small align">
-                    Confirm
+                    Confirm <span className="btn-shine"></span>
                   </button>
                 </div>
               </form>
