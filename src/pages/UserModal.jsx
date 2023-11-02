@@ -59,6 +59,27 @@ export default function UserModal() {
     };
   }, [navigate]);
 
+  const [user, setUser] = useState({
+    Hoursofsleep: ''
+});
+
+const userdata = (e) => {
+    const { name, value } = e.target;
+    setUser({ ...user, [name]: value });
+};
+
+const getdata = (e) => {
+  e.preventDefault();
+  const {Hoursofsleep } = user;
+
+  const userData = JSON.stringify({
+      Hoursofsleep
+  });
+
+  localStorage.setItem("userData", userData);
+  alert("Information saved");
+};
+
   return (
     <section className="page-content">
         <div >
@@ -79,8 +100,14 @@ export default function UserModal() {
                     />
                   </label>
                 </p>
+                <div className="spacing-bottom">
+                  <label htmlFor="hoursofsleep"><h4 className='heading heading-small'>Hours of sleep</h4></label>
+
+                  <input type="number" className='form-input heading heading-small' id="hoursofsleep" name="Hoursofsleep" value={user.Hoursofsleep} autoComplete="off" onChange={userdata} required />
+                </div>
                 <div id="modal-buttons">
-                  <button id="confirmBtn" value="default" className="button btn-small align">
+
+                  <button id="confirmBtn" value="default" className="button btn-small align" onClick={getdata}>
                     Confirm <span className="btn-shine"></span>
                   </button>
                 </div>
