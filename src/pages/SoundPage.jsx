@@ -45,10 +45,10 @@ export default function SoundPage(){
                 </Link>
 
                 <div className="flex">
-                    <div className="brickcontainer leftalign-bottom" id="brick-bg-sounds-2">
+                    <div className="brickcontainer leftalign-bottom shake" id="brick-bg-sounds-2">
                         <p className="heading">Rain</p>
                     </div>
-                    <div className="brickcontainer leftalign-bottom" id="brick-bg-sounds-3">
+                    <div className="brickcontainer leftalign-bottom shake" id="brick-bg-sounds-3">
                         <p className="heading">Ocean</p>
                     </div>
                 </div>

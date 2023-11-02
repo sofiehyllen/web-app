@@ -1,6 +1,8 @@
 
 import PropTypes from 'prop-types'; 
 import RatingForm from './RatingForm';
+import { motion } from 'framer-motion';
+import { containerAnimation } from './Animationer';
 
     RatingModal.propTypes = {
         isOpen: PropTypes.bool,
@@ -27,7 +29,7 @@ export default function RatingModal({ isOpen, onClose, elapsedTime}) {
   return (
     //Dette er selve overlay elementet. Med onClick={onClose} sørger jeg for at modalvinduet lukkes, 
     //når der trykkes alle andre steder end selve vinduet.
-    <div className="modal" onClick={onClose}>
+    <motion.div variants={containerAnimation} className="modal" onClick={onClose}>
         <div className="gradient-wrapper">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                 <RatingForm savePost={createPost} elapsedTime={elapsedTime}/>
@@ -36,6 +38,6 @@ export default function RatingModal({ isOpen, onClose, elapsedTime}) {
                 </div>
             </div>    
         </div>
-    </div>
+    </motion.div>
   );
 }

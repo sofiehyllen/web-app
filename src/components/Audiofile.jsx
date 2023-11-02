@@ -66,7 +66,7 @@ export default function Audiofile(props){
     const formattedTime = moment.utc(currentTime * 1000).format('mm:ss')
 
     return (
-        <motion.section className='audio-container' variants={itemAnimation}>
+        <motion.section className='audio-container spacing-top' variants={itemAnimation}>
             <button className='playbutton' onClick={onPlayClick}>
                 {isPlaying ? <img className='img-max' src={pause} alt="pause-button" /> : <img className='img-max' src={play} alt='play-button'/> }
             </button>

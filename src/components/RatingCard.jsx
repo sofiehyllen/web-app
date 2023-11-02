@@ -49,9 +49,9 @@ export default function RatingCard({ post }) {
             console.log("Hoursofsleep fra localstorage:", hoursofsleep);
 
             if (hoursofsleep >= formattedTime()) {
-                setTextColor('rgba(233, 97, 97, 1)'); // Ændrer farven til grøn, når brugerens søvnmål er lig med eller større end formattedTime
+                setTextColor('rgba(233, 97, 97, 1)'); // Ændrer farven til rød, når brugerens søvnmål er lig med eller større end formattedTime
             } else {
-                setTextColor('rgba(102, 203, 100, 1)'); // Ændrer farven til rød, når brugerens søvnmål er mindre end formattedTime
+                setTextColor('rgba(102, 203, 100, 1)'); // Ændrer farven til grøn, når brugerens søvnmål er mindre end formattedTime
             }
         }
     }, [formattedTime]);

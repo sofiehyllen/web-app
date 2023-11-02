@@ -106,8 +106,9 @@ const getdata = (e) => {
                   <input type="number" className='form-input heading heading-small' id="hoursofsleep" name="Hoursofsleep" value={user.Hoursofsleep} autoComplete="off" onChange={userdata} required />
                 </div>
                 <div id="modal-buttons">
+
                   <button id="confirmBtn" value="default" className="button btn-small align" onClick={getdata}>
-                    Confirm
+                    Confirm <span className="btn-shine"></span>
                   </button>
                 </div>
               </form>
