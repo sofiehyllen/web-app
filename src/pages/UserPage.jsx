@@ -1,5 +1,7 @@
 import { useState } from "react";
 import GoBackButton from "../components/GoBackButton";
+import { motion } from "framer-motion";
+import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 export default function UserPage() {
     const [user, setUser] = useState({
@@ -30,16 +32,16 @@ export default function UserPage() {
     };
 
     return (
-        <section className="page-content">
-            <GoBackButton/>
-            <div>
-                <h1 className='titel titel-big'> Hello...</h1>
-                <p className='bodytext spacing-bottom'>
+        <motion.section variants={containerAnimation} initial="hidden" animate="visible" className="page-content">
+            <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
+            <motion.div variants={containerAnimation}>
+                <motion.h1 variants={itemAnimation} className='titel titel-big'> Hello...</motion.h1>
+                <motion.p variants={itemAnimation} className='bodytext spacing-bottom'>
                     Please provide us with your name and email address so
                     that we may send you captivating updates and customize
                     the application precisely to meet your requirements.
-                </p>
-            </div>
+                </motion.p>
+            </motion.div>
             <form method="POST">
                 <div className="flex">
                     <div>
@@ -78,6 +80,6 @@ export default function UserPage() {
                     </button>
                 </div>
             </form>
-        </section>
+        </motion.section>
     );
 }
