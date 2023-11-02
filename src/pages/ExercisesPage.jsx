@@ -27,10 +27,10 @@ export default function ExercisesPage() {
         </motion.div>
 
         <motion.div className="flex spacing-top" variants={itemAnimation}>
-            <div className="brickcontainer brick-bg" id="brick-bg-breathing-1" >
+            <div className="brickcontainer brick-bg shake" id="brick-bg-breathing-1" >
                 <p className="heading">No. 1</p>
             </div>
-            <div className="brickcontainer brick-bg" id="brick-bg-breathing-2">
+            <div className="brickcontainer brick-bg shake" id="brick-bg-breathing-2">
                 <p className="heading">No. 2</p>
             </div>
         </motion.div>

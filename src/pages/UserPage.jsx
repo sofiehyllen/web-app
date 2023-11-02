@@ -1,5 +1,7 @@
 import { useState } from "react";
 import GoBackButton from "../components/GoBackButton";
+import { motion } from "framer-motion";
+import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 export default function UserPage() {
     const [user, setUser] = useState({
@@ -30,28 +32,28 @@ export default function UserPage() {
     };
 
     return (
-        <section className="page-content">
-            <GoBackButton/>
-            <div>
-                <h1 className='titel titel-big'> Hello...</h1>
-                <p className='bodytext spacing-bottom'>
+        <motion.section variants={containerAnimation} initial="hidden" animate="visible" className="page-content">
+            <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
+            <motion.div variants={containerAnimation}>
+                <motion.h1 variants={itemAnimation} className='titel titel-big'> Hello...</motion.h1>
+                <motion.p variants={itemAnimation} className='bodytext spacing-bottom'>
                     Please provide us with your name and email address so
                     that we may send you captivating updates and customize
                     the application precisely to meet your requirements.
-                </p>
-            </div>
+                </motion.p>
+            </motion.div>
             <form method="POST">
-                <div className="flex">
-                    <div>
+                <motion.div variants={containerAnimation} className="flex">
+                    <motion.div variants={itemAnimation}>
                         <label htmlFor="firstname"><h4 className='bodytext titelcolor'>First name</h4></label>
                         <input className='form-input heading heading-small' id="firstname" type="text" name="Firstname" value={user.Firstname} autoComplete="off" onChange={userdata} required />
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div variants={itemAnimation}>
                         <label htmlFor="lastname"><h4 className='bodytext titelcolor'>Surname</h4></label>
                         <input className='form-input heading heading-small' id="lastname" type="text" name="Lastname" value={user.Lastname} autoComplete="off" onChange={userdata} required />
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
                 <div className="spacing-bottom">
                     <label htmlFor="email"><h4 className='bodytext titelcolor'>E-mail</h4></label>
@@ -78,6 +80,6 @@ export default function UserPage() {
                     </button>
                 </div>
             </form>
-        </section>
+        </motion.section>
     );
 }

@@ -388,7 +388,7 @@
         background-image: url("src/assets/background-dark.svg");
         background-size: cover;
         background-attachment: fixed;
-        height: 95vh;
+        
         padding-top: 15vw;
     }
 
@@ -404,7 +404,12 @@
         padding-top: 20vw;
     }
 
-
+    #deletecardpage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh; 
+    }
 
 
 /*-- LYDFILER --*/
@@ -625,7 +630,7 @@
         position: absolute;
         margin-left: 110px;
         margin-bottom: 90px;
-        color: rgb(255, 34, 0);
+        color: rgb(223, 59, 59);
     }
 
     .forest-sound-title{
@@ -677,4 +682,24 @@
     color: var(--titel-text);
     border: none;
     margin-bottom: 5vw;
+}
+
+.shake:active{
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    10%, 90% {transform: translate3d(-3px, 0, 0);}
+    20%, 80% {transform: translate3d(4px, 0, 0);}
+    30%, 50%, 70% {transform: translate3d(-6px, 0, 0);}
+    40%, 60% {transform: translate3d(6px, 0, 0);}
+  }
+
+
+
+
+@media only screen and (min-width: 400px){
+    html{
+      display: none;
+    }
 }
