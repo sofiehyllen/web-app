@@ -1,7 +1,14 @@
 // FavouritesSection.js
+import { useState } from "react";
 import Audiofile from "../components/Audiofile";
 
-export default function Favourites({ favorites, handleHeartClick }) {
+export default function Favourites({ favorites}) {
+
+  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+
+
+
 
     
   return (

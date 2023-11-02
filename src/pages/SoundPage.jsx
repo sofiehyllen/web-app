@@ -1,26 +1,10 @@
 import { Link } from "react-router-dom";
 import GoBackButton from "../components/GoBackButton";
 import Favourites from "../components/Favourites";
-import { useState } from "react";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 import { motion } from "framer-motion";
 
 export default function SoundPage(){
-  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
-  const [favorites, setFavorites] = useState(storedFavorites);
-
-  const handleHeartClick = (audioUrl, title) => {
-    let updatedFavorites = [...favorites];
-    const index = updatedFavorites.findIndex(fav => fav.audioUrl === audioUrl);
-    if (index > -1) {
-      updatedFavorites.splice(index, 1);
-    } else {
-      updatedFavorites.push({ audioUrl, title, isFavorite: true });
-    }
-    setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-  };
-
 
     return(
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
