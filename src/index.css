@@ -388,7 +388,7 @@
         background-image: url("src/assets/background-dark.svg");
         background-size: cover;
         background-attachment: fixed;
-        height: 95vh;
+        
         padding-top: 15vw;
     }
 
@@ -625,7 +625,7 @@
         position: absolute;
         margin-left: 110px;
         margin-bottom: 90px;
-        color: rgb(255, 34, 0);
+        color: rgb(223, 59, 59);
     }
 
     .forest-sound-title{

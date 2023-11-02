@@ -3,11 +3,10 @@ import Audiofile from "../components/Audiofile";
 
 export default function Favourites({ favorites, handleHeartClick }) {
 
-    
   return (
     <section className='favourites spacing-top relative'>
-      <p className="heading"> Your favourites </p>
-      {/*<img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>*/}
+      <h2 className="heading"> Your favourites </h2>
+      <img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>
       {favorites.length === 0 ? (
         <p className='heading heading-small bodytext spacing-bottom'> # Like your favorite sounds to display them here.</p>
       ) : (
@@ -27,11 +26,9 @@ export default function Favourites({ favorites, handleHeartClick }) {
                 dragToSeek={true}
                 cursorColor={'transparent'}
                 style={{ paddingRight: '50px' }}
-                
               />
-              <i className="fi fi-sr-heart" style={{ position: 'absolute', top: '56%', transform: 'translateY(-50%)', right: '12px', color:'red' }}></i>
+              <i className="fi fi-sr-heart" style={{ position: 'absolute', top: '56%', transform: 'translateY(-50%)', right: '12px', color:'rgb(223, 59, 59)' }}></i>
           </div>
-
         ))
       )}
     </section>

@@ -36,7 +36,7 @@ export default function ForestPage() {
 
         <motion.div className="spacing-bottom" variants={itemAnimation}>
             <h2 className="heading">Rainforest</h2>
-            <div className="flex">
+            <div className="flex spacing-top">
                 <div className="brickcontainer brick-bg opacity relative" id="brick-bg-rainforest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <PlayButton audioUrl={'src/assets/rainforest-sound1.mp3'} />
                     <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/rainforest-sound1.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon  ${favorites.some(fav => fav.audioUrl === 'src/assets/rainforest-sound1.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/rainforest-sound1.mp3', 'Jungle Chorus')}></i>
@@ -57,8 +57,7 @@ export default function ForestPage() {
 
         <div>
             <motion.div variants={itemAnimation}><h2 className="heading">Forest</h2></motion.div>
-            <motion.div className="flex spacing-bottom" variants={itemAnimation}>
-                
+            <motion.div className="flex spacing-bottom spacing-top" variants={itemAnimation}>
                 <div className="brickcontainer brick-bg opacity relative" id="brick-bg-forest-1" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <PlayButton audioUrl={'src/assets/forest-sound1.mp3'} />
                     <i className={`fi ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'fi-sr-heart' : 'fi-rr-heart'} hearticon ${favorites.some(fav => fav.audioUrl === 'src/assets/forest-sound1.mp3' && fav.isFavorite) ? 'filled' : ''}`} onClick={() => handleHeartClick('src/assets/forest-sound1.mp3', "Nature's Lullaby")}></i>
