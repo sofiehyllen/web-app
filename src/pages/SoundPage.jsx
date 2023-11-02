@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import GoBackButton from "../components/GoBackButton";
 import Favourites from "../components/Favourites";
 import { useState } from "react";
-import { containerAnimation, itemAnimation, shakeAnimation } from "../components/Animationer";
+import { containerAnimation, itemAnimation } from "../components/Animationer";
 import { motion } from "framer-motion";
 
 export default function SoundPage(){
