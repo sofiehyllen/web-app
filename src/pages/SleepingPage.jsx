@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import moment from "moment";
 import Timer from "../components/Timer";
+import { motion } from "framer-motion";
+import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 export default function SleepingPage(){
     const [brugernavn, setBrugernavn] = useState("");
@@ -22,14 +24,12 @@ export default function SleepingPage(){
     }, []);
   
     return(
-        <section >
-            <section className="page-content" id="background-dark">
-                <h1 className=" titel titel-big">Sleep tight <span className="titel-tab">{brugernavn}</span></h1>
-                <div id="illustration-stopsleep" className="center">
-                    <h2 className="bodytext-normal">You have slept for</h2>
-                    <Timer startTime={startTime} />
-                </div>
-            </section>
-        </section>
+        <motion.section className="page-content" id="background-dark" variants={containerAnimation} initial="hidden" animate="visible">
+            <motion.h1 variants={itemAnimation} className=" titel titel-big">Sleep tight <motion.span variants={itemAnimation} className="titel-tab">{brugernavn}</motion.span></motion.h1>
+            <motion.div variants={containerAnimation} id="illustration-stopsleep" className="center">
+                <motion.h2 variants={itemAnimation} className="bodytext-normal">You have slept for</motion.h2>
+                <motion.div variants={itemAnimation} ><Timer startTime={startTime} /></motion.div>
+            </motion.div>
+        </motion.section>
     )
 }

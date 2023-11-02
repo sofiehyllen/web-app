@@ -3,7 +3,7 @@ import Favourites from "../components/Favourites";
 import { useState, useEffect, useRef } from "react";
 import illustrationSleeptrack from "../assets/illustration-start-sleep.svg"
 import {motion} from 'framer-motion'
-import { containerAnimation, itemAnimation } from "../components/Animationer";
+import { containerAnimation, itemAnimation} from "../components/Animationer";
 
 export default function SleeptrackPage() {
   // const [count, setCount] = useState(0)
