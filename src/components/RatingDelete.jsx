@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import {  useNavigate, useParams } from "react-router-dom";
 import RatingCard from "./RatingCard";
 import GoBackButton from "./GoBackButton";
+import { motion } from "framer-motion";
+import { containerAnimation, itemAnimation } from "./Animationer";
 
 
 
@@ -43,16 +45,16 @@ export default function RatingDelete() {
     };
 
     return (
-        <section>
-            <div className="page-content">
-                <GoBackButton/>
-                <RatingCard post={post} />
-                <div className="center">
-                    <button className="button btn-small" onClick={handleClick}>Delete Post  <span className='btn-shine'/></button>
+            <motion.section  variants={containerAnimation} initial="hidden" animate="visible" className="page-content">
+                <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
+                <div id="deletecardpage">
+                    <motion.div variants={itemAnimation} ><RatingCard post={post} /></motion.div>
+                    <motion.div variants={itemAnimation} className="center">
+                        <button className="button btn-small" onClick={handleClick}>Delete Post  <span className='btn-shine'/></button>
+                    </motion.div>
                 </div>
-
                 {showModal && (
-                    <div className="delete-modal">
+                    <motion.div variants={containerAnimation} initial="hidden" animate="visible" className="delete-modal">
                         <div className="delete-content">
                             <h1 className="titel">Delete?</h1>
                             <h2 className="heading heading-small spacing-bottom">Are you sure you want to delete the sleeptracking of this day?</h2>
@@ -61,9 +63,8 @@ export default function RatingDelete() {
                                 <button className="button btn-small" onClick={handleCancel}>Cancel <span className='btn-shine'/></button>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                 )}
-            </div>
-        </section>
+            </motion.section>
     );
 }

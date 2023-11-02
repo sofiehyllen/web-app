@@ -404,7 +404,12 @@
         padding-top: 20vw;
     }
 
-
+    #deletecardpage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh; 
+    }
 
 
 /*-- LYDFILER --*/
