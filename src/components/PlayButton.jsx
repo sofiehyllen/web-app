@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import play from '../assets/afspiller-play.svg'
+import pause from '../assets/afspiller-pause.svg'
 
-const PlayButton = ({ audioUrl }) => {
+const PlayButton = ( {audioUrl} ) => {
   const [audio, setAudio] = useState(new Audio(audioUrl));
   const [isPlaying, setIsPlaying] = useState(false);
 
@@ -15,23 +17,9 @@ const PlayButton = ({ audioUrl }) => {
   };
 
   return (
-    <div
-      style={{
-        width: 60,
-        height: 60,
-        borderRadius: '50%',
-        backgroundColor: 'rgba(255, 255, 255, 0.3)', // Hvid farve med 80% gennemsigtighed
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        cursor: 'pointer',
-        color: 'white',
-        fontSize: '25px',
-      }}
-      onClick={handlePlay}
-    >
-      {isPlaying ? '⏸' : '▶'}
-    </div>
+    <button className='playbutton-big' onClick={handlePlay}>
+        {isPlaying ? <img className='img-max' src={pause} alt="pause-button" /> : <img className='img-max' src={play} alt='play-button'/> }
+    </button>
   );
   
 };
