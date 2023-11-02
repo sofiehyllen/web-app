@@ -19,3 +19,13 @@ export const containerAnimation = {
     }
   };
 
+  export const shakeAnimation = {
+    x: 20,
+    scale: 1.3,
+       
+    }
+    
+    
+
+  
+

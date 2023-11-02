@@ -43,17 +43,17 @@ export default function UserPage() {
                 </motion.p>
             </motion.div>
             <form method="POST">
-                <div className="flex">
-                    <div>
+                <motion.div variants={containerAnimation} className="flex">
+                    <motion.div variants={itemAnimation}>
                         <label htmlFor="firstname"><h4 className='bodytext titelcolor'>First name</h4></label>
                         <input className='form-input heading heading-small' id="firstname" type="text" name="Firstname" value={user.Firstname} autoComplete="off" onChange={userdata} required />
-                    </div>
+                    </motion.div>
 
-                    <div>
+                    <motion.div variants={itemAnimation}>
                         <label htmlFor="lastname"><h4 className='bodytext titelcolor'>Surname</h4></label>
                         <input className='form-input heading heading-small' id="lastname" type="text" name="Lastname" value={user.Lastname} autoComplete="off" onChange={userdata} required />
-                    </div>
-                </div>
+                    </motion.div>
+                </motion.div>
 
                 <div className="spacing-bottom">
                     <label htmlFor="email"><h4 className='bodytext titelcolor'>E-mail</h4></label>

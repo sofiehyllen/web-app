@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import GoBackButton from "../components/GoBackButton";
 import Favourites from "../components/Favourites";
 import { useState } from "react";
-import { containerAnimation, itemAnimation } from "../components/Animationer";
+import { containerAnimation, itemAnimation, shakeAnimation } from "../components/Animationer";
 import { motion } from "framer-motion";
 
 export default function SoundPage(){
@@ -45,10 +45,10 @@ export default function SoundPage(){
                 </Link>
 
                 <div className="flex">
-                    <div className="brickcontainer leftalign-bottom" id="brick-bg-sounds-2">
+                    <div className="brickcontainer leftalign-bottom shake" id="brick-bg-sounds-2">
                         <p className="heading">Rain</p>
                     </div>
-                    <div className="brickcontainer leftalign-bottom" id="brick-bg-sounds-3">
+                    <div className="brickcontainer leftalign-bottom shake" id="brick-bg-sounds-3">
                         <p className="heading">Ocean</p>
                     </div>
                 </div>
