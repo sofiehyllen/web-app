@@ -11,17 +11,6 @@ export default function SleeptrackPage() {
   const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
   const [favorites, setFavorites] = useState(storedFavorites);
 
-  const handleHeartClick = (audioUrl, title) => {
-    let updatedFavorites = [...favorites];
-    const index = updatedFavorites.findIndex(fav => fav.audioUrl === audioUrl);
-    if (index > -1) {
-      updatedFavorites.splice(index, 1);
-    } else {
-      updatedFavorites.push({ audioUrl, title, isFavorite: true });
-    }
-    setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-  };
 
   const audioContextRef = useRef(null);
 
@@ -60,12 +49,9 @@ export default function SleeptrackPage() {
                     start tracking <span className="btn-shine" />
                 </Link>
             </motion.div>
-
-            <motion.div variants={itemAnimation}> 
-                <Favourites favorites={favorites} handleHeartClick={handleHeartClick}/>
-                <div className="rightalign-bottom">
-                    <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
-                </div>
+            <Favourites favorites={favorites} />
+            <motion.div variants={itemAnimation} className="rightalign-bottom">
+                <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
             </motion.div>
         </motion.section>
     )

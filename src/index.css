@@ -4,6 +4,8 @@
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
+   
+
 /*--Generelle regler, farver og typografi--*/
     :root{
         --darkest-purple: rgba(28, 23, 47, 1); 
@@ -15,8 +17,6 @@
         --titel-text:rgba(240, 238, 230, 1);
         --body-text:rgba(240, 238, 230, 0.7);
     }
-
-    
 
     *{
         margin: 0;
@@ -75,8 +75,6 @@
         max-height: 100%;
         display: block;
     }
-
-
 
 
 
@@ -192,7 +190,7 @@
     }
 
     .btn-shine{
-        background-image: url("src/assets/button-shine.svg");
+        background-image: url("/src/assets/button-shine.svg");
         background-repeat: no-repeat;
         background-position: -5px;
         width: 100%;
@@ -296,39 +294,39 @@
     }    
 
     #tip-bg{
-        background-image: url('src/assets/tip-bg.svg');
+        background-image: url('/src/assets/tip-bg.svg');
         background-size: contain;
         background-repeat: no-repeat;
     }
 
-    #brick-bg-home-1{background-image: url('src/assets/home-bg1.svg');}
-    #brick-bg-home-2{background-image: url('src/assets/home-bg2.svg');}
-    #brick-bg-home-3{background-image: url('src/assets/home-bg3.svg');}
+    #brick-bg-home-1{background-image: url('/src/assets/home-bg1.svg');}
+    #brick-bg-home-2{background-image: url('/src/assets/home-bg2.svg');}
+    #brick-bg-home-3{background-image: url('/src/assets/home-bg3.svg');}
 
-    #brick-bg-menu-1{background-image: url('src/assets/menu-waves2.svg');}
-    #brick-bg-menu-2{background-image: url('src/assets/menu-waves1.svg');}
-    #brick-bg-menu-3{background-image: url('src/assets/menu-waves3.svg');}
+    #brick-bg-menu-1{background-image: url('/src/assets/menu-waves2.svg');}
+    #brick-bg-menu-2{background-image: url('/src/assets/menu-waves1.svg');}
+    #brick-bg-menu-3{background-image: url('/src/assets/menu-waves3.svg');}
 
-    #brick-bg-sounds-1{background-image: url('src/assets/forest.svg');}
-    #brick-bg-sounds-2{background-image: url('src/assets/Rain.svg');}
-    #brick-bg-sounds-3{background-image: url('src/assets/Ocean.svg');}
+    #brick-bg-sounds-1{background-image: url('/src/assets/forest.svg');}
+    #brick-bg-sounds-2{background-image: url('/src/assets/Rain.svg');}
+    #brick-bg-sounds-3{background-image: url('/src/assets/Ocean.svg');}
 
-    #brick-bg-tools-1{background-image: url('src/assets/tool-bg1.svg');}
-    #brick-bg-tools-2{background-image: url('src/assets/tool-bg2.svg');}
-    #brick-bg-tools-3{background-image: url('src/assets/tool-bg3.svg');}
+    #brick-bg-tools-1{background-image: url('/src/assets/tool-bg1.svg');}
+    #brick-bg-tools-2{background-image: url('/src/assets/tool-bg2.svg');}
+    #brick-bg-tools-3{background-image: url('/src/assets/tool-bg3.svg');}
 
-    #brick-bg-rainforest-1{background-image: url('src/assets/rainforest-bg1.svg');}
-    #brick-bg-rainforest-2{background-image: url('src/assets/rainforest-bg2.svg');}
-    #brick-bg-forest-1{background-image: url('src/assets/forest-bg4.svg');}
-    #brick-bg-forest-2{background-image: url('src/assets/forest-bg2.svg');}
-    #brick-bg-forest-3{background-image: url('src/assets/forest-bg3.svg');}
-    #brick-bg-forest-4{background-image: url('src/assets/forest-bg1.svg');}
+    #brick-bg-rainforest-1{background-image: url('/src/assets/rainforest-bg1.svg');}
+    #brick-bg-rainforest-2{background-image: url('/src/assets/rainforest-bg2.svg');}
+    #brick-bg-forest-1{background-image: url('/src/assets/forest-bg4.svg');}
+    #brick-bg-forest-2{background-image: url('/src/assets/forest-bg2.svg');}
+    #brick-bg-forest-3{background-image: url('/src/assets/forest-bg3.svg');}
+    #brick-bg-forest-4{background-image: url('/src/assets/forest-bg1.svg');}
 
-    #brick-bg-meditation-1{background-image: url('src/assets/meditation-bg1.svg');}
-    #brick-bg-meditation-2{background-image: url('src/assets/meditation-bg2.svg');}
+    #brick-bg-meditation-1{background-image: url('/src/assets/meditation-bg1.svg');}
+    #brick-bg-meditation-2{background-image: url('/src/assets/meditation-bg2.svg');}
 
-    #brick-bg-breathing-1{background-image: url('src/assets/breathing-1.svg');}
-    #brick-bg-breathing-2{background-image: url('src/assets/breathing-2.svg');}
+    #brick-bg-breathing-1{background-image: url('/src/assets/breathing-1.svg');}
+    #brick-bg-breathing-2{background-image: url('/src/assets/breathing-2.svg');}
 
     .menu-icons{
         right: 0;
@@ -352,7 +350,7 @@
     }
 
     #illustration-stopsleep{
-        background-image: url("src/assets/illustration-stopsleep.svg");
+        background-image: url("/src/assets/illustration-stopsleep.svg");
         background-size: contain;
         background-repeat: no-repeat;
         padding-top: 75vw;
@@ -384,10 +382,10 @@
     }
     
     #background-dark{
-        background-image: url("src/assets/background-dark.svg");
+        background-image: url("/src/assets/background-dark.svg");
         background-size: cover;
         background-attachment: fixed;
-        height: 95vh;
+        
         padding-top: 15vw;
     }
 
@@ -403,10 +401,16 @@
         padding-top: 20vw;
     }
 
+    #deletecardpage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 80vh; 
+    }
 
 
 
-/*--Afspiller til lydfiler--*/
+/*-- LYDFILER --*/
     .audio-container{
         display: flex;
         align-items: center;
@@ -433,7 +437,6 @@
         min-width: 23vw;
         padding-left: 1vw;
         padding-right: 1vw;
-       
     }
 
     .audiowave{
@@ -445,6 +448,8 @@
         font-size: 3.3vw;
         min-width: 11vw;
         text-align: center;
+        padding-right: 50px;
+        padding-left: 5px;
     }
 
     .playbutton-big{
@@ -458,7 +463,6 @@
     .playbutton-big img{
         height: 5.5vh;
     }
-
 
 
 /*---Modalvindue til rating---*/
@@ -488,7 +492,7 @@
 
     .modal-content {
         border-radius: 20px;
-        background-image: url("/src/assets/moda-background.svg");
+        background-image: url("/src/assets/background-modal.svg");
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;  
@@ -624,7 +628,7 @@
         position: absolute;
         margin-left: 110px;
         margin-bottom: 90px;
-        color: rgb(229, 55, 55);
+        color: rgb(223, 59, 59);
     }
 
     .forest-sound-title{
@@ -636,20 +640,34 @@
 
     .favourite-heart{
         margin-left: 190px;
-        width: 43px;
+        width: 40px;
         top: 0;
+        margin-top: 2px;
     }
 
 /*---Dialogboks til brugernavn---*/
 .dialog {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 170px;
+    margin: 0 auto;
+    margin-top: 45%;
     border-radius: 20px;
     color: var(--titel-text);
     background-color: var(--dark-purple);
     border: 0;
-    padding: 50px 40px;
+    padding: 6vw;
+}
+
+#welcome-background{
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/src/assets/background-dark.svg");
+    backdrop-filter: blur(5px);
+    z-index: 100;
 }
 
 .text {
@@ -660,7 +678,6 @@
 }
 
 /*--- exercises side ---*/
-
 .logoer {
     width: 90%;
 }
@@ -676,3 +693,16 @@
     border: none;
     margin-bottom: 5vw;
 }
+
+.shake:active{
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    10%, 90% {transform: translate3d(-5px, 0, 0);}
+    20%, 80% {transform: translate3d(7px, 0, 0);}
+    30%, 50%, 70% {transform: translate3d(-7px, 0, 0);}
+    40%, 60% {transform: translate3d(7px, 0, 0);}
+  }
+
+

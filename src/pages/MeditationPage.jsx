@@ -20,10 +20,10 @@ export default function MeditationPage() {
             <motion.div className="spacing-bottom" variants={itemAnimation}>
                 <h2 className="heading">Meditation Exersices</h2>
                 <div className="flex spacing-top">
-                    <div className="brickcontainer brick-bg" id="brick-bg-meditation-1" >
+                    <div className="brickcontainer brick-bg shake" id="brick-bg-meditation-1" >
                         <p className="heading">Relaxation</p>
                     </div>
-                    <div className="brickcontainer brick-bg" id="brick-bg-meditation-2" >
+                    <div className="brickcontainer brick-bg shake" id="brick-bg-meditation-2" >
                         <p className="heading">Mindfull</p>
                     </div>
                 </div>

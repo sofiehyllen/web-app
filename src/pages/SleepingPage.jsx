@@ -25,7 +25,8 @@ export default function SleepingPage(){
   
     return(
         <motion.section className="page-content" id="background-dark" variants={containerAnimation} initial="hidden" animate="visible">
-            <motion.h1 variants={itemAnimation} className=" titel titel-big">Sleep tight <motion.span variants={itemAnimation} className="titel-tab">{brugernavn}</motion.span></motion.h1>
+            <motion.h1 variants={containerAnimation} className=" titel titel-big">Sleep tight <motion.span variants={itemAnimation} className="titel-tab">{brugernavn}</motion.span></motion.h1>
+            
             <motion.div variants={containerAnimation} id="illustration-stopsleep" className="center">
                 <motion.h2 variants={itemAnimation} className="bodytext-normal">You have slept for</motion.h2>
                 <motion.div variants={itemAnimation} ><Timer startTime={startTime} /></motion.div>

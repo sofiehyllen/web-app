@@ -77,43 +77,32 @@ const getdata = (e) => {
   });
 
   localStorage.setItem("userData", userData);
-  alert("Information saved");
 };
 
   return (
-    <section className="page-content">
-        <div >
-          <div>
+    <section>
+        <div id="welcome-background">
             <dialog id="favDialog" className="dialog">
-              <h2 className="titel spacing-bottom"> Welcome!</h2>
+              <h2 className="titel spacing-bottom"> Welcome to Sleeper!</h2>
               <h2 className="titel titel-small spacing-bottom"> Please tell us your name</h2>
               <form>
-                <p>
-
-                  <label className="heading heading-small">
-                    First name: <br/>
-                    <input
-                      type="text"
-                      value={user.Firstname}
-                      name="Firstname"
-                      onChange={userdata}
-                      className="form-input heading heading-small"
-                    />
-                  </label>
-                </p>
                 <div className="spacing-bottom">
-                  <label htmlFor="hoursofsleep"><h4 className='heading heading-small'>Hours of sleep</h4></label>
-
-                  <input type="number" className='form-input heading heading-small' id="hoursofsleep" name="Hoursofsleep" value={user.Hoursofsleep} autoComplete="off" onChange={userdata} required />
+                    <label className="heading heading-small">
+                        <h3> What is your name?</h3>
+                    </label>  
+                    <input type="text" value={user.Firstname} name="Firstname" onChange={userdata} className="form-input heading heading-small"/>
                 </div>
-                <div id="modal-buttons">
-                  <button id="confirmBtn" value="default" className="button btn-small align" onClick={getdata}>
-                    Confirm
+                <div className="spacing-bottom">
+                  <label htmlFor="hoursofsleep" className='heading heading-small'><h3>How many hours do you wish to sleep at night?</h3></label>
+                  <input type="number" className='form-input heading heading-small spacing-bottom' id="hoursofsleep" name="Hoursofsleep" value={user.Hoursofsleep} autoComplete="off" onChange={userdata} required />
+                </div>
+                <div id="modal-buttons" className="flex center">
+                  <button id="confirmBtn" value="default" className="button btn-big" onClick={getdata}>
+                    Confirm <span className="btn-shine"></span>
                   </button>
                 </div>
               </form>
             </dialog>
-          </div>
         </div>
     </section>
   );

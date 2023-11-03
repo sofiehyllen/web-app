@@ -7,6 +7,7 @@ import illustrationHome from "../assets/illustration-home.svg"
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 
+
 export default function HomePage(){
     const currentDate = moment();
     const homepageDate = currentDate.format('MMMM DD')
@@ -41,7 +42,7 @@ export default function HomePage(){
                     <h2 className="heading">Ready to go to sleep?</h2>
                     <p className="bodytext">Start the sleeptracker right before you go to sleep to keep track of the hours you sleep</p>
                 </div>
-                <Link className="button btn-small" to="/sleeptrackpage">
+                <Link className="button btn-small " to="/sleeptrackpage">
                     go to sleep <span className="btn-shine"/>
                 </Link>
             </motion.div>
