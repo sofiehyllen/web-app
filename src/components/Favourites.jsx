@@ -1,9 +1,8 @@
 // FavouritesSection.js
 import Audiofile from "../components/Audiofile";
 
-export default function Favourites({ favorites, handleHeartClick }) {
-
-    
+export default function Favourites({ favorites }) {
+  
   return (
     <section className='favourites spacing-top relative'>
       <p className="heading"> Your favourites </p>

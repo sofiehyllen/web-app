@@ -6,7 +6,8 @@ import { containerAnimation, itemAnimation } from '../components/Animationer';
 import { motion } from 'framer-motion';
 
 export default function ForestPage() {
-  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+const storedFavorites = JSON.parse(localStorage.getItem('favorites'));
+
   const [favorites, setFavorites] = useState(storedFavorites);
 
   const handleHeartClick = (audioUrl, title) => {
