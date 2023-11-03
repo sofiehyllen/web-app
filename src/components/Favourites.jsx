@@ -6,7 +6,7 @@ export default function Favourites({ favorites, handleHeartClick }) {
   return (
     <section className='favourites spacing-top relative'>
       <h2 className="heading"> Your favourites </h2>
-      <img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>
+      {/*<img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>*/}
       {favorites.length === 0 ? (
         <p className='heading heading-small bodytext spacing-bottom'> # Like your favorite sounds to display them here.</p>
       ) : (
