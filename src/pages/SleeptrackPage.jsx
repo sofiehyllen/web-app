@@ -49,12 +49,9 @@ export default function SleeptrackPage() {
                     start tracking <span className="btn-shine" />
                 </Link>
             </motion.div>
-
-            <motion.div variants={itemAnimation}> 
-                <Favourites favorites={favorites} />
-                <div className="rightalign-bottom">
-                    <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
-                </div>
+            <Favourites favorites={favorites} />
+            <motion.div variants={itemAnimation} className="rightalign-bottom">
+                <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
             </motion.div>
         </motion.section>
     )

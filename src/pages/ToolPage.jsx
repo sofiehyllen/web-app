@@ -53,7 +53,7 @@ export default function ToolPage(){
             {/* 10 STEPS SECTION */}
             <motion.div className="spacing-top" variants={itemAnimation}>
                 <h2 className="heading"> During the day</h2>
-                <div className="spacing-top brickcontainer medium leftalign-bottom brick-bg" id="brick-bg-tools-3">
+                <div className="spacing-top brickcontainer medium leftalign-bottom brick-bg shake" id="brick-bg-tools-3">
                     <p className="heading">10 steps to better sleep</p>
                 </div>
             </motion.div>

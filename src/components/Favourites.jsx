@@ -1,18 +1,19 @@
 // FavouritesSection.js
 import Audiofile from "../components/Audiofile";
+import { motion } from "framer-motion";
+import { itemAnimation } from "./Animationer";
 
 export default function Favourites({ favorites }) {
-  
   return (
     <section className='favourites spacing-top relative'>
-      <p className="heading"> Your favourites </p>
+      <motion.h2 variants={itemAnimation} className="heading"> Your favourites </motion.h2>
       {/*<img className="favourite-heart absolute" src="src/assets/heart-bg.svg" alt="heart icon favourites" ></img>*/}
       {favorites.length === 0 ? (
-        <p className='heading heading-small bodytext spacing-bottom'> # Like your favorite sounds to display them here.</p>
+        <motion.p variants={itemAnimation} className='heading heading-small bodytext spacing-bottom'> # Like your favorite sounds to display them here.</motion.p>
       ) : (
         favorites.map((favorite, index) => (
 
-        <div key={index} className="audiofile-container" style={{ position: 'relative'}}>
+        <motion.div variants={itemAnimation} key={index} className="audiofile-container" style={{ position: 'relative'}}>
               <Audiofile
                 textarea={favorite.title}
                 height={20}
@@ -26,11 +27,9 @@ export default function Favourites({ favorites }) {
                 dragToSeek={true}
                 cursorColor={'transparent'}
                 style={{ paddingRight: '50px' }}
-                
               />
-              <i className="fi fi-sr-heart" style={{ position: 'absolute', top: '56%', transform: 'translateY(-50%)', right: '12px', color:'red' }}></i>
-          </div>
-
+              <i className="fi fi-sr-heart" style={{ position: 'absolute', top: '56%', transform: 'translateY(-50%)', right: '12px', color:'rgb(223, 59, 59)' }}></i>
+          </motion.div>
         ))
       )}
     </section>

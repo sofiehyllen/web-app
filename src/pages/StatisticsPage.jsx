@@ -39,12 +39,13 @@ export default function StatisticsPage(){
                 <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job {brugernavn}!</p>
             </motion.div>
 
-            <motion.div variants={itemAnimation}>
-                <h2 className="heading">History</h2>
+            
+                <motion.h2 variants={itemAnimation} className="heading">History</motion.h2>
                 <div className="spacing-top">
                     <RatingHistory/>
                 </div>
-            </motion.div>
+           
+           
         </motion.section>
     )
 }
