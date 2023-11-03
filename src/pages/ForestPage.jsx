@@ -57,9 +57,9 @@ export default function ForestPage() {
             </div>
         </motion.div>
 
-        <motion.div variants={itemAnimation}>
+     
             <Favourites favorites={favorites} handleHeartClick={handleHeartClick}/>
-        </motion.div>
+
 
         <div>
             <motion.div variants={itemAnimation}><h2 className="heading">Forest</h2></motion.div>

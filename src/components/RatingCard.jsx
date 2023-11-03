@@ -7,6 +7,8 @@ import veryhappyIcon from '../assets/smiley5.svg';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import { useCallback, useEffect, useState } from 'react';
+import { motion } from 'framer-motion';
+import { containerAnimation, itemAnimation } from './Animationer';
 
 const ratingIcons = {
     1: verysadIcon,
@@ -62,8 +64,8 @@ export default function RatingCard({ post }) {
     }
 
     return (
-        <div className="brickcontainer medium" onClick={handleClick}>
-            <section className="flex">
+        <motion.div  className="brickcontainer medium" onClick={handleClick}>
+            <motion.div  className="flex">
                 <div className='rating-text'>
                     <span className="ident heading heading-small">{post.date}</span>
                     <div>
@@ -75,7 +77,7 @@ export default function RatingCard({ post }) {
                 <div className="icon-container card-icon">
                     <img src={ratingIcons[post.rt]} alt={`rating-icon-${post.rt}`} className="img-max" />
                 </div>
-            </section>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 }

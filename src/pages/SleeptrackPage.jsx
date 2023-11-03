@@ -61,12 +61,12 @@ export default function SleeptrackPage() {
                 </Link>
             </motion.div>
 
-            <motion.div variants={itemAnimation}> 
+           
                 <Favourites favorites={favorites} handleHeartClick={handleHeartClick}/>
-                <div className="rightalign-bottom">
+                <motion.div variants={itemAnimation} className="rightalign-bottom">
                     <Link to="/soundpage" className=" button btn-small btn-purple">explore more<i className="fi fi-sr-triangle rotate"></i></Link>
-                </div>
-            </motion.div>
+                </motion.div>
+            
         </motion.section>
     )
 }

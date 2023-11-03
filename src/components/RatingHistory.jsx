@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import RatingCard from "./RatingCard";
-
+import { motion } from "framer-motion";
+import { itemAnimation } from "./Animationer";
 
 export default function RatingHistory() {
   const [posts, setPosts] = useState([]);
@@ -35,11 +36,11 @@ export default function RatingHistory() {
   return (
     <article className="page">
       {isPosts ? (
-        <div className="flexbox">
+        <motion.div variants={itemAnimation} className="flexbox">
           {posts.map((post) => (
             <RatingCard key={post.id} post={post} />
           ))}
-        </div>
+        </motion.div>
       ) : (
         <p className="bodytext">You have no recorded sleep history. <br />
         Start your first sleeptracking to see the statistics of your sleep here. </p>
