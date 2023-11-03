@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GoBackButton from "../components/GoBackButton";
 import { motion } from "framer-motion";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
@@ -10,6 +10,14 @@ export default function UserPage() {
         Email: '',
         Hoursofsleep: ''
     });
+
+    useEffect(() => {
+        // Hent brugeroplysninger fra localStorage, hvis de eksisterer
+        const savedUserData = localStorage.getItem("userData");
+        if (savedUserData) {
+            setUser(JSON.parse(savedUserData));
+        }
+    }, []); // Kør kun ved komponentens montering
 
     const userdata = (e) => {
         const { name, value } = e.target;
@@ -73,7 +81,7 @@ export default function UserPage() {
                 </div>
 
                 <motion.div variants={itemAnimation} className='center spacing-bottom'>
-                    <button onClick={getdata} type='submit' className='button btn-big'>
+                    <button onClick={getdata} type='number' className='button btn-big'>
                         save <span className="buttonshine" />
                     </button>
                 </motion.div>
