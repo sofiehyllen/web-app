@@ -9,19 +9,6 @@ export default function SoundPage(){
   const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
   const [favorites, setFavorites] = useState(storedFavorites);
 
-  const handleHeartClick = (audioUrl, title) => {
-    let updatedFavorites = [...favorites];
-    const index = updatedFavorites.findIndex(fav => fav.audioUrl === audioUrl);
-    if (index > -1) {
-      updatedFavorites.splice(index, 1);
-    } else {
-      updatedFavorites.push({ audioUrl, title, isFavorite: true });
-    }
-    setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
-  };
-
-
     return(
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
@@ -55,7 +42,7 @@ export default function SoundPage(){
             </motion.div>
 
             {/* FAVOURITE SOUNDS SECTION */}
-            <motion.div variants={itemAnimation}><Favourites favorites={favorites} handleHeartClick={handleHeartClick}/></motion.div>
+            <motion.div variants={itemAnimation}><Favourites favorites={favorites}/></motion.div>
         </motion.section>
     )
 }

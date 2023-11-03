@@ -12,7 +12,8 @@ import rainforestSound1 from '../assets/rainforest-sound1.mp3'
 import rainforestSound2 from '../assets/rainforest-sound2.mp3'
 
 export default function ForestPage() {
-  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+const storedFavorites = JSON.parse(localStorage.getItem('favorites'));
+
   const [favorites, setFavorites] = useState(storedFavorites);
 
   const handleHeartClick = (audioUrl, title) => {

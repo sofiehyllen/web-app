@@ -3,8 +3,7 @@ import Audiofile from "../components/Audiofile";
 import { motion } from "framer-motion";
 import { itemAnimation } from "./Animationer";
 
-export default function Favourites({ favorites, handleHeartClick }) {
-
+export default function Favourites({ favorites }) {
   return (
     <section className='favourites spacing-top relative'>
       <motion.h2 variants={itemAnimation} className="heading"> Your favourites </motion.h2>
