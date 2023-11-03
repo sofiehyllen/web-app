@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import GoBackButton from "../components/GoBackButton";
 
 export default function UserPage() {
@@ -8,6 +8,14 @@ export default function UserPage() {
         Email: '',
         Hoursofsleep: ''
     });
+
+    useEffect(() => {
+        // Hent brugeroplysninger fra localStorage, hvis de eksisterer
+        const savedUserData = localStorage.getItem("userData");
+        if (savedUserData) {
+            setUser(JSON.parse(savedUserData));
+        }
+    }, []); // Kør kun ved komponentens montering
 
     const userdata = (e) => {
         const { name, value } = e.target;
@@ -31,7 +39,7 @@ export default function UserPage() {
 
     return (
         <section className="page-content">
-            <GoBackButton/>
+            <GoBackButton />
             <div>
                 <h1 className='titel titel-big'> Hello...</h1>
                 <p className='bodytext spacing-bottom'>
@@ -66,14 +74,12 @@ export default function UserPage() {
                     </p>
                     <div className="spacing-bottom">
                         <label htmlFor="hoursofsleep"><h4 className='heading heading-small'>Hours of sleep</h4></label>
-
                         <input type="number" className='form-input heading heading-small' id="hoursofsleep" name="Hoursofsleep" value={user.Hoursofsleep} autoComplete="off" onChange={userdata} required />
-
                     </div>
                 </div>
 
                 <div className='center spacing-bottom'>
-                    <button onClick={getdata} type='submit' className='button btn-big'>
+                    <button onClick={getdata} type='number' className='button btn-big'>
                         save <span className="buttonshine" />
                     </button>
                 </div>
