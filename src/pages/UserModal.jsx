@@ -60,6 +60,7 @@ export default function UserModal() {
   }, [navigate]);
 
   const [user, setUser] = useState({
+    Firstname: '',
     Hoursofsleep: ''
 });
 
@@ -70,13 +71,14 @@ const userdata = (e) => {
 
 const getdata = (e) => {
   e.preventDefault();
-  const {Hoursofsleep } = user;
+  const { Firstname, Hoursofsleep } = user;
 
-  const userData = JSON.stringify({
-      Hoursofsleep
-  });
+  const userData = JSON.parse(localStorage.getItem("userData")) || {}; // Hent eksisterende data eller opret et tomt objekt
+  userData.Firstname = Firstname;
+  userData.Hoursofsleep = Hoursofsleep;
 
-  localStorage.setItem("userData", userData);
+  localStorage.setItem("userData", JSON.stringify(userData));
+  alert("Information saved");
 };
 
   return (
@@ -89,7 +91,12 @@ const getdata = (e) => {
                         <label className="heading heading-small">
                             <h3> What is your name?</h3>
                         </label>  
-                        <input type="text" value={brugernavn} onChange={(e) => setBrugernavn(e.target.value)} className="form-input heading heading-small"/>
+                        <input     
+                          type="text"
+                          value={user.Firstname}
+                          name="Firstname"
+                          onChange={userdata}
+                          className="form-input heading heading-small"/>
                     </div>
 
                     <div className="spacing-bottom">
