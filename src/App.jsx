@@ -22,7 +22,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <section>
-        <BrowserRouter basename="/sleeper.sofiehyllen.dk">
+        <BrowserRouter>
             <Navigation/>
             <AnimatePresence>    
                 <Routes> 
