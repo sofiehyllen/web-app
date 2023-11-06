@@ -628,7 +628,8 @@
         position: absolute;
         margin-left: 110px;
         margin-bottom: 90px;
-        color: rgb(223, 59, 59);
+        font-size: 5vw;
+        color: rgb(223, 70, 70);
     }
 
     .forest-sound-title{
