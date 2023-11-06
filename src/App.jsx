@@ -22,7 +22,7 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <section>
-        <BrowserRouter>
+        <BrowserRouter basename="/sleeper.sofiehyllen.dk">
             <Navigation/>
             <AnimatePresence>    
                 <Routes> 
@@ -40,7 +40,7 @@ function App() {
                     <Route path="/exercises" element={<ExercisesPage/>} />
                     <Route path="/meditation" element={<MeditationPage/>} />
                     <Route path="/usermodal" element={<UserModal/>} />
-                    <Route path="*" element={<HomePage/>}/>
+                    <Route path="/*" element={<HomePage/>}/>
                 </Routes> 
             </AnimatePresence>
         </BrowserRouter>
