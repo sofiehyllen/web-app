@@ -1,5 +1,5 @@
 
-import { Routes, Route } from "react-router-dom"; 
+import { Routes, Route, BrowserRouter } from "react-router-dom"; 
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import Navigation from './components/Navigation';
@@ -22,26 +22,28 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <section>
-        <Navigation/>
-        <AnimatePresence>    
-            <Routes> 
-                <Route path="/" element={<UserModal/>} /> 
-                <Route path="/homepage" element={<HomePage/>} /> 
-                <Route path="/sleeptrackpage" element={<SleeptrackPage/>} /> 
-                <Route path="/menupage" element={<MenuPage/>} /> 
-                <Route path="/soundpage" element={<SoundPage/>} />
-                <Route path="/toolpage" element={<ToolPage/>} />
-                <Route path="/statisticspage" element={<StatisticsPage/>} />
-                <Route path="statisticspage/posts/:postId" element={<RatingDelete />} />
-                <Route path="/userpage" element={<UserPage/>} />
-                <Route path="/sleepingpage" element={<SleepingPage/>} />
-                <Route path="/forestpage" element={<ForestPage/>} />
-                <Route path="/exercises" element={<ExercisesPage/>} />
-                <Route path="/meditation" element={<MeditationPage/>} />
-                <Route path="/usermodal" element={<UserModal/>} />
-                <Route path="*" element={<HomePage/>}/>
-            </Routes> 
-        </AnimatePresence>
+        <BrowserRouter>
+            <Navigation/>
+            <AnimatePresence>    
+                <Routes> 
+                    <Route path="/" element={<UserModal/>} /> 
+                    <Route path="/homepage" element={<HomePage/>} /> 
+                    <Route path="/sleeptrackpage" element={<SleeptrackPage/>} /> 
+                    <Route path="/menupage" element={<MenuPage/>} /> 
+                    <Route path="/soundpage" element={<SoundPage/>} />
+                    <Route path="/toolpage" element={<ToolPage/>} />
+                    <Route path="/statisticspage" element={<StatisticsPage/>} />
+                    <Route path="statisticspage/posts/:postId" element={<RatingDelete />} />
+                    <Route path="/userpage" element={<UserPage/>} />
+                    <Route path="/sleepingpage" element={<SleepingPage/>} />
+                    <Route path="/forestpage" element={<ForestPage/>} />
+                    <Route path="/exercises" element={<ExercisesPage/>} />
+                    <Route path="/meditation" element={<MeditationPage/>} />
+                    <Route path="/usermodal" element={<UserModal/>} />
+                    <Route path="*" element={<HomePage/>}/>
+                </Routes> 
+            </AnimatePresence>
+        </BrowserRouter>
     </section>
   )
 }
