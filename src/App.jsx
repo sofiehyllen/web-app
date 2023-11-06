@@ -25,20 +25,21 @@ function App() {
         <Navigation/>
         <AnimatePresence>    
             <Routes> 
-                <Route exact path="/" element={<UserModal/>} /> 
-                <Route exact path="/homepage" element={<HomePage/>} /> 
-                <Route exact path="/sleeptrackpage" element={<SleeptrackPage/>} /> 
-                <Route exact path="/menupage" element={<MenuPage/>} /> 
-                <Route exact path="/soundpage" element={<SoundPage/>} />
-                <Route exact path="/toolpage" element={<ToolPage/>} />
-                <Route exact path="/statisticspage" element={<StatisticsPage/>} />
+                <Route path="/" element={<UserModal/>} /> 
+                <Route path="/homepage" element={<HomePage/>} /> 
+                <Route path="/sleeptrackpage" element={<SleeptrackPage/>} /> 
+                <Route path="/menupage" element={<MenuPage/>} /> 
+                <Route path="/soundpage" element={<SoundPage/>} />
+                <Route path="/toolpage" element={<ToolPage/>} />
+                <Route path="/statisticspage" element={<StatisticsPage/>} />
                 <Route path="statisticspage/posts/:postId" element={<RatingDelete />} />
-                <Route exact path="/userpage" element={<UserPage/>} />
-                <Route exact path="/sleepingpage" element={<SleepingPage/>} />
-                <Route exact path="/forestpage" element={<ForestPage/>} />
-                <Route exact path="/exercises" element={<ExercisesPage/>} />
-                <Route exact path="/meditation" element={<MeditationPage/>} />
-                <Route exact path="/usermodal" element={<UserModal/>} />
+                <Route path="/userpage" element={<UserPage/>} />
+                <Route path="/sleepingpage" element={<SleepingPage/>} />
+                <Route path="/forestpage" element={<ForestPage/>} />
+                <Route path="/exercises" element={<ExercisesPage/>} />
+                <Route path="/meditation" element={<MeditationPage/>} />
+                <Route path="/usermodal" element={<UserModal/>} />
+                <Route path="*" element={<HomePage/>}/>
             </Routes> 
         </AnimatePresence>
     </section>
