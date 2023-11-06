@@ -28,7 +28,7 @@ export default function Favourites({ favorites }) {
                 cursorColor={'transparent'}
                 style={{ paddingRight: '50px' }}
               />
-              <i className="fi fi-sr-heart" style={{ position: 'absolute', top: '56%', transform: 'translateY(-50%)', right: '12px', color:'rgb(223, 59, 59)' }}></i>
+              <i className="fi fi-sr-heart" style={{ position: 'absolute', top: '56%', transform: 'translateY(-50%)', right: '12px', color:'rgb(223, 70, 70)' }}></i>
           </motion.div>
         ))
       )}

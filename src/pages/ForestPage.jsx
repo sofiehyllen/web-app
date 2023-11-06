@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PlayButton from "../components/PlayButton";
 import GoBackButton from '../components/GoBackButton';
-import Favourites from '../components/Favourites';
 import { containerAnimation, itemAnimation } from '../components/Animationer';
 import { motion } from 'framer-motion';
 import forestSound1 from '../assets/forest-sound1.mp3'
@@ -14,7 +13,7 @@ import rainforestSound2 from '../assets/rainforest-sound2.mp3'
 export default function ForestPage() {
 const storedFavorites = JSON.parse(localStorage.getItem('favorites'));
 
-  const [favorites, setFavorites] = useState(storedFavorites);
+const [favorites, setFavorites] = useState(storedFavorites || []);
 
   const handleHeartClick = (audioUrl, title) => {
     let updatedFavorites = [...favorites];
@@ -57,10 +56,6 @@ const storedFavorites = JSON.parse(localStorage.getItem('favorites'));
                 </div>
             </div>
         </motion.div>
-
-     
-            <Favourites favorites={favorites} handleHeartClick={handleHeartClick}/>
-
 
         <div>
             <motion.div variants={itemAnimation}><h2 className="heading">Forest</h2></motion.div>

@@ -1,8 +1,0 @@
-{
-    "name": "Sleeper",
-    "short_name": "Sleeper",
-    "background_color": "rgba(36, 30, 60, 1);",
-    "display": "standalone",
-    "orientation": "portrait",
-    "start_url": "/"
-  }

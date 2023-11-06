@@ -78,7 +78,6 @@ const getdata = (e) => {
   userData.Hoursofsleep = Hoursofsleep;
 
   localStorage.setItem("userData", JSON.stringify(userData));
-  alert("Information saved");
 };
 
   return (
