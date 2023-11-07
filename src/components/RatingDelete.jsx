@@ -14,25 +14,32 @@ export default function RatingDelete() {
     const url = `https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep/${params.postId}.json`;
     const [showModal, setShowModal] = useState(false);
 
-    useEffect(() => {                                                                                                    //Her hentes det aktuelle "kort" med dataen for den givne dag
-    async function getPost() {
-        const response = await fetch(url);
-        const data = await response.json();
-        setPost(data);
-    }
-    getPost();
+    useEffect(() => {
+        async function getPost() {
+            try {
+                const response = await fetch(url);
+                const data = await response.json();
+                setPost(data);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+            }
+        }
+        getPost();
     }, [url]);
 
     const handleConfirm = async () => {
-        const response = await fetch(url, {
-            method: 'DELETE',
+        try {
+            const response = await fetch(url, {
+                method: 'DELETE',
             });
-
-        const data = await response.json();
-            console.log(data);
-            
-            setShowModal(false);
-            navigate('/statisticspage');
+    
+            if (response.ok) {
+                setShowModal(false);
+                navigate('/statisticspage');
+            }
+        } catch (error) {
+            console.error('Error deleting data:', error);
+        }
     };
 
     const handleClick = () => {
