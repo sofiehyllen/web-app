@@ -34,7 +34,7 @@ export default function UserModal() { // Ellen
           setShowModal(false);
           navigate("/homepage"); //til homepage
         } else if (!username) {
-          alert("Please enter a username"); //Melder fejl hvis ikke der er indtastet et navn
+          alert("Please enter your name"); //Melder fejl hvis ikke der er indtastet et navn
         }
       }
       favDialog.addEventListener("close", closeDialog);
@@ -47,7 +47,7 @@ export default function UserModal() { // Ellen
           favDialog.close(formattedUsername); 
           setShowModal(false);
         } else {
-          alert("Please enter a username"); //Melder fejl hvis ikke der er indtastet et navn
+          alert("Please enter your name"); //Melder fejl hvis ikke der er indtastet et navn
         }
       }
       
