@@ -50,27 +50,28 @@ export default function RatingDelete() {
         setShowModal(false);
     };
 
-    return (
-        <motion.section  variants={containerAnimation} initial="hidden" animate="visible" className="page-content">
-            <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
-            <div id="deletecardpage">
-                <motion.div variants={itemAnimation} ><RatingCard post={post} /></motion.div>
-                <motion.div variants={itemAnimation} className="center">
-                    <button className="button btn-small" onClick={handleClick}>Delete Post  <span className='btn-shine'/></button>
-                </motion.div>
-            </div>
-            {showModal && (
-                <motion.div variants={containerAnimation} initial="hidden" animate="visible" className="delete-modal">
-                    <div className="delete-content">
-                        <h1 className="titel">Delete?</h1>
-                        <h2 className="heading heading-small spacing-bottom">Are you sure you want to delete the sleeptracking of this day?</h2>
-                        <div className="center">
-                            <button className="button btn-small btn-delete" onClick={handleConfirm}>Delete <span className='btn-shine'/></button>
-                            <button className="button btn-small" onClick={handleCancel}>Cancel <span className='btn-shine'/></button>
-                        </div>
+return (
+    <motion.section  variants={containerAnimation} initial="hidden" animate="visible" className="page-content">
+        <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
+        <div id="deletecardpage">
+            <motion.div variants={itemAnimation} ><RatingCard post={post} /></motion.div>
+            <motion.div variants={itemAnimation} className="center">
+                <button className="button btn-small" onClick={handleClick}>Delete Post  <span className='btn-shine'/></button>
+            </motion.div>
+        </div>
+        
+        {showModal && (
+            <motion.div variants={containerAnimation} initial="hidden" animate="visible" className="delete-modal">
+                <div className="delete-content">
+                    <h1 className="titel">Delete?</h1>
+                    <h2 className="heading heading-small spacing-bottom">Are you sure you want to delete the sleeptracking of this day?</h2>
+                    <div className="center">
+                        <button className="button btn-small btn-delete" onClick={handleConfirm}>Delete <span className='btn-shine'/></button>
+                        <button className="button btn-small" onClick={handleCancel}>Cancel <span className='btn-shine'/></button>
                     </div>
-                </motion.div>
-            )}
-        </motion.section>
+                </div>
+            </motion.div>
+        )}
+    </motion.section>
     );
 }
