@@ -41,8 +41,10 @@ export default function MeditationPage() {
                 </motion.div>
                 
                 <div className="spacing-top">
+                    
+                    <motion.div variants={itemAnimation}>
                     <Audiofile
-                    textarea={"Session #1"}
+                    textarea={"Session No. 1"}
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230)"
@@ -53,10 +55,11 @@ export default function MeditationPage() {
                     barRadius={10}
                     dragToSeek={true}
                     cursorColor={'transparent'}
-                    />
+                    /></motion.div>
 
+                    <motion.div variants={itemAnimation}>
                     <Audiofile
-                    textarea={"Session #2"}
+                    textarea={"Session No. 2"}
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230, 1)"
@@ -67,10 +70,11 @@ export default function MeditationPage() {
                     barRadius={10}
                     dragToSeek={true}
                     cursorColor={'transparent'}
-                    />
+                    /></motion.div>
 
+                    <motion.div variants={itemAnimation}>
                     <Audiofile
-                    textarea={"Session #3"}
+                    textarea={"Session No. 3"}
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230)"
@@ -81,10 +85,11 @@ export default function MeditationPage() {
                     barRadius={10}
                     dragToSeek={true}
                     cursorColor={'transparent'}
-                    />
+                    /></motion.div>
 
+                    <motion.div variants={itemAnimation}>
                     <Audiofile
-                    textarea={"Session #4"}
+                    textarea={"Session No. 4"}
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230, 1)"
@@ -95,7 +100,7 @@ export default function MeditationPage() {
                     barRadius={10}
                     dragToSeek={true}
                     cursorColor={'transparent'}
-                    />
+                    /></motion.div>
                 </div>
             </section>
       </motion.section>
