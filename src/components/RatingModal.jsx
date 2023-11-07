@@ -1,14 +1,13 @@
-
 import PropTypes from 'prop-types'; 
 import RatingForm from './RatingForm';
 import { motion } from 'framer-motion';
 import { containerAnimation } from './Animationer';
 
-    RatingModal.propTypes = {
-        isOpen: PropTypes.bool,
-        onClose: PropTypes.func,
-        elapsedTime: PropTypes.string,
-    };
+RatingModal.propTypes = {
+    isOpen: PropTypes.bool,
+    onClose: PropTypes.func,
+    elapsedTime: PropTypes.string,
+};
 
 export default function RatingModal({ isOpen, onClose, elapsedTime}) {
     async function createPost(newPost) {
