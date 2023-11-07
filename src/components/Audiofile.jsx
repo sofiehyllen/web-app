@@ -4,8 +4,6 @@ import WaveSurfer from 'https://unpkg.com/wavesurfer.js@7/dist/wavesurfer.esm.js
 import moment from 'moment/moment'
 import play from '../assets/afspiller-play.svg'
 import pause from '../assets/afspiller-pause.svg'
-import { motion } from 'framer-motion';
-import { itemAnimation } from './Animationer';
 
 const useWavesurfer = (containerRef, options) => {
     const [wavesurfer, setWavesurfer] = useState(null)
