@@ -52,11 +52,11 @@ export default function RatingDelete() {
 
 return (
     <motion.section  variants={containerAnimation} initial="hidden" animate="visible" className="page-content">
-        <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
+        <GoBackButton/>
         <div id="deletecardpage">
-            <motion.div variants={itemAnimation} ><RatingCard post={post} /></motion.div>
+            <motion.div variants={itemAnimation} ><RatingCard post={post}/></motion.div>
             <motion.div variants={itemAnimation} className="center">
-                <button className="button btn-small" onClick={handleClick}>Delete Post  <span className='btn-shine'/></button>
+                <button className="button btn-small" onClick={handleClick}>Delete Post<span className='btn-shine'/></button>
             </motion.div>
         </div>
         
