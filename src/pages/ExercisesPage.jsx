@@ -3,11 +3,12 @@ import logoer from "../assets/logoer.svg"
 import { motion } from "framer-motion";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 
-export default function ExercisesPage() {
+export default function ExercisesPage() { //Ellen
     return (
       <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
         <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
 
+        {/* EXERCISES SECTION */} 
         <motion.h1 className='titel spacing-top' variants={itemAnimation}> Exercises </motion.h1>
         <motion.div variants={itemAnimation}>
             <p className="bodytext">
@@ -19,6 +20,7 @@ export default function ExercisesPage() {
         
         <motion.div className="center" variants={itemAnimation}><img src={logoer} alt="Logoer" className="logoer" /></motion.div>
 
+        {/* BREATHING EXERCISES SECTION */} 
         <motion.h2 className="heading" variants={itemAnimation}>Breahting exercises</motion.h2>
         <motion.div variants={itemAnimation}>
             <p className="bodytext spacing-bottom">
@@ -29,10 +31,10 @@ export default function ExercisesPage() {
         <motion.div className="flex spacing-top" variants={itemAnimation}>
             <div className="brickcontainer brick-bg shake" id="brick-bg-breathing-1" >
                 <p className="heading">No. 1</p>
-            </div>
+            </div>{/* Henter baggrundsbillede fra css */} 
             <div className="brickcontainer brick-bg shake" id="brick-bg-breathing-2">
                 <p className="heading">No. 2</p>
-            </div>
+            </div>{/* Henter baggrundsbillede fra css */} 
         </motion.div>
       </motion.section>
     );

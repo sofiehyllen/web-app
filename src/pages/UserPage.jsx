@@ -3,7 +3,7 @@ import GoBackButton from "../components/GoBackButton";
 import { motion } from "framer-motion";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 
-export default function UserPage() {
+export default function UserPage() { // Ellen
     const [user, setUser] = useState({
         Firstname: '',
         Lastname: '',

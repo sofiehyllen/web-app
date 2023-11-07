@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-export default function GoBackButton() {
+export default function GoBackButton() { // Ellen
   const history = useNavigate();
 
   const handleGoBack = () => {
@@ -8,6 +8,6 @@ export default function GoBackButton() {
   };
 
   return (
-    <button onClick={handleGoBack} className="back"><i className="fi fi-br-angle-small-left"></i> </button>
+    <button onClick={handleGoBack} className="back"><i className="fi fi-br-angle-small-left"></i>{/* tilbage knappen stylet i css */} </button>  
   );
 }
