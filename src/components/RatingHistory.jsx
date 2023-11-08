@@ -1,3 +1,5 @@
+// Denne side er kodet af: Karoline Lerche
+
 import { useEffect, useState } from "react";
 import RatingCard from "./RatingCard";
 import { motion } from "framer-motion";

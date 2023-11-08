@@ -1,3 +1,5 @@
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
+
 import { Link } from "react-router-dom";
 import Favourites from "../components/Favourites";
 import { useState, useEffect, useRef } from "react";

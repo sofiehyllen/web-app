@@ -1,11 +1,15 @@
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
+
 import moment from "moment";
 import { useEffect, useState } from "react";
 
 export default function SleepCalculator() {
+  // Initialisering af tilstanden
   const [state, setState] = useState({
     averageSleep: "00:00", // Tilføj gennemsnit til komponentens tilstand
   });
 
+  // Hent data fra Firebase-databasen
   useEffect(() => {
     async function fetchData() {
       const url =
@@ -14,9 +18,12 @@ export default function SleepCalculator() {
         const response = await fetch(url);
         const data = await response.json();
 
+        // Håndterer data, hvis det eksisterer
         if (data !== null) {
+          // Behandling af de seneste 7 elementer
           const entries = Object.entries(data);
           const latestEntries = entries.slice(-7); // Tag de seneste 7 elementer
+          // Konverter timer til minutter og beregn gennemsnitlig søvn
           const hoursSlept = latestEntries.map(
             ([, entry]) => {
                 const [hours, minutes, seconds] = entry.hs.split(':');
@@ -31,11 +38,13 @@ export default function SleepCalculator() {
   
             const averageSleep = totalSleep / hoursSlept.length;
   
+            // Formater gennemsnitlig søvntid
             const formattedTime = moment()
               .startOf("day")
               .minutes(averageSleep)
               .format("HH:mm");
 
+          // Opdater tilstanden med det gennemsnitlige søvntidspunkt
           setState((prev) => ({
             ...prev,
             averageSleep: formattedTime, // Opdater gennemsnit i tilstanden
@@ -51,6 +60,7 @@ export default function SleepCalculator() {
     fetchData();
   }, []);
 
+  // Returnerer den gennemsnitlige søvntid
   return(
         <> 
         {state.averageSleep} 
