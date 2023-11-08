@@ -49,17 +49,16 @@ export default function RatingCard({ post }) {
 
      // Effekt til at ændre tekstfarven baseret på brugerens søvnmål
     useEffect(() => {
-        const userData = localStorage.getItem("userData"); // Henter brugerdata fra localStorage
+        const userData = localStorage.getItem("userData"); // Henter brugerens indtastede søvnmål fra localStorage
 
         if (userData) {
-            const parsedUserData = JSON.parse(userData); // Parser brugerdata til et objekt
-            const hoursofsleep = parsedUserData.Hoursofsleep; // Henter antal timer brugeren har sovet fra brugerdata
-            console.log("Hoursofsleep fra localstorage:", hoursofsleep);
+            const parsedUserData = JSON.parse(userData); // Parser dataen til et objekt
+            const hoursofsleep = parsedUserData.Hoursofsleep; // Gemmer objektet som en variabel 
 
-            if (hoursofsleep >= formattedTime()) { // Hvis brugerens søvnmål er større end eller lig med formateret tid
-                setTextColor('rgba(233, 97, 97, 1)'); // Ændrer farven til rød, når brugerens søvnmål er lig med eller større end formattedTime
+            if (hoursofsleep >= formattedTime()) {   
+                setTextColor('rgba(233, 97, 97, 1)'); // Farven ændres til rød, når brugerens søvnmål er lig med, eller større end søvnmålingen (formattedTime)
             } else {
-                setTextColor('rgba(102, 203, 100, 1)'); // Ændrer farven til grøn, når brugerens søvnmål er mindre end formattedTime
+                setTextColor('rgba(102, 203, 100, 1)'); // Farven ændres til grøn, når brugerens søvnmål er mindre end søvnmålingen
             }
         }
     }, [formattedTime]); // Lytter efter ændringer i formattedTime
@@ -69,8 +68,7 @@ export default function RatingCard({ post }) {
         navigate(`posts/${post.id}`); // Navigerer til det specifikke indlæg
     }
 
-    // Returnerer JSX-elementer til visning af vurderingskortet
-    return (
+    return ( // Her returneres ratingkortet
         <div  className="brickcontainer medium" onClick={handleClick}>
             <div  className="flex">
                 {/* Elementer til visning af datoen og sovetid */}

@@ -26,10 +26,10 @@ export default function StatisticsPage(){
                 <p className="bodytext">Check out the statistics of your weekly sleepcycle to get a better feeling of the quality of your sleep.</p>
             </motion.div>
 
-            <motion.div className="spacing-bottom" variants={itemAnimation}> 
-                <h2 className="heading">Weekly status</h2>
+            <div className="spacing-bottom"> 
+                <motion.h2 variants={itemAnimation} className="heading">Weekly status</motion.h2>
                 <Graph/>
-            </motion.div>
+            </div>
 
             <motion.div className="heading heading-small" variants={itemAnimation}>              
                 <div className="center">
