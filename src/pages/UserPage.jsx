@@ -45,6 +45,7 @@ export default function UserPage() {
         localStorage.setItem("userData", userData);
         // Viser en meddelelse om at informationen er gemt
         alert("Information saved");
+
     };
 
     return (
@@ -99,7 +100,7 @@ export default function UserPage() {
                 {/* Gemme-knap */}
                 <motion.div variants={itemAnimation} className='center spacing-bottom'>
                     <button onClick={getdata} type='number' className='button btn-big'>
-                        save <span className="buttonshine" />
+                        save <span className="btn-shine" />
                     </button>
                 </motion.div>
             </form>

@@ -5,6 +5,7 @@ import RatingForm from './RatingForm';
 import { motion } from 'framer-motion';
 import { containerAnimation } from './Animationer';
 
+
 // Prop type validering for RatingModal-komponenten
     RatingModal.propTypes = {
         isOpen: PropTypes.bool, // Angiver om modalen er åben eller lukket
