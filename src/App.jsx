@@ -1,3 +1,5 @@
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
+
 
 import { Routes, Route, BrowserRouter } from "react-router-dom"; 
 import HomePage from './pages/HomePage';
@@ -22,9 +24,13 @@ import { AnimatePresence } from "framer-motion";
 function App() {
   return (
     <section>
+        {/* Indlejrer BrowserRouter til at omgive ruteindholdet */}
         <BrowserRouter>
+            {/* Navigation komponent */}
             <Navigation/>
-            <AnimatePresence>    
+            {/* AnimatePresence for at håndtere tilstedeværelse af animerede elementer */}
+            <AnimatePresence>
+                {/* Routes for at definere forskellige stier og komponenter */}    
                 <Routes> 
                     <Route path="/" element={<UserModal/>} /> 
                     <Route path="/homepage" element={<HomePage/>} /> 
@@ -40,7 +46,7 @@ function App() {
                     <Route path="/exercises" element={<ExercisesPage/>} />
                     <Route path="/meditation" element={<MeditationPage/>} />
                     <Route path="/usermodal" element={<UserModal/>} />
-                    <Route path="/*" element={<HomePage/>}/>
+                    <Route path="/*" element={<HomePage/>}/> {/* Fallback rute til hjemmesiden */}
                 </Routes> 
             </AnimatePresence>
         </BrowserRouter>

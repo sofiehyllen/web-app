@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
+import { itemAnimation } from "./Animationer";
 
 export default function GoBackButton() { // Ellen
   const history = useNavigate();
@@ -8,6 +10,8 @@ export default function GoBackButton() { // Ellen
   };
 
   return (
-    <button onClick={handleGoBack} className="back"><i className="fi fi-br-angle-small-left"></i>{/* tilbage knappen stylet i css */} </button>  
+    <motion.div variants={itemAnimation}>
+        <button onClick={handleGoBack} className="back"><i className="fi fi-br-angle-small-left"></i>{/* tilbage knappen stylet i css */} </button>  
+    </motion.div>    
   );
 }

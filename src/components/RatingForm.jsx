@@ -1,3 +1,5 @@
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
+
 import { useEffect, useState } from 'react';
 import verysadIcon from '../assets/smiley1.svg';
 import sadIcon from '../assets/smiley2.svg';

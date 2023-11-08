@@ -1,3 +1,5 @@
+// Denne side er kodet af: Karoline Lerche
+
 import { Link } from "react-router-dom";
 import GoBackButton from "../components/GoBackButton";
 import Favourites from "../components/Favourites";
