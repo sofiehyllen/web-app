@@ -9,8 +9,6 @@ import veryhappyIcon from '../assets/smiley5.svg';
 import PropTypes from 'prop-types';
 import moment from 'moment';
 import { useCallback, useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { containerAnimation, itemAnimation } from './Animationer';
 
 // Objekt, der mapper ratings til deres tilsvarende ikoner
 const ratingIcons = {
@@ -73,8 +71,8 @@ export default function RatingCard({ post }) {
 
     // Returnerer JSX-elementer til visning af vurderingskortet
     return (
-        <motion.div  className="brickcontainer medium" onClick={handleClick}>
-            <motion.div  className="flex">
+        <div  className="brickcontainer medium" onClick={handleClick}>
+            <div  className="flex">
                 {/* Elementer til visning af datoen og sovetid */}
                 <div className='rating-text'>
                     <span className="ident heading heading-small">{post.date}</span> {/* Viser datoen for indlægget */}
@@ -88,7 +86,7 @@ export default function RatingCard({ post }) {
                 <div className="icon-container card-icon">
                     <img src={ratingIcons[post.rt]} alt={`rating-icon-${post.rt}`} className="img-max" /> {/* Viser det korrekte ikon baseret på vurderingen */}
                 </div>
-            </motion.div>
-        </motion.div>
+            </div>
+        </div>
     );
 }

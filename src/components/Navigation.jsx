@@ -1,5 +1,6 @@
-import { NavLink } from "react-router-dom";
+// Denne side er kodet af: Sofie Hyllen
 
+import { NavLink } from "react-router-dom";
 
 export default function Navigation(){
     return(

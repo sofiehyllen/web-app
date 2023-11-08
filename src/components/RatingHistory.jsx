@@ -1,4 +1,4 @@
-// Denne side er kodet af: Karoline Lerche
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
 
 import { useEffect, useState } from "react";
 import RatingCard from "./RatingCard";

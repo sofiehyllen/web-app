@@ -1,3 +1,5 @@
+// Denne side er kodet af: Sofie Hyllen
+
 import moment from "moment/moment";
 import { useEffect } from "react";
 import { useState } from "react";

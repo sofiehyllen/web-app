@@ -1,3 +1,5 @@
+// Denne side er kodet af: Sofie Hyllen
+
 import { useEffect, useState } from "react";
 import GoBackButton from "../components/GoBackButton";
 import Graph from "../components/Graph";

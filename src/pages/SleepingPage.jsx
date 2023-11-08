@@ -1,3 +1,5 @@
+// Denne side er kodet af: Sofie Hyllen
+
 import { useEffect, useState } from "react";
 import moment from "moment";
 import Timer from "../components/Timer";

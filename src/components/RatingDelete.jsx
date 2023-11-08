@@ -1,3 +1,5 @@
+// Denne side er kodet af: Sofie Hyllen
+
 import { useEffect, useState } from "react";
 import {  useNavigate, useParams } from "react-router-dom";
 import RatingCard from "./RatingCard";

@@ -1,3 +1,5 @@
+// Denne side er kodet af: Sofie Hyllen
+
 import { useEffect, useState } from 'react';
 import { Bar } from 'react-chartjs-2';
 import 'chart.js/auto';

@@ -1,4 +1,4 @@
-// Denne side er kodet af: Karoline Lerche
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
 
 import { useRef, useState, useEffect, useCallback } from 'react'
 import PropTypes from 'prop-types';
