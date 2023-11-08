@@ -1,3 +1,5 @@
+// Denne side er kodet af: Karoline Lerche
+
 import { useState } from 'react';
 import PlayButton from "../components/PlayButton";
 import GoBackButton from '../components/GoBackButton';
@@ -10,27 +12,36 @@ import forestSound4 from '../assets/forest-sound4.mp3'
 import rainforestSound1 from '../assets/rainforest-sound1.mp3'
 import rainforestSound2 from '../assets/rainforest-sound2.mp3'
 
+// Funktionen ForestPage er en React-komponent, der viser en side med skovlyde.
 export default function ForestPage() {
+
+// Håndtering af favoritter fra localStorage
 const storedFavorites = JSON.parse(localStorage.getItem('favorites'));
 
+// Oprettelse af en state til favoritter og initialisering med de gemte favoritter, hvis de findes
 const [favorites, setFavorites] = useState(storedFavorites || []);
 
+// Funktion til håndtering af klik på hjerteikon
   const handleHeartClick = (audioUrl, title) => {
-    let updatedFavorites = [...favorites];
-    const index = updatedFavorites.findIndex(fav => fav.audioUrl === audioUrl);
-    if (index > -1) {
+    let updatedFavorites = [...favorites]; // Opretter en kopi af favoritterne
+    const index = updatedFavorites.findIndex(fav => fav.audioUrl === audioUrl); // Finder indekset for lyden i favoritterne
+    if (index > -1) { // Hvis lyden allerede er en favorit, fjernes den fra favoritterne
       updatedFavorites.splice(index, 1);
-    } else {
+    } else { // Hvis lyden ikke er en favorit, tilføjes den til favoritterne
       updatedFavorites.push({ audioUrl, title, isFavorite: true });
     }
-    setFavorites(updatedFavorites);
-    localStorage.setItem('favorites', JSON.stringify(updatedFavorites));
+    setFavorites(updatedFavorites); // Opdaterer favoritterne
+    localStorage.setItem('favorites', JSON.stringify(updatedFavorites)); // Gemmer favoritterne i localStorage
   };
 
+  // Returnerer JSX-elementer med skovlyde
   return (
     <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
+        
+        {/* Tilbageknap til navigation */}
         <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
 
+        {/* Overskrift og beskrivelse af skovlyde */}
         <motion.div variants={itemAnimation}>
             <h1 className='titel spacing-top'> Forest sounds </h1>
             <p className="bodytext spacing-bottom">
@@ -40,6 +51,7 @@ const [favorites, setFavorites] = useState(storedFavorites || []);
             </p>
         </motion.div>
 
+        {/* Sektion med regnskovlyde */}
         <motion.div className="spacing-bottom" variants={itemAnimation}>
             <h2 className="heading">Rainforest</h2>
             <div className="flex spacing-top">
@@ -57,6 +69,7 @@ const [favorites, setFavorites] = useState(storedFavorites || []);
             </div>
         </motion.div>
 
+        {/* Sektion med regnskovlyde */}
         <div>
             <motion.div variants={itemAnimation}><h2 className="heading">Forest</h2></motion.div>
             <motion.div className="flex spacing-bottom spacing-top" variants={itemAnimation}>

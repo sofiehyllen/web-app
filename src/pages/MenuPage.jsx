@@ -1,3 +1,5 @@
+// Denne side er kodet af: Karoline Lerche
+
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
@@ -7,6 +9,7 @@ import menuIcon3 from "../assets/menu-icon3.svg"
 
 export default function MenuPage(){
     return(
+        // Userpage ikonet
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <Link to ="/userpage">
                 <motion.div id="usericon" variants={itemAnimation}>
@@ -14,6 +17,7 @@ export default function MenuPage(){
                 </motion.div>
             </Link>
 
+            {/* Calming sounds */}
             <motion.div className="spacing-bottom" variants={itemAnimation}>
                 <h1 className="titel">Menu</h1>
                 <p className="bodytext">Try our calming sounds, soothing tools, or check up on your latest sleep trackings. </p>
@@ -27,6 +31,7 @@ export default function MenuPage(){
                 </motion.div>
             </Link>
 
+            {/* Statistics */}
             <Link to="/statisticspage">
                 <motion.div className="brickcontainer medium brick-bg relative" id="brick-bg-menu-2" variants={itemAnimation}>
                     <h2 className="heading">Your Statistics</h2>
@@ -35,6 +40,7 @@ export default function MenuPage(){
                 </motion.div>
             </Link>
 
+            {/* Tips & tools */}
             <Link to="/toolpage">
                 <motion.div className="brickcontainer medium brick-bg relative" id="brick-bg-menu-3" variants={itemAnimation}>
                     <h2 className="heading">Tips & Tools</h2>
