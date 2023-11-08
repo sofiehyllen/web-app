@@ -1,4 +1,4 @@
-// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
+// Denne side er kodet af: Ellen Bager, Karoline Lerche & Sofie Hyllen
 
 import { useState, useEffect } from "react";
 import GoBackButton from "../components/GoBackButton";

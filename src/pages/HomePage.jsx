@@ -1,4 +1,4 @@
-// Denne side er kodet af: Sofie Hyllen
+// Denne side er kodet af: Ellen Bager & Sofie Hyllen
 
 import { useEffect } from "react";
 import { useState } from "react";
@@ -7,7 +7,6 @@ import {motion} from 'framer-motion'
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 import moment from "moment/moment";
 import illustrationHome from "../assets/illustration-home.svg"
-
 
 export default function HomePage(){
     const currentDate = moment(); //Vi henter dags dato vha moment.js
