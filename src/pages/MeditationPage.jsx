@@ -1,9 +1,15 @@
+// Denne side er kodet af: Ellen Bager
+
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 import Audiofile from "../components/Audiofile";
 import GoBackButton from "../components/GoBackButton";
 import { motion } from "framer-motion";
+import session1 from "../assets/session1.mp3"
+import session2 from "../assets/session2.mp3"
+import session3 from "../assets/session3.mp3"
+import session4 from "../assets/session4.mp3"
 
-export default function MeditationPage() { //Ellen
+export default function MeditationPage() { 
     return (
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
@@ -48,7 +54,7 @@ export default function MeditationPage() { //Ellen
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230)"
-                    url={'src/assets/session1.mp3'}
+                    url={session1}
                     barHeight={1.5}
                     barWidth={3}
                     barGap={4}
@@ -63,7 +69,7 @@ export default function MeditationPage() { //Ellen
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230, 1)"
-                    url={'src/assets/session2.mp3'}
+                    url={session2}
                     barHeight={2}
                     barWidth={3}
                     barGap={4}
@@ -78,7 +84,7 @@ export default function MeditationPage() { //Ellen
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230)"
-                    url={'src/assets/session3.mp3'}
+                    url={session3}
                     barHeight={1.5}
                     barWidth={3}
                     barGap={4}
@@ -93,7 +99,7 @@ export default function MeditationPage() { //Ellen
                     height={30}
                     waveColor="rgba(96, 92, 110)"
                     progressColor="rgba(240, 238, 230, 1)"
-                    url={'src/assets/session4.mp3'}
+                    url={session4}
                     barHeight={2}
                     barWidth={3}
                     barGap={4}
