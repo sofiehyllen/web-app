@@ -1,9 +1,11 @@
+// Denne side er kodet af: Ellen Bager
+
 import GoBackButton from "../components/GoBackButton";
 import logoer from "../assets/logoer.svg"
 import { motion } from "framer-motion";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 
-export default function ExercisesPage() { //Ellen
+export default function ExercisesPage() { 
     return (
       <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
         <motion.div variants={itemAnimation}><GoBackButton /></motion.div>

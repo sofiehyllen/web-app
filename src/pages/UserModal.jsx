@@ -1,10 +1,10 @@
+// Denne side er kodet af: Ellen Bager
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
 export default function UserModal() { // Ellen
-
     const [brugernavn, setBrugernavn] = useState("");// bruges til at gemme brugerens navn
     const [showModal, setShowModal] = useState(true);//bruges til at styre om dialogb oks skal vises
     const navigate = useNavigate(); //bruges til at skifte mellem sider

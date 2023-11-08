@@ -1,9 +1,11 @@
+// Denne side er kodet af: Ellen Bager
+
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 import Audiofile from "../components/Audiofile";
 import GoBackButton from "../components/GoBackButton";
 import { motion } from "framer-motion";
 
-export default function MeditationPage() { //Ellen
+export default function MeditationPage() { 
     return (
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <motion.div variants={itemAnimation}><GoBackButton /></motion.div>

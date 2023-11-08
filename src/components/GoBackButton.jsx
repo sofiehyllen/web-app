@@ -1,8 +1,10 @@
+// Denne side er kodet af: Ellen Bager
+
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { itemAnimation } from "./Animationer";
 
-export default function GoBackButton() { // Ellen
+export default function GoBackButton() { 
   const history = useNavigate();
 
   const handleGoBack = () => {
