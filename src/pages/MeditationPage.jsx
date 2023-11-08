@@ -3,7 +3,7 @@ import Audiofile from "../components/Audiofile";
 import GoBackButton from "../components/GoBackButton";
 import { motion } from "framer-motion";
 
-export default function MeditationPage() {
+export default function MeditationPage() { //Ellen
     return (
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
             <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
@@ -22,10 +22,10 @@ export default function MeditationPage() {
                 <div className="flex spacing-top">
                     <div className="brickcontainer brick-bg shake" id="brick-bg-meditation-1" >
                         <p className="heading">Relaxation</p>
-                    </div>
+                    </div>{/* Henter baggrundsbillede fra css */} 
                     <div className="brickcontainer brick-bg shake" id="brick-bg-meditation-2" >
                         <p className="heading">Mindfull</p>
-                    </div>
+                    </div>{/* Henter baggrundsbillede fra css */} 
                 </div>
             </motion.div>
 
@@ -40,7 +40,7 @@ export default function MeditationPage() {
                     </p>
                 </motion.div>
                 
-                <div className="spacing-top">
+                <div className="spacing-top"> {/* Lydfiler til meditation */} 
                     
                     <motion.div variants={itemAnimation}>
                     <Audiofile

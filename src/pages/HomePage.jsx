@@ -8,9 +8,9 @@ import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 
 
-export default function HomePage(){
+export default function HomePage(){ // Ellen
     const currentDate = moment();
-    const homepageDate = currentDate.format('MMMM DD')
+    const homepageDate = currentDate.format('MMMM DD') //dagsdato 
 
     const [brugernavn, setBrugernavn] = useState("");
 
