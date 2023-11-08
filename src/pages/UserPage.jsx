@@ -36,7 +36,6 @@ export default function UserPage() {
         });
 
         localStorage.setItem("userData", userData);
-        alert("Information saved");
     };
 
     return (
@@ -82,7 +81,7 @@ export default function UserPage() {
 
                 <motion.div variants={itemAnimation} className='center spacing-bottom'>
                     <button onClick={getdata} type='number' className='button btn-big'>
-                        save <span className="buttonshine" />
+                        save <span className="btn-shine" />
                     </button>
                 </motion.div>
             </form>

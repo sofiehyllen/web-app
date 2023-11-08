@@ -17,7 +17,7 @@ export default function StatisticsPage(){
     },[])
     return(
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">
-            <motion.div variants={itemAnimation}><GoBackButton /></motion.div>
+            <GoBackButton/>
 
             <motion.div className="spacing-bottom" variants={itemAnimation}>                 
                 <h1 className="titel">Your statistics</h1>
