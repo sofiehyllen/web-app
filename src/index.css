@@ -6,8 +6,7 @@
     @import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
     @import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
-   
-
+    
 /*--Generelle regler, farver og typografi--*/
     :root{
         --darkest-purple: rgba(28, 23, 47, 1); 
@@ -735,15 +734,15 @@
 
 
 
-.shake:active{
-    animation: shake 0.5s;
-}
 
-@keyframes shake {
-    10%, 90% {transform: translate3d(-5px, 0, 0);}
-    20%, 80% {transform: translate3d(7px, 0, 0);}
-    30%, 50%, 70% {transform: translate3d(-7px, 0, 0);}
-    40%, 60% {transform: translate3d(7px, 0, 0);}
-  }
+/*--- Animation til de veje som ikke er kodet---*/
+    .shake:active{
+        animation: shake 0.5s;
+    }
 
-
+    @keyframes shake {
+        10%, 90% {transform: translate3d(-5px, 0, 0);}
+        20%, 80% {transform: translate3d(7px, 0, 0);}
+        30%, 50%, 70% {transform: translate3d(-7px, 0, 0);}
+        40%, 60% {transform: translate3d(7px, 0, 0);}
+    }
