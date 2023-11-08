@@ -11,6 +11,7 @@ import forestSound3 from '../assets/forest-sound3.mp3'
 import forestSound4 from '../assets/forest-sound4.mp3'
 import rainforestSound1 from '../assets/rainforest-sound1.mp3'
 import rainforestSound2 from '../assets/rainforest-sound2.mp3'
+import Favourites from '../components/Favourites';
 
 // Funktionen ForestPage er en React-komponent, der viser en side med skovlyde.
 export default function ForestPage() {
@@ -68,6 +69,9 @@ const [favorites, setFavorites] = useState(storedFavorites || []);
                 </div>
             </div>
         </motion.div>
+
+        {/* Sektion med favoritter */}
+        <Favourites favorites={favorites}/>
 
         {/* Sektion med regnskovlyde */}
         <div>

@@ -1,22 +1,21 @@
 // Denne side er kodet af: Sofie Hyllen
 
-import moment from "moment/moment";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import {motion} from 'framer-motion'
-import illustrationHome from "../assets/illustration-home.svg"
 import { containerAnimation, itemAnimation } from "../components/Animationer";
-
+import moment from "moment/moment";
+import illustrationHome from "../assets/illustration-home.svg"
 
 
 export default function HomePage(){
-    const currentDate = moment();
-    const homepageDate = currentDate.format('MMMM DD')
-
+    const currentDate = moment(); //Vi henter dags dato vha moment.js
+    const homepageDate = currentDate.format('MMMM DD') //Datoen formateres
+    
     const [brugernavn, setBrugernavn] = useState("");
 
-    useEffect(() => {
+    useEffect(() => { //Vi henter brugernavnet fra localStorage
         const temp = localStorage.getItem("brugernavn");
 
         if (temp) {
@@ -24,10 +23,6 @@ export default function HomePage(){
         }
     },[])
  
-
-//---Animationer---//
-
-
     return(
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible"> 
             <motion.div variants={itemAnimation}>

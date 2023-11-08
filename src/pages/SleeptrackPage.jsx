@@ -1,19 +1,17 @@
 // Denne side er kodet af: Karoline Lerche & Sofie Hyllen
 
 import { Link } from "react-router-dom";
-import Favourites from "../components/Favourites";
 import { useState, useEffect, useRef } from "react";
-import illustrationSleeptrack from "../assets/illustration-start-sleep.svg"
 import {motion} from 'framer-motion'
 import { containerAnimation, itemAnimation} from "../components/Animationer";
+import Favourites from "../components/Favourites";
+import illustrationSleeptrack from "../assets/illustration-start-sleep.svg"
 
 export default function SleeptrackPage() {
-  // const [count, setCount] = useState(0)
-
-  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || [];
+  const storedFavorites = JSON.parse(localStorage.getItem('favorites')) || []; //Her hentes brugerens farvoritter fra localStorage
   const [favorites, setFavorites] = useState(storedFavorites);
 
-
+  /*
   const audioContextRef = useRef(null);
 
   const initializeAudioContext = () => {
@@ -34,7 +32,7 @@ export default function SleeptrackPage() {
     return () => {
       document.removeEventListener('click', handleClick);
     };
-  }, []);
+  }, []);*/
 
     return (
         <motion.section className="page-content" variants={containerAnimation} initial="hidden" animate="visible">

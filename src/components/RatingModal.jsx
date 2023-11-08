@@ -5,15 +5,15 @@ import RatingForm from './RatingForm';
 import { motion } from 'framer-motion';
 import { containerAnimation } from './Animationer';
 
-
 // Prop type validering for RatingModal-komponenten
-    RatingModal.propTypes = {
-        isOpen: PropTypes.bool, // Angiver om modalen er åben eller lukket
-        onClose: PropTypes.func, // Funktion til at lukke modalen
-        elapsedTime: PropTypes.string, // Streng der angiver den forløbne tid
-    };
+RatingModal.propTypes = {
+    isOpen: PropTypes.bool, // Angiver om modalen er åben eller lukket
+    onClose: PropTypes.func, // Funktion til at lukke modalen
+    elapsedTime: PropTypes.string, // Streng der angiver den forløbne tid
+};
 
-// RatingModal-komponenten viser en modal til bedømmelse af søvn og gemmer data i en database
+//Denne funktion opretter en sleeptracking 
+//Den vises som en modal til bedømmelse af søvn og gemmer derefter dataene i firebase
 export default function RatingModal({ isOpen, onClose, elapsedTime}) {
     
     // Funktion til at oprette et nyt indlæg i databasen
@@ -32,9 +32,7 @@ export default function RatingModal({ isOpen, onClose, elapsedTime}) {
   //Dette er en måde at skjule modalvinduet, når det ikke er åbent.
   if (!isOpen) return null;
 
-  return (
-    //Dette er selve overlay elementet. Med onClick={onClose} sørger jeg for at modalvinduet lukkes, 
-    //når der trykkes alle andre steder end selve vinduet.
+  return ( //Her returneres modalvinduet, med indholdet fra RatingForm komponenten
     <motion.div variants={containerAnimation} className="modal" onClick={onClose}>
         <div className="gradient-wrapper">
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>

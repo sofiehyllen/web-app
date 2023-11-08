@@ -8,17 +8,17 @@ import RatingModal from './RatingModal';
 const Timer = () => {
   const [seconds, setSeconds] = useState(0); // State til at holde styr på antal sekunder
   const [isModalOpen, setIsModalOpen] = useState(false); // State til at styre, om modalen er åben eller lukket
-  const [mortenstid, setMortenstid] = useState(""); // State til at holde den beregnede forløbne tid
+  const [timer, setTimer] = useState(""); // State til at holde den beregnede forløbne tid
 
-  // Funktion til at lukke modalen
+  // Modalen lukkes ved at sætte isModalOpen til false
   const closeModal = () => {
-    setIsModalOpen(false); // Sætter isModalOpen til false for at lukke modalen
+    setIsModalOpen(false);
   };
 
   // Funktion til at stoppe nedtællingen
   const stopTimer = () => {
     setIsModalOpen(true); // Åbner modalen
-    setMortenstid(calculateElapsedTime()); // Beregner og sætter den forløbne tid, når nedtællingen stopper
+    setTimer(calculateElapsedTime()); // Beregner og sætter den forløbne tid, når nedtællingen stopper
   };
 
   // Effekt til at håndtere nedtællingen af tid
@@ -39,8 +39,8 @@ const Timer = () => {
     return formattedTime; // Returnerer den formaterede tid
   };
 
-  // Returnerer JSX-elementer til visning af nedtællingen og stop-knappen
-  return (
+  
+  return (// Her returneres elementerne til visning af nedtællingen og stop-knappen
     <div>
         <div className='flex center'>
         <h3 className='time-wrapper heading' >{calculateElapsedTime()}</h3> {/* Viser den formaterede tid */}
@@ -52,7 +52,7 @@ const Timer = () => {
         {/* Viser RatingModal, hvis isModalOpen er sand */}
         {isModalOpen && (
             <div>
-                <RatingModal isOpen={isModalOpen} onClose={closeModal} elapsedTime={mortenstid} /> {/* Viser RatingModal med den forløbne tid */}
+                <RatingModal isOpen={isModalOpen} onClose={closeModal} elapsedTime={timer} /> {/* Viser RatingModal med den forløbne tid */}
             </div>
         )}
     </div>
