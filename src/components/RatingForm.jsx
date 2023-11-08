@@ -1,15 +1,16 @@
 // Denne side er kodet af: Karoline Lerche & Sofie Hyllen
 
 import { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import moment from 'moment';
 import verysadIcon from '../assets/smiley1.svg';
 import sadIcon from '../assets/smiley2.svg';
 import betweenIcon from '../assets/smiley3.svg';
 import happyIcon from '../assets/smiley4.svg';
 import veryhappyIcon from '../assets/smiley5.svg';
-import PropTypes from 'prop-types';
-import { useNavigate } from 'react-router-dom';
-import moment from 'moment';
 
+// Objekt, der mapper ratings til deres tilsvarende ikoner
 const ratingIcons = {
     1: verysadIcon,
     2: sadIcon,
@@ -18,38 +19,43 @@ const ratingIcons = {
     5: veryhappyIcon,
 };
 
+// Vi definerer værdien af funktionens props
+RatingForm.propTypes = {
+    savePost: PropTypes.func,
+    elapsedTime: PropTypes.string,
+};
+
 export default function RatingForm({ savePost, elapsedTime }) {
-    const [rating, setRating] = useState("");
-    const [hoursSlept, setHoursSlept] = useState("");
-    const [date, setDate] = useState(""); // date = benyttes som transaction id
-    const [errorMessage, setErrorMessage] = useState("");
     const navigate = useNavigate();
+    const [rating, setRating] = useState(""); //Vi opretter statevariabler til håndtering af rating, sovetimer, dato, fejlbeskeder og brugernavn
+    const [hoursSlept, setHoursSlept] = useState("");
+    const [date, setDate] = useState("");
+    const [errorMessage, setErrorMessage] = useState("");
     const [brugernavn, setBrugernavn] = useState("");
 
-    useEffect(() => {
+    useEffect(() => { //Her hentes brugerens fornavn fra localStorage 
         const temp = localStorage.getItem("brugernavn");
         if (temp) {
             setBrugernavn(temp)
         }
     },[])
 
-    useEffect(() => {
+    useEffect(() => { 
+        //Her opdateres dato og de timer brugeren har sovet når elapsedTime ændrer sig
+        //Datoen vises ikke i denne komponent, men vises i RatingCard komponenten
         const today = new Date().toISOString().split('T')[0];
         setDate(today);
         setHoursSlept(elapsedTime);
     }, [elapsedTime]);
 
-    //const formatDate = (inputDate) => {
-    //    const options = { day: 'numeric', month: 'long' };
-    //    return new Date(inputDate).toLocaleDateString('en-US', options);
-    //};
-
+    // Funktion til formatering af tiden
     const formattedTime = () => {
-        const duration = moment.duration(elapsedTime, 'minutes');
+        const duration = moment.duration(elapsedTime, 'minutes'); // Omdanner tiden til en moment duration
         const hours = duration.hours();
         const minutes = duration.minutes();
         const seconds = duration.seconds();
     
+        // Betingelser for at vise tid i korrekt format
         if (hours > 0) {
             return `${hours} ${hours === 1 ? 'hour' : 'hours'} ${minutes} ${minutes === 1 ? 'minute' : 'minutes'}`;
         } else if (minutes > 0) {
@@ -59,11 +65,12 @@ export default function RatingForm({ savePost, elapsedTime }) {
         }
     };
 
+    //Denne funktion som opdaterer rating når der klikkes på en bestemt rating 
     const handleRatingClick = (selectedOption) => {
         setRating(selectedOption)
     };
 
-    // Når vores form er udfyldt og submitted, laves der et object (formData)
+    // Når vores form er udfyldt og submitted, laves der et object
     async function handleSubmit(e) {
         e.preventDefault();
 
@@ -73,8 +80,7 @@ export default function RatingForm({ savePost, elapsedTime }) {
             date: date
         }
 
-        // Vi tjekker her om der er valgt en rating, hvis ikke
-        // vises der en error message
+        // Vi tjekker her om der er valgt en rating, hvis ikke vises der en error message
         const validForm = formData.rt
         if (validForm) {
             savePost(formData);
@@ -85,21 +91,9 @@ export default function RatingForm({ savePost, elapsedTime }) {
         }
     }
 
-    // Vi definerer her værdien af funktionens props
-    RatingForm.propTypes = {
-        savePost: PropTypes.func,
-        elapsedTime: PropTypes.string,
-    };
-
     return (
-
         <form onSubmit={handleSubmit}>
             <h1 className="titel">Goodmorning <span className="titel-tab">{brugernavn}</span></h1>
-
-            <label>
-               {/* <h3 className='heading heading-small small-italic spacing-bottom'>Todays date is <span id='ratingmodal-date'>{formatDate(date)}</span></h3>*/}
-            </label>
-
             <label>
                 <h2 className='bodytext-normal'>You have slept for</h2>
                 <div className='flex center'>
@@ -110,7 +104,8 @@ export default function RatingForm({ savePost, elapsedTime }) {
             <label>
                 <h2 className='heading'>How did you sleep?</h2>
                 <div className="icon-container" >
-                    {[1, 2, 3, 4, 5].map((option) => (
+                    {/*Her ses vores smileys, repræsenteret som værdier fra 1-5*/}
+                    {[1, 2, 3, 4, 5].map((option) => ( 
                         <span
                             key={option}
                             onClick={() => handleRatingClick(option)}

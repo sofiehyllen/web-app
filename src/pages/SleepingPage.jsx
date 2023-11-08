@@ -1,3 +1,5 @@
+// Denne side er kodet af: Sofie Hyllen
+
 import { useEffect, useState } from "react";
 import moment from "moment";
 import Timer from "../components/Timer";
@@ -8,19 +10,19 @@ export default function SleepingPage(){
     const [brugernavn, setBrugernavn] = useState("");
     const [startTime, setStartTime] = useState(moment());
 
-    useEffect(() => {
+    useEffect(() => { //Her hentes brugernavnet fra localStorage
         const temp = localStorage.getItem("brugernavn");
         if (temp) {
             setBrugernavn(temp)
         }
     },[])
 
-    useEffect(() => {
-      const interval = setInterval(() => {
-        setStartTime(moment());
-      }, 1000);
-  
-      return () => clearInterval(interval);
+    useEffect(() => { //Her opdateres startTime hvert sekund ved hjælp af setInterval
+        const interval = setInterval(() => {
+            setStartTime(moment());
+        }, 1000);
+
+        return () => clearInterval(interval);
     }, []);
   
     return(

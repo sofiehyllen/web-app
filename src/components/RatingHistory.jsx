@@ -1,49 +1,45 @@
-// Denne side er kodet af: Karoline Lerche
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
 
-import { useEffect, useState } from "react";
-import RatingCard from "./RatingCard";
 import { motion } from "framer-motion";
 import { itemAnimation } from "./Animationer";
+import { useEffect, useState } from "react";
+import RatingCard from "./RatingCard";
 
+//Denne funktion henter søvnmålingerne og viser dem i RatingCard komponenten 
 export default function RatingHistory() {
   const [posts, setPosts] = useState([]);
-  const [isPosts, setIsPosts] = useState(true); // isPosts can be true or false
+  const [isPosts, setIsPosts] = useState(true);
   
-  useEffect(() => {
+  useEffect(() => { //Denne funktion henter dataene fra vores firebase-database
     async function getPosts() {
         const url = "https://sleep-aa77c-default-rtdb.europe-west1.firebasedatabase.app/sleep.json";
         const response = await fetch(url);
-      const data = await response.json();
+        const data = await response.json();
+
       if (data !== null) {
-        // This code makes a new array (postsArray) with all the 
-        // data (translations) from the database. "id" becomes equal to
-        // the unique database key, each post have - like "-NDxg_qx1eWfdkNlZ6oj"
-        // and the rest of the data is kept as they are: eng = english, dk = danish,
-        // tid = transaction id.
+        //Hvis der er data i firebase oprettes et nyt array ved at tilføje hvert datasæt (udfra id'et) til arrayet
         const postsArray = Object.keys(data).map((key) => ({
           id: key,
           ...data[key],
         }));      
 
-        setPosts(postsArray.reverse()); // Update "posts" object array list. Set posts equal to postsArray
+        setPosts(postsArray.reverse()); //Vi bruger reverse for at sortere dataene fra nyest til ældst
       } else {
-        setIsPosts(false); // If no data is found, set isPosts to "false". "Noting to show" message is shown.
+        setIsPosts(false); //Hvis ikke der er data i firebase, oprettes postet ikke
       }
     }
     getPosts();
   }, []);
 
-  // PostCard is implemented. It receives the data (translations)
-  // retrieved above.
-  return (
+  return ( //Her implementeres vores RatingCard
     <article className="page">
-      {isPosts ? (
+      {isPosts ? ( //Her vises brugerens tidligere trackings. 
         <motion.div variants={itemAnimation} className="flexbox">
           {posts.map((post) => (
             <RatingCard key={post.id} post={post} />
           ))}
         </motion.div>
-      ) : (
+      ) : ( //Er der ikke nogen trackings at vises, vises i stedet beskeden nedenfor
         <p className="bodytext">You have no recorded sleep history. <br />
         Start your first sleeptracking to see the statistics of your sleep here. </p>
       )}

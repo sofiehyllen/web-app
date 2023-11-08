@@ -1,4 +1,3 @@
-// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
 
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";

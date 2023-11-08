@@ -1,4 +1,4 @@
-// Denne side er kodet af: Karoline Lerche
+// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
 
 import { useRef, useState, useEffect, useCallback } from 'react'
 import PropTypes from 'prop-types';
@@ -7,7 +7,8 @@ import moment from 'moment/moment'
 import play from '../assets/afspiller-play.svg'
 import pause from '../assets/afspiller-pause.svg'
 
-// Funktion til brug af WaveSurfer
+// Vi benytter WaveSurfer.js biblioteket: https://wavesurfer.xyz/ 
+// Biblioteket bruges til at lave lydbølger for hver lydfil
 const useWavesurfer = (containerRef, options) => {
     const [wavesurfer, setWavesurfer] = useState(null) // Opretter en state for WaveSurfer-objektet
   
@@ -28,19 +29,18 @@ const useWavesurfer = (containerRef, options) => {
     return wavesurfer
 }
 
-export default function Audiofile(props){
+// Prop type validering
+Audiofile.propTypes = {
+    textarea: PropTypes.string,
+    };
 
+export default function Audiofile(props){
     const containerRef = useRef()
     const [isPlaying, setIsPlaying] = useState(false)
     const [currentTime, setCurrentTime] = useState(0)
     const wavesurfer = useWavesurfer(containerRef, props)
     const {textarea} = props;
   
-    // Prop type validering
-    Audiofile.propTypes = {
-        textarea: PropTypes.string.isRequired,
-      };
-
     // Funktion til afspil/pause knap
     const onPlayClick = useCallback(() => {
       wavesurfer.isPlaying() ? wavesurfer.pause() : wavesurfer.play()

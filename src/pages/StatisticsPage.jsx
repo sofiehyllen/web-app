@@ -1,3 +1,5 @@
+// Denne side er kodet af: Sofie Hyllen
+
 import { useEffect, useState } from "react";
 import GoBackButton from "../components/GoBackButton";
 import Graph from "../components/Graph";
@@ -6,10 +8,10 @@ import SleepCalculator from "../components/SleepCalculator";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 import { motion } from "framer-motion";
 
-
 export default function StatisticsPage(){
     const [brugernavn, setBrugernavn] = useState("");
-    useEffect(() => {
+
+    useEffect(() => { //Her hentes brugernavnet fra localStorage
         const temp = localStorage.getItem("brugernavn");
         if (temp) {
             setBrugernavn(temp)
@@ -24,11 +26,13 @@ export default function StatisticsPage(){
                 <p className="bodytext">Check out the statistics of your weekly sleepcycle to get a better feeling of the quality of your sleep.</p>
             </motion.div>
 
-            <motion.div className="spacing-bottom" variants={itemAnimation}> 
-                <h2 className="heading">Weekly status</h2>
+            {/*Her vises grafen*/}
+            <div className="spacing-bottom"> 
+                <motion.h2 variants={itemAnimation} className="heading">Weekly status</motion.h2>
                 <Graph/>
-            </motion.div>
+            </div>
 
+            {/*Her vises det ugentlige gennemsnit for hvor mange timer brugeren har sovet*/}
             <motion.div className="heading heading-small" variants={itemAnimation}>              
                 <div className="center">
                     <p id="statistictext">On average, you have slept for  
@@ -39,13 +43,11 @@ export default function StatisticsPage(){
                 <p className="heavy-text center spacing-bottom" id="statisticgoodjob">Good job {brugernavn}!</p>
             </motion.div>
 
-            
-                <motion.h2 variants={itemAnimation} className="heading">History</motion.h2>
-                <div className="spacing-top">
-                    <RatingHistory/>
-                </div>
-           
-           
+            {/*Her vises de tidligere sleeptrackings*/}
+            <motion.h2 variants={itemAnimation} className="heading">History</motion.h2>
+            <div className="spacing-top">
+                <RatingHistory/>
+            </div>
         </motion.section>
     )
 }

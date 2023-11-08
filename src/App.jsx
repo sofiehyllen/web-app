@@ -1,7 +1,7 @@
-// Denne side er kodet af: Karoline Lerche & Sofie Hyllen
-
+// Denne side er kodet af: Ellen Bager, Karoline Lerche & Sofie Hyllen
 
 import { Routes, Route, BrowserRouter } from "react-router-dom"; 
+import { AnimatePresence } from "framer-motion";
 import HomePage from './pages/HomePage';
 import MenuPage from './pages/MenuPage';
 import Navigation from './components/Navigation';
@@ -16,10 +16,6 @@ import ExercisesPage from './pages/ExercisesPage'
 import MeditationPage from './pages/MeditationPage'
 import RatingDelete from "./components/RatingDelete";
 import UserModal from "./pages/UserModal";
-import { AnimatePresence } from "framer-motion";
-
-
-
 
 function App() {
   return (
