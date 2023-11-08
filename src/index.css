@@ -29,6 +29,15 @@
         font-weight: 100;
     }
 
+    body{
+        background-image: url("/src/assets/background-default.svg");
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh; /* Minimums højde af viewportens højde */
+        display: flex;
+        flex-direction: column;
+    }
+
     .relative{
         position: relative;
     }
@@ -39,15 +48,6 @@
 
     body, a{
         color: var(--titel-text);
-    }
-
-    body{
-        background-image: url("/src/assets/background-default.svg");
-        background-size: cover;
-        background-attachment: fixed;
-        min-height: 100vh; /* Minimums højde af viewportens højde */
-        display: flex;
-        flex-direction: column;
     }
 
     .flex{
@@ -72,88 +72,95 @@
         align-items: end;
     }
 
+    .spacing-bottom{
+        margin-bottom: 6vw;
+    }
+    
+    .spacing-top{
+        margin-top: 1vw;
+    }
+
     .img-max{
         max-width: 100%;
         max-height: 100%;
         display: block;
     }
 
+    .page-content{
+        width: 100%;
+        height: 100%;
+        padding: 7vw;
+        margin-bottom: 15vw;
+    }
 
 
-.titel{
-    font-family: "gyst-variable",sans-serif;
-    font-variation-settings: 'wght' 550;
-    font-size: 13vw;
-}
 
-.titel-big{
-    font-size: 17vw;
-}
 
-.titel-small {
-    font-size: 8vw;
-}
 
-.titel-tab{
-    padding-left: 15vw;
-}
+/*--Typografi--*/
+    .titel{
+        font-family: "gyst-variable",sans-serif;
+        font-variation-settings: 'wght' 550;
+        font-size: 13vw;
+    }
 
-.heading{
-    font-family: "mundial", sans-serif;
-    font-weight: 100;
-    font-size: 6.5vw;
-}
+    .titel-big{
+        font-size: 17vw;
+    }
 
-.heading-small{
-    font-size: 4vw;
-    font-weight: 100;
-}
+    .titel-small {
+        font-size: 8vw;
+    }
 
-.small-italic{
-    font-style: italic;
-    color: var(--body-text);
-}
+    .titel-tab{
+        padding-left: 15vw;
+    }
 
-.bodytext{
-    font-family: 'poppins-light', sans-serif;
-    font-style: italic;
-    color: var(--body-text);
-    font-size: 3.4vw;
-    line-height: 5vw;
-}
+    .heading{
+        font-family: "mundial", sans-serif;
+        font-weight: 100;
+        font-size: 6.5vw;
+    }
 
-.bodytext-normal{
-    font-style: normal;
-    font-family: 'poppins-light', sans-serif;
-    color: var(--body-text);
-    font-size: 4vw;
-    line-height: 5vw;
-}
+    .heading-small{
+        font-size: 4vw;
+        font-weight: 100;
+    }
 
-.titelcolor{
-    color: var(--titel-text);
-}
+    .small-italic{
+        font-style: italic;
+        color: var(--body-text);
+    }
 
-.heavy-text{
-    color: var(--titel-text);
-    font-size: 4.5vw;
-    font-weight: 900;
-}
+    .bodytext{
+        font-family: 'poppins-light', sans-serif;
+        font-style: italic;
+        color: var(--body-text);
+        font-size: 3.4vw;
+        line-height: 5vw;
+    }
 
-.page-content{
-    width: 100%;
-    height: 100%;
-    padding: 7vw;
-    margin-bottom: 15vw;
-}
+    .bodytext-normal{
+        font-style: normal;
+        font-family: 'poppins-light', sans-serif;
+        color: var(--body-text);
+        font-size: 4vw;
+        line-height: 5vw;
+    }
 
-.spacing-bottom{
-    margin-bottom: 6vw;
-}
+    .titelcolor{
+        color: var(--titel-text);
+    }
 
-.spacing-top{
-    margin-top: 1vw;
-}
+    .heavy-text{
+        color: var(--titel-text);
+        font-size: 4.5vw;
+        font-weight: 900;
+    }
+
+
+
+
 
 /*--Knapper--*/
     .button{
@@ -224,6 +231,20 @@
         padding-bottom: 2vw;
     }
 
+    /*--- Go Back Button ---*/
+    .back{
+        border-radius: 50%;
+        font-size: 7vw;
+        padding: 2vw 1.7vw 0 1.7vw;
+        background-color: var(--light-purple);
+        color: var(--titel-text);
+        border: none;
+        margin-bottom: 5vw;
+    }
+
+
+
+
 
 /*---Navigation---*/
     nav{
@@ -259,6 +280,8 @@
 
 
 
+
+
 /*---Lilla container i 3 størrelser---*/
     .brickcontainer{
         background-color: var(--light-purple);
@@ -283,7 +306,11 @@
         margin-bottom: 5vw;
     }
 
-/*---ID og klasser til baggrunde til hver enkelt lilla container---*/
+
+
+
+
+/*---ID og klasser til baggrunde på lilla container---*/
     .brick-bg{
         background-size: cover;
         background-repeat: no-repeat;
@@ -291,7 +318,7 @@
     }
 
     .opacity{
-        background-color: rgba(0, 0, 0, 0.3); /*  Giver baggrunden 30% opacity, ved at lægge sort farve ovenpå */
+        background-color: rgba(0, 0, 0, 0.3);
         background-blend-mode: multiply;    
     }    
 
@@ -299,6 +326,12 @@
         background-image: url('/src/assets/tip-bg.svg');
         background-size: contain;
         background-repeat: no-repeat;
+    }
+
+   .menu-icons{
+        right: 0;
+        top: 0;
+        padding-top: 14px;
     }
 
     #brick-bg-home-1{background-image: url('/src/assets/home-bg1.svg');}
@@ -330,17 +363,11 @@
     #brick-bg-breathing-1{background-image: url('/src/assets/breathing-1.svg');}
     #brick-bg-breathing-2{background-image: url('/src/assets/breathing-2.svg');}
 
-    .menu-icons{
-        right: 0;
-        top: 0;
-        padding-top: 14px;
-    }
+ 
 
     
 
-    
-
-/*ID til illustrationer på sider*/
+/*ID til illustrationer på hver hovedside*/
     #illustration-home{
         margin-top: 2vw;
         margin-bottom: 10vw;
@@ -358,6 +385,9 @@
         padding-top: 75vw;
         margin-top: 5vw;
     }
+
+
+
 
 
 /*--Andre specifikke ID--*/
@@ -387,7 +417,6 @@
         background-image: url("/src/assets/background-dark.svg");
         background-size: cover;
         background-attachment: fixed;
-        
         padding-top: 15vw;
     }
 
@@ -409,6 +438,8 @@
         justify-content: center;
         height: 80vh; 
     }
+
+
 
 
 
@@ -546,7 +577,10 @@
     }
 
 
-/* SLEEPSUMMARYCARD */
+
+
+
+/*--Klasser til RatingCard--*/
     .card-icon{
         width: fit-content;
         height: fit-content;
@@ -571,25 +605,29 @@
 
 
 
-.delete-modal{
-    display: flex;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index: 50;
-}
 
-.delete-content{
-    border-radius: 20px;
-    padding: 5vw;
-    background-color: var(--darkest-purple);
-    width: 88%;
+/*---Modalvindue til sletning---*/
+    .delete-modal{
+        display: flex;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+    }
 
-}
+    .delete-content{
+        border-radius: 20px;
+        padding: 5vw;
+        background-color: var(--darkest-purple);
+        width: 88%;
+
+    }
+
+
 
 
 
@@ -624,6 +662,9 @@
     }
 
 
+
+
+
 /*---Forest sound side---*/ 
     .hearticon{
         position: absolute;
@@ -646,6 +687,10 @@
         top: 0;
         margin-top: 2px;
     }
+
+
+
+
 
 /*---Dialogboks til brugernavn---*/
 .dialog {
@@ -679,22 +724,16 @@
     border: solid 1px var(--dark-purple)
 }
 
+
+
+
+
 /*--- exercises side ---*/
 .logoer {
     width: 90%;
 }
 
-/*--- Go Back Button ---*/
 
-.back{
-    border-radius: 50%;
-    font-size: 7vw;
-    padding: 2vw 1.7vw 0 1.7vw;
-    background-color: var(--light-purple);
-    color: var(--titel-text);
-    border: none;
-    margin-bottom: 5vw;
-}
 
 .shake:active{
     animation: shake 0.5s;
