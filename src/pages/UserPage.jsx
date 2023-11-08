@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 import { containerAnimation, itemAnimation } from "../components/Animationer";
 
 export default function UserPage() {
-    // Initialisering af brugerstaten
     const [user, setUser] = useState({
         Firstname: '',
         Lastname: '',
@@ -43,9 +42,7 @@ export default function UserPage() {
 
         // Gemmer brugerdata i localStorage
         localStorage.setItem("userData", userData);
-        // Viser en meddelelse om at informationen er gemt
-        alert("Information saved");
-
+        alert("Information saved"); // Viser en meddelelse om at informationen er gemt
     };
 
     return (
